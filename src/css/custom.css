@@ -28,3 +28,67 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.col {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #f7f7f7;
+  margin-bottom: 1rem;
+}
+
+.col:hover {
+  background: #ececec;
+  transition: 0.2s;
+}
+
+.exercise-card {
+  background: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+.exercise-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+.exercise-card h2 {
+  margin-top: 0;
+}
+
+.exercise-card a {
+  font-weight: 600;
+}
+
+.row {
+  margin-top: 2rem;
+}
+
+.latest-exercises {
+  list-style: none;
+  padding: 0;
+}
+
+.latest-exercises li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.latest-exercises li a {
+  font-weight: 500;
+}
+.back-button {
+  margin-bottom: 1.5rem;
+}
