@@ -1,0 +1,195 @@
+---
+title: Lista de Limites 02
+pagination_prev: listas/limites/lista-limites-01
+---
+
+import BackToLists from '@site/src/components/BackToLists'
+
+<BackToLists />
+
+# Limites
+
+Resolva os limites abaixo.
+
+---
+
+### Exercício 1
+
+$$
+\lim_{x \to 0} \frac{1-\cos x}{x^2}
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Usando a expansão de Taylor:
+
+$$
+\cos x = 1 - \frac{x^2}{2} + \cdots
+$$
+
+Logo:
+
+$$
+1-\cos x \approx \frac{x^2}{2}
+$$
+
+Portanto:
+
+$$
+\lim_{x \to 0} \frac{1-\cos x}{x^2} = \frac{1}{2}
+$$
+
+</details>
+
+---
+
+### Exercício 2
+
+$$
+\lim_{x \to 0} \frac{\tan x}{x}
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Sabemos que:
+
+$$
+\frac{\sin x}{x} \to 1
+$$
+
+e
+
+$$
+\cos x \to 1
+$$
+
+Como
+
+$$
+\tan x = \frac{\sin x}{\cos x}
+$$
+
+Então
+
+$$
+\frac{\tan x}{x} =
+\frac{\sin x}{x}\cdot\frac{1}{\cos x}
+$$
+
+Logo
+
+$$
+\lim_{x\to0}\frac{\tan x}{x}=1
+$$
+
+</details>
+
+---
+
+### Exercício 3
+
+$$
+\lim_{x \to \infty} \frac{5x^2 + 3x}{2x^2 - x}
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Dividindo por $x^2$:
+
+$$
+\frac{5 + \frac{3}{x}}{2 - \frac{1}{x}}
+$$
+
+Quando $x \to \infty$:
+
+$$
+\frac{3}{x} \to 0
+\quad
+\frac{1}{x} \to 0
+$$
+
+Logo
+
+$$
+\frac{5}{2}
+$$
+
+</details>
+
+---
+
+### Exercício 4
+
+$$
+\lim_{x \to 2} \frac{x^2 - 4}{x-2}
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Fatorando:
+
+$$
+x^2 - 4 = (x-2)(x+2)
+$$
+
+Cancelando:
+
+$$
+\frac{(x-2)(x+2)}{x-2}
+$$
+
+Então:
+
+$$
+x+2
+$$
+
+Logo
+
+$$
+\lim_{x \to 2} (x+2) = 4
+$$
+
+</details>
+
+---
+
+### Exercício 5
+
+$$
+\lim_{x \to 0} \frac{\sqrt{1+x}-1}{x}
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Multiplicando pelo conjugado:
+
+$$
+\frac{\sqrt{1+x}-1}{x}
+\cdot
+\frac{\sqrt{1+x}+1}{\sqrt{1+x}+1}
+$$
+
+$$
+=
+\frac{1+x-1}{x(\sqrt{1+x}+1)}
+$$
+
+Cancelando:
+
+$$
+\frac{1}{\sqrt{1+x}+1}
+$$
+
+Quando $x\to0$:
+
+$$
+\frac{1}{2}
+$$
+
+</details>
