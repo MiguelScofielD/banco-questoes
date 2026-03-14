@@ -1,4 +1,8 @@
 {
   "label": "Matemática",
-  "position": 1
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "matematica-basica/index"
+  }
 }

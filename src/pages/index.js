@@ -6,15 +6,15 @@ import HomeCards from "../components/HomeCards";
 export default function Home() {
   return (
     <Layout
-      title="Banco de Questões"
+      title="Núcleo de Exatas"
       description="Problemas resolvidos de matemática, cálculo e física"
     >
       <header className="hero hero--primary">
         <div className="container">
-          <h1 className="hero__title">Banco de Questões</h1>
+          <h1 className="hero__title">Núcleo de Exatas</h1>
 
           <p className="hero__subtitle">
-            Problemas resolvidos de Matemática, Cálculo e Física
+            Problemas resolvidos de Cálculo, Física e Matemática,
           </p>
 
           <div style={{ marginTop: "2rem" }}>
@@ -22,16 +22,32 @@ export default function Home() {
               className="button button--secondary button--lg"
               to="/docs/exercicios"
             >
-              Ver Exercícios
+              Conteúdo
+            </Link>
+
+            {/* <Link
+              className="button button--secondary button--lg"
+              to="/blog"
+              style={{ marginLeft: "1rem" }}
+            >
+              Física
             </Link>
 
             <Link
+              className="button button--secondary button--lg"
+              to="/blog"
+              style={{ marginLeft: "1rem" }}
+            >
+              Matemática
+            </Link> */}
+
+            {/* <Link
               className="button button--outline button--lg"
               to="/blog"
               style={{ marginLeft: "1rem" }}
             >
-              Blog
-            </Link>
+              Exercícios
+            </Link> */}
           </div>
         </div>
       </header>

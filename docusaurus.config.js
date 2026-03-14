@@ -7,7 +7,7 @@ import rehypeKatex from 'rehype-katex'
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 
-  title: 'Banco de Questões',
+  title: 'Núcleo de Exatas',
   tagline: 'Matemática, Física e Cálculo resolvidos',
   favicon: 'img/favicon.ico',
 
@@ -74,18 +74,29 @@ const config = {
   themeConfig:
     ({
       navbar: {
-        title: 'Banco de Questões',
+        title: 'Início',
         logo: {
           alt: 'Logo',
           src: 'img/logo.svg',
         },
         items: [
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Conteúdo',
+          // },
+
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
             label: 'Conteúdo',
+            position: 'left',
+            items: [
+              {label: 'Matemática', to: '/docs/matematica-basica'},
+              {label: 'Cálculo', to: '/docs/calculo'},
+              {label: 'Física', to: '/docs/fisica'},
+            ],
           },
+
           {
             to: '/blog',
             label: 'Blog',
