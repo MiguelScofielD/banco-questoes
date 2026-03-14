@@ -52,12 +52,6 @@ const sidebars = {
       ],
     },
 
-    {
-      type: 'doc',
-      id: 'listas/index',
-      label: 'Listas de Exercícios',
-    },
-
   ],
 };
 

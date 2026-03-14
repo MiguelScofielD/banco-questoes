@@ -77,7 +77,7 @@ const config = {
         title: 'Início',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo_gpt.png',
         },
         items: [
           // {
