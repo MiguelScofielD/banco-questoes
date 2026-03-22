@@ -1,0 +1,106 @@
+import Exercicio from '@site/src/components/math/Exercicio'
+import Solucao from '@site/src/components/math/Solucao'
+
+# Produtos Notáveis e Fatoração
+
+<Exercicio>
+
+Calcule o valor de:
+
+$$
+\sqrt{224 \times 225 \times 226 \times 227 + 1}
+$$
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Estratégia
+
+Quando há números grandes e consecutivos, podemos substituir por uma variável:
+
+$$
+x = 224
+$$
+
+Assim:
+
+$$
+\sqrt{224 \cdot 225 \cdot 226 \cdot 227 + 1}
+=
+\sqrt{x(x+1)(x+2)(x+3) + 1}
+$$
+
+---
+
+## ✏️ Desenvolvimento
+
+Agrupando os termos:
+
+$$
+\begin{aligned}
+x(x+1)(x+2)(x+3)
+&= (x(x+3))((x+1)(x+2)) \\
+&= (x^2 + 3x)(x^2 + 3x + 2)
+\end{aligned}
+$$
+
+Agora fazemos uma substituição:
+
+$$
+y = x^2 + 3x
+$$
+
+Então:
+
+$$
+\begin{aligned}
+(x^2 + 3x)(x^2 + 3x + 2)
+&= y(y+2) \\
+&= (y+1)^2 - 1
+\end{aligned}
+$$
+
+---
+
+## 🔁 Substituindo na expressão
+
+$$
+\begin{aligned}
+\sqrt{x(x+1)(x+2)(x+3) + 1}
+&= \sqrt{(y+1)^2 - 1 + 1} \\
+&= \sqrt{(y+1)^2} \\
+&= y + 1
+\end{aligned}
+$$
+
+Substituindo \(y\):
+
+$$
+= x^2 + 3x + 1
+$$
+
+---
+
+## ✅ Resultado final
+
+Agora substituímos \(x = 224\):
+
+$$
+\begin{aligned}
+x^2 + 3x + 1
+&= 224^2 + 3(224) + 1 \\
+&= 50176 + 672 + 1 \\
+&= 50849
+\end{aligned}
+$$
+
+---
+
+## 🎯 Conclusão
+
+$$
+\sqrt{224 \times 225 \times 226 \times 227 + 1} = 50849
+$$
+
+</Solucao>

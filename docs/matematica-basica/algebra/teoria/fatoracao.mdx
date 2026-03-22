@@ -1,0 +1,165 @@
+---
+title: Fatoração
+sidebar_position: 5
+---
+
+# Fatoração
+
+## 🔧 Principais Técnicas de Fatoração
+
+A fatoração consiste em transformar uma expressão em um **produto de fatores**.  
+Existem várias técnicas importantes:
+
+---
+
+### 🔹 Fator comum em evidência
+
+Colocamos em evidência o fator que aparece em todos os termos.
+
+**Exemplo:**
+
+$$
+2x + 4 = 2(x + 2)
+$$
+
+---
+
+### 🔹 Agrupamento
+
+Usado quando não há fator comum em todos os termos, mas é possível agrupar.
+
+**Exemplo:**
+
+$$
+x^2 + 3x + 2x + 6
+$$
+
+Agrupando:
+
+$$
+(x^2 + 3x) + (2x + 6)
+$$
+
+Fatorando:
+
+$$
+x(x + 3) + 2(x + 3)
+$$
+
+$$
+(x + 3)(x + 2)
+$$
+
+---
+
+### 🔹 Diferença de dois quadrados
+
+Segue a forma:
+
+$$
+a^2 - b^2 = (a - b)(a + b)
+$$
+
+**Exemplo:**
+
+$$
+x^2 - 9 = (x - 3)(x + 3)
+$$
+
+---
+
+### 🔹 Trinômio quadrado perfeito
+
+Reconhece expressões do tipo:
+
+$$
+a^2 + 2ab + b^2 = (a + b)^2
+$$
+
+ou
+
+$$
+a^2 - 2ab + b^2 = (a - b)^2
+$$
+
+**Exemplo:**
+
+$$
+x^2 + 6x + 9 = (x + 3)^2
+$$
+
+---
+
+### 🔹 Fatoração de números (decomposição em primos)
+
+Consiste em escrever um número como produto de números primos.
+
+**Exemplo:**
+
+$$
+12 = 2 \cdot 2 \cdot 3 = 2^2 \cdot 3
+$$
+
+---
+
+## 📌 Dica importante
+
+Sempre tente fatorar na seguinte ordem:
+
+1. Fator comum  
+2. Agrupamento  
+3. Produtos notáveis  
+4. Outros métodos  
+
+---
+### TÉCNICAS ÚTEIS
+
+Por vezes existem casos que expressão fornecida ou obtida
+parece não possuir todas os termos que precisamos para efetuar o agrupamento, ou mesmo a
+expressão remete a algum quadrado perfeito, mas há algo faltando. Nessas situações, completar
+retângulos ou quadrados pode ser a solução!
+
+**Exemplo:** Fatore a seguinte expressão:
+
+$$
+x^4+4y^4
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+A expressão apresenta dois termos que não podem ser colocados em evidência mas ela lembra termos de um quadrado perfeito. Dessa forma, vamos completar o quadrado:
+
+$$
+x^4+4y^4 = x^4 + 2\cdot x²\cdot (2y)² + 4y^4 - 2\cdot x²\cdot (2y)²
+$$
+
+$$
+x^4+4y^4 = (x^4 + 4x²y² + 4y^4) - 4x²y² = (x²+2y²)² - 4x²y²
+$$
+
+Veja que ao adicionar o termo $$2\cdot x²\cdot (2y)²$$ completamos o quadrado perfeito. Porém, para não alterar a expressão também devemos remover esse mesmo termo. Assim, encontramos a diferença de dois quadrados:
+
+$$
+x^4+4y^4 = (x²+2y²)² - (2xy)² = (x²+2y²+2xy)(x²+2y²-2xy)
+$$
+
+Logo:
+
+$$
+x^4+4y^4 = (x²+2y²+2xy)(x²+2y²-2xy)
+$$
+
+
+</details>
+---
+
+## 🚀 Próximo passo
+
+Agora avance para:
+
+➡️ [Equações do 1º grau](/docs/matematica-basica/algebra/teoria/equacoes-1-grau)
+
+ou pratique:
+
+➡️ [Lista de Álgebra](/docs/matematica-basica/algebra/listas/lista-algebra-01)
