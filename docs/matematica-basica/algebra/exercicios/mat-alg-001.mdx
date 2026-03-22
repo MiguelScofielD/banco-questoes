@@ -3,7 +3,9 @@ import Solucao from '@site/src/components/math/Solucao'
 
 # Produtos Notáveis e Fatoração
 
-<Exercicio>
+---
+
+<Exercicio numero={1} dificuldade= "Médio">
 
 Calcule o valor de:
 
@@ -15,15 +17,17 @@ $$
 
 <Solucao>
 
-## 🔎 Estratégia
+## 🔎 Ideia principal
 
-Quando há números grandes e consecutivos, podemos substituir por uma variável:
+Quando aparecem **números consecutivos**, podemos substituir por uma variável para simplificar.
+
+---
+
+## ✏️ Passo 1 — Substituição
 
 $$
 x = 224
 $$
-
-Assim:
 
 $$
 \sqrt{224 \cdot 225 \cdot 226 \cdot 227 + 1}
@@ -33,9 +37,7 @@ $$
 
 ---
 
-## ✏️ Desenvolvimento
-
-Agrupando os termos:
+## ✏️ Passo 2 — Agrupamento inteligente
 
 $$
 \begin{aligned}
@@ -45,7 +47,11 @@ x(x+1)(x+2)(x+3)
 \end{aligned}
 $$
 
-Agora fazemos uma substituição:
+---
+
+## ✏️ Passo 3 — Substituição auxiliar
+
+Definimos:
 
 $$
 y = x^2 + 3x
@@ -55,15 +61,14 @@ Então:
 
 $$
 \begin{aligned}
-(x^2 + 3x)(x^2 + 3x + 2)
-&= y(y+2) \\
+y(y+2)
 &= (y+1)^2 - 1
 \end{aligned}
 $$
 
 ---
 
-## 🔁 Substituindo na expressão
+## ✏️ Passo 4 — Simplificação
 
 $$
 \begin{aligned}
@@ -74,7 +79,7 @@ $$
 \end{aligned}
 $$
 
-Substituindo \(y\):
+Voltando:
 
 $$
 = x^2 + 3x + 1
@@ -82,9 +87,7 @@ $$
 
 ---
 
-## ✅ Resultado final
-
-Agora substituímos \(x = 224\):
+## ✏️ Passo 5 — Substituição final
 
 $$
 \begin{aligned}
@@ -97,10 +100,614 @@ $$
 
 ---
 
-## 🎯 Conclusão
+## 🎯 Resultado
 
 $$
-\sqrt{224 \times 225 \times 226 \times 227 + 1} = 50849
+\boxed{50849}
+$$
+
+---
+
+## 💡 Insight
+
+Esse tipo de questão usa a identidade:
+
+$$
+a(a+1)(a+2)(a+3) + 1 = (a^2 + 3a + 1)^2
 $$
 
 </Solucao>
+
+---
+
+<Exercicio numero={2} dificuldade= "Fácil" >
+
+Quais são as soluções inteiras positivas da equação:
+
+$$
+mn + 2m + 3n = 29
+$$
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Vamos transformar a expressão em um **produto fatorável**.
+
+---
+
+## ✏️ Passo 1 — Completar fatoração
+
+Somamos 6 em ambos os lados:
+
+$$
+\begin{aligned}
+mn + 2m + 3n + 6 &= 29 + 6 \\
+(m+3)(n+2) &= 35
+\end{aligned}
+$$
+
+---
+
+## ✏️ Passo 2 — Fatoração do número
+
+$$
+35 = 1 \cdot 35 = 5 \cdot 7
+$$
+
+---
+
+## ✏️ Passo 3 — Análise das soluções
+
+Como:
+
+- \(m+3 > 3\)
+- \(n+2 > 2\)
+
+Testamos:
+
+### Caso 1
+
+$$
+m+3 = 5 \Rightarrow m = 2
+$$
+
+$$
+n+2 = 7 \Rightarrow n = 5
+$$
+
+---
+
+### Caso 2
+
+$$
+m+3 = 7 \Rightarrow m = 4
+$$
+
+$$
+n+2 = 5 \Rightarrow n = 3
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{(m,n) = (2,5) \text{ e } (4,3)}
+$$
+
+---
+
+## 💡 Insight
+
+Essa técnica é chamada de:
+
+👉 **completar para fatorar**
+
+Muito usada em:
+
+- olimpíadas
+- ITA/IME
+- problemas de teoria dos números
+
+</Solucao>
+
+<Exercicio numero={3} dificuldade="Médio">
+
+Fatore a expressão:
+
+$$
+E = (a^2 + 3a + 3)(a^2 + 3a + 5) - 15
+$$
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Observe que a expressão possui um termo que se repete:
+
+$$
+a^2 + 3a
+$$
+
+Vamos fazer uma substituição para simplificar.
+
+---
+
+## ✏️ Passo 1 — Substituição
+
+Defina:
+
+$$
+x = a^2 + 3a
+$$
+
+Então:
+
+$$
+E = (x + 3)(x + 5) - 15
+$$
+
+---
+
+## ✏️ Passo 2 — Expansão
+
+$$
+\begin{aligned}
+(x + 3)(x + 5)
+&= x^2 + 8x + 15
+\end{aligned}
+$$
+
+Substituindo:
+
+$$
+E = x^2 + 8x + 15 - 15
+$$
+
+$$
+E = x^2 + 8x
+$$
+
+---
+
+## ✏️ Passo 3 — Fatoração
+
+Colocando \(x\) em evidência:
+
+$$
+E = x(x + 8)
+$$
+
+---
+
+## ✏️ Passo 4 — Retornando à variável original
+
+$$
+E = (a^2 + 3a)(a^2 + 3a + 8)
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{E = (a^2 + 3a)(a^2 + 3a + 8)}
+$$
+
+---
+
+## 💡 Insight
+
+Sempre que houver expressões repetidas, vale a pena fazer uma substituição:
+
+$$
+x = a^2 + 3a
+$$
+
+Isso transforma a expressão em algo muito mais simples de fatorar.
+
+</Solucao>
+
+<Exercicio numero={4} dificuldade="Médio">
+
+Resolva o sistema:
+
+$$
+\begin{cases}
+x^2 + 2x = y - \frac{1}{4} \\
+y^2 + 2y = z - \frac{1}{4} \\
+z^2 + 2z = x - \frac{1}{4}
+\end{cases}
+$$
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Somar todas as equações e transformar os termos em **quadrados perfeitos**.
+
+---
+
+## ✏️ Passo 1 — Somando as equações
+
+$$
+\begin{aligned}
+(x^2 + 2x) + (y^2 + 2y) + (z^2 + 2z)
+&= (y - \tfrac{1}{4}) + (z - \tfrac{1}{4}) + (x - \tfrac{1}{4})
+\end{aligned}
+$$
+
+Simplificando:
+
+$$
+x^2 + y^2 + z^2 + 2(x+y+z) = x + y + z - \tfrac{3}{4}
+$$
+
+---
+
+## ✏️ Passo 2 — Reorganizando
+
+$$
+x^2 + y^2 + z^2 + (x+y+z) + \tfrac{3}{4} = 0
+$$
+
+---
+
+## ✏️ Passo 3 — Completando quadrados
+
+Usamos a identidade:
+
+$$
+x^2 + x + \tfrac{1}{4} = \left(x + \tfrac{1}{2}\right)^2
+$$
+
+Aplicando para cada variável:
+
+$$
+\begin{aligned}
+&\left(x + \tfrac{1}{2}\right)^2 +
+\left(y + \tfrac{1}{2}\right)^2 +
+\left(z + \tfrac{1}{2}\right)^2 = 0
+\end{aligned}
+$$
+
+---
+
+## ✏️ Passo 4 — Conclusão
+
+A soma de quadrados só é zero quando cada termo é zero:
+
+$$
+x + \tfrac{1}{2} = 0,\quad
+y + \tfrac{1}{2} = 0,\quad
+z + \tfrac{1}{2} = 0
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{x = y = z = -\tfrac{1}{2}}
+$$
+
+---
+
+## 💡 Insight
+
+Transformar expressões em **quadrados perfeitos** é uma técnica poderosa.
+
+Aqui usamos:
+
+$$
+x^2 + 2x \;\Rightarrow\; \left(x + \tfrac{1}{2}\right)^2 - \tfrac{1}{4}
+$$
+
+Essa abordagem aparece muito em:
+
+- olimpíadas
+- problemas simétricos
+- equações cíclicas
+
+</Solucao>
+
+<Exercicio numero={5} dificuldade="Difícil">
+
+Resolva o sistema:
+
+$$
+\frac{3xy}{x+y} = 2,\quad
+\frac{4yz}{y+z} = 3,\quad
+\frac{5zx}{z+x} = 6
+$$
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Transformar as equações usando a identidade:
+
+$$
+\frac{xy}{x+y} = \frac{1}{\frac{1}{x} + \frac{1}{y}}
+$$
+
+Isso permite trabalhar com **variáveis inversas**.
+
+---
+
+## ✏️ Passo 1 — Reescrevendo as equações
+
+Dividindo cada equação:
+
+$$
+\frac{xy}{x+y} = \frac{2}{3},\quad
+\frac{yz}{y+z} = \frac{3}{4},\quad
+\frac{zx}{z+x} = \frac{6}{5}
+$$
+
+Usando a identidade:
+
+$$
+\frac{1}{\frac{1}{x} + \frac{1}{y}} = \frac{2}{3}
+$$
+
+Invertendo:
+
+$$
+\frac{1}{x} + \frac{1}{y} = \frac{3}{2}
+$$
+
+Analogamente:
+
+$$
+\frac{1}{y} + \frac{1}{z} = \frac{4}{3}
+$$
+
+$$
+\frac{1}{z} + \frac{1}{x} = \frac{5}{6}
+$$
+
+---
+
+## ✏️ Passo 2 — Substituição
+
+Defina:
+
+$$
+a = \frac{1}{x}, \quad b = \frac{1}{y}, \quad c = \frac{1}{z}
+$$
+
+Então:
+
+$$
+\begin{cases}
+a + b = \frac{3}{2} \\
+b + c = \frac{4}{3} \\
+c + a = \frac{5}{6}
+\end{cases}
+$$
+
+---
+
+## ✏️ Passo 3 — Resolvendo o sistema
+
+Somando as três equações:
+
+$$
+2(a+b+c) = \frac{3}{2} + \frac{4}{3} + \frac{5}{6}
+$$
+
+Colocando no mesmo denominador:
+
+$$
+= \frac{9 + 8 + 5}{6} = \frac{22}{6} = \frac{11}{3}
+$$
+
+Logo:
+
+$$
+a + b + c = \frac{11}{6}
+$$
+
+---
+
+Agora:
+
+$$
+a = (a+b+c) - (b+c) = \frac{11}{6} - \frac{4}{3} = \frac{11}{6} - \frac{8}{6} = \frac{1}{2}
+$$
+
+$$
+b = \frac{11}{6} - \frac{5}{6} = 1
+$$
+
+$$
+c = \frac{11}{6} - \frac{3}{2} = \frac{11}{6} - \frac{9}{6} = \frac{1}{3}
+$$
+
+---
+
+## ✏️ Passo 4 — Voltando às variáveis
+
+$$
+x = \frac{1}{a} = 2,\quad
+y = \frac{1}{b} = 1,\quad
+z = \frac{1}{c} = 3
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{x = 2,\quad y = 1,\quad z = 3}
+$$
+
+---
+
+## 💡 Insight
+
+Problemas do tipo:
+
+$$
+\frac{xy}{x+y}
+$$
+
+geralmente indicam o uso da substituição:
+
+$$
+a = \frac{1}{x}
+$$
+
+Essa técnica aparece muito em:
+
+- sistemas simétricos  
+- olimpíadas  
+- problemas de frações algébricas  
+
+</Solucao>
+
+<Exercicio numero={6} dificuldade="Difícil">
+
+Para quais valores de \(n\) a expressão
+
+$$
+n^4 + 4^n
+$$
+
+é um número primo? Justifique.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Analisar separadamente os casos:
+
+- valores pequenos
+- $$n \geq 2$$, distinguindo a paridade  
+
+---
+
+## ✏️ Passo 1 — Testando valores iniciais
+
+### Caso \(n = 0\)
+
+$$
+0^4 + 4^0 = 0 + 1 = 1 \quad \text{(não é primo)}
+$$
+
+---
+
+### Caso \(n = 1\)
+
+$$
+1^4 + 4^1 = 1 + 4 = 5 \quad \text{(primo)}
+$$
+
+---
+
+## ✏️ Passo 2 — Caso $$n \geq 2$$
+
+Vamos analisar separando em dois casos.
+
+---
+
+### 🔹 Caso 1: \(n\) par
+
+Se $$n = 2k$$, então:
+
+$$
+n^4 = (2k)^4 = 16k^4
+$$
+
+e
+
+$$
+4^n = 4^{2k} = (2^2)^{2k} = 2^{4k}
+$$
+
+Ambos os termos são múltiplos de 16, então:
+
+$$
+n^4 + 4^n \equiv 0 \pmod{16}
+$$
+
+Logo, para $$n \geq 2$$ par:
+
+- o número é par  
+- é maior que 2  
+
+$$
+\Rightarrow \text{não é primo}
+$$
+
+---
+
+### 🔹 Caso 2: $$n$$ ímpar $$n \geq 3$$
+
+Se $$n$$ é ímpar, podemos escrever:
+
+$$
+n = 2k + 1
+$$
+
+---
+
+## ✏️ Estrutura da expressão
+
+$$
+n^4 + 4^n = (2k+1)^4 + 4^{2k+1}
+$$
+
+Note que:
+
+- $$(2k+1)^4$$ é ímpar  
+- $$4^{2k+1}$$ é múltiplo de 4  
+
+Assim, a expressão é maior que 1.
+
+---
+
+## 📌 Conclusão do caso
+
+Para $$n \geq 3$$ ímpar, a expressão:
+
+$$
+n^4 + 4^n
+$$
+
+é composta.
+
+---
+
+## 🎯 Conclusão final
+
+O único valor de \(n\) para o qual a expressão é primo é:
+
+$$
+\boxed{n = 1}
+$$
+
+---
+
+## 💡 Insight
+
+Este problema ilustra que:
+
+- testar casos iniciais é essencial  
+- análise de paridade ajuda a descartar possibilidades  
+- crescimento rápido geralmente indica números compostos  
+
+</Solucao>
+

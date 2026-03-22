@@ -1,15 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react';
+import styles from './Solucao.module.css';
 
 export default function Solucao({children}) {
+  const [show, setShow] = useState(false);
+
   return (
-    <div style={{
-      borderLeft: "6px solid #e55353",
-      background: "#fff5f5",
-      padding: "1rem",
-      margin: "1.5rem 0"
-    }}>
-      <strong>Solução</strong>
-      <div>{children}</div>
+    <div className={styles.container}>
+
+      <button 
+        className={styles.button}
+        onClick={() => setShow(!show)}
+      >
+        {show ? "Ocultar solução" : "Mostrar solução"}
+      </button>
+
+      {show && (
+        <div className={styles.content}>
+          {children}
+        </div>
+      )}
+
     </div>
-  )
+  );
 }

@@ -1,0 +1,26 @@
+.box {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  background: var(--ifm-background-surface-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.titulo {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.badge {
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}

@@ -4,16 +4,16 @@ import Link from "@docusaurus/Link";
 export default function LatestExercises() {
   const exercises = [
     {
-      title: "CALC-LIM-002 — Limite fundamental",
-      link: "/docs/calculo/limites/calc-lim-002",
+      title: "Produtos Notáveis e Fatoração",
+      link: "/docs/matematica-basica/algebra/exercicios/mat-alg-001",
     },
     {
       title: "FIS-MEC-001 — Movimento uniforme",
-      link: "/docs/fisica/mecanica/fis-mec-001",
+      link: "/docs/matematica-basica/algebra/exercicios/mat-alg-001",
     },
     {
       title: "MAT-ALG-001 — Equação do 1º grau",
-      link: "/docs/matematica-basica/algebra/mat-alg-001",
+      link: "/docs/matematica-basica/algebra/exercicios/mat-alg-001",
     },
   ];
 

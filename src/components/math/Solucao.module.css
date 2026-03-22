@@ -1,0 +1,24 @@
+.container {
+  margin: 1rem 0 2rem 0;
+}
+
+.button {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.content {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: 8px;
+}
