@@ -14,7 +14,7 @@ export default function Home() {
           <h1 className="hero__title">Núcleo de Exatas</h1>
 
           <p className="hero__subtitle">
-            Problemas resolvidos de Cálculo, Física e Matemática,
+            Problemas resolvidos de Cálculo, Física e Matemática
           </p>
 
           <div style={{ marginTop: "2rem" }}>

@@ -5,11 +5,25 @@ pagination_prev: null
 sidebar_position: 0
 sidebar_class_name: hidden
 ---
+
+import TopicCard from '@site/src/components/TopicCard'
+
 # Física
 
 Escolha um tópico.
 
-## Conteúdo
+<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:'1rem'}}>
 
-- [Mecânica](/docs/fisica/mecanica)
-- [Eletricidade](/docs/fisica/eletricidade)
+<TopicCard
+title="Mecânica"
+description="Fundamentos da mecânica, Cinemática, Dinâmica, Trabalho e Energia, Quantidade de Movimento, Gravitação e Movimento Circular"
+to="/docs/fisica/mecanica"
+/>
+
+<TopicCard
+title="Eletricidade"
+description="Fundamentos, Lei de Coulomb, Campo Elétrico, Potencial Elétrico, Corrente Elétrica, Lei de Ohm, Circuitos, Potência Elétrica"
+to="/docs/fisica/eletricidade"
+/>
+
+</div>
