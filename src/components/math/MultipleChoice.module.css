@@ -1,0 +1,22 @@
+.option {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.option:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.correct {
+  background: #4caf50;
+  color: white;
+}
+
+.wrong {
+  background: #f44336;
+  color: white;
+}
