@@ -1,0 +1,256 @@
+import Exercicio from '@site/src/components/math/Exercicio'
+import Solucao from '@site/src/components/math/Solucao'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Equações do 2ª Grau
+
+---
+
+<Exercicio numero={2} creditos={"(OCM)"} dificuldade="Médio">
+
+(OCM) As raízes da equação do segundo grau
+
+$$
+ax^2 + bx + c = 0
+$$
+
+são $$R$$ e $$S$$. Determine a equação do segundo grau cujas raízes são:
+
+$$
+aR + b \quad \text{e} \quad aS + b
+$$
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Usar as relações de **soma e produto das raízes**.
+
+Sabemos que:
+
+$$
+R + S = -\frac{b}{a}
+\quad \text{e} \quad
+RS = \frac{c}{a}
+$$
+
+---
+
+## ✏️ Passo 1 — Soma das novas raízes
+
+As novas raízes são:
+
+$$
+\alpha = aR + b
+\quad \text{e} \quad
+\beta = aS + b
+$$
+
+Somando:
+
+$$
+\alpha + \beta = a(R + S) + 2b
+$$
+
+Substituindo:
+
+$$
+\alpha + \beta = a\left(-\frac{b}{a}\right) + 2b = -b + 2b = b
+$$
+
+---
+
+## ✏️ Passo 2 — Produto das novas raízes
+
+$$
+\alpha \cdot \beta = (aR + b)(aS + b)
+$$
+
+Expandindo:
+
+$$
+= a^2 RS + ab(R+S) + b^2
+$$
+
+Substituindo:
+
+$$
+= a^2 \cdot \frac{c}{a} + ab\left(-\frac{b}{a}\right) + b^2
+$$
+
+$$
+= ac - b^2 + b^2 = ac
+$$
+
+---
+
+## ✏️ Passo 3 — Montando a nova equação
+
+Sabemos que uma equação com raízes $$\alpha$$ e $$\beta$$ é:
+
+$$
+x^2 - (\alpha + \beta)x + \alpha\beta = 0
+$$
+
+Substituindo:
+
+$$
+x^2 - bx + ac = 0
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{x^2 - bx + ac = 0}
+$$
+
+---
+
+## 💡 Insight
+
+Esse tipo de problema mostra que:
+
+👉 transformar raízes → transforma coeficientes  
+
+👉 usar soma e produto é MUITO mais eficiente que Bhaskara  
+
+👉 padrão clássico de olimpíada  
+
+</Solucao>
+
+<Exercicio numero={3} creditos={"(OCM)"} dificuldade="Difícil">
+
+(OCM) Se
+
+$$
+x^2 + x + 1 = 0
+$$
+
+calcule o valor de:
+
+$$
+(x + \tfrac{1}{x})^2 + (x^2 + \tfrac{1}{x^2})^2 + \cdots + (x^{27} + \tfrac{1}{x^{27}})^2
+$$
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+A equação:
+
+$$
+x^2 + x + 1 = 0
+$$
+
+implica que:
+
+$$
+x^3 = 1 \quad \text{e} \quad x \neq 1
+$$
+
+Ou seja, $$x$$ é uma **raiz cúbica da unidade**.
+
+---
+
+## ✏️ Passo 1 — Propriedade importante
+
+Como $$x^3 = 1$$, temos:
+
+$$
+x^{-1} = x^2
+$$
+
+Logo:
+
+$$
+x^k + \frac{1}{x^k} = x^k + x^{2k}
+$$
+
+---
+
+## ✏️ Passo 2 — Análise dos casos
+
+Como as potências de $$x$$ são periódicas de período 3:
+
+### 🔹 Caso 1: $$k \equiv 0 \pmod{3}$$
+
+$$
+x^k = 1 \Rightarrow x^k + \frac{1}{x^k} = 2
+$$
+
+$$
+(2)^2 = 4
+$$
+
+---
+
+### 🔹 Caso 2: $$k \equiv 1 \pmod{3}$$
+
+$$
+x + x^2 = -1
+$$
+
+$$
+(-1)^2 = 1
+$$
+
+---
+
+### 🔹 Caso 3: $$k \equiv 2 \pmod{3}$$
+
+$$
+x^2 + x = -1
+$$
+
+$$
+(-1)^2 = 1
+$$
+
+---
+
+## ✏️ Passo 3 — Contagem
+
+De 1 até 27:
+
+- múltiplos de 3: \(9\) termos  
+- demais: \(18\) termos  
+
+---
+
+## ✏️ Passo 4 — Soma
+
+$$
+9 \cdot 4 + 18 \cdot 1 = 36 + 18 = 54
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{54}
+$$
+
+---
+
+## 💡 Insight
+
+Sempre que aparecer:
+
+$$
+x^2 + x + 1 = 0
+$$
+
+lembre:
+
+👉 $$x^3 = 1$$
+👉 comportamento periódico  
+👉 problema vira contagem  
+
+</Solucao>

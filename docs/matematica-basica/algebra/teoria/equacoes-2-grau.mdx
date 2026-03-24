@@ -3,16 +3,395 @@ title: Equações do 2º Grau
 sidebar_position: 7
 ---
 
-# Equações do 2º Grau
+# Equações do Segundo Grau
 
-Forma:
+## 📘 Definição
+
+Uma **equação do segundo grau** é toda equação que pode ser escrita na forma:
 
 $$
 ax^2 + bx + c = 0
 $$
 
-Fórmula de Bhaskara:
+onde:
+
+- $$a \neq 0$$
+- $$a, b, c \in \mathbb{R}$$
+- $$x$$ é a incógnita
+
+---
+
+## 🧠 Objetivo
+
+Encontrar os valores de $$x$$ que tornam a equação verdadeira.
+
+---
+
+## 🔎 Exemplos
 
 $$
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+x^2 - 5x + 6 = 0
 $$
+
+$$
+2x^2 + 3x - 2 = 0
+$$
+
+---
+
+## ✏️ Método geral — Fórmula de Bhaskara
+
+A solução geral é dada por:
+
+$$
+x = \frac{-b \pm \sqrt{\Delta}}{2a}
+$$
+
+onde:
+
+$$
+\Delta = b^2 - 4ac
+$$
+
+---
+
+## 🔍 Interpretação do discriminante $$\Delta$$
+
+### ✔ $$\Delta > 0$$
+
+Duas raízes reais distintas
+
+---
+
+### ✔ $$\Delta = 0$$
+
+Uma raiz real (raiz dupla)
+
+---
+
+### ❌ $$\Delta < 0$$
+
+Não existem raízes reais
+
+---
+
+## ✏️ Exemplo
+
+Resolva:
+
+$$
+x^2 - 5x + 6 = 0
+$$
+
+$$
+\Delta = (-5)^2 - 4(1)(6) = 25 - 24 = 1
+$$
+
+$$
+x = \frac{5 \pm 1}{2}
+$$
+
+$$
+x_1 = 3,\quad x_2 = 2
+$$
+
+---
+
+# 🧩 De onde vem a fórmula de Bhaskara?
+
+Vamos deduzir a fórmula.
+
+---
+
+## ✏️ Passo 1 — Equação geral
+
+$$
+ax^2 + bx + c = 0
+$$
+
+Dividimos tudo por $$a$$:
+
+$$
+x^2 + \frac{b}{a}x + \frac{c}{a} = 0
+$$
+
+---
+
+## ✏️ Passo 2 — Isolando
+
+$$
+x^2 + \frac{b}{a}x = -\frac{c}{a}
+$$
+
+---
+
+## ✏️ Passo 3 — Completando quadrado
+
+Somamos:
+
+$$
+\left(\frac{b}{2a}\right)^2
+$$
+
+em ambos os lados:
+
+$$
+x^2 + \frac{b}{a}x + \left(\frac{b}{2a}\right)^2
+=
+-\frac{c}{a} + \left(\frac{b}{2a}\right)^2
+$$
+
+---
+
+## ✏️ Passo 4 — Quadrado perfeito
+
+$$
+\left(x + \frac{b}{2a}\right)^2
+=
+\frac{b^2 - 4ac}{4a^2}
+$$
+
+---
+
+## ✏️ Passo 5 — Raiz
+
+$$
+x + \frac{b}{2a}
+=
+\pm \frac{\sqrt{b^2 - 4ac}}{2a}
+$$
+
+---
+
+## ✏️ Passo 6 — Isolando \(x\)
+
+$$
+x =
+-\frac{b}{2a} \pm \frac{\sqrt{b^2 - 4ac}}{2a}
+$$
+
+---
+
+## 🎯 Resultado final
+
+$$
+\boxed{
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+}
+$$
+
+---
+
+## 💡 Insight
+
+A fórmula de Bhaskara vem do método de:
+
+👉 **completar quadrados**
+
+Essa é uma das técnicas mais importantes da álgebra.
+
+---
+
+## 🧠 Outras formas de resolver
+
+### ✔ Fatoração
+
+$$
+x^2 - 5x + 6 = (x-2)(x-3)
+$$
+
+---
+
+### ✔ Soma e produto das raízes
+
+Considere a equação do segundo grau:
+
+$$
+ax^2 + bx + c = 0
+$$
+
+com $$a \neq 0$$. Suas raízes são dadas por:
+
+$$
+x_1 = \frac{-b + \sqrt{b^2 - 4ac}}{2a}
+\quad \text{e} \quad
+x_2 = \frac{-b - \sqrt{b^2 - 4ac}}{2a}
+$$
+
+---
+
+## ✏️ Soma das raízes
+
+Somando $$x_1 + x_2$$:
+
+$$
+x_1 + x_2 =
+\frac{-b + \sqrt{b^2 - 4ac}}{2a}
++
+\frac{-b - \sqrt{b^2 - 4ac}}{2a}
+$$
+
+Os termos com raiz se cancelam:
+
+$$
+x_1 + x_2 = \frac{-2b}{2a} = \frac{-b}{a}
+$$
+
+---
+
+## ✏️ Produto das raízes
+
+Multiplicando $$x_1 \cdot x_2$$:
+
+$$
+x_1 \cdot x_2 =
+\left(\frac{-b + \sqrt{b^2 - 4ac}}{2a}\right)
+\left(\frac{-b - \sqrt{b^2 - 4ac}}{2a}\right)
+$$
+
+Usando o produto notável:
+
+$$
+(a+b)(a-b) = a^2 - b^2
+$$
+
+temos:
+
+$$
+x_1 \cdot x_2 =
+\frac{b^2 - (b^2 - 4ac)}{4a^2}
+= \frac{4ac}{4a^2}
+= \frac{c}{a}
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{x_1 + x_2 = \frac{-b}{a}}
+$$
+
+$$
+\boxed{x_1 \cdot x_2 = \frac{c}{a}}
+$$
+
+---
+
+## 💡 Interpretação
+
+- A soma das raízes depende de $$b$$
+- O produto depende de $$c$$
+
+Essas relações são muito úteis para:
+
+- fatoração  
+- construção de equações  
+- resolução rápida de problemas  
+
+---
+
+# 🧩 Fatoração do trinômio do segundo grau
+
+Considere o trinômio:
+
+$$
+ax^2 + bx + c
+$$
+
+com $$a \neq 0$$, e suponha que suas raízes sejam $$x_1$$ e $$x_2$$.
+
+---
+
+## ✏️ Passo 1 — Colocando $$a$$ em evidência
+
+$$
+ax^2 + bx + c = a\left(x^2 + \frac{b}{a}x + \frac{c}{a}\right)
+$$
+
+---
+
+## ✏️ Passo 2 — Usando soma e produto
+
+Sabemos que:
+
+$$
+x_1 + x_2 = -\frac{b}{a}
+\quad \text{e} \quad
+x_1x_2 = \frac{c}{a}
+$$
+
+Substituindo:
+
+$$
+x^2 + \frac{b}{a}x + \frac{c}{a}
+=
+x^2 - (x_1 + x_2)x + x_1x_2
+$$
+
+---
+
+## ✏️ Passo 3 — Fatoração
+
+$$
+x^2 - (x_1 + x_2)x + x_1x_2 = (x - x_1)(x - x_2)
+$$
+
+---
+
+## 🎯 Forma fatorada
+
+$$
+\boxed{
+ax^2 + bx + c = a(x - x_1)(x - x_2)
+}
+$$
+
+---
+
+## 💡 Insight
+
+Essa forma mostra que:
+
+👉 as raízes são exatamente os valores que anulam o polinômio  
+
+👉 fatorar é “reconstruir” a equação a partir das raízes  
+
+---
+
+## 🚀 Aplicação prática
+
+Se você conhece:
+
+- soma das raízes  
+- produto das raízes  
+
+👉 consegue montar a equação sem usar Bhaskara.
+
+
+
+
+---
+## 🚀 Aplicações
+
+Equações do segundo grau aparecem em:
+
+- física (MRUV)
+- geometria
+- engenharia
+- economia
+
+---
+
+## 📌 Problema aplicado
+
+A área de um retângulo é 20 e seu comprimento é 5 unidades maior que a largura. Determine as dimensões.
+
+$$
+x(x+5) = 20
+$$
+
+$$
+x^2 + 5x - 20 = 0
+$$
+
