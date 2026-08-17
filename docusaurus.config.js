@@ -91,9 +91,9 @@ const config = {
             label: 'Conteúdo',
             position: 'left',
             items: [
-              {label: 'Matemática', to: '/docs/matematica-basica'},
-              {label: 'Cálculo', to: '/docs/calculo'},
-              {label: 'Física', to: '/docs/fisica'},
+              {label: 'Matemática', to: '/docs/category/matemática'},
+              {label: 'Cálculo', to: '/docs/category/cálculo'},
+              {label: 'Física', to: '/docs/category/física'},
             ],
           },
 

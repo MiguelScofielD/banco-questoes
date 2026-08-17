@@ -1,0 +1,399 @@
+---
+id: exercicios-resolvidos-ponto-reta-plano
+title: Ponto, Reta e Plano
+sidebar_position: 1
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import Solucao from '@site/src/components/math/Solucao'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Ponto, Reta e Plano
+
+---
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Considere os pontos $A$, $B$ e $C$ representados abaixo:
+
+```text
+A •---------• B---------• C
+```
+
+Os pontos $A$, $B$ e $C$ são colineares ou não colineares? Justifique.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Pontos são chamados de **colineares** quando pertencem à mesma reta.
+
+---
+
+## ✏️ Passo 1 — Observar a representação
+
+Os três pontos estão sobre uma mesma linha reta:
+
+```text
+A •---------• B---------• C
+```
+
+Portanto, existe uma única reta que passa pelos três pontos.
+
+---
+
+## ✏️ Passo 2 — Classificação
+
+Como $A$, $B$ e $C$ pertencem à mesma reta, eles são **colineares**.
+
+Podemos escrever:
+
+$$
+A,B,C \in r
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{\text{A, B e C são colineares}}
+$$
+
+---
+
+## 💡 Insight
+
+A palavra **colinear** pode ser entendida como:
+
+> "pertencente à mesma linha."
+
+Assim, sempre que vários pontos estiverem sobre uma mesma reta, eles são colineares.
+
+</Solucao>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Considere dois pontos distintos $A$ e $B$. Quantas retas distintas podem passar simultaneamente pelos dois pontos?
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Existe uma propriedade fundamental da Geometria:
+
+> Por dois pontos distintos passa uma única reta.
+
+---
+
+## ✏️ Passo 1 — Considerar os pontos
+
+Temos:
+
+$$
+A \neq B
+$$
+
+Como os pontos são distintos, podemos traçar uma reta passando pelos dois:
+
+```text
+A •---------------------------• B
+```
+
+---
+
+## ✏️ Passo 2 — Determinar a reta
+
+A reta que passa pelos pontos $A$ e $B$ pode ser representada por:
+
+$$
+\overleftrightarrow{AB}
+$$
+
+Não existe uma segunda reta diferente que passe simultaneamente pelos mesmos dois pontos.
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{1\text{ reta}}
+$$
+
+---
+
+## 💡 Insight
+
+Essa propriedade é uma das bases da Geometria:
+
+$$
+\boxed{\text{Dois pontos distintos determinam uma única reta}}
+$$
+
+</Solucao>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Considere o ponto $A$ pertencente à reta $r$.
+
+Como podemos representar matematicamente essa relação?
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Para indicar que um ponto pertence a uma reta, utilizamos o símbolo:
+
+$$
+\in
+$$
+
+---
+
+## ✏️ Passo 1 — Identificar o ponto
+
+O ponto considerado é:
+
+$$
+A
+$$
+
+E a reta é:
+
+$$
+r
+$$
+
+---
+
+## ✏️ Passo 2 — Utilizar o símbolo de pertencimento
+
+Como $A$ está sobre a reta $r$, escrevemos:
+
+$$
+A \in r
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{A \in r}
+$$
+
+Lemos:
+
+> "A pertence à reta r."
+
+---
+
+## 💡 Insight
+
+Não devemos confundir os símbolos:
+
+$$
+A \in r
+$$
+
+significa que $A$ pertence a $r$.
+
+Já:
+
+$$
+A \notin r
+$$
+
+significa que $A$ não pertence a $r$.
+
+</Solucao>
+
+---
+
+<Exercicio numero={4} dificuldade="Médio">
+
+Considere três pontos não colineares $A$, $B$ e $C$. Quantos planos distintos passam simultaneamente pelos três pontos?
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Quando três pontos não pertencem à mesma reta, eles determinam um único plano.
+
+Essa é uma propriedade fundamental da Geometria Espacial.
+
+---
+
+## ✏️ Passo 1 — Identificar a condição
+
+Os pontos são não colineares.
+
+Isso significa que não existe uma única reta contendo simultaneamente $A$, $B$ e $C$.
+
+Podemos representar:
+
+```text
+        A •
+       /   \
+      /     \
+     •-------•
+     B       C
+```
+
+---
+
+## ✏️ Passo 2 — Determinar o plano
+
+Três pontos não colineares determinam um único plano.
+
+Se chamarmos esse plano de $\alpha$, podemos escrever:
+
+$$
+A,B,C \in \alpha
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{1\text{ plano}}
+$$
+
+---
+
+## 💡 Insight
+
+Observe a diferença:
+
+- **Dois pontos distintos** → determinam uma única reta.
+- **Três pontos não colineares** → determinam um único plano.
+
+Essas duas propriedades aparecem constantemente na Geometria.
+
+</Solucao>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Considere os pontos $A$, $B$ e $C$ sobre uma mesma reta, com $B$ entre $A$ e $C$.
+
+Sabendo que:
+
+$$
+AB = 7\text{ cm}
+$$
+
+e:
+
+$$
+BC = 12\text{ cm}
+$$
+
+determine o comprimento de $AC$.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Quando um ponto está entre dois outros pontos de um mesmo segmento, podemos utilizar a **adição dos segmentos**.
+
+Temos:
+
+```text
+A •---------• B----------------• C
+      7 cm          12 cm
+```
+
+Como $B$ está entre $A$ e $C$:
+
+$$
+AC = AB + BC
+$$
+
+---
+
+## ✏️ Passo 1 — Substituir os valores
+
+Sabemos que:
+
+$$
+AB = 7
+$$
+
+e:
+
+$$
+BC = 12
+$$
+
+Então:
+
+$$
+AC = 7 + 12
+$$
+
+---
+
+## ✏️ Passo 2 — Calcular
+
+$$
+AC = 19
+$$
+
+Como as medidas estão em centímetros:
+
+$$
+AC = 19\text{ cm}
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{AC=19\text{ cm}}
+$$
+
+---
+
+## 💡 Insight
+
+Quando um ponto $B$ está entre $A$ e $C$, vale a relação:
+
+$$
+\boxed{AC=AB+BC}
+$$
+
+Essa propriedade será muito importante quando estudarmos **segmentos de reta, ponto médio e distância entre pontos**.
+
+</Solucao>
+
+---
+
+## 📚 Conceitos trabalhados
+
+Neste conjunto de exercícios, utilizamos:
+
+- pontos colineares;
+- pontos não colineares;
+- reta determinada por dois pontos;
+- relação de pertencimento entre ponto e reta;
+- plano determinado por três pontos não colineares;
+- adição de segmentos.
+

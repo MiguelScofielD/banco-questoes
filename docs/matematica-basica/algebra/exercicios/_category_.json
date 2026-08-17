@@ -1,4 +1,11 @@
 {
   "label": "Exercícios Resolvidos",
-  "position": 2
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Exercícios Resolvidos",
+    "description": "Questões de Álgebra resolvidas passo a passo."
+  }
 }

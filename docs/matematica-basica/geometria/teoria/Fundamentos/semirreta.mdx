@@ -1,0 +1,614 @@
+---
+id: semirretas
+title: Semirretas
+sidebar_position: 4
+description: Conceito, representação, origem, sentido, semirretas opostas e operações com semirretas.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Semirretas
+
+Uma **semirreta** é uma parte de uma reta que possui um ponto de origem e se estende infinitamente em apenas um sentido.
+
+Considere os pontos $A$ e $B$:
+
+```text
+A •---------------------------→
+```
+
+A semirreta começa no ponto $A$ e passa pelo ponto $B$, continuando infinitamente na direção de $B$.
+
+Ela é representada por:
+
+$$
+\overrightarrow{AB}
+$$
+
+O ponto $A$ é chamado de **origem** da semirreta.
+
+---
+
+## 📌 Reta, segmento e semirreta
+
+É importante diferenciar esses três conceitos.
+
+### Reta
+
+A reta é infinita nos dois sentidos:
+
+```text
+←-----------------------------→
+```
+
+Sua representação pode ser:
+
+$$
+\overleftrightarrow{AB}
+$$
+
+### Semirreta
+
+A semirreta possui uma origem e é infinita em apenas um sentido:
+
+```text
+A •---------------------------→
+```
+
+Sua representação é:
+
+$$
+\overrightarrow{AB}
+$$
+
+### Segmento
+
+O segmento possui dois extremos:
+
+```text
+A •---------------------------• B
+```
+
+Sua representação é:
+
+$$
+\overline{AB}
+$$
+
+Podemos resumir:
+
+| Figura | Característica |
+|---|---|
+| Reta | Infinita nos dois sentidos |
+| Semirreta | Possui uma origem e é infinita em um sentido |
+| Segmento | Possui dois extremos |
+
+---
+
+# Elementos de uma semirreta
+
+Uma semirreta possui dois elementos importantes:
+
+- **origem**;
+- **sentido**.
+
+Considere:
+
+```text
+A •---------------------------→ B
+```
+
+O ponto $A$ é a origem.
+
+A semirreta parte de $A$ e passa por $B$.
+
+Por isso, podemos representá-la por:
+
+$$
+\overrightarrow{AB}
+$$
+
+A primeira letra indica a **origem**.
+
+A segunda letra indica um ponto que determina o **sentido** da semirreta.
+
+---
+
+# Representação de uma semirreta
+
+Considere os pontos $A$ e $B$:
+
+```text
+A •---------------------------→
+             B
+```
+
+A semirreta que começa em $A$ e passa por $B$ é:
+
+$$
+\overrightarrow{AB}
+$$
+
+Observe a ordem das letras.
+
+Na expressão:
+
+$$
+\overrightarrow{AB}
+$$
+
+o ponto $A$ é a origem.
+
+O ponto $B$ indica a direção.
+
+---
+
+## A ordem das letras é importante
+
+Considere os pontos $A$ e $B$ sobre uma mesma reta:
+
+```text
+A •---------------------------• B
+```
+
+Podemos formar duas semirretas diferentes:
+
+$$
+\overrightarrow{AB}
+$$
+
+e
+
+$$
+\overrightarrow{BA}
+$$
+
+A primeira começa em $A$ e segue em direção a $B$.
+
+A segunda começa em $B$ e segue em direção a $A$.
+
+Representando:
+
+```text
+A •---------------------------• B
+  →                           ←
+```
+
+Portanto:
+
+$$
+\overrightarrow{AB} \neq \overrightarrow{BA}
+$$
+
+---
+
+# Semirretas opostas
+
+Duas semirretas são chamadas de **opostas** quando:
+
+1. possuem a mesma origem;
+2. estão sobre a mesma reta;
+3. possuem sentidos contrários.
+
+Considere:
+
+```text
+←----------------•----------------→
+                 A
+```
+
+As semirretas:
+
+$$
+\overrightarrow{AB}
+$$
+
+e
+
+$$
+\overrightarrow{AC}
+$$
+
+podem ser opostas quando $B$, $A$ e $C$ são colineares e $A$ está entre $B$ e $C$.
+
+Por exemplo:
+
+```text
+B •----------------• A----------------• C
+  ←-----------------                 -----------------→
+```
+
+Nesse caso:
+
+$$
+\overrightarrow{AB}
+$$
+
+e
+
+$$
+\overrightarrow{AC}
+$$
+
+são semirretas opostas.
+
+---
+
+# Semirretas com a mesma origem
+
+Duas semirretas podem possuir a mesma origem sem serem opostas.
+
+Por exemplo:
+
+```text
+             B
+            •
+           /
+          /
+A •-------•----------------→ C
+```
+
+As semirretas:
+
+$$
+\overrightarrow{AB}
+$$
+
+e
+
+$$
+\overrightarrow{AC}
+$$
+
+possuem a mesma origem $A$, mas seguem em direções diferentes.
+
+Portanto, não são semirretas opostas.
+
+---
+
+# Semirretas coincidentes
+
+Duas semirretas são **coincidentes** quando possuem a mesma origem e o mesmo sentido.
+
+Considere três pontos:
+
+```text
+A •---------• B----------------→
+             C
+```
+
+Se $B$ e $C$ estão na mesma direção a partir de $A$, então:
+
+$$
+\overrightarrow{AB}
+$$
+
+e
+
+$$
+\overrightarrow{AC}
+$$
+
+representam a mesma semirreta.
+
+Nesse caso:
+
+$$
+\overrightarrow{AB} = \overrightarrow{AC}
+$$
+
+desde que $B$ e $C$ estejam na mesma direção a partir de $A$.
+
+---
+
+# Semirreta e ângulo
+
+As semirretas possuem uma função muito importante na Geometria: **formar ângulos**.
+
+Um ângulo é formado por duas semirretas que possuem a mesma origem.
+
+Considere:
+
+```text
+        B
+       /
+      /
+     /
+    A •----------------→ C
+```
+
+As semirretas:
+
+$$
+\overrightarrow{AB}
+$$
+
+e
+
+$$
+\overrightarrow{AC}
+$$
+
+possuem a mesma origem $A$.
+
+Juntas, elas formam um ângulo.
+
+Podemos representar esse ângulo por:
+
+$$
+\angle BAC
+$$
+
+O ponto $A$, que representa a origem das duas semirretas, aparece no **meio** da representação do ângulo.
+
+---
+
+# Origem de uma semirreta
+
+Para identificar corretamente uma semirreta, devemos observar a primeira letra.
+
+Por exemplo:
+
+$$
+\overrightarrow{AB}
+$$
+
+A origem é $A$.
+
+Já em:
+
+$$
+\overrightarrow{BA}
+$$
+
+a origem é $B$.
+
+Portanto:
+
+| Semirreta | Origem |
+|---|---|
+| $\overrightarrow{AB}$ | $A$ |
+| $\overrightarrow{BA}$ | $B$ |
+| $\overrightarrow{CD}$ | $C$ |
+| $\overrightarrow{DC}$ | $D$ |
+
+---
+
+# Exemplo 1
+
+Considere:
+
+```text
+A •---------------------------• B----------------→
+```
+
+Qual é a origem da semirreta $\overrightarrow{AB}$?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Na representação:
+
+$$
+\overrightarrow{AB}
+$$
+
+a primeira letra indica a origem.
+
+Portanto:
+
+$$
+\boxed{A}
+$$
+
+é a origem da semirreta.
+
+</details>
+
+---
+
+# Exemplo 2
+
+Considere os pontos:
+
+```text
+A •---------------------------• B
+```
+
+Qual é a diferença entre $\overrightarrow{AB}$ e $\overrightarrow{BA}$?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+A semirreta $\overrightarrow{AB}$ começa em $A$ e segue em direção a $B$.
+
+A semirreta $\overrightarrow{BA}$ começa em $B$ e segue em direção a $A$.
+
+Portanto, possuem origens e sentidos diferentes.
+
+$$
+\boxed{\overrightarrow{AB} \neq \overrightarrow{BA}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3
+
+Considere três pontos colineares:
+
+```text
+B •----------------• A----------------• C
+```
+
+As semirretas $\overrightarrow{AB}$ e $\overrightarrow{AC}$ são opostas?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+As duas semirretas possuem a mesma origem $A$.
+
+Além disso, estão sobre a mesma reta e possuem sentidos contrários.
+
+Portanto, são semirretas opostas.
+
+$$
+\boxed{\overrightarrow{AB}\text{ e }\overrightarrow{AC}\text{ são opostas}}
+$$
+
+</details>
+
+---
+
+# 🧠 Resumo
+
+- **Semirreta:** parte de uma reta que possui uma origem e se estende infinitamente em um único sentido.
+- A semirreta $\overrightarrow{AB}$ possui origem em $A$.
+- A primeira letra da representação indica a origem.
+- A segunda letra indica um ponto que determina o sentido.
+- $\overrightarrow{AB}$ e $\overrightarrow{BA}$ geralmente representam semirretas diferentes.
+- Semirretas opostas possuem a mesma origem, pertencem à mesma reta e possuem sentidos contrários.
+- Duas semirretas com a mesma origem podem formar um ângulo.
+- Uma semirreta possui infinitos pontos.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Na representação $\overrightarrow{AB}$, qual ponto representa a origem da semirreta?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) O ponto A",
+    "b) O ponto B",
+    "c) O ponto médio entre A e B",
+    "d) Nenhum dos pontos"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Qual das alternativas representa uma semirreta com origem no ponto $A$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $\\overline{AB}$",
+    "b) $\\overrightarrow{BA}$",
+    "c) $\\overrightarrow{AB}$",
+    "d) $\\overleftrightarrow{AB}$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Qual é a principal característica de uma semirreta?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Possui dois extremos.",
+    "b) É finita nos dois sentidos.",
+    "c) Possui uma origem e é infinita em um sentido.",
+    "d) Não possui nenhum ponto."
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Médio">
+
+Considere três pontos colineares na ordem $B$, $A$ e $C$. Quais semirretas possuem origem em $A$ e são opostas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $\\overrightarrow{AB}$ e $\\overrightarrow{AC}$",
+    "b) $\\overrightarrow{BA}$ e $\\overrightarrow{CA}$",
+    "c) $\\overrightarrow{AB}$ e $\\overrightarrow{BA}$",
+    "d) $\\overrightarrow{AC}$ e $\\overrightarrow{CA}$"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Duas semirretas possuem a mesma origem, mas seguem em sentidos diferentes sobre a mesma reta. Como são chamadas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Semirretas coincidentes",
+    "b) Semirretas opostas",
+    "c) Segmentos congruentes",
+    "d) Retas paralelas"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Considere as semirretas $\overrightarrow{AB}$ e $\overrightarrow{AC}$. Qual condição é necessária para que elas sejam semirretas opostas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Possuírem origens diferentes.",
+    "b) Possuírem a mesma origem e o mesmo sentido.",
+    "c) Possuírem a mesma origem, estarem na mesma reta e terem sentidos contrários.",
+    "d) Não possuírem pontos em comum."
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Duas semirretas possuem a mesma origem $A$ e passam pelos pontos $B$ e $C$, respectivamente. Se $B$ e $C$ estão na mesma direção a partir de $A$, como são classificadas essas semirretas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Opostas",
+    "b) Perpendiculares",
+    "c) Coincidentes",
+    "d) Paralelas"
+  ]}
+  correct={2}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos **ângulos**, que são formados por duas semirretas com a mesma origem.

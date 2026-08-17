@@ -1,0 +1,752 @@
+---
+id: plano-posicoes-relativas-retas-planos
+title: Plano e Posições Relativas entre Retas e Planos
+sidebar_position: 8
+description: Conceitos de plano e posições relativas entre retas e planos na Geometria.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Plano e Posições Relativas entre Retas e Planos
+
+O **plano** é um dos conceitos fundamentais da Geometria. Ele pode ser entendido como uma superfície plana que se estende indefinidamente em todas as direções.
+
+A partir do conceito de plano, podemos estudar as posições relativas entre:
+
+- ponto e plano;
+- reta e plano;
+- duas retas;
+- dois planos.
+
+Neste conteúdo, vamos avançar dos conceitos da Geometria Plana para as primeiras ideias da **Geometria Espacial**.
+
+---
+
+## 📐 O que é um plano?
+
+Um plano é uma superfície bidimensional que se estende infinitamente.
+
+Ele possui:
+
+- duas dimensões;
+- comprimento;
+- largura;
+
+mas não possui espessura.
+
+Podemos representar um plano por uma região inclinada:
+
+```text
+        ______________________
+       /                    /
+      /                    /
+     /                    /
+    /____________________/
+```
+
+Os planos normalmente são representados por letras gregas, como:
+
+$$
+\alpha
+$$
+
+e:
+
+$$
+\beta
+$$
+
+---
+
+# Representação de um plano
+
+Um plano pode ser representado por uma letra grega.
+
+Por exemplo:
+
+$$
+\alpha
+$$
+
+Podemos dizer:
+
+> "Plano alfa."
+
+Também podemos utilizar três pontos não colineares para determinar um plano.
+
+Considere:
+
+```text
+        A •
+       /   \
+      /     \
+     •-------•
+     B       C
+```
+
+Se $A$, $B$ e $C$ não são colineares, então eles determinam um único plano.
+
+Podemos escrever:
+
+$$
+A,B,C \in \alpha
+$$
+
+---
+
+# Três pontos não colineares determinam um plano
+
+Uma propriedade fundamental da Geometria Espacial é:
+
+> Três pontos não colineares determinam um único plano.
+
+Se $A$, $B$ e $C$ não pertencem à mesma reta, existe um único plano que passa pelos três.
+
+---
+
+# Ponto e plano
+
+Um ponto pode:
+
+- pertencer a um plano;
+- não pertencer a um plano.
+
+### Ponto pertencente ao plano
+
+Se o ponto $A$ está sobre o plano $\alpha$:
+
+$$
+A \in \alpha
+$$
+
+Lemos:
+
+> "A pertence ao plano alfa."
+
+### Ponto que não pertence ao plano
+
+Se o ponto $A$ não pertence ao plano $\alpha$:
+
+$$
+A \notin \alpha
+$$
+
+Lemos:
+
+> "A não pertence ao plano alfa."
+
+---
+
+# Reta contida em um plano
+
+Uma reta pode estar completamente contida em um plano.
+
+```text
+        plano α
+
+     ______________________
+    /                     /
+   /   A •---------• B   /
+  /_____________________/
+```
+
+Nesse caso:
+
+$$
+r \subset \alpha
+$$
+
+A reta e o plano possuem infinitos pontos em comum.
+
+---
+
+# Reta e plano
+
+Uma reta pode ocupar diferentes posições em relação a um plano:
+
+1. reta contida no plano;
+2. reta secante ao plano;
+3. reta paralela ao plano.
+
+---
+
+# Reta contida no plano
+
+Quando todos os pontos de uma reta pertencem a um plano, dizemos que a reta está **contida no plano**.
+
+$$
+r \subset \alpha
+$$
+
+Nesse caso, a reta e o plano possuem infinitos pontos em comum.
+
+---
+
+# Reta secante ao plano
+
+Uma reta é **secante a um plano** quando possui exatamente um ponto em comum com ele.
+
+```text
+             r
+             │
+             │
+             |
+             |
+             |
+             | 
+    _________|_____________
+   /         •P          /
+  /_____________________/
+           plano α
+```
+
+Nesse caso:
+
+$$
+r \cap \alpha = \{P\}
+$$
+
+A reta atravessa o plano em um único ponto.
+
+---
+
+# Reta paralela ao plano
+
+Uma reta é **paralela a um plano** quando não possui nenhum ponto em comum com ele.
+
+```text
+r  ----------------------------
+
+        ______________________
+       /                     /
+      /                     /
+     /_____________________/
+              α
+```
+
+Nesse caso:
+
+$$
+r \parallel \alpha
+$$
+
+e:
+
+$$
+r \cap \alpha = \varnothing
+$$
+
+---
+
+# Resumo das posições de uma reta em relação a um plano
+
+| Posição | Pontos em comum |
+|---|---:|
+| Reta contida no plano | Infinitos |
+| Reta secante ao plano | Um |
+| Reta paralela ao plano | Nenhum |
+
+---
+
+# Reta perpendicular a um plano
+
+Uma reta é **perpendicular a um plano** quando é perpendicular às retas do plano que passam pelo ponto de interseção.
+
+Representação:
+
+```text
+             r
+             │
+             │
+             |
+             | 
+    ─────────┼─────────
+   /         •P      /
+  /_________________/
+           plano α
+```
+
+Nesse caso:
+
+$$
+r \perp \alpha
+$$
+
+A reta encontra o plano em um único ponto.
+
+---
+
+# Reta secante x reta perpendicular ao plano
+
+Toda reta perpendicular a um plano é secante a esse plano, pois possui exatamente um ponto em comum.
+
+Porém, nem toda reta secante é perpendicular.
+
+Portanto:
+
+> Perpendicularidade é um caso particular de secância.
+
+---
+
+# Duas retas no espaço
+
+Na Geometria Plana, duas retas podem ser paralelas, concorrentes ou coincidentes.
+
+No espaço, surge uma nova possibilidade: **retas reversas**.
+
+Assim, duas retas no espaço podem ser:
+
+1. coincidentes;
+2. concorrentes;
+3. paralelas;
+4. reversas.
+
+---
+
+# Retas reversas
+
+Duas retas são **reversas** quando:
+
+- não possuem ponto em comum;
+- não são paralelas;
+- não pertencem ao mesmo plano.
+
+Essa é uma situação que só aparece na Geometria Espacial.
+
+---
+
+# Retas paralelas no espaço
+
+Duas retas são paralelas quando:
+
+- pertencem ao mesmo plano;
+- não possuem pontos em comum.
+
+Podemos escrever:
+
+$$
+r \parallel s
+$$
+
+---
+
+# Retas concorrentes no espaço
+
+Duas retas são concorrentes quando possuem exatamente um ponto em comum.
+
+Se o ponto de interseção é $P$:
+
+$$
+r \cap s = \{P\}
+$$
+
+As duas retas pertencem ao mesmo plano.
+
+---
+
+# Retas coincidentes
+
+Duas retas são coincidentes quando possuem todos os pontos em comum.
+
+Na prática, representam a mesma reta.
+
+$$
+r = s
+$$
+
+---
+
+# Retas reversas x paralelas
+
+Essa diferença é muito importante.
+
+| Característica | Paralelas | Reversas |
+|---|---|---|
+| Possuem ponto em comum | Não | Não |
+| Pertencem ao mesmo plano | Sim | Não |
+
+Portanto, duas retas sem ponto em comum não são necessariamente paralelas.
+
+Elas também podem ser **reversas**.
+
+---
+
+# Dois planos
+
+Dois planos podem ocupar diferentes posições relativas.
+
+As principais são:
+
+- planos paralelos;
+- planos secantes;
+- planos coincidentes.
+
+---
+
+# Planos paralelos
+
+Dois planos são paralelos quando não possuem nenhum ponto em comum.
+
+Podemos escrever:
+
+$$
+\alpha \parallel \beta
+$$
+
+e:
+
+$$
+\alpha \cap \beta = \varnothing
+$$
+
+---
+
+# Planos secantes
+
+Dois planos são **secantes** quando possuem uma reta em comum.
+
+Podemos escrever:
+
+$$
+\alpha \cap \beta = r
+$$
+
+A interseção de dois planos secantes é sempre uma reta.
+
+---
+
+# Planos coincidentes
+
+Dois planos são coincidentes quando possuem todos os pontos em comum.
+
+Na prática, representam o mesmo plano.
+
+Podemos escrever:
+
+$$
+\alpha = \beta
+$$
+
+---
+
+# Resumo das posições entre dois planos
+
+| Posição | Interseção |
+|---|---|
+| Planos paralelos | Nenhuma |
+| Planos secantes | Uma reta |
+| Planos coincidentes | O próprio plano |
+
+---
+
+# Exemplo 1
+
+Três pontos $A$, $B$ e $C$ não são colineares. O que podemos afirmar?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Três pontos não colineares determinam um único plano.
+
+$$
+\boxed{A,\ B,\ C\text{ determinam um único plano}}
+$$
+
+</details>
+
+---
+
+# Exemplo 2
+
+Uma reta possui exatamente um ponto em comum com um plano. Como essa reta é classificada em relação ao plano?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Uma reta que possui exatamente um ponto em comum com um plano é chamada de **reta secante ao plano**.
+
+$$
+\boxed{r \cap \alpha = \{P\}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3
+
+Uma reta não possui nenhum ponto em comum com um plano. Como podemos classificá-la?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Se a reta não possui nenhum ponto em comum com o plano, ela é paralela ao plano.
+
+$$
+\boxed{r \parallel \alpha}
+$$
+
+</details>
+
+---
+
+# Exemplo 4
+
+Duas retas no espaço não possuem ponto em comum e não pertencem ao mesmo plano. Como são classificadas?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Duas retas que não possuem ponto em comum e não pertencem ao mesmo plano são chamadas de **retas reversas**.
+
+$$
+\boxed{\text{retas reversas}}
+$$
+
+</details>
+
+---
+
+# Exemplo 5
+
+Dois planos possuem uma reta $r$ em comum. Como esses planos são classificados?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Quando dois planos possuem uma reta em comum, eles são chamados de **planos secantes**.
+
+$$
+\boxed{\alpha \cap \beta = r}
+$$
+
+</details>
+
+---
+
+# 🧠 Resumo
+
+- Um **plano** é uma superfície bidimensional que se estende infinitamente.
+- Três pontos não colineares determinam um único plano.
+- Um ponto pode pertencer ou não a um plano.
+- Uma reta pode ser:
+  - contida em um plano;
+  - secante ao plano;
+  - paralela ao plano.
+- Uma reta perpendicular a um plano é um caso particular de reta secante.
+- No espaço, duas retas podem ser:
+  - coincidentes;
+  - concorrentes;
+  - paralelas;
+  - reversas.
+- Retas reversas não possuem ponto em comum e não pertencem ao mesmo plano.
+- Dois planos podem ser:
+  - paralelos;
+  - secantes;
+  - coincidentes.
+- A interseção de dois planos secantes é uma **reta**.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Três pontos não colineares determinam:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Uma única reta",
+    "b) Um único plano",
+    "c) Duas retas paralelas",
+    "d) Nenhum plano"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Uma reta possui exatamente um ponto em comum com um plano. Como ela é classificada em relação ao plano?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Paralela ao plano",
+    "b) Contida no plano",
+    "c) Secante ao plano",
+    "d) Coincidente com o plano"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Uma reta não possui nenhum ponto em comum com um plano. Como ela é classificada?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Secante",
+    "b) Paralela",
+    "c) Coincidente",
+    "d) Perpendicular obrigatoriamente"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Quando todos os pontos de uma reta pertencem a um plano, dizemos que a reta está:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Paralela ao plano",
+    "b) Reversa ao plano",
+    "c) Contida no plano",
+    "d) Secante ao plano"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Duas retas no espaço não possuem ponto em comum e não pertencem ao mesmo plano. Como são classificadas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Paralelas",
+    "b) Concorrentes",
+    "c) Coincidentes",
+    "d) Reversas"
+  ]}
+  correct={3}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Qual é a principal diferença entre retas paralelas e retas reversas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) As paralelas possuem um ponto em comum e as reversas não.",
+    "b) As paralelas pertencem ao mesmo plano e as reversas não.",
+    "c) As paralelas são sempre perpendiculares.",
+    "d) As reversas pertencem sempre ao mesmo plano."
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Dois planos possuem uma reta em comum. Como esses planos são classificados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Paralelos",
+    "b) Coincidentes obrigatoriamente",
+    "c) Secantes",
+    "d) Perpendiculares obrigatoriamente"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Qual é a interseção de dois planos secantes?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Um ponto",
+    "b) Um segmento",
+    "c) Uma reta",
+    "d) Nenhum elemento"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Se duas retas são perpendiculares ao mesmo plano, qual relação pode ser estabelecida entre elas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) São necessariamente concorrentes.",
+    "b) São necessariamente paralelas.",
+    "c) São necessariamente coincidentes.",
+    "d) São necessariamente reversas."
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Considere uma reta $r$ e um plano $\alpha$. Se:
+
+$$
+r \cap \alpha = \{P\}
+$$
+
+qual é a posição da reta $r$ em relação ao plano $\alpha$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $r \\parallel \\alpha$",
+    "b) $r \\subset \\alpha$",
+    "c) $r$ é secante a $\\alpha$",
+    "d) $r$ é coincidente com $\\alpha$"
+  ]}
+  correct={2}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos as **posições relativas entre planos**, aprofundando os conceitos de planos paralelos, secantes e perpendiculares.

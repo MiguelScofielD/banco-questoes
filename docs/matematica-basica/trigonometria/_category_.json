@@ -1,0 +1,11 @@
+{
+  "label": "Trigonometria",
+  "position": 3,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Trigonometria",
+    "description": "Estude Trigonometria de forma progressiva, desde os conceitos fundamentais até problemas mais avançados."
+  }
+}

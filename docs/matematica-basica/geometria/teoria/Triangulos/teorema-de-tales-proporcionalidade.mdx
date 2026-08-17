@@ -1,0 +1,1036 @@
+---
+id: teorema-de-tales-proporcionalidade
+title: Teorema de Tales e a Proporcionalidade
+sidebar_position: 8
+description: Estudo do Teorema de Tales, segmentos proporcionais e aplicações em problemas de Geometria.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+import Teorema from '@site/src/components/math/Teorema'
+
+# Teorema de Tales e a Proporcionalidade
+
+O **Teorema de Tales** é uma das principais ferramentas da Geometria para trabalhar com **proporcionalidade de segmentos**.
+
+Ele aparece principalmente quando temos:
+
+- retas paralelas;
+- retas transversais;
+- segmentos proporcionais.
+
+O teorema permite determinar medidas desconhecidas sem precisar medir diretamente os segmentos.
+
+---
+
+# ⭐ Teorema de Tales
+
+Considere três retas paralelas cortadas por duas transversais:
+
+```text
+                    
+ \                  /
+  \                /
+--A\--------------/D--- r₁
+    \            /
+     \          /
+-----B\--------/E------ r₂
+       \      /
+        \    /
+--------C\--/F------- r₃
+          \/
+          X
+```
+
+
+De forma geral, se as retas são paralelas, os segmentos correspondentes nas transversais são proporcionais.
+
+Podemos escrever:
+
+$$
+\boxed{
+\frac{AB}{BC}
+=
+\frac{DE}{EF}
+}
+$$
+
+A ideia central é:
+<Teorema>
+**Retas paralelas determinam segmentos proporcionais em transversais.**
+</Teorema>
+
+---
+
+# 🔎 Entendendo a proporcionalidade
+
+Suponha que uma transversal tenha segmentos:
+
+$$
+AB=4
+$$
+
+e:
+
+$$
+BC=6
+$$
+
+Outra transversal possui:
+
+$$
+DE=8
+$$
+
+e queremos descobrir $EF$.
+
+Pelo Teorema de Tales:
+
+$$
+\frac{AB}{BC}
+=
+\frac{DE}{EF}
+$$
+
+Substituindo:
+
+$$
+\frac{4}{6}
+=
+\frac{8}{x}
+$$
+
+Fazendo a multiplicação cruzada:
+
+$$
+4x=48
+$$
+
+$$
+x=12
+$$
+
+Logo:
+
+$$
+\boxed{EF=12}
+$$
+
+---
+
+# 📏 Forma geral
+
+Se três retas paralelas determinam os segmentos $a$ e $b$ em uma transversal e $c$ e $d$ em outra:
+
+```text
+Transversal 1       Transversal 2
+
+      A                  D
+       \                /
+        \              /
+---------\------------/---------
+        a \          / b
+           \        /
+------------\------/------------
+             \    /
+              \  /
+             c \/ d
+               /\
+              /  \
+-------------/----\-------------
+            B      E
+```
+
+Então:
+
+$$
+\boxed{\frac{a}{b}=\frac{c}{d}}
+$$
+
+ou:
+
+$$
+\boxed{\frac{a}{c}=\frac{b}{d}}
+$$
+
+desde que os segmentos correspondentes sejam comparados na mesma ordem.
+
+---
+
+# ⚠️ A ordem da proporção é importante
+
+Se escrevemos:
+
+$$
+\frac{AB}{BC}
+=
+\frac{DE}{EF}
+$$
+
+devemos comparar:
+
+$$
+AB\leftrightarrow DE
+$$
+
+e:
+
+$$
+BC\leftrightarrow EF
+$$
+
+Não devemos misturar a ordem.
+
+Por exemplo, não podemos escrever:
+
+$$
+\frac{AB}{BC}
+=
+\frac{EF}{DE}
+$$
+
+sem inverter corretamente a primeira razão também.
+
+Uma forma segura é manter sempre:
+
+$$
+\boxed{\frac{\text{segmento da primeira transversal}}
+{\text{segmento correspondente da primeira transversal}}
+=
+\frac{\text{segmento correspondente da segunda transversal}}
+{\text{segmento correspondente da segunda transversal}}}
+$$
+
+---
+
+# 🔺 Teorema de Tales no triângulo
+
+Uma das aplicações mais importantes do Teorema de Tales acontece dentro de um triângulo.
+
+Considere o triângulo $ABC$ e uma reta paralela ao lado $BC$:
+
+```text
+              A
+             / \
+            /   \
+           D-----E
+          /       \
+         /         \
+        B-----------C
+```
+
+Se:
+
+$$
+DE\parallel BC
+$$
+
+então os lados do triângulo são divididos proporcionalmente.
+
+Podemos escrever:
+
+$$
+\boxed{
+\frac{AD}{DB}
+=
+\frac{AE}{EC}
+}
+$$
+
+Essa relação é uma consequência do Teorema de Tales.
+
+---
+
+# 📐 Relação com triângulos semelhantes
+
+Quando:
+
+$$
+DE\parallel BC
+$$
+
+no triângulo $ABC$, os triângulos:
+
+$$
+\triangle ADE
+$$
+
+e:
+
+$$
+\triangle ABC
+$$
+
+são semelhantes.
+
+Podemos escrever:
+
+$$
+\boxed{\triangle ADE\sim\triangle ABC}
+$$
+
+Por isso:
+
+$$
+\frac{AD}{AB}
+=
+\frac{AE}{AC}
+=
+\frac{DE}{BC}
+$$
+
+O Teorema de Tales e a semelhança de triângulos estão, portanto, diretamente relacionados.
+
+---
+
+# 🧠 Uma ideia importante
+
+Podemos pensar da seguinte maneira:
+
+$$
+\boxed{
+\text{Paralelas}
+\longrightarrow
+\text{proporcionalidade}
+}
+$$
+
+E, no triângulo:
+
+$$
+\boxed{
+\text{reta paralela a um lado}
+\longrightarrow
+\text{triângulos semelhantes}
+}
+$$
+
+---
+
+# Exemplo 1 — Aplicação direta
+
+Duas transversais são cortadas por três retas paralelas.
+
+Em uma transversal, os segmentos medem:
+
+$$
+5\text{ cm}
+$$
+
+e:
+
+$$
+8\text{ cm}
+$$
+
+Na outra, o primeiro segmento mede:
+
+$$
+10\text{ cm}
+$$
+
+Determine o segundo segmento.
+
+<details>
+<summary>Ver solução</summary>
+
+Pelo Teorema de Tales:
+
+$$
+\frac{5}{8}
+=
+\frac{10}{x}
+$$
+
+Multiplicando cruzado:
+
+$$
+5x=80
+$$
+
+Logo:
+
+$$
+x=16
+$$
+
+Portanto:
+
+$$
+\boxed{x=16\text{ cm}}
+$$
+
+</details>
+
+---
+
+# Exemplo 2 — Segmentos em um triângulo
+
+No triângulo $ABC$, uma reta paralela a $BC$ intercepta os lados $AB$ e $AC$ nos pontos $D$ e $E$.
+
+Sabendo que:
+
+$$
+AD=4
+$$
+
+$$
+DB=6
+$$
+
+e:
+
+$$
+AE=8
+$$
+
+determine $EC$.
+
+<details>
+<summary>Ver solução</summary>
+
+Como:
+
+$$
+DE\parallel BC
+$$
+
+podemos usar o Teorema de Tales:
+
+$$
+\frac{AD}{DB}
+=
+\frac{AE}{EC}
+$$
+
+Substituindo:
+
+$$
+\frac{4}{6}
+=
+\frac{8}{x}
+$$
+
+Multiplicando cruzado:
+
+$$
+4x=48
+$$
+
+Logo:
+
+$$
+x=12
+$$
+
+Portanto:
+
+$$
+\boxed{EC=12}
+$$
+
+</details>
+
+---
+
+# Exemplo 3 — Descobrindo uma medida
+
+No triângulo $ABC$, temos:
+
+$$
+DE\parallel BC
+$$
+
+e:
+
+$$
+AD=6,\quad DB=9,\quad AE=8
+$$
+
+Determine $EC$.
+
+<details>
+<summary>Ver solução</summary>
+
+Pelo Teorema de Tales:
+
+$$
+\frac{AD}{DB}
+=
+\frac{AE}{EC}
+$$
+
+Então:
+
+$$
+\frac{6}{9}
+=
+\frac{8}{x}
+$$
+
+Multiplicando cruzado:
+
+$$
+6x=72
+$$
+
+Logo:
+
+$$
+x=12
+$$
+
+Portanto:
+
+$$
+\boxed{EC=12}
+$$
+
+</details>
+
+---
+
+# Exemplo 4 — Usando a semelhança
+
+No triângulo $ABC$, uma reta $DE$ é paralela a $BC$.
+
+Sabendo que:
+
+$$
+AD=5
+$$
+
+$$
+AB=15
+$$
+
+e:
+
+$$
+AC=21
+$$
+
+determine $AE$.
+
+<details>
+<summary>Ver solução</summary>
+
+Como:
+
+$$
+DE\parallel BC
+$$
+
+temos:
+
+$$
+\triangle ADE\sim\triangle ABC
+$$
+
+Logo:
+
+$$
+\frac{AD}{AB}
+=
+\frac{AE}{AC}
+$$
+
+Substituindo:
+
+$$
+\frac{5}{15}
+=
+\frac{x}{21}
+$$
+
+Simplificando:
+
+$$
+\frac{1}{3}
+=
+\frac{x}{21}
+$$
+
+Portanto:
+
+$$
+x=7
+$$
+
+Logo:
+
+$$
+\boxed{AE=7}
+$$
+
+</details>
+
+---
+
+# Exemplo 5 — Problema de sombra
+
+Um poste de $3$ m projeta uma sombra de $2$ m.
+
+No mesmo instante, uma árvore projeta uma sombra de $10$ m.
+
+Determine a altura da árvore.
+
+<details>
+<summary>Ver solução</summary>
+
+Como os raios solares podem ser considerados paralelos, os triângulos formados são semelhantes.
+
+Assim:
+
+$$
+\frac{3}{2}
+=
+\frac{x}{10}
+$$
+
+Multiplicando cruzado:
+
+$$
+2x=30
+$$
+
+$$
+x=15
+$$
+
+Portanto:
+
+$$
+\boxed{15\text{ m}}
+$$
+
+</details>
+
+---
+
+# Exemplo 6 — Divisão proporcional
+
+Um segmento é dividido por duas retas paralelas de modo que os comprimentos obtidos em uma transversal são:
+
+$$
+7\text{ cm}
+$$
+
+e:
+
+$$
+14\text{ cm}
+$$
+
+Na outra transversal, o primeiro segmento mede $9$ cm.
+
+Determine o segundo.
+
+<details>
+<summary>Ver solução</summary>
+
+Pelo Teorema de Tales:
+
+$$
+\frac{7}{14}
+=
+\frac{9}{x}
+$$
+
+Como:
+
+$$
+\frac{7}{14}=\frac{1}{2}
+$$
+
+temos:
+
+$$
+\frac{1}{2}
+=
+\frac{9}{x}
+$$
+
+Logo:
+
+$$
+x=18
+$$
+
+Portanto:
+
+$$
+\boxed{18\text{ cm}}
+$$
+
+</details>
+
+---
+
+# 🔎 Recíproca do Teorema de Tales
+
+Existe também uma ideia importante relacionada à **recíproca** do Teorema de Tales.
+
+Se uma sequência de segmentos determinados por duas transversais possui proporcionalidade adequada, podemos concluir que as retas que os determinam são paralelas, sob as condições geométricas apropriadas.
+
+De forma simplificada:
+
+$$
+\boxed{
+\text{segmentos proporcionais}
+\Longrightarrow
+\text{paralelismo}
+}
+$$
+
+Essa propriedade é muito utilizada para verificar se duas retas são paralelas.
+
+---
+
+# 📐 Aplicações do Teorema de Tales
+
+O teorema possui muitas aplicações práticas.
+
+Ele pode ser utilizado para:
+
+- calcular alturas inacessíveis;
+- determinar distâncias;
+- dividir segmentos proporcionalmente;
+- calcular medidas em triângulos;
+- resolver problemas com mapas e escalas;
+- trabalhar com sombras;
+- verificar paralelismo;
+- resolver problemas envolvendo figuras semelhantes.
+
+---
+
+# 🗺️ Tales e escalas
+
+A ideia de proporcionalidade também aparece em mapas.
+
+Se uma distância real é representada por uma distância menor no mapa, existe uma razão constante entre essas medidas.
+
+Por exemplo, em uma escala:
+
+$$
+1:100\,000
+$$
+
+temos:
+
+$$
+1\text{ cm no mapa}=100\,000\text{ cm na realidade}
+$$
+
+Como:
+
+$$
+100\,000\text{ cm}=1\text{ km}
+$$
+
+então:
+
+$$
+\boxed{1\text{ cm no mapa}=1\text{ km na realidade}}
+$$
+
+A mesma ideia de proporcionalidade aparece em diversas situações.
+
+---
+
+# 🧩 Como resolver problemas de Tales
+
+Uma estratégia eficiente:
+
+### Passo 1
+
+Identifique as retas paralelas.
+
+### Passo 2
+
+Identifique as transversais.
+
+### Passo 3
+
+Separe os segmentos correspondentes.
+
+### Passo 4
+
+Monte uma proporção mantendo a mesma ordem.
+
+Por exemplo:
+
+$$
+\frac{AB}{BC}
+=
+\frac{DE}{EF}
+$$
+
+### Passo 5
+
+Resolva a proporção.
+
+---
+
+# ⚠️ Erros comuns
+
+### 1. Comparar segmentos que não correspondem
+
+As razões devem comparar segmentos correspondentes.
+
+### 2. Inverter apenas uma razão
+
+Se você inverter uma razão, deve manter a igualdade corretamente.
+
+Por exemplo:
+
+$$
+\frac{AB}{BC}
+=
+\frac{DE}{EF}
+$$
+
+ou:
+
+$$
+\frac{BC}{AB}
+=
+\frac{EF}{DE}
+$$
+
+As duas são equivalentes.
+
+### 3. Esquecer o paralelismo
+
+O Teorema de Tales depende da configuração com **retas paralelas**.
+
+---
+
+# 🧠 Resumo
+
+O Teorema de Tales estabelece uma relação de proporcionalidade entre segmentos determinados por retas paralelas e transversais.
+
+A ideia fundamental é:
+
+$$
+\boxed{
+\text{Retas paralelas}
+\Rightarrow
+\text{segmentos proporcionais}
+}
+$$
+
+No triângulo, se:
+
+$$
+DE\parallel BC
+$$
+
+então:
+
+$$
+\boxed{
+\frac{AD}{DB}
+=
+\frac{AE}{EC}
+}
+$$
+
+e também:
+
+$$
+\boxed{
+\triangle ADE\sim\triangle ABC
+}
+$$
+
+Por isso, o Teorema de Tales está diretamente ligado à **semelhança de triângulos**.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Duas retas paralelas são cortadas por transversais. Qual conceito está diretamente relacionado à proporcionalidade dos segmentos determinados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Teorema de Pitágoras",
+    "b) Teorema de Tales",
+    "c) Teorema de Euler",
+    "d) Teorema da bissetriz"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Se três retas paralelas cortam duas transversais, os segmentos correspondentes determinados nas transversais são:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Sempre iguais",
+    "b) Sempre perpendiculares",
+    "c) Proporcionais",
+    "d) Sempre paralelos"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+No triângulo $ABC$, uma reta $DE$ é paralela a $BC$. Qual relação pode ser obtida pelo Teorema de Tales?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $AD+DB=AE+EC$",
+    "b) $\\frac{AD}{DB}=\\frac{AE}{EC}$",
+    "c) $AD=AE$ sempre",
+    "d) $DB=EC$ sempre"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Se uma reta é paralela a um dos lados de um triângulo e intercepta os outros dois lados, os triângulos formados são:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Sempre congruentes",
+    "b) Sempre equiláteros",
+    "c) Semelhantes",
+    "d) Perpendiculares"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Duas transversais são cortadas por retas paralelas. Em uma delas os segmentos medem $4$ cm e $6$ cm. Na outra, o primeiro segmento mede $8$ cm. Qual é o segundo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $10$ cm",
+    "b) $12$ cm",
+    "c) $14$ cm",
+    "d) $16$ cm"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+No triângulo $ABC$, $DE\parallel BC$, $AD=6$, $DB=9$ e $AE=8$. Qual é o valor de $EC$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $10$",
+    "b) $12$",
+    "c) $14$",
+    "d) $16$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+No triângulo $ABC$, $DE\parallel BC$, $AD=5$, $AB=15$ e $AC=21$. Qual é o valor de $AE$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $5$",
+    "b) $6$",
+    "c) $7$",
+    "d) $8$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Um poste de $3$ m projeta uma sombra de $2$ m. Uma árvore, no mesmo instante, projeta uma sombra de $10$ m. Qual é a altura da árvore?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $10$ m",
+    "b) $12$ m",
+    "c) $15$ m",
+    "d) $18$ m"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Qual é a principal condição geométrica que permite aplicar diretamente o Teorema de Tales na configuração clássica?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Existência de retas paralelas cortadas por transversais",
+    "b) Existência obrigatória de um ângulo reto",
+    "c) Existência de um triângulo equilátero",
+    "d) Existência de três lados iguais"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Se duas retas paralelas determinam segmentos proporcionais em duas transversais, qual conceito está sendo aplicado?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Teorema de Pitágoras",
+    "b) Teorema de Tales",
+    "c) Relação de Euler",
+    "d) Lei dos cossenos"
+  ]}
+  correct={1}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos as Relações métricas em triângulos.
+

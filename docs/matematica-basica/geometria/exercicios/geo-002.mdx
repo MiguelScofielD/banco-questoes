@@ -1,0 +1,626 @@
+---
+id: exercicios-resolvidos-segmento-reta
+title: Segmento de Reta
+sidebar_position: 2
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import Solucao from '@site/src/components/math/Solucao'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Segmento de Reta
+
+---
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Considere o segmento de reta $\overline{AB}$ com comprimento de $12$ cm. Se $M$ é o ponto médio de $\overline{AB}$, determine os comprimentos de $\overline{AM}$ e $\overline{MB}$.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+O **ponto médio** divide um segmento em duas partes de mesmo comprimento.
+
+Assim:
+
+$$
+AM = MB
+$$
+
+e:
+
+$$
+AB = AM + MB
+$$
+
+---
+
+## ✏️ Passo 1 — Utilizar a propriedade do ponto médio
+
+Como $M$ é o ponto médio:
+
+$$
+AM = MB
+$$
+
+Podemos chamar cada parte de $x$:
+
+$$
+AM=MB=x
+$$
+
+---
+
+## ✏️ Passo 2 — Montar a relação
+
+Sabemos que:
+
+$$
+AB=12
+$$
+
+Logo:
+
+$$
+x+x=12
+$$
+
+---
+
+## ✏️ Passo 3 — Calcular
+
+$$
+2x=12
+$$
+
+Portanto:
+
+$$
+x=6
+$$
+
+Assim:
+
+$$
+AM=6\text{ cm}
+$$
+
+e:
+
+$$
+MB=6\text{ cm}
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{AM=MB=6\text{ cm}}
+$$
+
+---
+
+## 💡 Insight
+
+Sempre que um ponto for identificado como **ponto médio**, podemos imediatamente utilizar:
+
+$$
+\boxed{AM=MB}
+$$
+
+Essa propriedade será muito utilizada em problemas envolvendo segmentos.
+
+</Solucao>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Considere três pontos colineares $A$, $B$ e $C$, com $B$ entre $A$ e $C$.
+
+Sabendo que:
+
+$$
+AB=8\text{ cm}
+$$
+
+e:
+
+$$
+BC=13\text{ cm}
+$$
+
+determine o comprimento de $\overline{AC}$.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Quando um ponto está entre dois outros pontos, o segmento maior é formado pela soma dos dois segmentos menores.
+
+Assim:
+
+$$
+AC=AB+BC
+$$
+
+---
+
+## ✏️ Passo 1 — Substituir os valores
+
+Temos:
+
+$$
+AB=8
+$$
+
+e:
+
+$$
+BC=13
+$$
+
+Portanto:
+
+$$
+AC=8+13
+$$
+
+---
+
+## ✏️ Passo 2 — Calcular
+
+$$
+AC=21
+$$
+
+Logo:
+
+$$
+AC=21\text{ cm}
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{AC=21\text{ cm}}
+$$
+
+---
+
+## 💡 Insight
+
+Quando $B$ está entre $A$ e $C$, podemos utilizar diretamente:
+
+$$
+\boxed{AC=AB+BC}
+$$
+
+Essa relação é chamada de **adição de segmentos**.
+
+</Solucao>
+
+---
+
+<Exercicio numero={3} dificuldade="Médio">
+
+Considere três pontos colineares $A$, $B$ e $C$, com $B$ entre $A$ e $C$.
+
+Sabendo que:
+
+$$
+AC=35\text{ cm}
+$$
+
+e:
+
+$$
+AB=18\text{ cm}
+$$
+
+determine o comprimento de $\overline{BC}$.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Como $B$ está entre $A$ e $C$:
+
+$$
+AC=AB+BC
+$$
+
+Neste problema, conhecemos o segmento maior e uma de suas partes. Portanto, precisamos isolar $BC$.
+
+---
+
+## ✏️ Passo 1 — Montar a equação
+
+Substituindo os valores:
+
+$$
+35=18+BC
+$$
+
+---
+
+## ✏️ Passo 2 — Isolar $BC$
+
+Subtraindo $18$ dos dois lados:
+
+$$
+BC=35-18
+$$
+
+---
+
+## ✏️ Passo 3 — Calcular
+
+$$
+BC=17
+$$
+
+Logo:
+
+$$
+BC=17\text{ cm}
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{BC=17\text{ cm}}
+$$
+
+---
+
+## 💡 Insight
+
+Quando conhecemos o segmento total e uma das partes, podemos encontrar a outra fazendo:
+
+$$
+\boxed{\text{parte desconhecida}=\text{total}-\text{parte conhecida}}
+$$
+
+</Solucao>
+
+---
+
+<Exercicio numero={4} dificuldade="Médio">
+
+Um segmento $\overline{AB}$ possui comprimento de $24$ cm. Um ponto $M$ divide o segmento de modo que:
+
+$$
+AM=2x+3
+$$
+
+e:
+
+$$
+MB=3x-3
+$$
+
+Determine o valor de $x$ e os comprimentos $AM$ e $MB$.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Como $M$ está sobre o segmento $\overline{AB}$:
+
+$$
+AB=AM+MB
+$$
+
+Sabemos que:
+
+$$
+AB=24
+$$
+
+Portanto, podemos montar uma equação.
+
+---
+
+## ✏️ Passo 1 — Montar a equação
+
+Substituindo as expressões:
+
+$$
+24=(2x+3)+(3x-3)
+$$
+
+---
+
+## ✏️ Passo 2 — Simplificar
+
+$$
+24=2x+3+3x-3
+$$
+
+Os termos constantes se anulam:
+
+$$
+24=5x
+$$
+
+---
+
+## ✏️ Passo 3 — Determinar $x$
+
+$$
+x=\frac{24}{5}
+$$
+
+Portanto:
+
+$$
+\boxed{x=\frac{24}{5}}
+$$
+
+---
+
+## ✏️ Passo 4 — Determinar $AM$
+
+Temos:
+
+$$
+AM=2x+3
+$$
+
+Substituindo:
+
+$$
+AM=2\left(\frac{24}{5}\right)+3
+$$
+
+$$
+AM=\frac{48}{5}+\frac{15}{5}
+$$
+
+$$
+AM=\frac{63}{5}
+$$
+
+Logo:
+
+$$
+\boxed{AM=12{,}6\text{ cm}}
+$$
+
+---
+
+## ✏️ Passo 5 — Determinar $MB$
+
+Temos:
+
+$$
+MB=3x-3
+$$
+
+Então:
+
+$$
+MB=3\left(\frac{24}{5}\right)-3
+$$
+
+$$
+MB=\frac{72}{5}-\frac{15}{5}
+$$
+
+$$
+MB=\frac{57}{5}
+$$
+
+Logo:
+
+$$
+\boxed{MB=11{,}4\text{ cm}}
+$$
+
+---
+
+## ✏️ Passo 6 — Conferência
+
+Devemos ter:
+
+$$
+AM+MB=AB
+$$
+
+Verificando:
+
+$$
+12{,}6+11{,}4=24
+$$
+
+Portanto, o resultado está correto.
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{x=\frac{24}{5}}
+$$
+
+$$
+\boxed{AM=12{,}6\text{ cm}}
+$$
+
+$$
+\boxed{MB=11{,}4\text{ cm}}
+$$
+
+---
+
+## 💡 Insight
+
+Problemas de segmentos frequentemente podem ser transformados em uma equação utilizando:
+
+$$
+\boxed{AB=AM+MB}
+$$
+
+O ponto de divisão funciona como uma "ponte" entre as medidas conhecidas.
+
+</Solucao>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Considere um segmento $\overline{AB}$ de comprimento $30$ cm. O ponto $M$ é seu ponto médio e o ponto $N$ é o ponto médio do segmento $\overline{MB}$.
+
+Determine o comprimento de $\overline{AN}$.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Precisamos interpretar cuidadosamente a posição dos pontos.
+
+Como $M$ é o ponto médio de $\overline{AB}$:
+
+$$
+AM=MB
+$$
+
+Como $N$ é o ponto médio de $\overline{MB}$:
+
+$$
+MN=NB
+$$
+
+---
+
+## ✏️ Passo 1 — Determinar $AM$ e $MB$
+
+Como:
+
+$$
+AB=30
+$$
+
+e $M$ é o ponto médio:
+
+$$
+AM=MB=\frac{30}{2}
+$$
+
+Logo:
+
+$$
+AM=15
+$$
+
+e:
+
+$$
+MB=15
+$$
+
+---
+
+## ✏️ Passo 2 — Determinar $MN$
+
+Como $N$ é o ponto médio de $MB$:
+
+$$
+MN=\frac{MB}{2}
+$$
+
+Portanto:
+
+$$
+MN=\frac{15}{2}
+$$
+
+$$
+MN=7{,}5
+$$
+
+---
+
+## ✏️ Passo 3 — Determinar $AN$
+
+A ordem dos pontos é:
+
+```text
+A •----------------• M--------• N--------• B
+        15 cm           7,5 cm
+```
+
+Assim:
+
+$$
+AN=AM+MN
+$$
+
+Substituindo:
+
+$$
+AN=15+7{,}5
+$$
+
+---
+
+## ✏️ Passo 4 — Calcular
+
+$$
+AN=22{,}5
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{AN=22{,}5\text{ cm}}
+$$
+
+---
+
+## 💡 Insight
+
+Quando existem vários pontos médios em sequência, é útil determinar primeiro os segmentos menores e depois somá-los.
+
+Neste problema:
+
+$$
+AB \rightarrow AM \rightarrow MN
+$$
+
+Cada ponto médio reduz o segmento correspondente pela metade.
+
+</Solucao>
+
+---
+
+## 📚 Conceitos trabalhados
+
+Neste conjunto de exercícios, utilizamos:
+
+- adição de segmentos;
+- subtração de segmentos;
+- ponto médio;
+- divisão de um segmento em partes;
+- equações envolvendo comprimentos;
+- verificação de resultados.
+

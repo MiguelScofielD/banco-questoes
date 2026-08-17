@@ -1,8 +1,6 @@
 {
   "label": "Física",
-  "position": 3,
-  "link": {
-    "type": "doc",
-    "id": "fisica/index"
-  }
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false
 }

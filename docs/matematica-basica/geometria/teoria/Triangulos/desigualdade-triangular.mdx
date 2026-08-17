@@ -1,0 +1,622 @@
+---
+id: desigualdade-triangular
+title: Desigualdade Triangular
+sidebar_position: 4
+description: Condição necessária para que três segmentos possam formar um triângulo.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Desigualdade Triangular
+
+Nem sempre três segmentos de reta podem ser unidos para formar um triângulo.
+
+Para que três segmentos de medidas $a$, $b$ e $c$ possam formar um triângulo, a soma das medidas de quaisquer dois lados deve ser **maior** que a medida do terceiro lado.
+
+Essa propriedade é chamada de **desigualdade triangular**.
+
+---
+
+# 📐 Condição fundamental
+
+Para que $a$, $b$ e $c$ sejam lados de um triângulo:
+
+$$
+\boxed{a+b>c}
+$$
+
+$$
+\boxed{a+c>b}
+$$
+
+$$
+\boxed{b+c>a}
+$$
+
+As três desigualdades devem ser satisfeitas simultaneamente.
+
+---
+
+# 🧠 Regra prática
+
+Na maioria dos exercícios, podemos usar uma forma mais rápida:
+
+> **Some os dois menores lados e compare com o maior lado.**
+
+Se:
+
+$$
+\boxed{\text{menor}+\text{menor}>\text{maior}}
+$$
+
+os segmentos podem formar um triângulo.
+
+Por exemplo:
+
+$$
+5,\quad7,\quad9
+$$
+
+Temos:
+
+$$
+5+7=12
+$$
+
+Como:
+
+$$
+12>9
+$$
+
+os segmentos podem formar um triângulo.
+
+---
+
+# ❌ Quando não é possível?
+
+Considere:
+
+$$
+2,\quad3,\quad6
+$$
+
+Os dois menores lados são $2$ e $3$:
+
+$$
+2+3=5
+$$
+
+Como:
+
+$$
+5<6
+$$
+
+não é possível formar um triângulo.
+
+$$
+\boxed{\text{Não formam um triângulo}}
+$$
+
+---
+
+# ⚠️ E quando a soma é igual?
+
+Considere:
+
+$$
+3,\quad4,\quad7
+$$
+
+Temos:
+
+$$
+3+4=7
+$$
+
+Nesse caso, os segmentos ficam alinhados e não formam uma região triangular.
+
+Portanto:
+
+$$
+\boxed{3+4=7\Rightarrow\text{não forma triângulo}}
+$$
+
+A condição precisa ser **maior**, e não maior ou igual:
+
+$$
+\boxed{\text{soma dos dois menores}>\text{maior}}
+$$
+
+---
+
+# Exemplo 1 — Verificando três lados
+
+Verifique se $6$ cm, $8$ cm e $10$ cm podem formar um triângulo.
+
+<details>
+<summary>Ver solução</summary>
+
+Os dois menores lados são $6$ e $8$:
+
+$$
+6+8=14
+$$
+
+Como:
+
+$$
+14>10
+$$
+
+os segmentos podem formar um triângulo.
+
+$$
+\boxed{\text{Sim}}
+$$
+
+</details>
+
+---
+
+# Exemplo 2 — Situação impossível
+
+Verifique se $4$ cm, $5$ cm e $10$ cm podem formar um triângulo.
+
+<details>
+<summary>Ver solução</summary>
+
+$$
+4+5=9
+$$
+
+Como:
+
+$$
+9<10
+$$
+
+não é possível formar um triângulo.
+
+$$
+\boxed{\text{Não}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3 — Caso limite
+
+Verifique se $5$ cm, $7$ cm e $12$ cm formam um triângulo.
+
+<details>
+<summary>Ver solução</summary>
+
+$$
+5+7=12
+$$
+
+Como a soma é igual ao maior lado, a condição não é satisfeita.
+
+Precisamos de:
+
+$$
+5+7>12
+$$
+
+Logo:
+
+$$
+\boxed{\text{Não formam um triângulo}}
+$$
+
+</details>
+
+---
+
+# Exemplo 4 — Encontrando um lado possível
+
+Dois lados de um triângulo medem $7$ cm e $10$ cm. Quais valores inteiros podem ser usados como medida do terceiro lado?
+
+<details>
+<summary>Ver solução</summary>
+
+Se o terceiro lado for $x$:
+
+$$
+7+10>x
+$$
+
+Logo:
+
+$$
+x<17
+$$
+
+Também precisamos de:
+
+$$
+7+x>10
+$$
+
+portanto:
+
+$$
+x>3
+$$
+
+Assim:
+
+$$
+3<x<17
+$$
+
+Como procuramos valores inteiros:
+
+$$
+\boxed{x=4,5,6,\ldots,16}
+$$
+
+</details>
+
+---
+
+# Exemplo 5 — Encontrando um intervalo
+
+Dois lados medem $8$ cm e $13$ cm. Determine o intervalo de valores possíveis para o terceiro lado $x$.
+
+<details>
+<summary>Ver solução</summary>
+
+Temos:
+
+$$
+8+13>x
+$$
+
+Logo:
+
+$$
+x<21
+$$
+
+Também:
+
+$$
+8+x>13
+$$
+
+Então:
+
+$$
+x>5
+$$
+
+Portanto:
+
+$$
+\boxed{5<x<21}
+$$
+
+</details>
+
+---
+
+# Exemplo 6 — Expressão algébrica
+
+Os lados de um triângulo medem:
+
+$$
+x,\quad x+2,\quad10
+$$
+
+Determine os valores de $x$ para os quais existe um triângulo.
+
+<details>
+<summary>Ver solução</summary>
+
+Aplicamos:
+
+$$
+x+(x+2)>10
+$$
+
+$$
+2x+2>10
+$$
+
+$$
+x>4
+$$
+
+As outras duas desigualdades são automaticamente satisfeitas para $x>4$.
+
+Logo:
+
+$$
+\boxed{x>4}
+$$
+
+</details>
+
+---
+
+# Relação geométrica
+
+A desigualdade triangular pode ser entendida visualmente.
+
+Se:
+
+$$
+a+b<c
+$$
+
+os dois segmentos menores não conseguem alcançar o maior para fechar a figura.
+
+Se:
+
+$$
+a+b=c
+$$
+
+os segmentos ficam alinhados.
+
+Somente quando:
+
+$$
+a+b>c
+$$
+
+é possível fechar uma região triangular.
+
+```text
+a + b < c
+
+A------B--------------------C
+```
+
+```text
+a + b = c
+
+A------B----------C
+```
+
+```text
+a + b > c
+
+       A
+      / \
+     /   \
+    B-----C
+```
+
+---
+
+# 🧠 Resumo
+
+Para três segmentos de medidas $a$, $b$ e $c$ formarem um triângulo:
+
+$$
+\boxed{a+b>c}
+$$
+
+$$
+\boxed{a+c>b}
+$$
+
+$$
+\boxed{b+c>a}
+$$
+
+Na prática:
+
+$$
+\boxed{\text{soma dos dois menores}>\text{maior}}
+$$
+
+Se:
+
+$$
+\text{soma dos dois menores}=\text{maior}
+$$
+
+não existe região triangular.
+
+Se:
+
+$$
+\text{soma dos dois menores}<\text{maior}
+$$
+
+também não existe triângulo.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Quais medidas abaixo podem formar um triângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $2$, $3$ e $6$",
+    "b) $3$, $4$ e $5$",
+    "c) $2$, $2$ e $5$",
+    "d) $1$, $4$ e $6$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Os segmentos de medidas $5$ cm, $7$ cm e $9$ cm podem formar um triângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Sim",
+    "b) Não",
+    "c) Somente se for equilátero",
+    "d) Não é possível determinar"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Os segmentos de medidas $4$ cm, $5$ cm e $9$ cm podem formar um triângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Sim",
+    "b) Não, pois $4+5=9$",
+    "c) Sim, pois $4+5=9$",
+    "d) Somente se for retângulo"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Qual condição deve ser satisfeita pela soma dos dois menores lados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Deve ser menor que o maior lado",
+    "b) Deve ser igual ao maior lado",
+    "c) Deve ser maior que o maior lado",
+    "d) Pode assumir qualquer valor"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Dois lados de um triângulo medem $6$ cm e $10$ cm. Qual valor pode ser o terceiro lado?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $3$ cm",
+    "b) $4$ cm",
+    "c) $5$ cm",
+    "d) $16$ cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Dois lados de um triângulo medem $7$ cm e $10$ cm. Quais valores inteiros podem representar o terceiro lado?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $2$ a $17$",
+    "b) $3$ a $17$",
+    "c) $4$ a $16$",
+    "d) $7$ a $10$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Dois lados de um triângulo medem $8$ cm e $13$ cm. Qual intervalo contém os valores possíveis para o terceiro lado $x$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $0<x<21$",
+    "b) $5<x<21$",
+    "c) $5\leq x\leq21$",
+    "d) $8<x<13$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Os lados de um triângulo são $x$, $x+2$ e $10$. Qual condição deve ser satisfeita por $x$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $x>2$",
+    "b) $x>3$",
+    "c) $x>4$",
+    "d) $x>5$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Três segmentos medem $10$ cm, $15$ cm e $25$ cm. O que podemos concluir?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Formam um triângulo equilátero",
+    "b) Formam um triângulo isósceles",
+    "c) Não formam um triângulo",
+    "d) Formam um triângulo retângulo"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Dois lados de um triângulo medem $9$ cm e $12$ cm. Qual opção representa corretamente os valores possíveis para o terceiro lado $x$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $x<21$",
+    "b) $x>3$",
+    "c) $3<x<21$",
+    "d) $3\leq x\leq21$"
+  ]}
+  correct={2}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos os **elementos e pontos notáveis do triângulo**, começando pelas medianas e pelo baricentro.

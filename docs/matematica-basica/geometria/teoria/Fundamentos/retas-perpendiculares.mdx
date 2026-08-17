@@ -1,0 +1,751 @@
+---
+id: retas-perpendiculares
+title: Retas Perpendiculares
+sidebar_position: 7
+description: Conceito, propriedades e aplicações das retas perpendiculares na Geometria Plana.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Retas Perpendiculares
+
+Duas retas são **perpendiculares** quando se intersectam formando quatro ângulos retos, ou seja, quatro ângulos de $90^\circ$.
+
+Utilizamos o símbolo:
+
+$$
+r \perp s
+$$
+
+Lemos:
+
+> "A reta $r$ é perpendicular à reta $s$."
+
+Uma representação é:
+
+```text
+          r
+          │
+          │
+          │
+──────────┼────────── s
+          │
+          │
+          │
+```
+
+O ponto em que as duas retas se encontram é chamado de **ponto de interseção**.
+
+---
+
+## 📐 Ângulo reto
+
+O conceito de perpendicularidade está diretamente relacionado ao **ângulo reto**.
+
+Um ângulo reto possui medida:
+
+$$
+90^\circ
+$$
+
+Quando duas retas se cruzam perpendicularmente, os quatro ângulos formados possuem medida de $90^\circ$.
+
+```text
+          │
+          │
+      90° │ 90°
+──────────┼──────────
+      90° │ 90°
+          │
+          │
+```
+
+Portanto:
+
+$$
+90^\circ + 90^\circ + 90^\circ + 90^\circ = 360^\circ
+$$
+
+---
+
+# Retas perpendiculares são concorrentes
+
+Toda reta perpendicular a outra é também uma reta **concorrente**, pois as duas possuem um ponto em comum.
+
+Considere:
+
+```text
+          r
+          │
+          │
+──────────P────────── s
+          │
+          │
+```
+
+As retas $r$ e $s$ se encontram no ponto $P$.
+
+Além disso, formam quatro ângulos retos.
+
+Portanto:
+
+$$
+r \perp s
+$$
+
+e também:
+
+$$
+r \cap s = \{P\}
+$$
+
+Assim:
+
+> Toda reta perpendicular é concorrente, mas nem toda reta concorrente é perpendicular.
+
+---
+
+# Retas concorrentes e perpendiculares
+
+É importante não confundir esses conceitos.
+
+### Retas concorrentes
+
+Duas retas concorrentes possuem exatamente um ponto em comum.
+
+Porém, elas não precisam formar ângulos de $90^\circ$.
+
+```text
+        r
+         ╲
+          ╲
+           • P
+          ╱
+         ╱
+        s
+```
+
+Nesse caso, são concorrentes, mas não necessariamente perpendiculares.
+
+### Retas perpendiculares
+
+Quando as retas concorrentes formam quatro ângulos de $90^\circ$, elas são perpendiculares.
+
+```text
+          r
+          │
+          │
+──────────P────────── s
+          │
+          │
+```
+
+---
+
+# Símbolo de perpendicularidade
+
+O símbolo utilizado para indicar perpendicularidade é:
+
+$$
+\perp
+$$
+
+Por exemplo:
+
+$$
+r \perp s
+$$
+
+Isso significa que a reta $r$ é perpendicular à reta $s$.
+
+Também podemos dizer que:
+
+$$
+s \perp r
+$$
+
+A relação de perpendicularidade é recíproca.
+
+---
+
+# Ponto de interseção
+
+Quando duas retas perpendiculares se encontram, o ponto de encontro é chamado de **ponto de interseção**.
+
+Considere:
+
+```text
+          r
+          │
+          │
+          │
+──────────P────────── s
+          │
+          │
+```
+
+O ponto $P$ pertence às duas retas:
+
+$$
+P \in r
+$$
+
+e:
+
+$$
+P \in s
+$$
+
+Logo:
+
+$$
+r \cap s = \{P\}
+$$
+
+---
+
+# Perpendicular por um ponto
+
+Uma ideia muito importante da Geometria é a construção de uma reta perpendicular a outra passando por um determinado ponto.
+
+Considere uma reta $r$ e um ponto $P$ sobre ela:
+
+```text
+r  ───────────P──────────
+```
+
+Podemos traçar uma única reta perpendicular a $r$ passando por $P$:
+
+```text
+             s
+             │
+             │
+r  ──────────P──────────
+             │
+             │
+```
+
+Nesse caso:
+
+$$
+r \perp s
+$$
+
+e $P$ é o ponto de interseção.
+
+---
+
+# Perpendicular a uma reta por um ponto fora dela
+
+Também podemos traçar uma perpendicular a uma reta passando por um ponto que não pertence a ela.
+
+Considere:
+
+```text
+          P •
+          │
+          │
+          │
+──────────┼────────── r
+```
+
+A reta que passa por $P$ e encontra $r$ formando um ângulo de $90^\circ$ é perpendicular a $r$.
+
+Essa ideia é fundamental para o conceito de **distância de um ponto a uma reta**.
+
+---
+
+# Distância de um ponto a uma reta
+
+A distância entre um ponto e uma reta é medida pelo **segmento perpendicular** entre o ponto e a reta.
+
+Considere:
+
+```text
+        P •
+          │
+          │ d
+          │
+          • A
+──────────┼────────── r
+```
+
+O segmento $\overline{PA}$ é perpendicular à reta $r$.
+
+Assim, a distância do ponto $P$ até a reta $r$ é:
+
+$$
+d(P,r) = PA
+$$
+
+A menor distância entre um ponto e uma reta é sempre obtida por meio da perpendicular.
+
+---
+
+# Pé da perpendicular
+
+O ponto em que o segmento perpendicular encontra a reta é chamado de **pé da perpendicular**.
+
+Na figura:
+
+```text
+        P •
+          │
+          │
+          │
+          | 
+          |
+──────────•A───────── r
+```
+
+O ponto $A$ é o **pé da perpendicular**.
+
+Temos:
+
+$$
+PA \perp r
+$$
+
+---
+
+# Retas perpendiculares e ângulos
+
+Se duas retas são perpendiculares:
+
+$$
+r \perp s
+$$
+
+então os quatro ângulos formados na interseção possuem medida:
+
+$$
+90^\circ
+$$
+
+Podemos representar:
+
+```text
+          │
+       90°│90°
+──────────┼──────────
+       90°│90°
+          │
+```
+
+Assim:
+
+$$
+\angle_1 = \angle_2 = \angle_3 = \angle_4 = 90^\circ
+$$
+
+---
+
+# Retas horizontais e verticais
+
+No plano cartesiano, uma reta horizontal é perpendicular a uma reta vertical.
+
+Por exemplo:
+
+```text
+          │
+          │
+          │
+──────────┼──────────
+          │
+          │
+```
+
+A reta horizontal e a reta vertical formam ângulos de $90^\circ$.
+
+Esse conceito será muito importante quando estudarmos **Geometria Analítica**.
+
+---
+
+# Perpendicularidade entre segmentos
+
+Não apenas retas podem ser perpendiculares.
+
+Dois segmentos também podem ser considerados perpendiculares quando estão contidos em retas perpendiculares.
+
+Considere:
+
+```text
+          A
+          │
+          │
+          │
+B─────────P─────────C
+          │
+          │
+          D
+```
+
+Os segmentos $\overline{AB}$ e $\overline{BC}$ estão sobre retas perpendiculares.
+
+Portanto:
+
+$$
+\overline{AB} \perp \overline{BC}
+$$
+
+---
+
+# Perpendicularidade e quadriláteros
+
+A perpendicularidade aparece em diversas figuras geométricas.
+
+No quadrado e no retângulo, por exemplo, os lados consecutivos são perpendiculares.
+
+Considere um retângulo:
+
+```text
+A •────────────• B
+  │             │
+  │             │
+  │             │
+D •────────────• C
+```
+
+Temos:
+
+$$
+\overline{AB} \perp \overline{BC}
+$$
+
+e:
+
+$$
+\overline{BC} \perp \overline{CD}
+$$
+
+Além disso, todos os ângulos internos do retângulo são retos.
+
+---
+
+# Perpendiculares e paralelas
+
+É possível estabelecer uma relação importante entre perpendicularidade e paralelismo.
+
+Se duas retas são perpendiculares à mesma reta, então elas são paralelas entre si.
+
+Considere:
+
+```text
+r  │                 │  s
+   │                 │
+   │                 │
+───┼─────────────────┼─── t
+```
+
+Se:
+
+$$
+r \perp t
+$$
+
+e:
+
+$$
+s \perp t
+$$
+
+então:
+
+$$
+r \parallel s
+$$
+
+Essa propriedade será muito útil no estudo de construções geométricas e ângulos.
+
+---
+
+# Exemplo 1
+
+Duas retas se intersectam formando quatro ângulos de $90^\circ$. Como elas são classificadas?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Quando duas retas se intersectam formando quatro ângulos retos, elas são **perpendiculares**.
+
+Portanto:
+
+$$
+\boxed{r \perp s}
+$$
+
+</details>
+
+---
+
+# Exemplo 2
+
+Duas retas possuem exatamente um ponto em comum, mas não formam ângulos de $90^\circ$. Elas são perpendiculares?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Não.
+
+Elas são **concorrentes**, pois possuem exatamente um ponto em comum.
+
+Para serem perpendiculares, deveriam formar quatro ângulos de $90^\circ$.
+
+Portanto:
+
+$$
+\boxed{\text{São concorrentes, mas não perpendiculares}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3
+
+Uma reta $r$ é perpendicular a uma reta $t$. Uma segunda reta $s$ também é perpendicular a $t$.
+
+Qual é a relação entre $r$ e $s$?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Se duas retas são perpendiculares à mesma reta, então elas são paralelas entre si.
+
+Temos:
+
+$$
+r \perp t
+$$
+
+e:
+
+$$
+s \perp t
+$$
+
+Logo:
+
+$$
+\boxed{r \parallel s}
+$$
+
+</details>
+
+---
+
+# Exemplo 4
+
+Um ponto $P$ está fora de uma reta $r$. Um segmento $\overline{PA}$ liga o ponto $P$ à reta formando um ângulo de $90^\circ$.
+
+Qual é o papel do ponto $A$?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+O ponto $A$ é o ponto em que o segmento perpendicular encontra a reta.
+
+Portanto, $A$ é chamado de **pé da perpendicular**.
+
+$$
+\boxed{A\text{ é o pé da perpendicular}}
+$$
+
+</details>
+
+---
+
+# 🧠 Resumo
+
+- Duas retas são **perpendiculares** quando formam quatro ângulos de $90^\circ$.
+- O símbolo de perpendicularidade é:
+
+$$
+r \perp s
+$$
+
+- Retas perpendiculares são um caso particular de retas concorrentes.
+- O ponto onde duas retas se encontram é o **ponto de interseção**.
+- A distância de um ponto a uma reta é medida pelo segmento perpendicular.
+- O ponto onde a perpendicular encontra a reta é chamado de **pé da perpendicular**.
+- Se duas retas são perpendiculares à mesma reta, então elas são paralelas entre si.
+- Lados consecutivos de quadrados e retângulos são exemplos de segmentos perpendiculares.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Duas retas formam quatro ângulos de $90^\circ$ quando se intersectam. Como essas retas são classificadas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Paralelas",
+    "b) Coincidentes",
+    "c) Perpendiculares",
+    "d) Colineares"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Qual símbolo representa corretamente que as retas $r$ e $s$ são perpendiculares?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $r \\parallel s$",
+    "b) $r \\perp s$",
+    "c) $r = s$",
+    "d) $r \\cap s = \\varnothing$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Qual é a medida de cada ângulo formado por duas retas perpendiculares?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $45^\\circ$",
+    "b) $60^\\circ$",
+    "c) $90^\\circ$",
+    "d) $180^\\circ$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Duas retas perpendiculares são também classificadas como:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Paralelas",
+    "b) Concorrentes",
+    "c) Coincidentes",
+    "d) Não colineares"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Um ponto $P$ está fora de uma reta $r$. O segmento que liga $P$ à reta $r$ formando um ângulo de $90^\circ$ representa:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Uma paralela à reta",
+    "b) A distância entre dois pontos quaisquer",
+    "c) Uma perpendicular à reta",
+    "d) Uma reta coincidente"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Como é chamado o ponto em que uma perpendicular encontra uma determinada reta?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Ponto médio",
+    "b) Ponto de interseção apenas",
+    "c) Pé da perpendicular",
+    "d) Centro da perpendicular"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+As retas $r$ e $s$ são ambas perpendiculares à reta $t$. Qual é a relação entre $r$ e $s$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $r \\perp s$",
+    "b) $r \\parallel s$",
+    "c) $r = s$ obrigatoriamente",
+    "d) $r \\cap s$ possui infinitos pontos"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Qual afirmação é verdadeira?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Toda reta concorrente é perpendicular.",
+    "b) Toda reta perpendicular é paralela.",
+    "c) Retas perpendiculares formam quatro ângulos retos.",
+    "d) Retas perpendiculares não possuem ponto de interseção."
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Um retângulo possui lados consecutivos $\overline{AB}$ e $\overline{BC}$. Qual relação pode ser estabelecida entre esses lados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $\\overline{AB} \\parallel \\overline{BC}$",
+    "b) $\\overline{AB} \\perp \\overline{BC}$",
+    "c) $\\overline{AB} = \\overline{BC}$ obrigatoriamente",
+    "d) $\\overline{AB}$ e $\\overline{BC}$ não possuem ponto em comum"
+  ]}
+  correct={1}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos o **plano e as posições relativas entre retas e planos**, avançando gradualmente para os conceitos da Geometria Espacial.

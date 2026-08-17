@@ -1,0 +1,561 @@
+---
+id: soma-angulos-internos-triangulo
+title: Soma dos Ângulos Internos de um Triângulo
+sidebar_position: 3
+description: Estudo da propriedade fundamental segundo a qual a soma dos ângulos internos de qualquer triângulo é igual a 180 graus.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Soma dos Ângulos Internos de um Triângulo
+
+Uma das propriedades mais importantes da Geometria é a **soma dos ângulos internos de um triângulo**.
+
+Independentemente do formato ou das medidas de seus lados, a soma dos três ângulos internos de qualquer triângulo é sempre:
+
+$$
+\boxed{180^\circ}
+$$
+
+Se um triângulo possui ângulos $A$, $B$ e $C$, então:
+
+$$
+\boxed{\angle A+\angle B+\angle C=180^\circ}
+$$
+
+---
+
+# 📐 Por que a soma é $180^\circ$?
+
+Considere um triângulo $ABC$:
+
+```text
+          A
+         / \
+        /   \
+       /     \
+      /       \
+     B---------C
+```
+
+Traçando uma reta paralela ao lado $\overline{BC}$ passando pelo vértice $A$, podemos utilizar as propriedades dos ângulos formados por retas paralelas.
+
+A partir dessa construção, os três ângulos internos do triângulo podem ser associados a ângulos que juntos formam um ângulo raso.
+
+Como um ângulo raso mede:
+
+$$
+180^\circ
+$$
+
+concluímos que:
+
+$$
+\boxed{\angle A+\angle B+\angle C=180^\circ}
+$$
+
+Essa propriedade vale para **todo triângulo da Geometria Euclidiana**.
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+<iframe
+  width="315"
+  height="560"
+  src="https://www.youtube.com/embed/7Sx80pnMMFw"
+  title="Soma dos Ângulos Internos de um Triângulo"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+</div>
+
+---
+
+# 🧠 A ideia fundamental
+
+Sempre que você encontrar um triângulo em uma questão, lembre-se:
+
+$$
+\boxed{\text{soma dos ângulos internos}=180^\circ}
+$$
+
+Isso permite descobrir um ângulo desconhecido quando os outros dois são conhecidos.
+
+---
+
+# Exemplo 1 — Encontrando um ângulo
+
+Um triângulo possui dois ângulos medindo $50^\circ$ e $60^\circ$. Qual é a medida do terceiro ângulo?
+
+<details>
+<summary>Ver solução</summary>
+
+$$
+50^\circ+60^\circ+x=180^\circ
+$$
+
+$$
+110^\circ+x=180^\circ
+$$
+
+$$
+\boxed{x=70^\circ}
+$$
+
+</details>
+
+---
+
+# Exemplo 2 — Dois ângulos iguais
+
+Um triângulo possui dois ângulos iguais de $40^\circ$. Qual é a medida do terceiro ângulo?
+
+<details>
+<summary>Ver solução</summary>
+
+$$
+40^\circ+40^\circ+x=180^\circ
+$$
+
+$$
+80^\circ+x=180^\circ
+$$
+
+$$
+\boxed{x=100^\circ}
+$$
+
+</details>
+
+---
+
+# Exemplo 3 — Triângulo equilátero
+
+Determine a medida de cada ângulo interno de um triângulo equilátero.
+
+<details>
+<summary>Ver solução</summary>
+
+Como os três ângulos são iguais:
+
+$$
+x+x+x=180^\circ
+$$
+
+$$
+3x=180^\circ
+$$
+
+$$
+\boxed{x=60^\circ}
+$$
+
+</details>
+
+---
+
+# Exemplo 4 — Expressão algébrica
+
+Os ângulos internos de um triângulo medem:
+
+$$
+(x+20)^\circ,\qquad(2x+10)^\circ,\qquad(3x-30)^\circ
+$$
+
+Determine $x$.
+
+<details>
+<summary>Ver solução</summary>
+
+Pela soma dos ângulos internos:
+
+$$
+(x+20)+(2x+10)+(3x-30)=180
+$$
+
+$$
+6x=180
+$$
+
+$$
+\boxed{x=30}
+$$
+
+As medidas são:
+
+$$
+50^\circ,\quad70^\circ,\quad60^\circ
+$$
+
+e:
+
+$$
+50^\circ+70^\circ+60^\circ=180^\circ
+$$
+
+</details>
+
+---
+
+# Exemplo 5 — Triângulo isósceles
+
+Um triângulo isósceles possui um ângulo de $40^\circ$ entre os lados iguais. Determine os outros dois ângulos.
+
+<details>
+<summary>Ver solução</summary>
+
+Os outros dois ângulos são iguais. Seja cada um deles $x$:
+
+$$
+40^\circ+x+x=180^\circ
+$$
+
+$$
+2x=140^\circ
+$$
+
+$$
+\boxed{x=70^\circ}
+$$
+
+Portanto, os outros dois ângulos medem $70^\circ$ cada.
+
+</details>
+
+---
+
+# Exemplo 6 — Triângulo retângulo
+
+Um triângulo retângulo possui um dos ângulos agudos medindo $35^\circ$. Qual é o outro ângulo agudo?
+
+<details>
+<summary>Ver solução</summary>
+
+Um dos ângulos mede $90^\circ$:
+
+$$
+90^\circ+35^\circ+x=180^\circ
+$$
+
+$$
+\boxed{x=55^\circ}
+$$
+
+</details>
+
+---
+
+# Exemplo 7 — Os ângulos formam um triângulo?
+
+As medidas $50^\circ$, $60^\circ$ e $70^\circ$ podem representar os ângulos internos de um mesmo triângulo?
+
+<details>
+<summary>Ver solução</summary>
+
+$$
+50^\circ+60^\circ+70^\circ=180^\circ
+$$
+
+Como a soma é $180^\circ$:
+
+$$
+\boxed{\text{Sim}}
+$$
+
+</details>
+
+---
+
+# Quando os ângulos não formam um triângulo
+
+Considere:
+
+$$
+50^\circ,\quad60^\circ,\quad80^\circ
+$$
+
+Temos:
+
+$$
+50^\circ+60^\circ+80^\circ=190^\circ
+$$
+
+Como:
+
+$$
+190^\circ\neq180^\circ
+$$
+
+esses valores não podem representar os três ângulos internos de um mesmo triângulo.
+
+$$
+\boxed{\text{Não formam um triângulo}}
+$$
+
+---
+
+# ⚠️ Cuidado com ângulos externos
+
+Na propriedade da soma dos ângulos internos, utilizamos apenas os ângulos que estão **dentro do triângulo**.
+
+Um ângulo formado pela extensão de um dos lados para fora da figura é um **ângulo externo**.
+
+A relação entre ângulos internos e externos será estudada posteriormente.
+
+---
+
+# Por que um triângulo não pode ter dois ângulos retos?
+
+Se dois ângulos fossem retos:
+
+$$
+90^\circ+90^\circ=180^\circ
+$$
+
+não sobraria medida para o terceiro ângulo.
+
+Portanto, um triângulo possui no máximo um ângulo reto.
+
+---
+
+# Por que um triângulo não pode ter dois ângulos obtusos?
+
+Um ângulo obtuso é maior que $90^\circ$.
+
+Assim, dois ângulos obtusos teriam soma maior que:
+
+$$
+90^\circ+90^\circ=180^\circ
+$$
+
+Isso ultrapassaria a soma total permitida para os três ângulos.
+
+Portanto:
+
+$$
+\boxed{\text{Um triângulo possui no máximo um ângulo obtuso}}
+$$
+
+---
+
+# 🧠 Resumo
+
+A propriedade fundamental é:
+
+$$
+\boxed{\angle A+\angle B+\angle C=180^\circ}
+$$
+
+Para encontrar um ângulo desconhecido:
+
+$$
+\boxed{x=180^\circ-(\text{soma dos ângulos conhecidos})}
+$$
+
+No triângulo equilátero:
+
+$$
+\boxed{60^\circ+60^\circ+60^\circ=180^\circ}
+$$
+
+No triângulo retângulo, os dois ângulos agudos somam:
+
+$$
+\boxed{90^\circ}
+$$
+
+E três medidas podem representar os ângulos de um triângulo somente quando sua soma é:
+
+$$
+\boxed{180^\circ}
+$$
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Qual é a soma dos ângulos internos de qualquer triângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $90^\\circ$",
+    "b) $180^\\circ$",
+    "c) $270^\\circ$",
+    "d) $360^\\circ$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Um triângulo possui ângulos de $50^\circ$ e $60^\circ$. Qual é a medida do terceiro ângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $60^\\circ$",
+    "b) $70^\\circ$",
+    "c) $80^\\circ$",
+    "d) $90^\\circ$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Um triângulo possui dois ângulos de $45^\circ$. Qual é a medida do terceiro ângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $45^\\circ$",
+    "b) $60^\\circ$",
+    "c) $90^\\circ$",
+    "d) $100^\\circ$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Um triângulo equilátero possui ângulos internos de qual medida?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $30^\\circ$",
+    "b) $45^\\circ$",
+    "c) $60^\\circ$",
+    "d) $90^\\circ$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Um triângulo possui ângulos de $35^\circ$, $65^\circ$ e $x$. Qual é o valor de $x$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $70^\\circ$",
+    "b) $75^\\circ$",
+    "c) $80^\\circ$",
+    "d) $85^\\circ$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Os ângulos de um triângulo são $(x+20)^\circ$, $(2x+10)^\circ$ e $(3x-30)^\circ$. Qual é o valor de $x$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $20$",
+    "b) $25$",
+    "c) $30$",
+    "d) $35$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Um triângulo retângulo possui um ângulo agudo de $35^\circ$. Qual é a medida do outro ângulo agudo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $45^\\circ$",
+    "b) $50^\\circ$",
+    "c) $55^\\circ$",
+    "d) $65^\\circ$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Um triângulo isósceles possui um ângulo de $40^\circ$ entre os lados iguais. Qual é a medida de cada um dos outros dois ângulos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $50^\\circ$",
+    "b) $60^\\circ$",
+    "c) $70^\\circ$",
+    "d) $80^\\circ$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Quais medidas abaixo podem representar os três ângulos internos de um mesmo triângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $50^\\circ$, $60^\\circ$, $70^\\circ$",
+    "b) $40^\\circ$, $60^\\circ$, $90^\\circ$",
+    "c) $30^\\circ$, $80^\\circ$, $90^\\circ$",
+    "d) $45^\\circ$, $55^\\circ$, $90^\\circ$"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Por que um triângulo não pode possuir dois ângulos obtusos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Porque todo triângulo possui três ângulos iguais",
+    "b) Porque dois ângulos obtusos já possuem soma maior que $180^\\circ$",
+    "c) Porque um triângulo possui apenas dois lados",
+    "d) Porque ângulos obtusos não existem"
+  ]}
+  correct={1}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos a **desigualdade triangular**, aprendendo a determinar quando três segmentos podem ou não formar um triângulo.

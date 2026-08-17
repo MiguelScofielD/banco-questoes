@@ -1,4 +1,11 @@
 {
   "label": "Listas",
-  "position": 3
+  "position": 3,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Listas de Exercícios",
+    "description": "Listas de exercícios de Álgebra organizadas por assunto."
+  }
 }

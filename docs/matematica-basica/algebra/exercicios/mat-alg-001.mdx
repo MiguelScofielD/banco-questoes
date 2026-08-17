@@ -1113,3 +1113,105 @@ $$
 👉 reconhecer isso resolve a questão em segundos.
 
 </Solucao>
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Calcule a soma
+
+$$
+1+2+3+\cdots+n.
+$$
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Escrevemos a soma em duas ordens diferentes e somamos termo a termo.
+
+---
+
+## ✏️ Passo 1 — Definindo a soma
+
+Chamemos a soma de
+
+$$
+S_n=1+2+3+\cdots+n.
+$$
+
+---
+
+## ✏️ Passo 2 — Escrevendo ao contrário
+
+Agora escrevemos a mesma soma em ordem inversa:
+
+$$
+S_n=n+(n-1)+(n-2)+\cdots+1.
+$$
+
+---
+
+## ✏️ Passo 3 — Somando as duas expressões
+
+Somando membro a membro,
+
+$$
+\begin{aligned}
+2S_n
+&=(1+n)+(2+n-1)+(3+n-2)+\cdots+(n+1).
+\end{aligned}
+$$
+
+Observe que **todos os pares possuem o mesmo valor**:
+
+$$
+1+n=2+(n-1)=3+(n-2)=\cdots=n+1.
+$$
+
+Cada parcela vale
+
+$$
+n+1.
+$$
+
+Como existem **\(n\)** parcelas,
+
+$$
+2S_n=n(n+1).
+$$
+
+---
+
+## ✏️ Passo 4 — Isolando \(S_n\)
+
+Dividindo ambos os lados por \(2\),
+
+$$
+S_n=\frac{n(n+1)}{2}.
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{1+2+3+\cdots+n=\frac{n(n+1)}{2}}
+$$
+
+---
+
+## 💡 Insight
+
+Essa demonstração é atribuída ao matemático **Carl Friedrich Gauss**, que teria descoberto essa fórmula ainda quando criança ao perceber que os pares
+
+$$
+1+n,\;
+2+(n-1),\;
+3+(n-2),\;
+\ldots
+$$
+
+têm sempre a mesma soma.
+
+</Solucao>

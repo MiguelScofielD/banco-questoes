@@ -8,7 +8,6 @@ export default function Teorema({children}) {
       padding: "1rem",
       margin: "1.5rem 0"
     }}>
-      <strong>Teorema</strong>
       <div>{children}</div>
     </div>
   )

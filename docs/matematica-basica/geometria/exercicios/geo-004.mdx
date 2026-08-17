@@ -1,0 +1,869 @@
+---
+id: exercicios-resolvidos-distancia-pontos
+title: Distância entre Pontos
+sidebar_position: 4
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import Solucao from '@site/src/components/math/Solucao'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Distância entre Pontos
+
+---
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Na reta numérica, considere os pontos $A=3$ e $B=11$. Determine a distância entre eles.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Quando dois pontos estão sobre uma reta numérica, a distância entre eles é o **módulo da diferença** entre suas coordenadas.
+
+A fórmula é:
+
+$$
+d=|x_2-x_1|
+$$
+
+---
+
+## ✏️ Passo 1 — Identificar as coordenadas
+
+Temos:
+
+$$
+x_1=3
+$$
+
+e:
+
+$$
+x_2=11
+$$
+
+---
+
+## ✏️ Passo 2 — Aplicar a fórmula
+
+$$
+d=|11-3|
+$$
+
+---
+
+## ✏️ Passo 3 — Calcular
+
+$$
+d=|8|
+$$
+
+Portanto:
+
+$$
+d=8
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{d=8}
+$$
+
+---
+
+## 💡 Insight
+
+Na reta numérica, a distância entre dois pontos é sempre positiva ou zero.
+
+Por isso utilizamos o módulo:
+
+$$
+\boxed{d=|x_2-x_1|}
+$$
+
+</Solucao>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Considere os pontos:
+
+$$
+A(2,5)
+$$
+
+e:
+
+$$
+B(8,5)
+$$
+
+Determine a distância entre $A$ e $B$.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Os dois pontos possuem a mesma coordenada $y$:
+
+$$
+y_A=y_B=5
+$$
+
+Portanto, o deslocamento é apenas **horizontal**.
+
+---
+
+## ✏️ Passo 1 — Observar as coordenadas
+
+Temos:
+
+$$
+A(2,5)
+$$
+
+e:
+
+$$
+B(8,5)
+$$
+
+As coordenadas $y$ são iguais.
+
+---
+
+## ✏️ Passo 2 — Calcular a diferença horizontal
+
+$$
+d=|8-2|
+$$
+
+Logo:
+
+$$
+d=6
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{AB=6}
+$$
+
+---
+
+## 💡 Insight
+
+Quando dois pontos possuem a mesma coordenada $y$, não precisamos utilizar a fórmula completa da distância.
+
+Basta calcular:
+
+$$
+\boxed{d=|x_2-x_1|}
+$$
+
+</Solucao>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Considere os pontos:
+
+$$
+A(4,2)
+$$
+
+e:
+
+$$
+B(4,9)
+$$
+
+Determine a distância entre $A$ e $B$.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Agora os pontos possuem a mesma coordenada $x$.
+
+Portanto, o deslocamento é exclusivamente **vertical**.
+
+---
+
+## ✏️ Passo 1 — Identificar as coordenadas
+
+Temos:
+
+$$
+A(4,2)
+$$
+
+e:
+
+$$
+B(4,9)
+$$
+
+Como:
+
+$$
+x_A=x_B=4
+$$
+
+a distância depende apenas da diferença entre as coordenadas $y$.
+
+---
+
+## ✏️ Passo 2 — Calcular
+
+$$
+d=|9-2|
+$$
+
+Logo:
+
+$$
+d=7
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{AB=7}
+$$
+
+---
+
+## 💡 Insight
+
+Quando os pontos possuem a mesma coordenada $x$, a distância é vertical:
+
+$$
+\boxed{d=|y_2-y_1|}
+$$
+
+</Solucao>
+
+---
+
+<Exercicio numero={4} dificuldade="Médio">
+
+Considere os pontos:
+
+$$
+A(1,2)
+$$
+
+e:
+
+$$
+B(4,6)
+$$
+
+Determine a distância entre eles.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Quando os pontos possuem coordenadas diferentes em $x$ e em $y$, utilizamos a **fórmula da distância entre dois pontos**.
+
+$$
+d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
+$$
+
+Essa fórmula é uma aplicação direta do Teorema de Pitágoras.
+
+---
+
+## ✏️ Passo 1 — Identificar as coordenadas
+
+Temos:
+
+$$
+x_1=1,\quad y_1=2
+$$
+
+e:
+
+$$
+x_2=4,\quad y_2=6
+$$
+
+---
+
+## ✏️ Passo 2 — Calcular as diferenças
+
+Para $x$:
+
+$$
+x_2-x_1=4-1=3
+$$
+
+Para $y$:
+
+$$
+y_2-y_1=6-2=4
+$$
+
+---
+
+## ✏️ Passo 3 — Aplicar a fórmula
+
+$$
+d=\sqrt{3^2+4^2}
+$$
+
+---
+
+## ✏️ Passo 4 — Calcular
+
+$$
+d=\sqrt{9+16}
+$$
+
+$$
+d=\sqrt{25}
+$$
+
+Portanto:
+
+$$
+d=5
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{AB=5}
+$$
+
+---
+
+## 💡 Insight
+
+O famoso triângulo de lados $3$, $4$ e $5$ aparece naturalmente em problemas de distância.
+
+A ideia geométrica é:
+
+$$
+3^2+4^2=5^2
+$$
+
+Ou seja, a distância entre os pontos corresponde à hipotenusa de um triângulo retângulo.
+
+</Solucao>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Considere os pontos:
+
+$$
+A(-2,1)
+$$
+
+e:
+
+$$
+B(4,9)
+$$
+
+Determine a distância entre eles.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Quando aparecem coordenadas negativas, devemos ter atenção principalmente aos sinais durante a subtração.
+
+A fórmula continua sendo:
+
+$$
+d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
+$$
+
+---
+
+## ✏️ Passo 1 — Identificar as coordenadas
+
+Temos:
+
+$$
+x_1=-2,\quad y_1=1
+$$
+
+e:
+
+$$
+x_2=4,\quad y_2=9
+$$
+
+---
+
+## ✏️ Passo 2 — Calcular a diferença em $x$
+
+$$
+x_2-x_1=4-(-2)
+$$
+
+Subtrair um número negativo equivale a somar:
+
+$$
+4-(-2)=4+2=6
+$$
+
+---
+
+## ✏️ Passo 3 — Calcular a diferença em $y$
+
+$$
+y_2-y_1=9-1=8
+$$
+
+---
+
+## ✏️ Passo 4 — Aplicar a fórmula
+
+$$
+d=\sqrt{6^2+8^2}
+$$
+
+$$
+d=\sqrt{36+64}
+$$
+
+$$
+d=\sqrt{100}
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{AB=10}
+$$
+
+---
+
+## 💡 Insight
+
+Quando houver coordenadas negativas, escreva os parênteses explicitamente:
+
+$$
+4-(-2)
+$$
+
+Isso ajuda a evitar erros de sinal.
+
+</Solucao>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Considere o ponto $A(6,8)$ e a origem $O(0,0)$. Determine a distância entre $A$ e $O$.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+A origem do plano cartesiano é:
+
+$$
+O(0,0)
+$$
+
+Podemos utilizar a fórmula da distância entre dois pontos.
+
+---
+
+## ✏️ Passo 1 — Identificar os pontos
+
+Temos:
+
+$$
+A(6,8)
+$$
+
+e:
+
+$$
+O(0,0)
+$$
+
+---
+
+## ✏️ Passo 2 — Aplicar a fórmula
+
+$$
+d=\sqrt{(6-0)^2+(8-0)^2}
+$$
+
+---
+
+## ✏️ Passo 3 — Simplificar
+
+$$
+d=\sqrt{6^2+8^2}
+$$
+
+$$
+d=\sqrt{36+64}
+$$
+
+$$
+d=\sqrt{100}
+$$
+
+---
+
+## ✏️ Passo 4 — Calcular
+
+$$
+d=10
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{AO=10}
+$$
+
+---
+
+## 💡 Insight
+
+Quando um dos pontos é a origem, $(0,0)$, a fórmula fica mais simples:
+
+$$
+\boxed{d=\sqrt{x^2+y^2}}
+$$
+
+Assim, para $A(6,8)$:
+
+$$
+d=\sqrt{6^2+8^2}=10
+$$
+
+</Solucao>
+
+---
+
+<Exercicio numero={7} dificuldade="Difícil">
+
+Determine o valor de $x$ sabendo que os pontos:
+
+$$
+A(x,2)
+$$
+
+e:
+
+$$
+B(7,6)
+$$
+
+estão a uma distância de $5$ unidades.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Quando conhecemos a distância e uma coordenada é desconhecida, utilizamos a fórmula da distância e depois resolvemos uma equação.
+
+Sabemos que:
+
+$$
+AB=5
+$$
+
+---
+
+## ✏️ Passo 1 — Aplicar a fórmula da distância
+
+Temos:
+
+$$
+A(x,2)
+$$
+
+e:
+
+$$
+B(7,6)
+$$
+
+Logo:
+
+$$
+5=\sqrt{(7-x)^2+(6-2)^2}
+$$
+
+---
+
+## ✏️ Passo 2 — Simplificar
+
+$$
+5=\sqrt{(7-x)^2+4^2}
+$$
+
+$$
+5=\sqrt{(7-x)^2+16}
+$$
+
+---
+
+## ✏️ Passo 3 — Elevar os dois lados ao quadrado
+
+$$
+25=(7-x)^2+16
+$$
+
+Então:
+
+$$
+(7-x)^2=9
+$$
+
+---
+
+## ✏️ Passo 4 — Resolver a equação
+
+Temos:
+
+$$
+7-x=\pm3
+$$
+
+Primeira possibilidade:
+
+$$
+7-x=3
+$$
+
+Logo:
+
+$$
+x=4
+$$
+
+Segunda possibilidade:
+
+$$
+7-x=-3
+$$
+
+Logo:
+
+$$
+x=10
+$$
+
+---
+
+## ✏️ Passo 5 — Interpretar as soluções
+
+Existem duas posições possíveis para o ponto $A$:
+
+$$
+A(4,2)
+$$
+
+ou:
+
+$$
+A(10,2)
+$$
+
+Ambas estão a $5$ unidades de distância de $B(7,6)$.
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{x=4\text{ ou }x=10}
+$$
+
+---
+
+## 💡 Insight
+
+Quando aparece uma equação do tipo:
+
+$$
+u^2=k
+$$
+
+devemos lembrar que:
+
+$$
+u=\pm\sqrt{k}
+$$
+
+Por isso, problemas de distância podem apresentar **duas soluções**.
+
+</Solucao>
+
+---
+
+<Exercicio numero={8} dificuldade="Difícil">
+
+Considere os pontos:
+
+$$
+A(-3,4)
+$$
+
+e:
+
+$$
+B(5,-2)
+$$
+
+Determine a distância entre eles e escreva o resultado na forma mais simplificada.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Como as duas coordenadas são diferentes, utilizaremos a fórmula completa da distância.
+
+---
+
+## ✏️ Passo 1 — Identificar as coordenadas
+
+Temos:
+
+$$
+x_1=-3,\quad y_1=4
+$$
+
+e:
+
+$$
+x_2=5,\quad y_2=-2
+$$
+
+---
+
+## ✏️ Passo 2 — Calcular a diferença em $x$
+
+$$
+x_2-x_1=5-(-3)
+$$
+
+$$
+=5+3
+$$
+
+$$
+=8
+$$
+
+---
+
+## ✏️ Passo 3 — Calcular a diferença em $y$
+
+$$
+y_2-y_1=-2-4
+$$
+
+$$
+=-6
+$$
+
+Como essa diferença será elevada ao quadrado:
+
+$$
+(-6)^2=36
+$$
+
+---
+
+## ✏️ Passo 4 — Aplicar a fórmula
+
+$$
+d=\sqrt{8^2+(-6)^2}
+$$
+
+$$
+d=\sqrt{64+36}
+$$
+
+$$
+d=\sqrt{100}
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{AB=10}
+$$
+
+---
+
+## 💡 Insight
+
+O sinal negativo desaparece quando a diferença é elevada ao quadrado:
+
+$$
+(-6)^2=36
+$$
+
+Por isso, não devemos substituir o módulo de forma precipitada: basta seguir corretamente a fórmula.
+
+</Solucao>
+
+---
+
+## 📚 Conceitos trabalhados
+
+Neste conjunto de exercícios, utilizamos:
+
+- distância entre pontos em uma reta numérica;
+- distância horizontal;
+- distância vertical;
+- fórmula da distância no plano cartesiano;
+- Teorema de Pitágoras;
+- pontos com coordenadas negativas;
+- distância entre um ponto e a origem;
+- determinação de coordenadas desconhecidas a partir de uma distância.
+

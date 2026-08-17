@@ -1,4 +1,11 @@
 {
   "label": "Mecânica",
-  "position": 1
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Mecânica",
+    "description": "Estude Mecânica de forma progressiva, desde os conceitos fundamentais até problemas mais avançados."
+  }
 }

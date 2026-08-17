@@ -1,0 +1,633 @@
+---
+id: retas-paralelas-concorrentes
+title: Retas Paralelas e Concorrentes
+sidebar_position: 6
+description: Conceito e propriedades das retas paralelas e concorrentes na Geometria Plana.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Retas Paralelas e Concorrentes
+
+Duas retas podem ocupar diferentes posições em um plano.
+
+Quando analisamos duas retas, podemos verificar se elas:
+
+- nunca se encontram;
+- possuem um único ponto em comum;
+- são coincidentes.
+
+Neste conteúdo estudaremos principalmente as **retas paralelas** e as **retas concorrentes**.
+
+---
+
+## Retas paralelas
+
+Duas retas são **paralelas** quando estão no mesmo plano e não possuem nenhum ponto em comum.
+
+Representamos duas retas paralelas por:
+
+$$
+r \parallel s
+$$
+
+Lemos:
+
+> "A reta $r$ é paralela à reta $s$."
+
+Uma representação é:
+
+```text
+r  ←────────────────────────→
+
+s  ←────────────────────────→
+```
+
+As retas continuam indefinidamente sem se encontrar.
+
+---
+
+## Características das retas paralelas
+
+As retas paralelas possuem algumas características importantes:
+
+- pertencem ao mesmo plano;
+- não possuem pontos em comum;
+- mantêm a mesma direção;
+- a distância entre elas permanece constante.
+
+Por exemplo:
+
+```text
+r  ←────────────────────────→
+
+s  ←────────────────────────→
+```
+
+Mesmo que prolonguemos as duas retas indefinidamente, elas não se encontrarão.
+
+---
+
+# Retas concorrentes
+
+Duas retas são chamadas de **concorrentes** quando possuem exatamente um ponto em comum.
+
+Considere:
+
+```text
+        r
+         ╲
+          ╲
+           ╲
+            • P
+           ╱
+          ╱
+         ╱
+        s
+```
+
+As retas $r$ e $s$ se encontram no ponto $P$.
+
+Podemos escrever:
+
+$$
+r \cap s = \{P\}
+$$
+
+O ponto $P$ é chamado de **ponto de interseção**.
+
+---
+
+## Ponto de interseção
+
+O ponto em que duas retas concorrentes se encontram é chamado de **ponto de interseção**.
+
+Considere:
+
+```text
+r  ──────────•──────────
+             P
+            ╱
+           ╱
+          ╱
+         s
+```
+
+Nesse caso:
+
+$$
+P \in r
+$$
+
+e:
+
+$$
+P \in s
+$$
+
+Portanto, $P$ pertence às duas retas.
+
+---
+
+# Paralelas x concorrentes
+
+A principal diferença entre elas está no número de pontos em comum.
+
+| Tipo de retas | Pontos em comum |
+|---|---:|
+| Paralelas | Nenhum |
+| Concorrentes | Um |
+| Coincidentes | Infinitos |
+
+Podemos representar:
+
+### Paralelas
+
+```text
+r  ←────────────────────────→
+
+s  ←────────────────────────→
+```
+
+$$
+r \parallel s
+$$
+
+### Concorrentes
+
+```text
+        r
+         ╲
+          ╲
+           • P
+          ╱
+         ╱
+        s
+```
+
+$$
+r \cap s = \{P\}
+$$
+
+### Coincidentes
+
+Duas retas coincidentes ocupam exatamente a mesma posição.
+
+```text
+r e s  ←────────────────────────→
+```
+
+Nesse caso, todos os pontos de uma reta também pertencem à outra.
+
+---
+
+# Retas concorrentes perpendiculares
+
+Existe um caso especial de retas concorrentes.
+
+Quando duas retas concorrentes formam quatro ângulos de $90^\circ$, elas são chamadas de **perpendiculares**.
+
+Utilizamos o símbolo:
+
+$$
+r \perp s
+$$
+
+Representação:
+
+```text
+        r
+        │
+        │
+────────•──────── s
+        │
+        │
+```
+
+O ponto de interseção é o mesmo, mas as retas formam ângulos retos.
+
+Portanto:
+
+> Toda reta perpendicular a outra é concorrente, mas nem toda reta concorrente é perpendicular.
+
+---
+
+# Retas concorrentes não perpendiculares
+
+Duas retas podem se encontrar sem formar ângulos de $90^\circ$.
+
+Por exemplo:
+
+```text
+          r
+           ╲
+            ╲
+             •
+            ╱
+           ╱
+          s
+```
+
+Nesse caso, as retas são **concorrentes**, mas não são perpendiculares.
+
+---
+
+# Como identificar duas retas paralelas?
+
+Para identificar duas retas paralelas, devemos verificar se:
+
+1. elas estão no mesmo plano;
+2. não possuem nenhum ponto em comum;
+3. mantêm a mesma direção.
+
+Se essas condições forem satisfeitas:
+
+$$
+r \parallel s
+$$
+
+---
+
+# Como identificar duas retas concorrentes?
+
+Para identificar duas retas concorrentes, devemos verificar se:
+
+1. elas estão no mesmo plano;
+2. possuem exatamente um ponto em comum.
+
+Se $P$ é esse ponto:
+
+$$
+P \in r
+$$
+
+e:
+
+$$
+P \in s
+$$
+
+Então:
+
+$$
+r \cap s = \{P\}
+$$
+
+---
+
+# Distância entre retas paralelas
+
+A distância entre duas retas paralelas é constante.
+
+Considere:
+
+```text
+r  ←────────────────────────→
+
+             d
+
+s  ←────────────────────────→
+```
+
+A distância perpendicular entre as retas é representada por $d$.
+
+Se tomarmos diferentes pontos sobre uma das retas e medirmos a distância perpendicular até a outra, obteremos sempre o mesmo valor.
+
+---
+
+# Retas paralelas cortadas por uma transversal
+
+Uma reta que intersecta duas ou mais retas é chamada de **transversal**.
+
+Considere:
+
+```text
+r  ←─────────\───────────────→
+              ╲
+               ╲
+                ╲
+s  ←─────────────╲──────────→
+```
+
+A reta transversal encontra as duas retas.
+
+Quando as retas $r$ e $s$ são paralelas, a transversal produz relações importantes entre os ângulos formados.
+
+Essas relações serão estudadas com mais detalhes no conteúdo de **Ângulos formados por retas paralelas e uma transversal**.
+
+---
+
+# Propriedades importantes
+
+## Propriedade 1 — Paralelas não se encontram
+
+Se:
+
+$$
+r \parallel s
+$$
+
+então as retas $r$ e $s$ não possuem pontos em comum.
+
+---
+
+## Propriedade 2 — Concorrentes possuem um ponto em comum
+
+Se $r$ e $s$ são concorrentes, existe um único ponto $P$ tal que:
+
+$$
+P \in r
+$$
+
+e:
+
+$$
+P \in s
+$$
+
+---
+
+## Propriedade 3 — Perpendiculares são concorrentes
+
+Se:
+
+$$
+r \perp s
+$$
+
+então $r$ e $s$ possuem um ponto de interseção e formam quatro ângulos retos.
+
+---
+
+# Exemplo 1
+
+Duas retas $r$ e $s$ pertencem ao mesmo plano e não possuem nenhum ponto em comum.
+
+Como essas retas são classificadas?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Retas que pertencem ao mesmo plano e não possuem nenhum ponto em comum são **paralelas**.
+
+Portanto:
+
+$$
+\boxed{r \parallel s}
+$$
+
+</details>
+
+---
+
+# Exemplo 2
+
+Duas retas se encontram exatamente no ponto $P$.
+
+Como essas retas são classificadas?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Duas retas que possuem exatamente um ponto em comum são chamadas de **concorrentes**.
+
+O ponto $P$ é o ponto de interseção.
+
+Portanto:
+
+$$
+\boxed{r \text{ e } s \text{ são concorrentes}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3
+
+Duas retas se encontram formando quatro ângulos de $90^\circ$.
+
+Como essas retas são classificadas?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+As retas possuem um ponto em comum, portanto são concorrentes.
+
+Como formam ângulos de $90^\circ$, também são perpendiculares.
+
+Logo:
+
+$$
+\boxed{r \perp s}
+$$
+
+</details>
+
+---
+
+# Exemplo 4
+
+Considere três retas $r$, $s$ e $t$.
+
+Sabendo que:
+
+$$
+r \parallel s
+$$
+
+e que $t$ intersecta $r$ e $s$, como podemos classificar $t$ em relação às retas $r$ e $s$?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+A reta $t$ intersecta as retas $r$ e $s$.
+
+Portanto, $t$ é uma **transversal** das retas paralelas $r$ e $s$.
+
+</details>
+
+---
+
+# 🧠 Resumo
+
+- **Retas paralelas:** estão no mesmo plano e não possuem pontos em comum.
+- O símbolo de paralelismo é:
+
+$$
+r \parallel s
+$$
+
+- **Retas concorrentes:** possuem exatamente um ponto em comum.
+- O ponto comum é chamado de **ponto de interseção**.
+- Retas perpendiculares são um caso particular de retas concorrentes.
+- O símbolo de perpendicularidade é:
+
+$$
+r \perp s
+$$
+
+- Retas coincidentes possuem infinitos pontos em comum.
+- A distância entre duas retas paralelas é constante.
+- Uma reta que intersecta duas ou mais retas é chamada de **transversal**.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Duas retas pertencentes ao mesmo plano não possuem nenhum ponto em comum. Como elas são classificadas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Concorrentes",
+    "b) Paralelas",
+    "c) Perpendiculares",
+    "d) Coincidentes"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Duas retas possuem exatamente um ponto em comum. Como elas são classificadas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Paralelas",
+    "b) Coincidentes",
+    "c) Concorrentes",
+    "d) Colineares"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Qual símbolo representa corretamente que as retas $r$ e $s$ são paralelas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $r \\perp s$",
+    "b) $r \\cap s$",
+    "c) $r \\parallel s$",
+    "d) $r = s$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Qual é o nome do ponto em que duas retas concorrentes se encontram?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Ponto médio",
+    "b) Ponto de interseção",
+    "c) Ponto médio da reta",
+    "d) Ponto colinear"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Duas retas concorrentes formam quatro ângulos de $90^\circ$. Como essas retas são classificadas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Paralelas",
+    "b) Coincidentes",
+    "c) Perpendiculares",
+    "d) Oblíquas"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Qual afirmação é verdadeira?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Toda reta concorrente é perpendicular.",
+    "b) Toda reta paralela possui um ponto de interseção.",
+    "c) Retas perpendiculares são um caso particular de retas concorrentes.",
+    "d) Retas paralelas são sempre coincidentes."
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Uma reta $t$ intersecta duas retas paralelas $r$ e $s$. Como a reta $t$ é chamada?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Bissetriz",
+    "b) Transversal",
+    "c) Mediana",
+    "d) Diagonal"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Considere duas retas $r$ e $s$. Se existe um único ponto $P$ pertencente às duas retas, qual relação pode ser estabelecida?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $r \\parallel s$",
+    "b) $r \\perp s$ obrigatoriamente",
+    "c) $r \\cap s = \\{P\\}$",
+    "d) $r = s$ obrigatoriamente"
+  ]}
+  correct={2}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos as **retas perpendiculares**, incluindo ângulos retos e propriedades da perpendicularidade.

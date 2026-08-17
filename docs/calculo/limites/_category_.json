@@ -1,4 +1,11 @@
 {
   "label": "Limites",
-  "position": 1
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Limites",
+    "description": "Estude Limites de forma progressiva, desde os conceitos fundamentais até problemas mais avançados."
+  }
 }

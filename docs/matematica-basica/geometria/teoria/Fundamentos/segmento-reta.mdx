@@ -1,0 +1,676 @@
+---
+id: segmentos-reta
+title: Segmentos de Reta
+sidebar_position: 3
+description: Conceito, representação, comprimento, ponto médio e operações com segmentos de reta.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Segmentos de Reta
+
+Um **segmento de reta** é uma parte de uma reta limitada por dois pontos.
+
+Considere os pontos $A$ e $B$:
+
+```text
+A •---------------------------• B
+```
+
+O trecho compreendido entre $A$ e $B$ é chamado de **segmento de reta**.
+
+Representamos esse segmento por:
+
+$$
+\overline{AB}
+$$
+
+Os pontos $A$ e $B$ são chamados de **extremos do segmento**.
+
+---
+
+## 📌 Segmento de reta e reta
+
+É importante diferenciar uma reta de um segmento de reta.
+
+### Reta
+
+Uma reta é infinita nos dois sentidos:
+
+```text
+←-----------------------------→
+```
+
+Podemos representá-la por:
+
+$$
+\overleftrightarrow{AB}
+$$
+
+### Segmento de reta
+
+O segmento possui dois extremos:
+
+```text
+A •---------------------------• B
+```
+
+Sua representação é:
+
+$$
+\overline{AB}
+$$
+
+Portanto:
+
+| Figura | Característica |
+|---|---|
+| Reta | Infinita nos dois sentidos |
+| Semirreta | Possui uma origem e é infinita em um sentido |
+| Segmento | Possui dois extremos |
+
+---
+
+# Comprimento de um segmento
+
+O comprimento de um segmento corresponde à distância entre seus extremos.
+
+Se o segmento possui extremos $A$ e $B$, seu comprimento é indicado por:
+
+$$
+AB
+$$
+
+Por exemplo, se:
+
+$$
+AB = 8\text{ cm}
+$$
+
+então a distância entre os pontos $A$ e $B$ é de **8 cm**.
+
+Observe que existe uma diferença entre:
+
+$$
+\overline{AB}
+$$
+
+e
+
+$$
+AB
+$$
+
+O primeiro representa o **segmento**.
+
+O segundo representa o **comprimento do segmento**.
+
+---
+
+# Comparação entre segmentos
+
+Podemos comparar segmentos de acordo com seus comprimentos.
+
+Considere:
+
+$$
+AB = 5\text{ cm}
+$$
+
+e
+
+$$
+CD = 8\text{ cm}
+$$
+
+Como:
+
+$$
+5 < 8
+$$
+
+podemos concluir que:
+
+$$
+AB < CD
+$$
+
+Portanto, o segmento $\overline{AB}$ é menor que o segmento $\overline{CD}$.
+
+---
+
+# Segmentos congruentes
+
+Dois segmentos são **congruentes** quando possuem o mesmo comprimento.
+
+Por exemplo:
+
+$$
+AB = 6\text{ cm}
+$$
+
+e
+
+$$
+CD = 6\text{ cm}
+$$
+
+Então:
+
+$$
+AB = CD
+$$
+
+e dizemos que os segmentos $\overline{AB}$ e $\overline{CD}$ são **congruentes**.
+
+O símbolo de congruência é:
+
+$$
+\overline{AB} \cong \overline{CD}
+$$
+
+Isso significa:
+
+> Os segmentos possuem o mesmo comprimento.
+
+---
+
+# Adição de segmentos
+
+Podemos dividir um segmento em partes menores.
+
+Considere:
+
+```text
+A •---------• B---------• C
+```
+
+O ponto $B$ está entre $A$ e $C$.
+
+Nesse caso:
+
+$$
+AC = AB + BC
+$$
+
+### Exemplo
+
+Se:
+
+$$
+AB = 4\text{ cm}
+$$
+
+e
+
+$$
+BC = 7\text{ cm}
+$$
+
+então:
+
+$$
+AC = 4 + 7
+$$
+
+Logo:
+
+$$
+\boxed{AC = 11\text{ cm}}
+$$
+
+---
+
+# Subtração de segmentos
+
+Também podemos determinar uma parte de um segmento quando conhecemos o comprimento total e outra parte.
+
+Considere:
+
+$$
+AC = 15\text{ cm}
+$$
+
+e:
+
+$$
+AB = 9\text{ cm}
+$$
+
+Como:
+
+$$
+AC = AB + BC
+$$
+
+temos:
+
+$$
+15 = 9 + BC
+$$
+
+Portanto:
+
+$$
+BC = 15 - 9
+$$
+
+Logo:
+
+$$
+\boxed{BC = 6\text{ cm}}
+$$
+
+---
+
+# Ponto médio
+
+O **ponto médio** de um segmento é o ponto que divide o segmento em duas partes de mesmo comprimento.
+
+Considere:
+
+```text
+A •--------------• M--------------• B
+```
+
+Se $M$ é o ponto médio de $\overline{AB}$, então:
+
+$$
+AM = MB
+$$
+
+Além disso:
+
+$$
+AB = AM + MB
+$$
+
+Como as duas partes possuem o mesmo comprimento:
+
+$$
+AM = MB = \frac{AB}{2}
+$$
+
+---
+
+## Exemplo
+
+Considere um segmento de comprimento:
+
+$$
+AB = 20\text{ cm}
+$$
+
+Se $M$ é o ponto médio, então:
+
+$$
+AM = MB = \frac{20}{2}
+$$
+
+Portanto:
+
+$$
+\boxed{AM = MB = 10\text{ cm}}
+$$
+
+---
+
+# Determinando o ponto médio
+
+Se conhecemos o comprimento total do segmento, podemos encontrar o comprimento de cada metade.
+
+Por exemplo:
+
+$$
+AB = 18\text{ m}
+$$
+
+Então:
+
+$$
+AM = MB = \frac{18}{2}
+$$
+
+Logo:
+
+$$
+\boxed{AM = MB = 9\text{ m}}
+$$
+
+---
+
+# Segmentos consecutivos
+
+Dois ou mais segmentos são chamados de **consecutivos** quando possuem um extremo em comum.
+
+Por exemplo:
+
+```text
+A •---------• B---------• C
+```
+
+Os segmentos $\overline{AB}$ e $\overline{BC}$ são consecutivos porque possuem o ponto $B$ em comum.
+
+---
+
+# Segmentos adjacentes
+
+Dois segmentos são **adjacentes** quando são consecutivos e não possuem pontos internos em comum.
+
+Considere:
+
+```text
+A •---------• B---------• C
+```
+
+Os segmentos:
+
+$$
+\overline{AB}
+$$
+
+e
+
+$$
+\overline{BC}
+$$
+
+são adjacentes.
+
+Eles possuem apenas o ponto $B$ em comum.
+
+---
+
+# Segmentos colineares
+
+Segmentos são **colineares** quando estão sobre uma mesma reta.
+
+Considere:
+
+```text
+A •---------• B---------• C---------• D
+```
+
+Os segmentos:
+
+$$
+\overline{AB},\quad \overline{BC},\quad \overline{CD}
+$$
+
+são colineares.
+
+---
+
+# Exemplo 1
+
+Considere:
+
+$$
+AB = 7\text{ cm}
+$$
+
+e:
+
+$$
+BC = 5\text{ cm}
+$$
+
+Sabendo que $B$ está entre $A$ e $C$, determine $AC$.
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Como $B$ está entre $A$ e $C$:
+
+$$
+AC = AB + BC
+$$
+
+Substituindo os valores:
+
+$$
+AC = 7 + 5
+$$
+
+Portanto:
+
+$$
+\boxed{AC = 12\text{ cm}}
+$$
+
+</details>
+
+---
+
+# Exemplo 2
+
+Um segmento $\overline{AB}$ possui comprimento de $24$ cm. Determine o comprimento de cada parte quando ele é dividido pelo ponto médio $M$.
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Como $M$ é o ponto médio:
+
+$$
+AM = MB = \frac{AB}{2}
+$$
+
+Então:
+
+$$
+AM = MB = \frac{24}{2}
+$$
+
+Logo:
+
+$$
+\boxed{AM = MB = 12\text{ cm}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3
+
+Considere:
+
+$$
+AC = 30\text{ cm}
+$$
+
+e:
+
+$$
+AB = 18\text{ cm}
+$$
+
+Sabendo que $B$ está entre $A$ e $C$, determine $BC$.
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Temos:
+
+$$
+AC = AB + BC
+$$
+
+Substituindo:
+
+$$
+30 = 18 + BC
+$$
+
+Logo:
+
+$$
+BC = 30 - 18
+$$
+
+Portanto:
+
+$$
+\boxed{BC = 12\text{ cm}}
+$$
+
+</details>
+
+---
+
+# 🧠 Resumo
+
+- **Segmento de reta:** parte da reta limitada por dois extremos.
+- O comprimento do segmento $\overline{AB}$ é representado por $AB$.
+- Dois segmentos são **congruentes** quando possuem o mesmo comprimento.
+- O **ponto médio** divide um segmento em duas partes iguais.
+- Se $B$ está entre $A$ e $C$, então:
+
+$$
+AC = AB + BC
+$$
+
+- Segmentos **consecutivos** possuem um extremo em comum.
+- Segmentos **adjacentes** são consecutivos e possuem apenas um extremo em comum.
+- Segmentos **colineares** pertencem à mesma reta.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Um segmento de reta possui comprimento de $15$ cm. Qual é a distância entre seus extremos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 5 cm",
+    "b) 10 cm",
+    "c) 15 cm",
+    "d) 30 cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Um segmento $\overline{AB}$ possui comprimento de $20$ cm. Se $M$ é o ponto médio de $\overline{AB}$, qual é o comprimento de $AM$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 5 cm",
+    "b) 10 cm",
+    "c) 15 cm",
+    "d) 20 cm"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Considere $AB = 8$ cm e $BC = 6$ cm. Sabendo que $B$ está entre $A$ e $C$, qual é o comprimento de $AC$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 2 cm",
+    "b) 12 cm",
+    "c) 14 cm",
+    "d) 48 cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Médio">
+
+Um segmento $\overline{AC}$ possui comprimento de $25$ cm. Sabendo que $B$ está entre $A$ e $C$ e que $AB = 17$ cm, determine $BC$.
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 7 cm",
+    "b) 8 cm",
+    "c) 9 cm",
+    "d) 42 cm"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Dois segmentos possuem comprimentos iguais a $12$ cm. Qual afirmação é correta?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Os segmentos são paralelos.",
+    "b) Os segmentos são perpendiculares.",
+    "c) Os segmentos são congruentes.",
+    "d) Os segmentos são colineares."
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+O segmento $\overline{AB}$ mede $36$ cm. O ponto $M$ é o ponto médio de $\overline{AB}$. Qual é a medida de $MB$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 9 cm",
+    "b) 12 cm",
+    "c) 18 cm",
+    "d) 24 cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Considere três pontos colineares $A$, $B$ e $C$, com $B$ entre $A$ e $C$. Se $AC = 42$ cm e $AB = 25$ cm, determine $BC$.
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 15 cm",
+    "b) 17 cm",
+    "c) 19 cm",
+    "d) 21 cm"
+  ]}
+  correct={1}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos **Semirretas**.

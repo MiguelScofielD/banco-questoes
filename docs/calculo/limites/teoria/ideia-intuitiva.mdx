@@ -1,0 +1,124 @@
+---
+title: Ideia Intuitiva de Limites
+sidebar_position: 1
+---
+
+# Ideia Intuitiva de Limites
+
+Antes de formalizar o conceito, é importante entender a **ideia intuitiva de limite**.
+
+Um limite descreve o comportamento de uma função quando a variável **se aproxima** de um valor, sem necessariamente atingi-lo.
+
+---
+
+## 🧠 Intuição
+
+Quando escrevemos:
+
+$$
+\lim_{x \to a} f(x)
+$$
+
+queremos saber:
+
+👉 **para qual valor $$f(x)$$ se aproxima quando $$x$$ se aproxima de $$a$$**
+
+---
+
+## 🔍 Exemplo clássico
+
+Considere a função:
+
+$$
+f(x) = \frac{x^2 - 1}{x - 1}
+$$
+
+Se substituirmos $$x = 1$$, teremos:
+
+$$
+\frac{0}{0}
+$$
+
+👉 expressão **indeterminada**
+
+---
+
+## ✏️ Mas podemos simplificar
+
+$$
+\frac{x^2 - 1}{x - 1} = \frac{(x-1)(x+1)}{x-1}
+$$
+
+$$
+= x + 1 \quad (x \neq 1)
+$$
+
+---
+
+## 🔁 Agora calcule o limite
+
+$$
+\lim_{x \to 1} \frac{x^2 - 1}{x - 1}
+= \lim_{x \to 1} (x + 1)
+= 2
+$$
+
+---
+
+## 💡 Interpretação
+
+Mesmo que a função **não esteja definida em $$x = 1$$**, os valores de $$f(x)$$ se aproximam de:
+
+$$
+2
+$$
+
+👉 Isso é o **limite**
+
+---
+
+## 📈 Visualmente
+
+- $$x$$ se aproxima de 1  
+- $$f(x)$$ se aproxima de 2  
+
+---
+
+## 🔥 Exemplo importante
+
+$$
+\lim_{x \to 0} \frac{\sin x}{x} = 1
+$$
+
+👉 Esse é um dos limites mais importantes do cálculo.
+
+---
+
+## ⚠️ Cuidado
+
+Limite **não é simplesmente substituir o valor**.
+
+Às vezes:
+
+- dá certo (funções contínuas)
+- às vezes gera indeterminação:  $$\frac{0}{0}$$
+
+---
+
+## 🎯 Resumo
+
+- Limite descreve comportamento, não valor exato  
+- Podemos nos aproximar sem atingir o ponto  
+- Indeterminações exigem manipulação algébrica  
+
+---
+
+## 🚀 Próximo passo
+
+Agora avance para:
+
+➡️ [Leis dos limites](/docs/calculo/limites/teoria/leis-dos-limites)
+
+ou pratique:
+
+➡️ [Lista de limites](/docs/calculo/limites/listas/lista-limites-01)

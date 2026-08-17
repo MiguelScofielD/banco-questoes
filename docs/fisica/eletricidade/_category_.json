@@ -1,4 +1,11 @@
 {
   "label": "Eletricidade",
-  "position": 2
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Eletricidade",
+    "description": "Estude Eletricidade de forma progressiva, desde os conceitos fundamentais até problemas mais avançados."
+  }
 }

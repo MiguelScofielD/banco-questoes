@@ -1,0 +1,522 @@
+---
+id: ponto-reta-plano
+title: Ponto, Reta e Plano
+sidebar_position: 2
+description: Conceitos fundamentais de ponto, reta e plano na Geometria Plana.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import Solucao from '@site/src/components/math/Solucao'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Ponto, Reta e Plano
+
+Ponto, reta e plano são os **conceitos fundamentais da Geometria**. A partir deles, podemos construir e estudar segmentos, ângulos, polígonos e diversas outras figuras geométricas.
+
+---
+
+## 📍 Ponto
+
+O **ponto** representa uma posição no espaço.
+
+Ele não possui:
+
+- comprimento;
+- largura;
+- altura.
+
+Por isso, dizemos que o ponto possui **dimensão zero**.
+
+Um ponto é representado por uma letra **maiúscula**:
+
+$$
+A
+$$
+
+$$
+B
+$$
+
+$$
+C
+$$
+
+Por exemplo:
+
+```text
+• A
+```
+
+A marca é apenas uma representação visual. Matematicamente, um ponto não possui tamanho.
+
+---
+
+## 📏 Reta
+
+Uma **reta** é formada por uma quantidade infinita de pontos alinhados.
+
+Uma característica fundamental da reta é:
+
+> Uma reta é infinita nos dois sentidos.
+
+Podemos representar uma reta por uma letra minúscula, como:
+
+$$
+r
+$$
+
+Também podemos representar uma reta utilizando dois de seus pontos:
+
+$$
+\overleftrightarrow{AB}
+$$
+
+Representação:
+
+```text
+<----------------------------->
+              r
+```
+
+As setas indicam que a reta continua indefinidamente nas duas direções.
+
+### Dois pontos determinam uma única reta
+
+Dados dois pontos distintos, existe uma única reta que passa por eles.
+
+```text
+A •---------------------------• B
+```
+
+Essa reta pode ser representada por:
+
+$$
+\overleftrightarrow{AB}
+$$
+
+---
+
+## 📐 Plano
+
+O **plano** é uma superfície que se estende infinitamente em duas dimensões.
+
+Ele possui:
+
+- comprimento;
+- largura;
+
+mas não possui espessura.
+
+Um plano pode ser representado visualmente por uma região plana:
+
+```text
+        __________________
+       /                /
+      /                /
+     /________________/
+```
+
+Normalmente, utilizamos letras gregas para representar planos, como:
+
+$$
+\alpha
+$$
+
+ou
+
+$$
+\beta
+$$
+
+---
+
+# Relação entre ponto, reta e plano
+
+Os três conceitos estão diretamente relacionados.
+
+Um **ponto pode pertencer a uma reta**.
+
+```text
+        A •
+----------|------------------ r
+```
+
+Nesse caso, dizemos que o ponto $A$ pertence à reta $r$.
+
+Utilizamos o símbolo:
+
+$$
+A \in r
+$$
+
+Lemos:
+
+> "A pertence à reta r."
+
+---
+
+## Ponto que não pertence à reta
+
+Quando um ponto não está sobre determinada reta, utilizamos:
+
+$$
+A \notin r
+$$
+
+Lemos:
+
+> "A não pertence à reta r."
+
+---
+
+# Reta contida em um plano
+
+Uma reta pode estar completamente contida em um plano.
+
+```text
+              plano α
+
+       ______________________
+      /                     /
+     /    A •--------------/---- r
+    /                     /
+   /_____________________/
+```
+
+Nesse caso, todos os pontos da reta $r$ pertencem ao plano $\alpha$.
+
+Podemos escrever:
+
+$$
+r \subset \alpha
+$$
+
+Lemos:
+
+> "A reta r está contida no plano α."
+
+---
+
+# Pontos colineares
+
+Três ou mais pontos são chamados de **colineares** quando pertencem à mesma reta.
+
+Por exemplo:
+
+```text
+A •---------• B---------• C
+```
+
+Os pontos $A$, $B$ e $C$ são colineares.
+
+Podemos escrever:
+
+$$
+A,B,C \in r
+$$
+
+---
+
+## Pontos não colineares
+
+Quando três ou mais pontos não pertencem à mesma reta, eles são chamados de **não colineares**.
+
+Exemplo:
+
+```text
+A •
+
+
+          • B
+
+
+     • C
+```
+
+Nesse caso, não existe uma única reta que passe pelos três pontos.
+
+---
+
+# Pontos coplanares
+
+Pontos são chamados de **coplanares** quando pertencem ao mesmo plano.
+
+Por exemplo:
+
+$$
+A,B,C,D \in \alpha
+$$
+
+Nesse caso, os pontos $A$, $B$, $C$ e $D$ pertencem ao plano $\alpha$.
+
+Na Geometria Plana, as figuras estudadas estão contidas em um mesmo plano.
+
+---
+
+# Propriedades fundamentais
+
+### Dois pontos determinam uma reta
+
+Por dois pontos distintos passa uma única reta.
+
+Se:
+
+$$
+A \neq B
+$$
+
+então existe uma única reta que passa pelos pontos $A$ e $B$.
+
+---
+
+### Três pontos não colineares determinam um plano
+
+Dados três pontos que não pertencem à mesma reta, existe um único plano que contém esses três pontos.
+
+Se $A$, $B$ e $C$ não são colineares, então:
+
+$$
+A,B,C \in \alpha
+$$
+
+---
+
+### Uma reta possui infinitos pontos
+
+Entre dois pontos de uma reta existem infinitos outros pontos.
+
+Portanto, uma reta é formada por infinitos pontos.
+
+---
+
+# Segmento de reta
+
+Quando consideramos apenas a parte de uma reta compreendida entre dois pontos, obtemos um **segmento de reta**.
+
+Considere:
+
+```text
+A •----------------• B
+```
+
+Esse segmento é representado por:
+
+$$
+\overline{AB}
+$$
+
+Diferentemente da reta, o segmento possui **dois extremos**.
+
+---
+
+# Reta, semirreta e segmento
+
+É importante não confundir esses três conceitos.
+
+| Figura | Característica |
+|---|---|
+| Reta | Infinita nos dois sentidos |
+| Semirreta | Possui origem e é infinita em um sentido |
+| Segmento | Possui dois extremos |
+
+### Reta
+
+```text
+<----------------------------->
+```
+
+### Semirreta
+
+```text
+A •--------------------------->
+```
+
+### Segmento
+
+```text
+A •---------------------------• B
+```
+
+---
+
+# Exemplo 1
+
+Considere os pontos $A$, $B$ e $C$ sobre uma mesma reta:
+
+```text
+A •---------• B---------• C
+```
+
+Os pontos são:
+
+**A)** não colineares
+
+**B)** colineares
+
+**C)** não coplanares
+
+**D)** perpendiculares
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Os três pontos pertencem à mesma reta.
+
+Portanto, são **pontos colineares**.
+
+**Resposta: B.**
+
+</details>
+
+---
+
+# Exemplo 2
+
+Qual é a principal diferença entre uma reta e um segmento de reta?
+
+<details>
+<summary>Ver solução</summary>
+### Resolução
+
+A reta é infinita nos dois sentidos, enquanto o segmento possui dois extremos.
+
+Portanto:
+
+$$
+\boxed{\text{Reta} \neq \text{Segmento de reta}}
+$$
+</details>
+---
+
+# Exemplo 3
+
+Dois pontos distintos $A$ e $B$ determinam quantas retas?
+
+<details>
+<summary>Ver solução</summary>
+### Resolução
+
+Por dois pontos distintos passa uma única reta.
+
+Portanto:
+
+$$
+\boxed{1}
+$$
+
+</details>
+---
+
+# 🧠 Resumo
+
+- **Ponto:** representa uma posição e possui dimensão zero.
+- **Reta:** é formada por infinitos pontos e é infinita nos dois sentidos.
+- **Plano:** é uma superfície bidimensional que se estende infinitamente.
+- Dois pontos distintos determinam uma única reta.
+- Três pontos não colineares determinam um único plano.
+- Pontos pertencentes à mesma reta são **colineares**.
+- Pontos pertencentes ao mesmo plano são **coplanares**.
+- **Segmento de reta** possui dois extremos.
+- **Semirreta** possui uma origem e é infinita em um único sentido.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Qual dos elementos geométricos possui dimensão zero?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Reta",
+    "b) Plano",
+    "c) Ponto",
+    "d) Segmento"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Dois pontos distintos determinam:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Duas retas",
+    "b) Uma única reta",
+    "c) Infinitas retas",
+    "d) Nenhum plano"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Quando três pontos pertencem à mesma reta, eles são chamados de:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Coplanares",
+    "b) Paralelos",
+    "c) Colineares",
+    "d) Perpendiculares"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Qual das alternativas representa corretamente um segmento de reta?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Uma figura infinita nos dois sentidos.",
+    "b) Uma figura infinita em um único sentido.",
+    "c) Uma figura com dois extremos.",
+    "d) Uma figura sem pontos."
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Qual das afirmações abaixo é verdadeira?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Uma reta possui início e fim.",
+    "b) Uma semirreta possui dois extremos.",
+    "c) Um segmento de reta é infinito nos dois sentidos.",
+    "d) Uma semirreta possui uma origem e é infinita em um único sentido."
+  ]}
+  correct={3}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos os **segmentos de reta**, incluindo comprimento, ponto médio e operações envolvendo segmentos.
+
+[Continuar para Segmentos de Reta →](/docs/matematica-basica/geometria/teoria/segmentos-reta)

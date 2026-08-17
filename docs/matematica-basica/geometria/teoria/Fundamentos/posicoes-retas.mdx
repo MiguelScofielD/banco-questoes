@@ -1,0 +1,668 @@
+---
+id: posicoes-relativas-pontos-retas
+title: Posições Relativas entre Pontos e Retas
+sidebar_position: 5
+description: Estudo das posições relativas entre pontos e retas na Geometria Plana.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Posições Relativas entre Pontos e Retas
+
+Na Geometria, é importante saber descrever a posição de um ponto em relação a uma reta.
+
+Um ponto pode:
+
+- pertencer a uma reta;
+- não pertencer a uma reta.
+
+Além disso, dois ou mais pontos podem estar alinhados sobre uma mesma reta.
+
+Essas relações são fundamentais para o estudo de segmentos, ângulos, polígonos e outras figuras geométricas.
+
+---
+
+## 📍 Ponto pertencente a uma reta
+
+Considere a figura:
+
+```text
+A •----------------------------- r
+```
+
+O ponto $A$ está sobre a reta $r$.
+
+Nesse caso, dizemos que **$A$ pertence à reta $r$**.
+
+Utilizamos o símbolo:
+
+$$
+A \in r
+$$
+
+Lemos:
+
+> "A pertence à reta r."
+
+---
+
+## Ponto que não pertence a uma reta
+
+Agora considere:
+
+```text
+        A •
+
+----------------------------- r
+```
+
+O ponto $A$ não está sobre a reta $r$.
+
+Nesse caso:
+
+$$
+A \notin r
+$$
+
+Lemos:
+
+> "A não pertence à reta r."
+
+---
+
+# Pontos colineares
+
+Dois ou mais pontos são chamados de **colineares** quando pertencem à mesma reta.
+
+Considere:
+
+```text
+A •---------• B---------• C
+```
+
+Os pontos $A$, $B$ e $C$ pertencem à mesma reta.
+
+Portanto, são **colineares**.
+
+Podemos escrever:
+
+$$
+A,B,C \in r
+$$
+
+---
+
+## Pontos não colineares
+
+Quando três ou mais pontos não pertencem à mesma reta, são chamados de **não colineares**.
+
+Considere:
+
+```text
+A •
+
+
+        • B
+
+
+   • C
+```
+
+Não existe uma única reta que passe simultaneamente pelos três pontos.
+
+Portanto, os pontos $A$, $B$ e $C$ são **não colineares**.
+
+---
+
+# Dois pontos e uma reta
+
+Existe uma propriedade fundamental da Geometria:
+
+> Por dois pontos distintos passa uma única reta.
+
+Considere:
+
+```text
+A •---------------------------• B
+```
+
+Existe uma única reta que passa por $A$ e $B$.
+
+Podemos representá-la por:
+
+$$
+\overleftrightarrow{AB}
+$$
+
+ou simplesmente por uma letra, como:
+
+$$
+r
+$$
+
+---
+
+# Três pontos
+
+Quando temos três pontos, existem duas possibilidades principais.
+
+### Caso 1 — Pontos colineares
+
+```text
+A •---------• B---------• C
+```
+
+Os três pontos pertencem à mesma reta.
+
+São, portanto, **colineares**.
+
+---
+
+### Caso 2 — Pontos não colineares
+
+```text
+A •
+
+
+        • B
+
+
+   • C
+```
+
+Os três pontos não pertencem à mesma reta.
+
+São, portanto, **não colineares**.
+
+Esse caso é especialmente importante porque:
+
+> Três pontos não colineares determinam um único plano.
+
+---
+
+# Posição de um ponto em relação a uma reta
+
+Podemos resumir as duas possibilidades:
+
+| Situação | Símbolo | Significado |
+|---|---|---|
+| Ponto pertence à reta | $A \in r$ | A está sobre a reta |
+| Ponto não pertence à reta | $A \notin r$ | A não está sobre a reta |
+
+---
+
+# Pontos alinhados
+
+A expressão **pontos alinhados** é frequentemente utilizada como sinônimo de pontos colineares.
+
+Por exemplo:
+
+```text
+A •---------• B---------• C---------• D
+```
+
+Os pontos $A$, $B$, $C$ e $D$ estão alinhados.
+
+Portanto:
+
+$$
+A,B,C,D \in r
+$$
+
+---
+
+# Ponto entre dois pontos
+
+Considere três pontos colineares:
+
+```text
+A •---------• B---------• C
+```
+
+Nesse caso, dizemos que o ponto $B$ está **entre** $A$ e $C$.
+
+Essa relação pode ser expressa pelo comprimento dos segmentos:
+
+$$
+AC = AB + BC
+$$
+
+Por exemplo, se:
+
+$$
+AB = 5\text{ cm}
+$$
+
+e:
+
+$$
+BC = 7\text{ cm}
+$$
+
+então:
+
+$$
+AC = 5 + 7
+$$
+
+Logo:
+
+$$
+\boxed{AC = 12\text{ cm}}
+$$
+
+---
+
+# Ordem dos pontos em uma reta
+
+Considere os pontos:
+
+```text
+A •---------• B---------• C
+```
+
+Podemos dizer que:
+
+- $A$ está antes de $B$;
+- $B$ está entre $A$ e $C$;
+- $C$ está depois de $B$.
+
+Também podemos inverter a orientação da reta:
+
+```text
+C •---------• B---------• A
+```
+
+A posição geométrica dos pontos não mudou.
+
+O que mudou foi apenas a orientação utilizada para representar a reta.
+
+---
+
+# Distância entre dois pontos
+
+Quando dois pontos pertencem a uma mesma reta, a distância entre eles corresponde ao comprimento do segmento que os une.
+
+Considere:
+
+```text
+A •---------------------------• B
+```
+
+A distância entre $A$ e $B$ pode ser representada por:
+
+$$
+AB
+$$
+
+Se:
+
+$$
+AB = 10\text{ cm}
+$$
+
+então a distância entre os pontos $A$ e $B$ é de $10$ cm.
+
+---
+
+# Posição relativa entre uma reta e pontos
+
+Podemos analisar uma reta considerando quantos pontos conhecidos pertencem a ela.
+
+### Nenhum dos pontos pertence à reta
+
+```text
+A •        B •
+
+----------------------------- r
+```
+
+Nesse caso:
+
+$$
+A \notin r
+$$
+
+e:
+
+$$
+B \notin r
+$$
+
+---
+
+### Um dos pontos pertence à reta
+
+```text
+A •--------------------------- r
+
+        B •
+```
+
+Nesse caso:
+
+$$
+A \in r
+$$
+
+e:
+
+$$
+B \notin r
+$$
+
+---
+
+### Dois pontos pertencem à reta
+
+```text
+A •---------• B---------------- r
+```
+
+Nesse caso:
+
+$$
+A,B \in r
+$$
+
+Como dois pontos distintos determinam uma única reta, a reta que passa por $A$ e $B$ pode ser representada por:
+
+$$
+\overleftrightarrow{AB}
+$$
+
+---
+
+# Exemplo 1
+
+Considere:
+
+```text
+A •----------------------------- r
+```
+
+Qual relação podemos estabelecer entre $A$ e $r$?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+O ponto $A$ está sobre a reta $r$.
+
+Portanto:
+
+$$
+\boxed{A \in r}
+$$
+
+</details>
+
+---
+
+# Exemplo 2
+
+Considere:
+
+```text
+A •---------• B---------• C
+```
+
+Qual é a relação entre os pontos $A$, $B$ e $C$?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Os três pontos pertencem à mesma reta.
+
+Portanto, são **colineares**.
+
+$$
+\boxed{A,B,C \text{ são colineares}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3
+
+Considere três pontos $A$, $B$ e $C$ tais que $B$ está entre $A$ e $C$.
+
+Sabendo que:
+
+$$
+AB = 8\text{ cm}
+$$
+
+e:
+
+$$
+BC = 11\text{ cm}
+$$
+
+determine $AC$.
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Como $B$ está entre $A$ e $C$:
+
+$$
+AC = AB + BC
+$$
+
+Substituindo:
+
+$$
+AC = 8 + 11
+$$
+
+Portanto:
+
+$$
+\boxed{AC = 19\text{ cm}}
+$$
+
+</details>
+
+---
+
+# Exemplo 4
+
+Três pontos $A$, $B$ e $C$ não pertencem à mesma reta.
+
+O que podemos afirmar sobre esses pontos?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Se os três pontos não pertencem à mesma reta, eles são **não colineares**.
+
+Além disso, três pontos não colineares determinam um único plano.
+
+Portanto:
+
+$$
+\boxed{\text{A, B e C são não colineares}}
+$$
+
+</details>
+
+---
+
+# 🧠 Resumo
+
+- Um ponto pode pertencer ou não pertencer a uma reta.
+- $A \in r$ significa que $A$ pertence à reta $r$.
+- $A \notin r$ significa que $A$ não pertence à reta $r$.
+- Pontos que pertencem à mesma reta são **colineares**.
+- Pontos que não pertencem à mesma reta são **não colineares**.
+- Dois pontos distintos determinam uma única reta.
+- Pontos alinhados são pontos colineares.
+- Se $B$ está entre $A$ e $C$, então:
+
+$$
+AC = AB + BC
+$$
+
+- Três pontos não colineares determinam um único plano.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Considere um ponto $A$ localizado sobre a reta $r$. Qual símbolo representa corretamente essa relação?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $A \\notin r$",
+    "b) $A \\in r$",
+    "c) $A \\parallel r$",
+    "d) $A \\perp r$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Considere três pontos $A$, $B$ e $C$ pertencentes à mesma reta. Como esses pontos são classificados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Não colineares",
+    "b) Paralelos",
+    "c) Colineares",
+    "d) Perpendiculares"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Qual afirmação é verdadeira sobre dois pontos distintos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Dois pontos distintos determinam uma única reta.",
+    "b) Dois pontos distintos nunca pertencem à mesma reta.",
+    "c) Dois pontos distintos determinam dois planos.",
+    "d) Dois pontos distintos não podem ser colineares."
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Considere três pontos $A$, $B$ e $C$ que não pertencem à mesma reta. Como esses pontos são classificados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Colineares",
+    "b) Não colineares",
+    "c) Paralelos",
+    "d) Coincidentes"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Considere três pontos colineares $A$, $B$ e $C$, com $B$ entre $A$ e $C$. Se $AB = 9$ cm e $BC = 13$ cm, qual é o comprimento de $AC$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 4 cm",
+    "b) 18 cm",
+    "c) 22 cm",
+    "d) 117 cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Considere os pontos $A$, $B$ e $C$. Sabendo que $B$ está entre $A$ e $C$, $AC = 35$ cm e $AB = 18$ cm, determine $BC$.
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 13 cm",
+    "b) 17 cm",
+    "c) 19 cm",
+    "d) 53 cm"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Qual afirmação descreve corretamente três pontos não colineares?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Os três pontos pertencem obrigatoriamente à mesma reta.",
+    "b) Os três pontos determinam um único plano.",
+    "c) Os três pontos são sempre perpendiculares.",
+    "d) Os três pontos possuem a mesma posição."
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Se $A \in r$ e $B \notin r$, qual afirmação está correta?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Os pontos $A$ e $B$ pertencem à reta $r$.",
+    "b) O ponto $A$ não pertence à reta $r$.",
+    "c) O ponto $A$ pertence à reta $r$ e o ponto $B$ não pertence.",
+    "d) Nenhum dos pontos pertence à reta $r$."
+  ]}
+  correct={2}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos as **retas paralelas e concorrentes**.

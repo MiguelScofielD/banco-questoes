@@ -6,17 +6,17 @@ export default function HomeCards() {
     {
       title: "Matemática Básica",
       description: "Álgebra, trigonometria e fundamentos.",
-      link: "/docs/matematica-basica/algebra/mat-alg-001",
+      link: "/docs/category/matemática",
     },
     {
       title: "Cálculo",
       description: "Limites, derivadas e integrais.",
-      link: "/docs/calculo/limites/calc-lim-001",
+      link: "/docs/category/cálculo",
     },
     {
       title: "Física",
       description: "Mecânica e outros tópicos de física.",
-      link: "/docs/fisica/mecanica/fis-mec-001",
+      link: "/docs/category/física",
     },
   ];
 

@@ -1,0 +1,11 @@
+{
+  "label": "Relações Métricas",
+  "position": 4,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Relações Métricas",
+    "description": "Estudo sobre as relações métricas em triângulos."
+  }
+}

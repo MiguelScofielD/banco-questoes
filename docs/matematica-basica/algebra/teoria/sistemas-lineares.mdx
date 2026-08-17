@@ -5,18 +5,323 @@ sidebar_position: 8
 
 # Sistemas Lineares
 
+## 📘 Definição
+
+Um **sistema linear** é um conjunto de duas ou mais equações lineares envolvendo as mesmas incógnitas.
+
 Exemplo:
 
 $$
-x + y = 5
+\begin{cases}
+x + y = 5 \\
+x - y = 1
+\end{cases}
+$$
+
+---
+
+## 🧠 Objetivo
+
+Encontrar os valores das incógnitas que satisfazem **todas as equações simultaneamente**.
+
+---
+
+## 🔎 Interpretação geométrica
+
+- Cada equação representa uma **reta** (em 2 variáveis)
+- A solução do sistema é o **ponto de interseção**
+
+---
+
+## 🎯 Tipos de sistemas
+
+### ✔ Sistema possível e determinado (SPD)
+
+Possui **uma única solução**:
+
+$$
+\begin{cases}
+x + y = 5 \\
+x - y = 1
+\end{cases}
+\Rightarrow (x,y) = (3,2)
+$$
+
+---
+
+### ♾️ Sistema possível e indeterminado (SPI)
+
+Possui **infinitas soluções**:
+
+$$
+\begin{cases}
+x + y = 2 \\
+2x + 2y = 4
+\end{cases}
+$$
+
+---
+
+### ❌ Sistema impossível (SI)
+
+Não possui solução:
+
+$$
+\begin{cases}
+x + y = 2 \\
+x + y = 3
+\end{cases}
+$$
+
+---
+
+# ✏️ Métodos de resolução
+
+---
+
+## 🔁 1. Método da substituição
+
+### Exemplo
+
+$$
+\begin{cases}
+x + y = 5 \\
+x - y = 1
+\end{cases}
+$$
+
+Isolando:
+
+$$
+x = 5 - y
+$$
+
+Substituindo:
+
+$$
+5 - y - y = 1
 $$
 
 $$
+5 - 2y = 1 \Rightarrow y = 2
+$$
+
+$$
+x = 3
+$$
+
+---
+
+## ➕ 2. Método da adição (eliminação)
+
+### Exemplo
+
+$$
+\begin{cases}
+x + y = 5 \\
 x - y = 1
+\end{cases}
 $$
 
 Somando:
 
 $$
-2x = 6 → x = 3
+2x = 6 \Rightarrow x = 3
 $$
+
+$$
+y = 2
+$$
+
+---
+
+## 📦 3. Método da comparação
+
+### Exemplo
+
+$$
+\begin{cases}
+x = 2y + 1 \\
+x = y + 3
+\end{cases}
+$$
+
+Igualando:
+
+$$
+2y + 1 = y + 3
+$$
+
+$$
+y = 2,\quad x = 5
+$$
+
+---
+
+## 🧩 Sistemas com três incógnitas
+
+Exemplo:
+
+$$
+\begin{cases}
+x + y + z = 6 \\
+x + y = 4 \\
+y + z = 5
+\end{cases}
+$$
+
+Subtraindo:
+
+$$
+z = 2,\quad y = 3,\quad x = 1
+$$
+
+---
+
+# 🧠 Estratégias importantes
+
+### ✔ Organizar o sistema
+
+Alinhe as equações:
+
+$$
+\begin{cases}
+ax + by = c \\
+dx + ey = f
+\end{cases}
+$$
+
+---
+
+### ✔ Eliminar uma variável
+
+Multiplique equações se necessário.
+
+---
+
+### ✔ Verificar a solução
+
+Sempre substitua no sistema original.
+
+---
+
+# 🔍 Sistemas dependentes
+
+Quando uma equação é múltipla da outra:
+
+$$
+2x + 4y = 6
+$$
+
+$$
+x + 2y = 3
+$$
+
+👉 representam a mesma reta
+
+---
+
+# ⚠️ Sistemas inconsistentes
+
+Quando possuem mesma inclinação mas termos diferentes:
+
+👉 não se cruzam
+
+---
+
+# 🧮 Método matricial (introdução)
+
+Sistema:
+
+$$
+\begin{cases}
+2x + y = 5 \\
+x - y = 1
+\end{cases}
+$$
+
+Forma matricial:
+
+$$
+\begin{bmatrix}
+2 & 1 \\
+1 & -1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+=
+\begin{bmatrix}
+5 \\
+1
+\end{bmatrix}
+$$
+
+---
+
+# 💡 Regra de Cramer (introdução)
+
+Para sistema:
+
+$$
+\begin{cases}
+ax + by = c \\
+dx + ey = f
+\end{cases}
+$$
+
+Determinante:
+
+$$
+\Delta = ae - bd
+$$
+
+Se $$\Delta \neq 0$$, então:
+
+$$
+x = \frac{ce - bf}{\Delta}
+\quad,\quad
+y = \frac{af - cd}{\Delta}
+$$
+
+---
+
+# 🚀 Aplicações
+
+Sistemas lineares aparecem em:
+
+- física  
+- economia  
+- engenharia  
+- computação  
+- estatística  
+
+---
+
+# 📌 Problema aplicado
+
+Um sistema tem:
+
+- soma: 10  
+- diferença: 2  
+
+$$
+\begin{cases}
+x + y = 10 \\
+x - y = 2
+\end{cases}
+$$
+
+$$
+x = 6,\quad y = 4
+$$
+
+---
+
+# 🎯 Resumo
+
+- Resolver sistema = encontrar solução comum  
+- Métodos: substituição, adição, comparação  
+- Tipos: SPD, SPI, SI  
+- Interpretação: interseção de retas  

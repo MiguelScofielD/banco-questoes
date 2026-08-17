@@ -1,0 +1,11 @@
+{
+  "label": "Listas",
+  "position": 3,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Listas de Exercícios",
+    "description": "Listas de exercícios de Geometria organizadas por assunto."
+  }
+}

@@ -1,0 +1,836 @@
+---
+id: distancia-entre-pontos
+title: Distância entre Pontos
+sidebar_position: 9
+description: Conceito de distância entre pontos e cálculo da distância em uma reta e no plano cartesiano.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Distância entre Pontos
+
+A **distância entre dois pontos** corresponde ao comprimento do segmento de reta que liga esses pontos.
+
+Considere os pontos $A$ e $B$:
+
+```text
+A •---------------------------• B
+```
+
+A distância entre $A$ e $B$ é representada por:
+
+$$
+AB
+$$
+
+Se:
+
+$$
+AB = 8\text{ cm}
+$$
+
+então a distância entre os pontos $A$ e $B$ é de $8$ cm.
+
+---
+
+## 📏 Distância entre pontos em uma reta
+
+Quando dois pontos estão sobre uma mesma reta, podemos determinar a distância entre eles utilizando a diferença entre suas posições.
+
+Considere:
+
+```text
+A •---------• B
+```
+
+Se:
+
+$$
+A = 3
+$$
+
+e:
+
+$$
+B = 10
+$$
+
+a distância entre eles é:
+
+$$
+AB = |10-3|
+$$
+
+Logo:
+
+$$
+\boxed{AB = 7}
+$$
+
+Utilizamos o **módulo** porque a distância nunca pode ser negativa.
+
+---
+
+# Distância entre pontos em uma reta numérica
+
+Considere dois pontos representados na reta numérica:
+
+```text
+0----1----2----3----4----5----6----7----8
+          A                         B
+```
+
+Se:
+
+$$
+A=2
+$$
+
+e:
+
+$$
+B=7
+$$
+
+então:
+
+$$
+AB=|7-2|
+$$
+
+Portanto:
+
+$$
+\boxed{AB=5}
+$$
+
+---
+
+## Distância entre dois números
+
+De maneira geral, se dois pontos possuem coordenadas $x_1$ e $x_2$ em uma reta, a distância entre eles é:
+
+$$
+d=|x_2-x_1|
+$$
+
+Por exemplo:
+
+$$
+x_1=4
+$$
+
+e:
+
+$$
+x_2=11
+$$
+
+Então:
+
+$$
+d=|11-4|
+$$
+
+Logo:
+
+$$
+\boxed{d=7}
+$$
+
+---
+
+# Distância entre pontos no plano cartesiano
+
+Agora considere dois pontos no plano cartesiano:
+
+$$
+A(x_1,y_1)
+$$
+
+e:
+
+$$
+B(x_2,y_2)
+$$
+
+A distância entre eles pode ser determinada utilizando o **Teorema de Pitágoras**.
+
+Considere:
+
+```text
+y
+↑
+│            B •
+│             /│
+│            / │ 
+│         d /  │  
+│          /   │   
+│         /    │    
+│      A •─────┘     
+│                    
+└────────────────────────→ x
+```
+
+A diferença horizontal entre os pontos é:
+
+$$
+\Delta x=x_2-x_1
+$$
+
+A diferença vertical é:
+
+$$
+\Delta y=y_2-y_1
+$$
+
+Essas duas diferenças formam os catetos de um triângulo retângulo.
+
+---
+
+# Fórmula da distância entre dois pontos
+
+Aplicando o Teorema de Pitágoras:
+
+$$
+d^2=(x_2-x_1)^2+(y_2-y_1)^2
+$$
+
+Extraindo a raiz quadrada:
+
+$$
+\boxed{d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}}
+$$
+
+Essa é a **fórmula da distância entre dois pontos no plano cartesiano**.
+
+---
+
+# Como utilizar a fórmula
+
+Para calcular a distância entre:
+
+$$
+A(x_1,y_1)
+$$
+
+e:
+
+$$
+B(x_2,y_2)
+$$
+
+devemos seguir estes passos:
+
+### 1. Identificar as coordenadas
+
+Determine:
+
+$$
+x_1,\ y_1,\ x_2,\ y_2
+$$
+
+### 2. Calcular a diferença das coordenadas $x$
+
+$$
+x_2-x_1
+$$
+
+### 3. Calcular a diferença das coordenadas $y$
+
+$$
+y_2-y_1
+$$
+
+### 4. Elevar as diferenças ao quadrado
+
+$$
+(x_2-x_1)^2
+$$
+
+e:
+
+$$
+(y_2-y_1)^2
+$$
+
+### 5. Somar os resultados
+
+$$
+(x_2-x_1)^2+(y_2-y_1)^2
+$$
+
+### 6. Calcular a raiz quadrada
+
+$$
+d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
+$$
+
+---
+
+# Exemplo 1 — Pontos sobre uma reta
+
+Considere os pontos:
+
+$$
+A=2
+$$
+
+e:
+
+$$
+B=9
+$$
+
+Determine a distância entre eles.
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Utilizamos:
+
+$$
+d=|x_2-x_1|
+$$
+
+Substituindo:
+
+$$
+d=|9-2|
+$$
+
+Logo:
+
+$$
+\boxed{d=7}
+$$
+
+</details>
+
+---
+
+# Exemplo 2 — Pontos no plano cartesiano
+
+Considere:
+
+$$
+A(1,2)
+$$
+
+e:
+
+$$
+B(4,6)
+$$
+
+Determine a distância entre os pontos.
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Utilizamos a fórmula:
+
+$$
+d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
+$$
+
+Substituindo:
+
+$$
+d=\sqrt{(4-1)^2+(6-2)^2}
+$$
+
+Calculando as diferenças:
+
+$$
+d=\sqrt{3^2+4^2}
+$$
+
+Então:
+
+$$
+d=\sqrt{9+16}
+$$
+
+$$
+d=\sqrt{25}
+$$
+
+Portanto:
+
+$$
+\boxed{d=5}
+$$
+
+</details>
+
+---
+
+# Exemplo 3 — Distância horizontal
+
+Considere os pontos:
+
+$$
+A(2,5)
+$$
+
+e:
+
+$$
+B(8,5)
+$$
+
+Observe que os dois pontos possuem a mesma coordenada $y$.
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Como os pontos possuem a mesma coordenada $y$, a distância é apenas horizontal.
+
+Podemos calcular:
+
+$$
+d=|8-2|
+$$
+
+Logo:
+
+$$
+\boxed{d=6}
+$$
+
+</details>
+
+---
+
+# Exemplo 4 — Distância vertical
+
+Considere:
+
+$$
+A(3,2)
+$$
+
+e:
+
+$$
+B(3,9)
+$$
+
+Os dois pontos possuem a mesma coordenada $x$.
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Como os pontos possuem a mesma coordenada $x$, a distância é vertical.
+
+Assim:
+
+$$
+d=|9-2|
+$$
+
+Portanto:
+
+$$
+\boxed{d=7}
+$$
+
+</details>
+
+---
+
+# Distância e Teorema de Pitágoras
+
+A fórmula da distância entre dois pontos é uma aplicação direta do Teorema de Pitágoras.
+
+Se:
+
+$$
+A(x_1,y_1)
+$$
+
+e:
+
+$$
+B(x_2,y_2)
+$$
+
+podemos construir um triângulo retângulo.
+
+Seus catetos possuem medidas:
+
+$$
+|\Delta x|=|x_2-x_1|
+$$
+
+e:
+
+$$
+|\Delta y|=|y_2-y_1|
+$$
+
+A distância $d$ entre os pontos corresponde à hipotenusa.
+
+Portanto:
+
+$$
+d^2=(\Delta x)^2+(\Delta y)^2
+$$
+
+e:
+
+$$
+d=\sqrt{(\Delta x)^2+(\Delta y)^2}
+$$
+
+---
+
+# Distância entre pontos simétricos
+
+Considere dois pontos:
+
+$$
+A(-3,0)
+$$
+
+e:
+
+$$
+B(3,0)
+$$
+
+Eles são simétricos em relação ao eixo $y$.
+
+A distância entre eles é:
+
+$$
+d=|3-(-3)|
+$$
+
+Logo:
+
+$$
+\boxed{d=6}
+$$
+
+---
+
+# Distância entre um ponto e a origem
+
+A origem do plano cartesiano é:
+
+$$
+O(0,0)
+$$
+
+Considere um ponto:
+
+$$
+A(x,y)
+$$
+
+A distância entre $O$ e $A$ é:
+
+$$
+d=\sqrt{(x-0)^2+(y-0)^2}
+$$
+
+Portanto:
+
+$$
+\boxed{d=\sqrt{x^2+y^2}}
+$$
+
+### Exemplo
+
+Considere:
+
+$$
+A(3,4)
+$$
+
+Então:
+
+$$
+d=\sqrt{3^2+4^2}
+$$
+
+$$
+d=\sqrt{9+16}
+$$
+
+$$
+\boxed{d=5}
+$$
+
+---
+
+# Propriedades da distância
+
+A distância entre dois pontos possui algumas propriedades importantes.
+
+### 1. A distância nunca é negativa
+
+Sempre:
+
+$$
+d\geq0
+$$
+
+### 2. A distância de um ponto até ele mesmo é zero
+
+$$
+AA=0
+$$
+
+### 3. A distância é a mesma nos dois sentidos
+
+$$
+AB=BA
+$$
+
+### 4. Pontos coincidentes possuem distância zero
+
+Se:
+
+$$
+A=B
+$$
+
+então:
+
+$$
+AB=0
+$$
+
+---
+
+# 🧠 Resumo
+
+- A distância entre dois pontos corresponde ao comprimento do segmento que os liga.
+- Em uma reta numérica:
+
+$$
+d=|x_2-x_1|
+$$
+
+- No plano cartesiano:
+
+$$
+d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
+$$
+
+- A fórmula da distância é uma aplicação do **Teorema de Pitágoras**.
+- A distância nunca é negativa:
+
+$$
+d\geq0
+$$
+
+- A distância é simétrica:
+
+$$
+AB=BA
+$$
+
+- A distância entre um ponto e a origem é:
+
+$$
+d=\sqrt{x^2+y^2}
+$$
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Na reta numérica, considere os pontos $A=3$ e $B=11$. Qual é a distância entre eles?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 6",
+    "b) 7",
+    "c) 8",
+    "d) 14"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Considere os pontos $A(1,2)$ e $B(1,8)$. Qual é a distância entre eles?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 5",
+    "b) 6",
+    "c) 7",
+    "d) 10"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Considere os pontos $A(2,3)$ e $B(7,3)$. Qual é a distância entre eles?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 3",
+    "b) 4",
+    "c) 5",
+    "d) 10"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Médio">
+
+Considere os pontos $A(0,0)$ e $B(3,4)$. Qual é a distância entre eles?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 3",
+    "b) 4",
+    "c) 5",
+    "d) 7"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Considere os pontos $A(1,2)$ e $B(4,6)$. Qual é a distância entre eles?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $3$",
+    "b) $4$",
+    "c) $5$",
+    "d) $7$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Considere os pontos $A(-2,1)$ e $B(4,9)$. Qual é a distância entre eles?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $\\sqrt{52}$",
+    "b) $\\sqrt{72}$",
+    "c) $\\sqrt{100}$",
+    "d) $10$"
+  ]}
+  correct={3}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Qual fórmula representa a distância entre os pontos $A(x_1,y_1)$ e $B(x_2,y_2)$ no plano cartesiano?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $d=|x_2-x_1|$",
+    "b) $d=x_2-x_1+y_2-y_1$",
+    "c) $d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$",
+    "d) $d=(x_2-x_1)^2+(y_2-y_1)^2$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Considere o ponto $A(6,8)$. Qual é a distância entre $A$ e a origem $O(0,0)$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $6$",
+    "b) $8$",
+    "c) $10$",
+    "d) $14$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Dois pontos possuem coordenadas $A(-4,3)$ e $B(2,3)$. Qual é a distância entre eles?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $2$",
+    "b) $4$",
+    "c) $6$",
+    "d) $8$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Se dois pontos $A$ e $B$ são coincidentes, qual é a distância entre eles?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $-1$",
+    "b) $0$",
+    "c) $1$",
+    "d) Depende da posição dos pontos"
+  ]}
+  correct={1}
+/>
+
+
+
+

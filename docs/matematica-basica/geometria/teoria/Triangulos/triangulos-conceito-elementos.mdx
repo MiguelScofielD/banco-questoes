@@ -1,0 +1,656 @@
+---
+id: triangulos-conceito-elementos
+title: Triângulos — Conceito e Elementos
+sidebar_position: 1
+description: Introdução aos triângulos, seus elementos fundamentais e sua representação geométrica.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Triângulos — Conceito e Elementos
+
+O **triângulo** é uma figura geométrica plana formada por **três segmentos de reta** que ligam três pontos não colineares.
+
+É uma das figuras mais importantes da Geometria, pois aparece em construções, mapas, estruturas, problemas de medidas e diversas outras situações.
+
+---
+
+# 🔺 O que é um triângulo?
+
+Considere três pontos não colineares $A$, $B$ e $C$.
+
+Ao ligarmos esses pontos por segmentos de reta, obtemos um triângulo:
+
+```text
+          A
+         / \
+        /   \
+       /     \
+      /       \
+     B---------C
+```
+
+Esse triângulo pode ser representado por:
+
+$$
+\boxed{\triangle ABC}
+$$
+
+Lemos:
+
+> "Triângulo ABC."
+
+---
+
+# Elementos de um triângulo
+
+Todo triângulo possui três elementos fundamentais:
+
+- **3 vértices**;
+- **3 lados**;
+- **3 ângulos internos**.
+
+No triângulo $ABC$, os vértices são:
+
+$$
+\boxed{A,\ B,\ C}
+$$
+
+Os lados são:
+
+$$
+\boxed{\overline{AB},\ \overline{BC},\ \overline{AC}}
+$$
+
+E os ângulos internos são:
+
+$$
+\boxed{\angle A,\ \angle B,\ \angle C}
+$$
+
+Portanto:
+
+$$
+\boxed{3\text{ vértices}+3\text{ lados}+3\text{ ângulos}}
+$$
+
+---
+
+# 📍 Vértices
+
+Os **vértices** são os pontos onde dois lados do triângulo se encontram.
+
+No triângulo $ABC$, temos três vértices:
+
+$$
+A,\quad B,\quad C
+$$
+
+Cada vértice determina também um ângulo interno.
+
+Por exemplo, o vértice $A$ está associado ao ângulo:
+
+$$
+\angle BAC
+$$
+
+O vértice $B$ está associado ao ângulo:
+
+$$
+\angle ABC
+$$
+
+E o vértice $C$ está associado ao ângulo:
+
+$$
+\angle ACB
+$$
+
+---
+
+# 📏 Lados
+
+Os **lados** de um triângulo são os segmentos de reta que conectam seus vértices.
+
+No triângulo $ABC$, temos:
+
+$$
+\overline{AB}
+$$
+
+$$
+\overline{BC}
+$$
+
+$$
+\overline{AC}
+$$
+
+Portanto, todo triângulo possui exatamente três lados.
+
+---
+
+# 📐 Ângulos internos
+
+Os ângulos formados no interior do triângulo são chamados de **ângulos internos**.
+
+No triângulo $ABC$:
+
+$$
+\angle A,\quad\angle B,\quad\angle C
+$$
+
+Esses ângulos possuem uma propriedade muito importante:
+
+$$
+\boxed{\angle A+\angle B+\angle C=180^\circ}
+$$
+
+---
+
+# Lado oposto a um vértice
+
+Cada lado de um triângulo está associado a um vértice oposto.
+
+No triângulo $ABC$:
+
+```text
+          A
+         / \
+        /   \
+       /     \
+      /       \
+     B---------C
+```
+
+O lado oposto ao vértice $A$ é:
+
+$$
+\boxed{\overline{BC}}
+$$
+
+O lado oposto ao vértice $B$ é:
+
+$$
+\boxed{\overline{AC}}
+$$
+
+O lado oposto ao vértice $C$ é:
+
+$$
+\boxed{\overline{AB}}
+$$
+
+---
+
+# Ângulo oposto a um lado
+
+A relação também funciona no sentido contrário.
+
+O ângulo oposto ao lado $\overline{BC}$ é o ângulo do vértice $A$:
+
+$$
+\boxed{\angle A}
+$$
+
+O ângulo oposto ao lado $\overline{AC}$ é:
+
+$$
+\boxed{\angle B}
+$$
+
+E o ângulo oposto ao lado $\overline{AB}$ é:
+
+$$
+\boxed{\angle C}
+$$
+
+| Lado | Vértice oposto |
+|---|---|
+| $\overline{AB}$ | $C$ |
+| $\overline{BC}$ | $A$ |
+| $\overline{AC}$ | $B$ |
+
+---
+
+# Perímetro do triângulo
+
+O **perímetro** é a soma dos comprimentos dos três lados.
+
+Se os lados possuem medidas $a$, $b$ e $c$:
+
+$$
+\boxed{P=a+b+c}
+$$
+
+Por exemplo:
+
+$$
+P=5+7+9
+$$
+
+$$
+\boxed{P=21\text{ cm}}
+$$
+
+---
+
+# Área do triângulo
+
+A área de um triângulo pode ser calculada utilizando uma base e a altura correspondente:
+
+$$
+\boxed{A=\frac{b\cdot h}{2}}
+$$
+
+onde:
+
+- $b$ é a medida da base;
+- $h$ é a altura relativa a essa base.
+
+Por exemplo, se $b=8$ cm e $h=5$ cm:
+
+$$
+A=\frac{8\cdot5}{2}
+$$
+
+$$
+\boxed{A=20\text{ cm}^2}
+$$
+
+---
+
+# Altura de um triângulo
+
+A **altura** de um triângulo é o segmento perpendicular que liga um vértice à reta que contém o lado oposto.
+
+```text
+          A
+         /|\
+        / | \
+       /  |  \
+      /   |   \
+     B----H----C
+```
+
+O segmento $\overline{AH}$ representa uma altura.
+
+Observe que:
+
+$$
+\overline{AH}\perp\overline{BC}
+$$
+
+Portanto:
+
+$$
+\boxed{\angle AHB=90^\circ}
+$$
+
+A altura será estudada com mais detalhes posteriormente.
+
+---
+
+# Condição fundamental para formar um triângulo
+
+Para formar um triângulo, os três pontos devem ser **não colineares**.
+
+Se estiverem sobre uma mesma reta:
+
+```text
+A •---------• B---------• C
+```
+
+não será formada uma região triangular.
+
+Portanto:
+
+$$
+\boxed{\text{Os três vértices devem ser não colineares}}
+$$
+
+---
+
+# Condição dos lados
+
+As medidas dos três lados também precisam permitir a formação de um triângulo.
+
+Se os lados possuem medidas $a$, $b$ e $c$, devemos ter:
+
+$$
+a+b>c
+$$
+
+$$
+a+c>b
+$$
+
+$$
+b+c>a
+$$
+
+Essas relações são chamadas de **desigualdade triangular**.
+
+---
+
+# Exemplo 1
+
+Quantos vértices, lados e ângulos internos possui um triângulo?
+
+<details>
+<summary>Ver solução</summary>
+
+Todo triângulo possui:
+
+- 3 vértices;
+- 3 lados;
+- 3 ângulos internos.
+
+Portanto:
+
+$$
+\boxed{3\text{ vértices},\ 3\text{ lados e }3\text{ ângulos}}
+$$
+
+</details>
+
+---
+
+# Exemplo 2
+
+No triângulo $ABC$, qual é o lado oposto ao vértice $A$?
+
+<details>
+<summary>Ver solução</summary>
+
+O lado oposto a um vértice é aquele que não contém esse vértice.
+
+Logo:
+
+$$
+\boxed{\overline{BC}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3
+
+No triângulo $ABC$, qual é o vértice oposto ao lado $\overline{AB}$?
+
+<details>
+<summary>Ver solução</summary>
+
+O vértice que não pertence ao lado $\overline{AB}$ é $C$.
+
+Logo:
+
+$$
+\boxed{C}
+$$
+
+</details>
+
+---
+
+# Exemplo 4
+
+Um triângulo possui lados de medidas $6$ cm, $8$ cm e $10$ cm. Determine seu perímetro.
+
+<details>
+<summary>Ver solução</summary>
+
+$$
+P=6+8+10
+$$
+
+$$
+\boxed{P=24\text{ cm}}
+$$
+
+</details>
+
+---
+
+# Exemplo 5
+
+Um triângulo possui base de $12$ cm e altura de $7$ cm. Determine sua área.
+
+<details>
+<summary>Ver solução</summary>
+
+$$
+A=\frac{12\cdot7}{2}
+$$
+
+$$
+\boxed{A=42\text{ cm}^2}
+$$
+
+</details>
+
+---
+
+# 🧠 Resumo
+
+Um **triângulo** é uma figura plana formada por três segmentos de reta que conectam três pontos não colineares.
+
+Todo triângulo possui:
+
+$$
+\boxed{3\text{ vértices}}
+$$
+
+$$
+\boxed{3\text{ lados}}
+$$
+
+$$
+\boxed{3\text{ ângulos internos}}
+$$
+
+O perímetro é:
+
+$$
+\boxed{P=a+b+c}
+$$
+
+A área utilizando base e altura é:
+
+$$
+\boxed{A=\frac{b\cdot h}{2}}
+$$
+
+O lado oposto ao vértice $A$ é $\overline{BC}$.
+
+Além disso, as medidas dos lados devem satisfazer a desigualdade triangular.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Quantos lados possui um triângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 2",
+    "b) 3",
+    "c) 4",
+    "d) 5"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Quantos vértices possui um triângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 2",
+    "b) 3",
+    "c) 4",
+    "d) 6"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+No triângulo $ABC$, qual é o lado oposto ao vértice $A$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $\\overline{AB}$",
+    "b) $\\overline{AC}$",
+    "c) $\\overline{BC}$",
+    "d) $\\overline{BA}$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+No triângulo $ABC$, qual é o vértice oposto ao lado $\\overline{AC}$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $A$",
+    "b) $B$",
+    "c) $C$",
+    "d) Não existe"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Fácil">
+
+Qual é a soma dos ângulos internos de um triângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $90^\\circ$",
+    "b) $120^\\circ$",
+    "c) $180^\\circ$",
+    "d) $360^\\circ$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Um triângulo possui lados de $5$ cm, $7$ cm e $9$ cm. Qual é seu perímetro?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $19$ cm",
+    "b) $20$ cm",
+    "c) $21$ cm",
+    "d) $22$ cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Um triângulo possui base de $10$ cm e altura de $6$ cm. Qual é sua área?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $20$ cm²",
+    "b) $30$ cm²",
+    "c) $40$ cm²",
+    "d) $60$ cm²"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Qual condição é necessária para que três pontos formem os vértices de um triângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Os três pontos devem ser colineares",
+    "b) Os três pontos devem ser coincidentes",
+    "c) Os três pontos devem ser não colineares",
+    "d) Os três pontos devem estar sobre uma mesma reta"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Qual dos conjuntos abaixo pode representar as medidas dos lados de um triângulo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $2$, $3$ e $6$",
+    "b) $3$, $4$ e $5$",
+    "c) $1$, $2$ e $4$",
+    "d) $2$, $2$ e $5$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Um triângulo possui lados de medidas $8$ cm, $10$ cm e $12$ cm. Qual é seu perímetro?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $20$ cm",
+    "b) $25$ cm",
+    "c) $30$ cm",
+    "d) $32$ cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos a **classificação dos triângulos**, analisando os triângulos de acordo com seus lados e seus ângulos.

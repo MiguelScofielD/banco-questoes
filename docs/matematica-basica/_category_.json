@@ -1,8 +1,6 @@
 {
   "label": "Matemática",
-  "position": 3,
-  "link": {
-    "type": "doc",
-    "id": "matematica-basica/index"
-  }
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false
 }

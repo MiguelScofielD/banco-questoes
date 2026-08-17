@@ -1,0 +1,773 @@
+---
+id: angulos-adjacentes
+title: Ângulos Adjacentes
+sidebar_position: 4
+description: Conceito, propriedades e identificação de ângulos adjacentes.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Ângulos Adjacentes
+
+Dois ângulos são **adjacentes** quando possuem:
+
+- o mesmo vértice;
+- um lado em comum;
+- regiões internas que não possuem pontos em comum.
+
+Em outras palavras, são ângulos que ficam **lado a lado**, compartilhando um dos seus lados.
+
+---
+
+# 📐 Entendendo a ideia
+
+Considere:
+
+```text
+        C
+       /
+      /
+     / β
+    B────────→
+     \ α
+      \
+       \
+        A
+```
+
+Os ângulos $\alpha$ e $\beta$ possuem um lado em comum.
+
+Para visualizar melhor, podemos representar:
+
+```text
+        C
+       /
+      /
+     / β
+    B────────→D
+     \ α
+      \
+       \
+        A 
+```
+
+Os dois ângulos possuem o mesmo vértice $B$ e compartilham um lado.
+
+O conceito principal é:
+
+$$
+\boxed{\text{mesmo vértice + lado comum + interiores não sobrepostos}}
+$$
+
+---
+
+# Elementos dos ângulos adjacentes
+
+Para que dois ângulos sejam adjacentes, precisamos verificar três condições.
+
+## 1. Mesmo vértice
+
+Os dois ângulos devem possuir o mesmo vértice.
+
+Por exemplo:
+
+$$
+\angle ABC
+$$
+
+e:
+
+$$
+\angle CBD
+$$
+
+possuem o mesmo vértice:
+
+$$
+\boxed{B}
+$$
+
+---
+
+## 2. Um lado em comum
+
+Os ângulos devem compartilhar exatamente um lado.
+
+Nos ângulos:
+
+$$
+\angle ABC
+$$
+
+e:
+
+$$
+\angle CBD
+$$
+
+o lado comum é:
+
+$$
+\overrightarrow{BC}
+$$
+
+---
+
+## 3. Regiões internas não sobrepostas
+
+Os interiores dos dois ângulos não podem ocupar a mesma região.
+
+Eles devem ficar lado a lado.
+
+Essa condição é importante para diferenciar ângulos adjacentes de outros ângulos que possuem apenas o mesmo vértice ou um lado em comum.
+
+---
+
+# Exemplo de ângulos adjacentes
+
+Considere:
+
+```text
+        C
+       /
+      /
+     /
+    B •────────→ A
+     \
+      \
+       \
+        D
+```
+
+Os ângulos:
+
+$$
+\angle CBA
+$$
+
+e:
+
+$$
+\angle ABD
+$$
+
+possuem:
+
+- vértice $B$ em comum;
+- lado $\overrightarrow{BA}$ em comum;
+- interiores que não se sobrepõem.
+
+Portanto, são adjacentes.
+
+---
+
+# Ângulos adjacentes e soma das medidas
+
+Uma característica importante é que **ângulos adjacentes não precisam necessariamente somar $90^\circ$ ou $180^\circ$**.
+
+Por exemplo:
+
+$$
+30^\circ+40^\circ=70^\circ
+$$
+
+Esses dois ângulos podem ser adjacentes mesmo que sua soma seja $70^\circ$.
+
+Portanto:
+
+> Ser adjacente é uma relação de **posição geométrica**, e não uma condição sobre a soma das medidas.
+
+---
+
+# Ângulos adjacentes complementares
+
+Dois ângulos podem ser simultaneamente:
+
+- adjacentes;
+- complementares.
+
+Isso acontece quando são adjacentes e a soma de suas medidas é:
+
+$$
+90^\circ
+$$
+
+Por exemplo:
+
+$$
+30^\circ+60^\circ=90^\circ
+$$
+
+Se esses ângulos forem adjacentes, podemos dizer que são **ângulos adjacentes complementares**.
+
+---
+
+# Ângulos adjacentes suplementares
+
+Dois ângulos também podem ser simultaneamente:
+
+- adjacentes;
+- suplementares.
+
+Nesse caso, além de serem adjacentes, a soma das medidas é:
+
+$$
+180^\circ
+$$
+
+Por exemplo:
+
+$$
+70^\circ+110^\circ=180^\circ
+$$
+
+Se os lados externos formarem uma reta, esses ângulos formam um **par linear**.
+
+---
+
+# Par linear
+
+Um **par linear** é formado por dois ângulos adjacentes cujos lados não comuns são semirretas opostas.
+
+Considere:
+
+```text
+A ←──────── B ────────→ C
+            /
+           /
+          D
+```
+
+Podemos considerar os ângulos:
+
+$$
+\angle ABD
+$$
+
+e:
+
+$$
+\angle DBC
+$$
+
+Eles são adjacentes porque possuem:
+
+- vértice $B$;
+- lado $\overrightarrow{BD}$ em comum;
+- interiores que não se sobrepõem.
+
+Além disso, $\overrightarrow{BA}$ e $\overrightarrow{BC}$ são semirretas opostas.
+
+Portanto, formam um par linear.
+
+---
+
+# Soma dos ângulos de um par linear
+
+Como os lados externos formam uma reta, temos um ângulo raso:
+
+$$
+180^\circ
+$$
+
+Assim:
+
+$$
+\boxed{\alpha+\beta=180^\circ}
+$$
+
+Por exemplo, se:
+
+$$
+\alpha=75^\circ
+$$
+
+então:
+
+$$
+\beta=180^\circ-75^\circ
+$$
+
+$$
+\boxed{\beta=105^\circ}
+$$
+
+---
+
+# Ângulos adjacentes x ângulos complementares
+
+É importante diferenciar esses conceitos.
+
+### Ângulos adjacentes
+
+A definição depende da **posição geométrica**.
+
+Eles precisam:
+
+- ter o mesmo vértice;
+- possuir um lado em comum;
+- não sobrepor seus interiores.
+
+### Ângulos complementares
+
+A definição depende da **soma das medidas**:
+
+$$
+\alpha+\beta=90^\circ
+$$
+
+Portanto, dois ângulos podem ser:
+
+- adjacentes, mas não complementares;
+- complementares, mas não adjacentes;
+- simultaneamente adjacentes e complementares.
+
+---
+
+# Ângulos adjacentes x ângulos suplementares
+
+Da mesma forma:
+
+### Adjacentes
+
+Dependem da posição.
+
+### Suplementares
+
+Dependem da soma:
+
+$$
+\alpha+\beta=180^\circ
+$$
+
+Dois ângulos podem ser suplementares sem serem adjacentes.
+
+Por exemplo, dois ângulos de $60^\circ$ e $120^\circ$ podem estar desenhados em posições diferentes e ainda assim serem suplementares.
+
+---
+
+# Como identificar ângulos adjacentes
+
+Em uma questão, siga esta sequência:
+
+### Passo 1 — Verifique o vértice
+
+Os dois ângulos possuem o mesmo vértice?
+
+Se não, não são adjacentes.
+
+### Passo 2 — Verifique o lado comum
+
+Eles possuem um lado em comum?
+
+Se não, não são adjacentes.
+
+### Passo 3 — Verifique os interiores
+
+As regiões internas estão lado a lado e não se sobrepõem?
+
+Se sim, os ângulos podem ser adjacentes.
+
+---
+
+# Exemplo 1
+
+Considere os ângulos:
+
+$$
+\angle ABC
+$$
+
+e:
+
+$$
+\angle CBD
+$$
+
+Eles possuem o mesmo vértice $B$ e o lado $\overrightarrow{BC}$ em comum. Seus interiores não se sobrepõem.
+
+Eles são adjacentes?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Vamos verificar as três condições.
+
+**1. Mesmo vértice:**
+
+Ambos possuem vértice $B$.
+
+**2. Lado comum:**
+
+O lado comum é:
+
+$$
+\overrightarrow{BC}
+$$
+
+**3. Interiores não sobrepostos:**
+
+Os dois ângulos ficam lado a lado.
+
+Portanto:
+
+$$
+\boxed{\text{Sim, são ângulos adjacentes}}
+$$
+
+</details>
+
+---
+
+# Exemplo 2
+
+Dois ângulos adjacentes medem $35^\circ$ e $55^\circ$. Eles também são complementares?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Dois ângulos são complementares quando a soma de suas medidas é $90^\circ$.
+
+Calculando:
+
+$$
+35^\circ+55^\circ=90^\circ
+$$
+
+Portanto, eles são complementares.
+
+Como o enunciado também informa que são adjacentes, podemos dizer que são:
+
+$$
+\boxed{\text{ângulos adjacentes e complementares}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3
+
+Dois ângulos adjacentes medem $120^\circ$ e $60^\circ$. Qual é a relação entre eles?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+A soma é:
+
+$$
+120^\circ+60^\circ=180^\circ
+$$
+
+Portanto, eles são suplementares.
+
+Como também são adjacentes, formam um par linear se os lados externos forem semirretas opostas.
+
+Assim:
+
+$$
+\boxed{\text{ângulos adjacentes e suplementares}}
+$$
+
+</details>
+
+---
+
+# Exemplo 4
+
+Dois ângulos possuem o mesmo vértice, mas não possuem nenhum lado em comum. Eles são necessariamente adjacentes?
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Não.
+
+Para serem adjacentes, além de possuírem o mesmo vértice, eles precisam possuir um lado em comum.
+
+Como essa condição não é satisfeita:
+
+$$
+\boxed{\text{não são necessariamente adjacentes}}
+$$
+
+</details>
+
+---
+
+# Exemplo 5
+
+Dois ângulos adjacentes formam um ângulo raso. Um deles mede $68^\circ$. Determine a medida do outro.
+
+<details>
+<summary>Ver solução</summary>
+
+### Resolução
+
+Como os dois ângulos formam um ângulo raso:
+
+$$
+\alpha+\beta=180^\circ
+$$
+
+Sabemos que:
+
+$$
+\alpha=68^\circ
+$$
+
+Então:
+
+$$
+68^\circ+\beta=180^\circ
+$$
+
+Isolando $\beta$:
+
+$$
+\beta=180^\circ-68^\circ
+$$
+
+$$
+\beta=112^\circ
+$$
+
+### 🎯 Resultado
+
+$$
+\boxed{\beta=112^\circ}
+$$
+
+</details>
+
+---
+
+# 🧠 Resumo
+
+Dois ângulos são **adjacentes** quando:
+
+- possuem o mesmo vértice;
+- possuem um lado em comum;
+- suas regiões internas não se sobrepõem.
+
+A condição de adjacência está relacionada à **posição dos ângulos**.
+
+Não confunda:
+
+### Complementares
+
+$$
+\boxed{\alpha+\beta=90^\circ}
+$$
+
+### Suplementares
+
+$$
+\boxed{\alpha+\beta=180^\circ}
+$$
+
+### Par linear
+
+São dois ângulos adjacentes cujos lados não comuns são semirretas opostas.
+
+Nesse caso:
+
+$$
+\boxed{\alpha+\beta=180^\circ}
+$$
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Dois ângulos possuem o mesmo vértice, um lado em comum e interiores que não se sobrepõem. Como são classificados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Ângulos opostos pelo vértice",
+    "b) Ângulos adjacentes",
+    "c) Ângulos complementares obrigatoriamente",
+    "d) Ângulos suplementares obrigatoriamente"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Qual é uma das condições necessárias para que dois ângulos sejam adjacentes?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Devem possuir medidas iguais",
+    "b) Devem somar $90^\\circ$",
+    "c) Devem possuir um lado em comum",
+    "d) Devem ser ambos retos"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Dois ângulos adjacentes medem $30^\circ$ e $60^\circ$. Eles são complementares?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Sim, pois a soma é $90^\\circ$",
+    "b) Não, pois são adjacentes",
+    "c) Sim, pois a soma é $180^\\circ$",
+    "d) Não, pois um deles é obtuso"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Dois ângulos adjacentes medem $70^\circ$ e $110^\circ$. Qual é a relação entre eles?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Complementares",
+    "b) Suplementares",
+    "c) Iguais",
+    "d) Nulos"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Dois ângulos adjacentes formam um ângulo raso. Um deles mede $45^\circ$. Qual é a medida do outro?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $45^\\circ$",
+    "b) $90^\\circ$",
+    "c) $135^\\circ$",
+    "d) $180^\\circ$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Dois ângulos possuem o mesmo vértice, mas não possuem lado em comum. Podemos afirmar que são adjacentes?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Sim, sempre",
+    "b) Não, pois falta o lado comum",
+    "c) Sim, desde que tenham a mesma medida",
+    "d) Sim, desde que sejam suplementares"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Dois ângulos adjacentes medem $(2x+10)^\circ$ e $(3x+20)^\circ$ e formam um ângulo raso. Qual é o valor de $x$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $20$",
+    "b) $25$",
+    "c) $30$",
+    "d) $35$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Dois ângulos adjacentes são complementares. Um deles mede $37^\circ$. Qual é a medida do outro?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $43^\\circ$",
+    "b) $53^\\circ$",
+    "c) $63^\\circ$",
+    "d) $143^\\circ$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Um par linear é formado por dois ângulos adjacentes. Qual é a soma de suas medidas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $90^\\circ$",
+    "b) $120^\\circ$",
+    "c) $180^\\circ$",
+    "d) $360^\\circ$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Dois ângulos adjacentes formam um par linear. Um deles mede $127^\circ$. Qual é a medida do outro?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $43^\\circ$",
+    "b) $53^\\circ$",
+    "c) $63^\\circ$",
+    "d) $73^\\circ$"
+  ]}
+  correct={0}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos os **ângulos opostos pelo vértice**, uma relação importante formada pelo cruzamento de duas retas.

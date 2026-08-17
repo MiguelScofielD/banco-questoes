@@ -1,0 +1,11 @@
+{
+  "label": "Fundamentos",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Fundamentos da Geometria",
+    "description": "Conceitos fundamentais para construir uma base sólida em Geometria."
+  }
+}

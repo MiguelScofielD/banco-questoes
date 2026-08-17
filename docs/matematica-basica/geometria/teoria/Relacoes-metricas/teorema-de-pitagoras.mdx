@@ -1,0 +1,1035 @@
+---
+id: teorema-de-pitagoras
+title: Teorema de Pitágoras
+sidebar_position: 1
+description: Estudo do Teorema de Pitágoras e suas aplicações em triângulos retângulos.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+import Teorema from '@site/src/components/math/Teorema'
+
+# Teorema de Pitágoras
+
+O **Teorema de Pitágoras** é uma das relações mais importantes da Geometria.
+
+Ele estabelece uma relação entre os lados de um **triângulo retângulo**.
+
+Antes de utilizar o teorema, é fundamental identificar corretamente:
+
+- os **catetos**;
+- a **hipotenusa**;
+- o **ângulo reto**.
+
+---
+
+# 📐 Triângulo retângulo
+
+Um **triângulo retângulo** é aquele que possui um ângulo interno de:
+
+$$
+90^\circ
+$$
+
+Considere:
+
+```text
+        A
+        |\
+        | \
+        |  \
+        |   \
+        |    \
+        |     \
+        B------C
+```
+
+Se:
+
+$$
+\angle B=90^\circ
+$$
+
+então o triângulo $ABC$ é retângulo.
+
+Os lados que formam o ângulo reto são chamados de **catetos**.
+
+O lado oposto ao ângulo reto é chamado de **hipotenusa**.
+
+---
+
+# 📏 Catetos e hipotenusa
+
+No triângulo:
+
+```text
+        A
+        |\
+        | \
+        |  \
+        |   \
+        |    \
+        B-----C
+```
+
+Se o ângulo reto está em $B$:
+
+- $AB$ é um cateto;
+- $BC$ é um cateto;
+- $AC$ é a hipotenusa.
+
+A hipotenusa é sempre:
+
+$$
+\boxed{\text{o maior lado do triângulo retângulo}}
+$$
+
+E está sempre oposta ao ângulo de:
+
+$$
+90^\circ
+$$
+
+---
+
+# ⭐ Teorema de Pitágoras
+
+<Teorema>
+Em todo triângulo retângulo, o quadrado da medida da hipotenusa é igual à soma dos quadrados das medidas dos catetos.
+
+
+Se os catetos são $a$ e $b$ e a hipotenusa é $c$, então:
+
+$$
+\boxed{a^2+b^2=c^2}
+$$
+
+</Teorema>
+
+Essa é a fórmula fundamental do Teorema de Pitágoras.
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+<iframe
+  width="315"
+  height="560"
+  src="https://www.youtube.com/embed/vw-hCf-g4u0"
+  title="Soma dos Ângulos Internos de um Triângulo"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+</div>
+
+---
+
+# 🔎 Interpretando a fórmula
+
+A expressão:
+
+$$
+a^2+b^2=c^2
+$$
+
+significa:
+
+$$
+\boxed{\text{cateto}^2+\text{cateto}^2=\text{hipotenusa}^2}
+$$
+
+Por exemplo, se os catetos medem:
+
+$$
+3
+$$
+
+e:
+
+$$
+4
+$$
+
+então:
+
+$$
+3^2+4^2=c^2
+$$
+
+$$
+9+16=c^2
+$$
+
+$$
+25=c^2
+$$
+
+Logo:
+
+$$
+c=5
+$$
+
+Portanto, um triângulo com lados:
+
+$$
+3,\quad4,\quad5
+$$
+
+é um exemplo clássico de triângulo retângulo.
+
+---
+
+# 🧠 Como identificar a hipotenusa
+
+Um erro muito comum é escolher o lado errado para aplicar o teorema.
+
+A hipotenusa é identificada por duas características:
+
+### 1. Está oposta ao ângulo reto
+
+Se:
+
+$$
+\angle B=90^\circ
+$$
+
+a hipotenusa é o lado $AC$.
+
+### 2. É o maior lado
+
+Em qualquer triângulo retângulo:
+
+$$
+\boxed{c>a}
+$$
+
+e:
+
+$$
+\boxed{c>b}
+$$
+
+Portanto, nunca escolha um cateto como hipotenusa.
+
+---
+
+# ✏️ Calculando a hipotenusa
+
+Se conhecemos os dois catetos:
+
+$$
+a=6
+$$
+
+e:
+
+$$
+b=8
+$$
+
+podemos calcular a hipotenusa:
+
+$$
+a^2+b^2=c^2
+$$
+
+Substituindo:
+
+$$
+6^2+8^2=c^2
+$$
+
+$$
+36+64=c^2
+$$
+
+$$
+100=c^2
+$$
+
+Logo:
+
+$$
+c=10
+$$
+
+Portanto:
+
+$$
+\boxed{c=10}
+$$
+
+---
+
+# ✏️ Calculando um cateto
+
+Também podemos utilizar o teorema para descobrir um cateto.
+
+Considere:
+
+$$
+c=13
+$$
+
+e:
+
+$$
+a=5
+$$
+
+Queremos encontrar $b$.
+
+Começamos com:
+
+$$
+a^2+b^2=c^2
+$$
+
+Substituindo:
+
+$$
+5^2+b^2=13^2
+$$
+
+$$
+25+b^2=169
+$$
+
+Então:
+
+$$
+b^2=169-25
+$$
+
+$$
+b^2=144
+$$
+
+Logo:
+
+$$
+b=12
+$$
+
+Portanto:
+
+$$
+\boxed{b=12}
+$$
+
+---
+
+# 📐 Fórmulas isolando cada lado
+
+A partir de:
+
+$$
+a^2+b^2=c^2
+$$
+
+podemos obter:
+
+### Hipotenusa
+
+$$
+\boxed{c=\sqrt{a^2+b^2}}
+$$
+
+### Primeiro cateto
+
+$$
+\boxed{a=\sqrt{c^2-b^2}}
+$$
+
+### Segundo cateto
+
+$$
+\boxed{b=\sqrt{c^2-a^2}}
+$$
+
+Essas três formas são úteis dependendo do que o problema fornece.
+
+---
+
+# 🔺 Ternos pitagóricos
+
+Alguns conjuntos de números satisfazem diretamente:
+
+$$
+a^2+b^2=c^2
+$$
+
+Esses conjuntos são chamados de **ternos pitagóricos**.
+
+O mais conhecido é:
+
+$$
+\boxed{3,\ 4,\ 5}
+$$
+
+pois:
+
+$$
+3^2+4^2=5^2
+$$
+
+$$
+9+16=25
+$$
+
+Outros exemplos são:
+
+$$
+5,\ 12,\ 13
+$$
+
+pois:
+
+$$
+25+144=169
+$$
+
+e:
+
+$$
+8,\ 15,\ 17
+$$
+
+pois:
+
+$$
+64+225=289
+$$
+
+---
+
+# 🔎 Ternos pitagóricos proporcionais
+
+Se multiplicarmos os lados de um terno pitagórico pelo mesmo número, continuamos tendo um triângulo retângulo.
+
+Por exemplo:
+
+$$
+3,\ 4,\ 5
+$$
+
+multiplicado por $2$:
+
+$$
+6,\ 8,\ 10
+$$
+
+Temos:
+
+$$
+6^2+8^2=10^2
+$$
+
+$$
+36+64=100
+$$
+
+Portanto, também forma um triângulo retângulo.
+
+---
+
+# 🧩 Estratégia para resolver problemas
+
+Ao encontrar um problema envolvendo o Teorema de Pitágoras:
+
+### Passo 1 — Identifique o ângulo reto
+
+Procure o ângulo de:
+
+$$
+90^\circ
+$$
+
+### Passo 2 — Identifique a hipotenusa
+
+É o lado oposto ao ângulo reto.
+
+### Passo 3 — Escreva a fórmula
+
+$$
+a^2+b^2=c^2
+$$
+
+### Passo 4 — Substitua os valores
+
+Coloque as medidas conhecidas.
+
+### Passo 5 — Resolva a equação
+
+Se necessário, extraia a raiz quadrada.
+
+---
+
+# Exemplo 1 — Encontrando a hipotenusa
+
+Um triângulo retângulo possui catetos de $9$ cm e $12$ cm. Determine a hipotenusa.
+
+<details>
+<summary>Ver solução</summary>
+
+Aplicamos:
+
+$$
+a^2+b^2=c^2
+$$
+
+Substituindo:
+
+$$
+9^2+12^2=c^2
+$$
+
+$$
+81+144=c^2
+$$
+
+$$
+225=c^2
+$$
+
+Portanto:
+
+$$
+c=15
+$$
+
+Logo:
+
+$$
+\boxed{c=15\text{ cm}}
+$$
+
+</details>
+
+---
+
+# Exemplo 2 — Encontrando um cateto
+
+A hipotenusa de um triângulo retângulo mede $10$ cm e um dos catetos mede $6$ cm. Determine o outro cateto.
+
+<details>
+<summary>Ver solução</summary>
+
+Temos:
+
+$$
+6^2+b^2=10^2
+$$
+
+$$
+36+b^2=100
+$$
+
+$$
+b^2=64
+$$
+
+Logo:
+
+$$
+b=8
+$$
+
+Portanto:
+
+$$
+\boxed{b=8\text{ cm}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3 — Diagonal de um retângulo
+
+Um retângulo possui comprimento de $12$ cm e largura de $5$ cm. Determine sua diagonal.
+
+<details>
+<summary>Ver solução</summary>
+
+A diagonal divide o retângulo em dois triângulos retângulos.
+
+Assim, podemos aplicar Pitágoras:
+
+$$
+12^2+5^2=d^2
+$$
+
+$$
+144+25=d^2
+$$
+
+$$
+169=d^2
+$$
+
+Logo:
+
+$$
+d=13
+$$
+
+Portanto:
+
+$$
+\boxed{d=13\text{ cm}}
+$$
+
+</details>
+
+---
+
+# Exemplo 4 — Distância entre dois pontos
+
+Considere dois pontos no plano cartesiano:
+
+$$
+A=(1,2)
+$$
+
+e:
+
+$$
+B=(7,10)
+$$
+
+A diferença horizontal é:
+
+$$
+\Delta x=7-1=6
+$$
+
+A diferença vertical é:
+
+$$
+\Delta y=10-2=8
+$$
+
+Essas diferenças formam os catetos de um triângulo retângulo.
+
+<details>
+<summary>Ver solução</summary>
+
+Pelo Teorema de Pitágoras:
+
+$$
+d^2=6^2+8^2
+$$
+
+$$
+d^2=36+64
+$$
+
+$$
+d^2=100
+$$
+
+Portanto:
+
+$$
+\boxed{d=10}
+$$
+
+Essa ideia será utilizada posteriormente na fórmula da distância entre dois pontos.
+
+</details>
+
+---
+
+# Exemplo 5 — Problema de altura
+
+Uma escada de $5$ m está apoiada em uma parede. A base da escada está a $3$ m da parede.
+
+Qual é a altura alcançada pela escada?
+
+<details>
+<summary>Ver solução</summary>
+
+A parede, o chão e a escada formam um triângulo retângulo.
+
+A escada é a hipotenusa:
+
+$$
+c=5
+$$
+
+A distância até a parede é um cateto:
+
+$$
+a=3
+$$
+
+Chamando a altura de $h$:
+
+$$
+3^2+h^2=5^2
+$$
+
+$$
+9+h^2=25
+$$
+
+$$
+h^2=16
+$$
+
+$$
+h=4
+$$
+
+Logo:
+
+$$
+\boxed{h=4\text{ m}}
+$$
+
+</details>
+
+---
+
+# 🔎 Recíproca do Teorema de Pitágoras
+
+O Teorema de Pitágoras também possui uma recíproca importante.
+
+Se, em um triângulo, o maior lado $c$ satisfaz:
+
+$$
+a^2+b^2=c^2
+$$
+
+então o triângulo é **retângulo**.
+
+Por exemplo, considere os lados:
+
+$$
+7,\quad24,\quad25
+$$
+
+Verificamos:
+
+$$
+7^2+24^2=25^2
+$$
+
+$$
+49+576=625
+$$
+
+Como a igualdade é verdadeira, o triângulo é retângulo.
+
+O ângulo oposto ao lado de $25$ mede:
+
+$$
+\boxed{90^\circ}
+$$
+
+---
+
+# ⚠️ Classificação usando os quadrados dos lados
+
+A comparação com Pitágoras também permite classificar um triângulo.
+
+Considere o maior lado $c$.
+
+### Se:
+
+$$
+a^2+b^2=c^2
+$$
+
+o triângulo é **retângulo**.
+
+### Se:
+
+$$
+a^2+b^2>c^2
+$$
+
+o triângulo é **acutângulo**.
+
+### Se:
+
+$$
+a^2+b^2<c^2
+$$
+
+o triângulo é **obtusângulo**.
+
+Essa classificação será muito útil em problemas mais avançados.
+
+---
+
+# 📐 Aplicações do Teorema de Pitágoras
+
+O teorema aparece em muitas situações.
+
+Podemos utilizá-lo para calcular:
+
+- hipotenusas;
+- catetos;
+- diagonais de retângulos;
+- diagonais de quadrados;
+- alturas;
+- distâncias;
+- comprimentos inacessíveis;
+- distâncias no plano cartesiano;
+- medidas em figuras geométricas.
+
+---
+
+# 🧠 Resumo
+
+O Teorema de Pitágoras é válido para **triângulos retângulos**.
+
+Sua fórmula é:
+
+$$
+\boxed{a^2+b^2=c^2}
+$$
+
+onde:
+
+- $a$ e $b$ são os catetos;
+- $c$ é a hipotenusa.
+
+A hipotenusa é:
+
+$$
+\boxed{\text{o lado oposto ao ângulo de }90^\circ}
+$$
+
+e também:
+
+$$
+\boxed{\text{o maior lado do triângulo}}
+$$
+
+Para encontrar a hipotenusa:
+
+$$
+\boxed{c=\sqrt{a^2+b^2}}
+$$
+
+Para encontrar um cateto:
+
+$$
+\boxed{a=\sqrt{c^2-b^2}}
+$$
+
+ou:
+
+$$
+\boxed{b=\sqrt{c^2-a^2}}
+$$
+
+O exemplo clássico é:
+
+$$
+\boxed{3^2+4^2=5^2}
+$$
+
+ou:
+
+$$
+\boxed{9+16=25}
+$$
+
+Além disso, a recíproca permite reconhecer um triângulo retângulo quando:
+
+$$
+\boxed{a^2+b^2=c^2}
+$$
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Em um triângulo retângulo, como é chamado o lado oposto ao ângulo de $90^\circ$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Cateto",
+    "b) Mediana",
+    "c) Hipotenusa",
+    "d) Altura"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Qual é a fórmula do Teorema de Pitágoras?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $a+b=c$",
+    "b) $a^2+b^2=c^2$",
+    "c) $a^2-b^2=c^2$",
+    "d) $2a+2b=c$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Um triângulo retângulo possui catetos de $3$ cm e $4$ cm. Qual é a medida da hipotenusa?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $5$ cm",
+    "b) $6$ cm",
+    "c) $7$ cm",
+    "d) $8$ cm"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Um triângulo retângulo possui hipotenusa de $13$ cm e um cateto de $5$ cm. Qual é o outro cateto?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $8$ cm",
+    "b) $10$ cm",
+    "c) $12$ cm",
+    "d) $14$ cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Um retângulo possui lados de $9$ cm e $12$ cm. Qual é a medida da diagonal?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $13$ cm",
+    "b) $14$ cm",
+    "c) $15$ cm",
+    "d) $16$ cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Uma escada de $10$ m está apoiada em uma parede. Sua base está a $6$ m da parede. Qual altura a escada alcança?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $6$ m",
+    "b) $8$ m",
+    "c) $10$ m",
+    "d) $12$ m"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Os lados de um triângulo medem $8$, $15$ e $17$. Esse triângulo é:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Acutângulo",
+    "b) Obtusângulo",
+    "c) Retângulo",
+    "d) Equilátero"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Dois pontos possuem diferenças horizontal e vertical iguais a $5$ e $12$, respectivamente. Qual é a distância entre eles?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $13$",
+    "b) $15$",
+    "c) $17$",
+    "d) $19$"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Se, em um triângulo com maior lado $c$, temos $a^2+b^2>c^2$, então o triângulo é:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Retângulo",
+    "b) Obtusângulo",
+    "c) Acutângulo",
+    "d) Equilátero"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Qual das alternativas apresenta um terno pitagórico?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $2,3,4$",
+    "b) $4,5,6$",
+    "c) $5,12,13$",
+    "d) $6,7,8$"
+  ]}
+  correct={2}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos as **relações métricas no triângulo retângulo**, utilizando a altura relativa à hipotenusa e as projeções dos catetos.

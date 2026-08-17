@@ -1,8 +1,6 @@
 {
   "label": "Cálculo",
-  "position": 2,
-  "link": {
-    "type": "doc",
-    "id": "calculo/index"
-  }
+  "position": 3,
+  "collapsible": true,
+  "collapsed": false
 }

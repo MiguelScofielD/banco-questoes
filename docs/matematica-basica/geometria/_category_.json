@@ -1,0 +1,11 @@
+{
+  "label": "Geometria",
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Geometria",
+    "description": "Estude Geometria de forma progressiva, desde os conceitos fundamentais até problemas mais avançados."
+  }
+}

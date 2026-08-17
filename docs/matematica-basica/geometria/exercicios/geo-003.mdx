@@ -1,0 +1,533 @@
+---
+id: exercicios-resolvidos-semirretas
+title: Semirretas
+sidebar_position: 3
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import Solucao from '@site/src/components/math/Solucao'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Semirretas
+
+---
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Considere a semirreta $\overrightarrow{AB}$. Qual dos pontos representa a origem dessa semirreta?
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Na representação de uma semirreta, a **primeira letra indica a origem**.
+
+Assim, em:
+
+$$
+\overrightarrow{AB}
+$$
+
+o ponto $A$ é a origem.
+
+---
+
+## ✏️ Passo 1 — Identificar a primeira letra
+
+Temos:
+
+$$
+\overrightarrow{AB}
+$$
+
+A primeira letra é:
+
+$$
+A
+$$
+
+---
+
+## ✏️ Passo 2 — Interpretar a segunda letra
+
+A segunda letra, $B$, indica um ponto que determina o sentido da semirreta.
+
+Podemos representar:
+
+```text
+A •--------------------------→ B
+```
+
+A semirreta começa em $A$ e segue na direção de $B$.
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{A}
+$$
+
+A origem da semirreta $\overrightarrow{AB}$ é o ponto $A$.
+
+---
+
+## 💡 Insight
+
+Uma regra simples para memorizar:
+
+> **Na semirreta $\overrightarrow{AB}$, a primeira letra é a origem.**
+
+</Solucao>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Considere os pontos $A$ e $B$ sobre uma mesma reta. Explique a diferença entre as semirretas $\overrightarrow{AB}$ e $\overrightarrow{BA}$.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+A ordem das letras é importante na representação de uma semirreta.
+
+A primeira letra indica a origem e a segunda indica o sentido.
+
+---
+
+## ✏️ Passo 1 — Analisar $\overrightarrow{AB}$
+
+Na semirreta:
+
+$$
+\overrightarrow{AB}
+$$
+
+a origem é $A$.
+
+Ela parte de $A$ e segue na direção de $B$:
+
+```text
+A •---------------------------→ B
+```
+
+---
+
+## ✏️ Passo 2 — Analisar $\overrightarrow{BA}$
+
+Na semirreta:
+
+$$
+\overrightarrow{BA}
+$$
+
+a origem é $B$.
+
+Ela parte de $B$ e segue na direção de $A$:
+
+```text
+A ←---------------------------• B
+```
+
+---
+
+## ✏️ Passo 3 — Comparar
+
+Temos:
+
+$$
+\overrightarrow{AB}\neq\overrightarrow{BA}
+$$
+
+As origens são diferentes e os sentidos também são diferentes.
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{\overrightarrow{AB}\text{ e }\overrightarrow{BA}\text{ são semirretas diferentes}}
+$$
+
+---
+
+## 💡 Insight
+
+Trocar a ordem das letras de uma semirreta muda sua origem.
+
+Por isso:
+
+$$
+\boxed{\overrightarrow{AB}\neq\overrightarrow{BA}}
+$$
+
+em geral.
+
+</Solucao>
+
+---
+
+<Exercicio numero={3} dificuldade="Médio">
+
+Considere três pontos colineares na ordem $B$, $A$ e $C$:
+
+```text
+B •----------------• A----------------• C
+```
+
+As semirretas $\overrightarrow{AB}$ e $\overrightarrow{AC}$ são opostas? Justifique.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Duas semirretas são **opostas** quando:
+
+- possuem a mesma origem;
+- estão sobre a mesma reta;
+- possuem sentidos contrários.
+
+---
+
+## ✏️ Passo 1 — Identificar as origens
+
+Considere:
+
+$$
+\overrightarrow{AB}
+$$
+
+e:
+
+$$
+\overrightarrow{AC}
+$$
+
+As duas começam no ponto $A$.
+
+Portanto, possuem a mesma origem.
+
+---
+
+## ✏️ Passo 2 — Analisar os sentidos
+
+A semirreta $\overrightarrow{AB}$ segue de $A$ em direção a $B$:
+
+```text
+B ←----------------• A
+```
+
+A semirreta $\overrightarrow{AC}$ segue de $A$ em direção a $C$:
+
+```text
+A •----------------→ C
+```
+
+Os sentidos são contrários.
+
+---
+
+## ✏️ Passo 3 — Verificar a reta
+
+Os pontos $B$, $A$ e $C$ são colineares.
+
+Portanto, as duas semirretas pertencem à mesma reta.
+
+---
+
+## 🎯 Resultado
+
+Todas as condições foram satisfeitas.
+
+Logo:
+
+$$
+\boxed{\overrightarrow{AB}\text{ e }\overrightarrow{AC}\text{ são semirretas opostas}}
+$$
+
+---
+
+## 💡 Insight
+
+Para reconhecer semirretas opostas, procure três características:
+
+$$
+\boxed{\text{mesma origem + mesma reta + sentidos contrários}}
+$$
+
+</Solucao>
+
+---
+
+<Exercicio numero={4} dificuldade="Médio">
+
+Considere os pontos colineares $A$, $B$ e $C$, nessa ordem:
+
+```text
+A •---------• B---------• C
+```
+
+As semirretas $\overrightarrow{AB}$ e $\overrightarrow{AC}$ representam a mesma semirreta? Justifique.
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Duas semirretas podem ser **coincidentes** quando possuem a mesma origem e seguem exatamente na mesma direção.
+
+---
+
+## ✏️ Passo 1 — Observar as origens
+
+Temos:
+
+$$
+\overrightarrow{AB}
+$$
+
+e:
+
+$$
+\overrightarrow{AC}
+$$
+
+As duas possuem origem em $A$.
+
+---
+
+## ✏️ Passo 2 — Observar os sentidos
+
+Os pontos estão organizados assim:
+
+```text
+A •---------• B---------• C
+```
+
+Tanto $B$ quanto $C$ estão na mesma direção a partir de $A$.
+
+Portanto, as duas semirretas seguem para o mesmo lado.
+
+---
+
+## ✏️ Passo 3 — Comparar
+
+A semirreta $\overrightarrow{AB}$ continua indefinidamente depois de $B$.
+
+Como $C$ está nessa mesma direção, $\overrightarrow{AC}$ também representa exatamente a mesma região da reta a partir de $A$.
+
+Assim:
+
+$$
+\overrightarrow{AB}=\overrightarrow{AC}
+$$
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{\overrightarrow{AB}=\overrightarrow{AC}}
+$$
+
+As duas semirretas são coincidentes.
+
+---
+
+## 💡 Insight
+
+Não é necessário que o segundo ponto seja o mesmo.
+
+Se dois pontos estão na mesma direção a partir da mesma origem, as semirretas podem coincidir.
+
+</Solucao>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Duas semirretas $\overrightarrow{AB}$ e $\overrightarrow{AC}$ possuem a mesma origem $A$. Sabendo que $B$, $A$ e $C$ não são colineares, essas semirretas podem ser classificadas como opostas?
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Para que duas semirretas sejam opostas, elas precisam estar sobre a **mesma reta**.
+
+A informação de que possuem a mesma origem não é suficiente.
+
+---
+
+## ✏️ Passo 1 — Identificar a origem
+
+As duas semirretas são:
+
+$$
+\overrightarrow{AB}
+$$
+
+e:
+
+$$
+\overrightarrow{AC}
+$$
+
+Ambas possuem origem em $A$.
+
+---
+
+## ✏️ Passo 2 — Verificar a colinearidade
+
+O problema informa que $B$, $A$ e $C$ **não são colineares**.
+
+Portanto, os pontos não pertencem à mesma reta.
+
+Assim, as semirretas estão em direções diferentes.
+
+Podemos imaginar:
+
+```text
+B •
+   \
+    \
+     A •----------------→ C
+```
+
+---
+
+## ✏️ Passo 3 — Aplicar a definição
+
+Para serem opostas, seria necessário que:
+
+1. tivessem a mesma origem;
+2. estivessem na mesma reta;
+3. tivessem sentidos contrários.
+
+A primeira condição é satisfeita.
+
+Mas a segunda não é.
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{\text{Não}}
+$$
+
+As semirretas não são opostas.
+
+---
+
+## 💡 Insight
+
+Ter a mesma origem **não significa** que duas semirretas sejam opostas.
+
+Para serem opostas, elas precisam estar na mesma reta e seguir em sentidos contrários.
+
+</Solucao>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Considere duas semirretas $\overrightarrow{AB}$ e $\overrightarrow{AC}$ com a mesma origem $A$. Elas formam um ângulo de $60^\circ$. Qual é a medida do ângulo formado pelas semirretas?
+
+</Exercicio>
+
+<Solucao>
+
+## 🔎 Ideia principal
+
+Um ângulo é formado por duas semirretas que possuem a mesma origem.
+
+Se:
+
+$$
+\overrightarrow{AB}
+$$
+
+e:
+
+$$
+\overrightarrow{AC}
+$$
+
+possuem origem em $A$, elas podem formar o ângulo:
+
+$$
+\angle BAC
+$$
+
+---
+
+## ✏️ Passo 1 — Identificar o vértice
+
+As duas semirretas começam no ponto $A$.
+
+Logo, $A$ é o vértice:
+
+$$
+\angle BAC
+$$
+
+---
+
+## ✏️ Passo 2 — Utilizar a informação fornecida
+
+O problema informa que as semirretas formam um ângulo de:
+
+$$
+60^\circ
+$$
+
+Portanto, não é necessário realizar nenhum cálculo adicional.
+
+---
+
+## 🎯 Resultado
+
+$$
+\boxed{\angle BAC=60^\circ}
+$$
+
+---
+
+## 💡 Insight
+
+As duas semirretas que formam um ângulo têm a **mesma origem**.
+
+Por isso, na notação:
+
+$$
+\angle BAC
+$$
+
+a letra central $A$ indica o vértice.
+
+</Solucao>
+
+---
+
+## 📚 Conceitos trabalhados
+
+Neste conjunto de exercícios, utilizamos:
+
+- origem de uma semirreta;
+- representação $\overrightarrow{AB}$;
+- importância da ordem das letras;
+- semirretas opostas;
+- semirretas coincidentes;
+- colinearidade;
+- formação de ângulos por duas semirretas.
+

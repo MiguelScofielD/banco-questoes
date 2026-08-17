@@ -1,4 +1,11 @@
 {
   "label": "Teoria",
-  "position": 1
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Teoria de Álgebra",
+    "description": "Estude os conceitos de Álgebra de forma progressiva e organizada."
+  }
 }

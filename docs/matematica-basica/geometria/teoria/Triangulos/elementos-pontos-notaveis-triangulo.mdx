@@ -1,0 +1,772 @@
+---
+id: elementos-pontos-notaveis-triangulo
+title: Elementos e Pontos Notáveis do Triângulo
+sidebar_position: 5
+description: Estudo das medianas, alturas, bissetrizes, mediatrizes e dos principais pontos notáveis dos triângulos.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Elementos e Pontos Notáveis do Triângulo
+
+Os triângulos possuem alguns **segmentos especiais** que permitem estudar suas propriedades e localizar pontos importantes.
+
+Entre os principais elementos estão:
+
+- **medianas**;
+- **alturas**;
+- **bissetrizes internas**;
+- **mediatrizes dos lados**.
+
+Esses elementos se encontram em pontos especiais chamados de **pontos notáveis do triângulo**.
+
+Os principais são:
+
+- **baricentro**;
+- **ortocentro**;
+- **incentro**;
+- **circuncentro**.
+
+---
+
+# 📏 Mediana
+
+A **mediana** de um triângulo é o segmento que liga um vértice ao **ponto médio do lado oposto**.
+
+Considere o triângulo $ABC$:
+
+```text
+          A
+         /|\
+        / | \
+       /  |  \
+      /   |   \
+     B----M----C
+```
+
+Se $M$ é o ponto médio de $\overline{BC}$, então:
+
+$$
+BM=MC
+$$
+
+O segmento:
+
+$$
+\overline{AM}
+$$
+
+é uma mediana.
+
+Como um triângulo possui três vértices, ele possui:
+
+$$
+\boxed{3\text{ medianas}}
+$$
+
+---
+
+# 📍 Baricentro
+
+As três medianas de um triângulo se encontram em um único ponto chamado **baricentro**.
+
+<div style={{textAlign: 'center'}}>
+
+<img
+  src="/img/geometria/baricentro.png"
+  alt="Triângulo com suas três medianas e o baricentro"
+  style={{maxWidth: '400px', width: '100%'}}
+/>
+
+</div>
+
+Representamos o baricentro por $G$.
+
+Portanto:
+
+$$
+\boxed{\text{As três medianas se encontram no baricentro}}
+$$
+
+O baricentro possui uma propriedade importante: ele divide cada mediana na razão:
+
+$$
+\boxed{2:1}
+$$
+
+A parte que vai do vértice até o baricentro é duas vezes maior que a parte que vai do baricentro até o ponto médio do lado.
+
+Se $M$ é o ponto médio de $\overline{BC}$:
+
+$$
+AG=2GM
+$$
+
+---
+
+# 📐 Altura
+
+A **altura** de um triângulo é o segmento perpendicular que liga um vértice à reta que contém o lado oposto.
+
+```text
+          A
+         /|\
+        / | \
+       /  |  \
+      /   |   \
+     B----H----C
+```
+
+Temos:
+
+$$
+\overline{AH}\perp\overline{BC}
+$$
+
+Portanto:
+
+$$
+\angle AHB=90^\circ
+$$
+
+Todo triângulo possui três alturas, uma correspondente a cada vértice.
+
+$$
+\boxed{3\text{ alturas}}
+$$
+
+---
+
+# 📍 Ortocentro
+
+As três alturas de um triângulo se encontram em um ponto chamado **ortocentro**.
+
+<div style={{textAlign: 'center'}}>
+
+<img
+  src="/img/geometria/ortocentro.png"
+  alt="Triângulo com suas três alturas e o ortocentro"
+  style={{maxWidth: '800px', width: '100%'}}
+/>
+
+</div>
+
+### Triângulo acutângulo
+
+O ortocentro fica **dentro** do triângulo.
+
+### Triângulo retângulo
+
+O ortocentro coincide com o vértice do ângulo reto.
+
+### Triângulo obtusângulo
+
+O ortocentro fica **fora** do triângulo.
+
+---
+
+# 📐 Bissetriz interna
+
+A **bissetriz de um ângulo** é a semirreta que divide o ângulo em duas partes de mesma medida.
+
+Em um triângulo, a bissetriz interna de um vértice liga esse vértice ao lado oposto, dividindo o ângulo em duas partes iguais.
+
+```text
+          A
+         /|\
+        / | \
+       /  |  \
+      /   |   \
+     B----D----C
+```
+
+Se $\overline{AD}$ é a bissetriz do ângulo $A$, então:
+
+$$
+\angle BAD=\angle DAC
+$$
+
+Como existem três ângulos internos, um triângulo possui:
+
+$$
+\boxed{3\text{ bissetrizes internas}}
+$$
+
+---
+
+# 📍 Incentro
+
+As três bissetrizes internas de um triângulo se encontram em um ponto chamado **incentro**.
+
+Representamos o incentro por:
+
+$$
+\boxed{I}
+$$
+
+Portanto:
+
+$$
+\boxed{\text{As três bissetrizes internas se encontram no incentro}}
+$$
+
+Uma propriedade importante é que o incentro está à mesma distância dos três lados do triângulo.
+
+Por isso, ele é o centro da circunferência que pode ser inscrita no triângulo.
+
+Essa circunferência é chamada de **circunferência inscrita**.
+
+---
+
+# 📏 Mediatriz
+
+A **mediatriz** de um segmento é a reta perpendicular ao segmento que passa pelo seu ponto médio.
+
+Considere o segmento $\overline{AB}$:
+
+```text
+          |
+          |
+A---------M---------B
+          |
+          |
+```
+
+O ponto $M$ é o ponto médio de $\overline{AB}$ e a reta vertical é perpendicular ao segmento.
+
+Portanto:
+
+$$
+AM=MB
+$$
+
+e:
+
+$$
+\boxed{\text{mediatriz}\perp\overline{AB}}
+$$
+
+Cada lado de um triângulo possui uma mediatriz.
+
+Assim, um triângulo possui:
+
+$$
+\boxed{3\text{ mediatrizes}}
+$$
+
+---
+
+# 📍 Circuncentro
+
+As três mediatrizes dos lados de um triângulo se encontram em um ponto chamado **circuncentro**.
+
+Representamos o circuncentro por:
+
+$$
+\boxed{O}
+$$
+
+O circuncentro é equidistante dos três vértices:
+
+$$
+OA=OB=OC
+$$
+
+Por isso, ele é o centro da circunferência que passa pelos três vértices do triângulo.
+
+Essa circunferência é chamada de **circunferência circunscrita**.
+
+---
+
+# 🧠 Os quatro principais pontos notáveis
+
+Podemos resumir:
+
+| Elementos que se encontram | Ponto notável |
+|---|---|
+| Medianas | Baricentro |
+| Alturas | Ortocentro |
+| Bissetrizes internas | Incentro |
+| Mediatrizes | Circuncentro |
+
+Uma forma importante de memorizar:
+
+$$
+\boxed{\text{Medianas}\rightarrow\text{Baricentro}}
+$$
+
+$$
+\boxed{\text{Alturas}\rightarrow\text{Ortocentro}}
+$$
+
+$$
+\boxed{\text{Bissetrizes}\rightarrow\text{Incentro}}
+$$
+
+$$
+\boxed{\text{Mediatrizes}\rightarrow\text{Circuncentro}}
+$$
+
+---
+
+# 🔎 Comparando os elementos
+
+É importante não confundir os elementos.
+
+### Mediana
+
+Liga um vértice ao **ponto médio do lado oposto**.
+
+### Altura
+
+Liga um vértice ao lado oposto formando um **ângulo de $90^\circ$**.
+
+### Bissetriz
+
+Divide um **ângulo em duas partes iguais**.
+
+### Mediatriz
+
+É perpendicular a um lado e passa pelo **ponto médio desse lado**.
+
+---
+
+# ⭐ Uma observação importante
+
+A mediana e a altura não são necessariamente o mesmo segmento.
+
+Por exemplo, em um triângulo escaleno qualquer, a mediana pode não ser perpendicular ao lado oposto.
+
+Da mesma forma, uma altura normalmente não passa pelo ponto médio do lado oposto.
+
+Porém, em alguns triângulos especiais, determinados elementos podem coincidir.
+
+---
+
+# 🔺 Triângulo equilátero
+
+No triângulo equilátero ocorre uma situação especial.
+
+Como todos os lados e ângulos são iguais, as:
+
+- medianas;
+- alturas;
+- bissetrizes;
+- mediatrizes
+
+correspondentes a cada vértice/lado coincidem.
+
+Consequentemente, os quatro pontos notáveis:
+
+$$
+\boxed{G,\ H,\ I,\ O}
+$$
+
+coincidem em um único ponto.
+
+---
+
+# 🔺 Triângulo isósceles
+
+No triângulo isósceles, existe um eixo de simetria relacionado ao vértice oposto à base.
+
+A mediana relativa à base também é:
+
+- altura;
+- bissetriz interna;
+- mediatriz da base.
+
+Isso acontece por causa da simetria do triângulo.
+
+---
+
+# 🔺 Triângulo retângulo
+
+No triângulo retângulo, o ortocentro é especialmente fácil de localizar.
+
+Se o ângulo reto está no vértice $A$, então:
+
+$$
+\boxed{H=A}
+$$
+
+Ou seja, o ortocentro coincide com o vértice do ângulo reto.
+
+Já o circuncentro está no ponto médio da hipotenusa.
+
+---
+
+# Exemplo 1 — Identificando uma mediana
+
+No triângulo $ABC$, o ponto $M$ pertence ao lado $\overline{BC}$ e:
+
+$$
+BM=MC
+$$
+
+Qual é a classificação do segmento $\overline{AM}$?
+
+<details>
+<summary>Ver solução</summary>
+
+Como $M$ é o ponto médio de $\overline{BC}$ e o segmento liga o vértice $A$ a esse ponto:
+
+$$
+\boxed{\overline{AM}\text{ é uma mediana}}
+$$
+
+</details>
+
+---
+
+# Exemplo 2 — Identificando uma altura
+
+Um segmento liga o vértice $A$ ao lado $\overline{BC}$ formando um ângulo de $90^\circ$. Que elemento é esse?
+
+<details>
+<summary>Ver solução</summary>
+
+A principal característica da altura é ser perpendicular ao lado oposto.
+
+Como:
+
+$$
+\angle=90^\circ
+$$
+
+o segmento é uma:
+
+$$
+\boxed{\text{altura}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3 — Identificando uma bissetriz
+
+Um segmento divide o ângulo $A$ de um triângulo em dois ângulos de $30^\circ$.
+
+Qual elemento está sendo representado?
+
+<details>
+<summary>Ver solução</summary>
+
+Como o ângulo foi dividido em duas partes iguais:
+
+$$
+30^\circ=30^\circ
+$$
+
+o segmento é uma:
+
+$$
+\boxed{\text{bissetriz}}
+$$
+
+</details>
+
+---
+
+# Exemplo 4 — Ponto de encontro das medianas
+
+As três medianas de um triângulo se encontram em qual ponto notável?
+
+<details>
+<summary>Ver solução</summary>
+
+As três medianas são concorrentes no:
+
+$$
+\boxed{\text{baricentro}}
+$$
+
+</details>
+
+---
+
+# Exemplo 5 — Ponto de encontro das alturas
+
+As três alturas de um triângulo se encontram em qual ponto?
+
+<details>
+<summary>Ver solução</summary>
+
+As três alturas são concorrentes no:
+
+$$
+\boxed{\text{ortocentro}}
+$$
+
+</details>
+
+---
+
+# Exemplo 6 — Ponto de encontro das bissetrizes
+
+As três bissetrizes internas de um triângulo se encontram em qual ponto?
+
+<details>
+<summary>Ver solução</summary>
+
+As três bissetrizes internas se encontram no:
+
+$$
+\boxed{\text{incentro}}
+$$
+
+</details>
+
+---
+
+# Exemplo 7 — Ponto de encontro das mediatrizes
+
+As três mediatrizes dos lados de um triângulo se encontram em qual ponto?
+
+<details>
+<summary>Ver solução</summary>
+
+As mediatrizes são concorrentes no:
+
+$$
+\boxed{\text{circuncentro}}
+$$
+
+</details>
+
+---
+
+# 🧠 Resumo
+
+Os principais elementos de um triângulo são:
+
+### Mediana
+
+Liga um vértice ao ponto médio do lado oposto.
+
+$$
+\boxed{\text{Medianas}\rightarrow G}
+$$
+
+### Altura
+
+É perpendicular ao lado oposto.
+
+$$
+\boxed{\text{Alturas}\rightarrow H}
+$$
+
+### Bissetriz
+
+Divide um ângulo em duas partes iguais.
+
+$$
+\boxed{\text{Bissetrizes}\rightarrow I}
+$$
+
+### Mediatriz
+
+É perpendicular ao lado e passa pelo seu ponto médio.
+
+$$
+\boxed{\text{Mediatrizes}\rightarrow O}
+$$
+
+Portanto:
+
+| Elemento | Ponto notável |
+|---|---|
+| Medianas | Baricentro $G$ |
+| Alturas | Ortocentro $H$ |
+| Bissetrizes | Incentro $I$ |
+| Mediatrizes | Circuncentro $O$ |
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Qual segmento liga um vértice ao ponto médio do lado oposto?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Altura",
+    "b) Mediana",
+    "c) Bissetriz",
+    "d) Mediatriz"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Qual elemento é perpendicular ao lado oposto e passa por um vértice?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Mediana",
+    "b) Bissetriz",
+    "c) Altura",
+    "d) Mediatriz"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Qual elemento divide um ângulo interno em duas partes iguais?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Mediana",
+    "b) Altura",
+    "c) Bissetriz",
+    "d) Mediatriz"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+As três medianas de um triângulo se encontram em qual ponto?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Incentro",
+    "b) Ortocentro",
+    "c) Circuncentro",
+    "d) Baricentro"
+  ]}
+  correct={3}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Fácil">
+
+As três alturas de um triângulo se encontram em qual ponto?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Baricentro",
+    "b) Ortocentro",
+    "c) Incentro",
+    "d) Circuncentro"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Fácil">
+
+As três bissetrizes internas de um triângulo se encontram em qual ponto?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Incentro",
+    "b) Baricentro",
+    "c) Ortocentro",
+    "d) Circuncentro"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+As três mediatrizes dos lados de um triângulo se encontram em qual ponto?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Baricentro",
+    "b) Incentro",
+    "c) Circuncentro",
+    "d) Ortocentro"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+O baricentro divide cada mediana em qual razão, considerando a parte do vértice até o baricentro e a parte do baricentro até o ponto médio?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $1:1$",
+    "b) $1:2$",
+    "c) $2:1$",
+    "d) $3:1$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Em um triângulo retângulo, onde está localizado o ortocentro?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) No ponto médio da hipotenusa",
+    "b) No vértice do ângulo reto",
+    "c) Sempre fora do triângulo",
+    "d) No centro da circunferência inscrita"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Qual alternativa relaciona corretamente cada elemento ao seu ponto notável?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Medianas → Incentro; alturas → Baricentro",
+    "b) Medianas → Baricentro; alturas → Ortocentro",
+    "c) Bissetrizes → Circuncentro; mediatrizes → Incentro",
+    "d) Alturas → Circuncentro; medianas → Ortocentro"
+  ]}
+  correct={1}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos com mais detalhes o **Congruência de triângulos**, incluindo suas propriedades e aplicações em problemas de Geometria.

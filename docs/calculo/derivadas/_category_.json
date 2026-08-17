@@ -1,4 +1,11 @@
 {
   "label": "Derivadas",
-  "position": 2
+  "position": 3,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Derivadas",
+    "description": "Estude Derivadas de forma progressiva, desde os conceitos fundamentais até problemas mais avançados."
+  }
 }

@@ -1,0 +1,1024 @@
+---
+id: semelhanca-de-triangulos
+title: Semelhança de Triângulos
+sidebar_position: 7
+description: Estudo da semelhança de triângulos, dos critérios de semelhança e da razão de semelhança.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Semelhança de Triângulos
+
+Dois triângulos são **semelhantes** quando possuem a mesma forma, mesmo que tenham tamanhos diferentes.
+
+Em triângulos semelhantes:
+
+- os **ângulos correspondentes são iguais**;
+- os **lados correspondentes são proporcionais**.
+
+O símbolo utilizado para indicar semelhança é:
+
+$$
+\boxed{\sim}
+$$
+
+Se os triângulos $ABC$ e $DEF$ são semelhantes, escrevemos:
+
+$$
+\boxed{\triangle ABC\sim\triangle DEF}
+$$
+
+---
+
+# 📐 Congruência × Semelhança
+
+É importante diferenciar esses dois conceitos.
+
+### Triângulos congruentes
+
+Possuem:
+
+$$
+\boxed{\text{mesma forma e mesmo tamanho}}
+$$
+
+Os lados correspondentes possuem exatamente a mesma medida.
+
+### Triângulos semelhantes
+
+Possuem:
+
+$$
+\boxed{\text{mesma forma, mas podem ter tamanhos diferentes}}
+$$
+
+Os lados correspondentes são proporcionais.
+
+Por exemplo:
+
+$$
+3,\quad4,\quad5
+$$
+
+e:
+
+$$
+6,\quad8,\quad10
+$$
+
+formam triângulos semelhantes, pois todos os lados do segundo são o dobro dos lados do primeiro.
+
+Mas eles não são congruentes, pois possuem tamanhos diferentes.
+
+---
+
+# 🔎 Correspondência entre os vértices
+
+Se:
+
+$$
+\triangle ABC\sim\triangle DEF
+$$
+
+a ordem dos vértices indica a correspondência:
+
+$$
+A\leftrightarrow D
+$$
+
+$$
+B\leftrightarrow E
+$$
+
+$$
+C\leftrightarrow F
+$$
+
+Portanto:
+
+$$
+AB\leftrightarrow DE
+$$
+
+$$
+BC\leftrightarrow EF
+$$
+
+$$
+AC\leftrightarrow DF
+$$
+
+e:
+
+$$
+\angle A=\angle D
+$$
+
+$$
+\angle B=\angle E
+$$
+
+$$
+\angle C=\angle F
+$$
+
+---
+
+# 📏 Proporcionalidade dos lados
+
+<div style={{textAlign: 'center'}}>
+
+<img
+  src="/img/geometria/triangulos.png"
+  alt="Triângulos semelhantes"
+  style={{maxWidth: '500px', width: '100%'}}
+/>
+
+</div>
+
+Em triângulos semelhantes, os lados correspondentes possuem a mesma razão.
+Essa constante é chamada de **razão de semelhança**.
+
+---
+
+# ⭐ Razão de semelhança
+
+Considere dois triângulos semelhantes:
+
+Primeiro:
+
+$$
+3,\quad4,\quad5
+$$
+
+Segundo:
+
+$$
+6,\quad8,\quad10
+$$
+
+A razão entre os lados correspondentes é:
+
+$$
+\frac{6}{3}=2
+$$
+
+$$
+\frac{8}{4}=2
+$$
+
+$$
+\frac{10}{5}=2
+$$
+
+Portanto, a razão de semelhança do segundo triângulo em relação ao primeiro é:
+
+$$
+\boxed{k=2}
+$$
+
+Isso significa que o segundo triângulo possui lados duas vezes maiores.
+
+---
+
+# 🔢 Como utilizar a razão de semelhança
+
+Se dois triângulos são semelhantes e a razão de semelhança é $k$, então:
+
+$$
+\boxed{\text{lado do maior}=k\cdot\text{lado correspondente do menor}}
+$$
+
+Por exemplo, se:
+
+$$
+k=3
+$$
+
+e um lado do primeiro triângulo mede:
+
+$$
+4\text{ cm}
+$$
+
+o lado correspondente do segundo mede:
+
+$$
+3\cdot4=12\text{ cm}
+$$
+
+---
+
+# 🔷 Critérios de semelhança
+
+Existem três critérios principais para determinar se dois triângulos são semelhantes:
+
+- **AA** — ângulo, ângulo;
+- **LAL** — lado, ângulo, lado;
+- **LLL** — lado, lado, lado.
+
+---
+
+# 🔷 Caso AA — Ângulo, Ângulo
+
+Dois triângulos são semelhantes pelo caso **AA** quando possuem **dois ângulos correspondentes iguais**.
+
+Por exemplo:
+
+$$
+\angle A=\angle D
+$$
+
+e:
+
+$$
+\angle B=\angle E
+$$
+
+Como a soma dos ângulos internos de um triângulo é $180^\circ$, o terceiro ângulo também será igual:
+
+$$
+\angle C=\angle F
+$$
+
+Portanto:
+
+$$
+\boxed{\triangle ABC\sim\triangle DEF}
+$$
+
+pelo caso AA.
+
+### 🧠 Ideia importante
+
+Não é necessário conhecer os três ângulos.
+
+Se dois ângulos correspondentes forem iguais, o terceiro automaticamente será igual.
+
+---
+
+# 🔷 Caso LAL — Lado, Ângulo, Lado
+
+Dois triângulos são semelhantes pelo caso **LAL** quando:
+
+- dois lados correspondentes são proporcionais;
+- o ângulo compreendido entre esses lados é igual.
+
+Por exemplo:
+
+$$
+\frac{AB}{DE}=\frac{AC}{DF}
+$$
+
+e:
+
+$$
+\angle A=\angle D
+$$
+
+Então:
+
+$$
+\boxed{\triangle ABC\sim\triangle DEF}
+$$
+
+pelo caso LAL.
+
+### ⚠️ Atenção
+
+O ângulo precisa ser o ângulo **entre os dois lados proporcionais**.
+
+---
+
+# 🔷 Caso LLL — Lado, Lado, Lado
+
+Dois triângulos são semelhantes pelo caso **LLL** quando os três lados correspondentes são proporcionais.
+
+Por exemplo:
+
+$$
+\frac{AB}{DE}
+=
+\frac{BC}{EF}
+=
+\frac{AC}{DF}
+$$
+
+Então:
+
+$$
+\boxed{\triangle ABC\sim\triangle DEF}
+$$
+
+---
+
+# Exemplo de LLL
+
+Considere dois triângulos com lados:
+
+Primeiro:
+
+$$
+4,\quad6,\quad8
+$$
+
+Segundo:
+
+$$
+6,\quad9,\quad12
+$$
+
+Verifique se são semelhantes.
+
+<details>
+<summary>Ver solução</summary>
+
+Calculamos as razões:
+
+$$
+\frac{6}{4}=\frac{3}{2}
+$$
+
+$$
+\frac{9}{6}=\frac{3}{2}
+$$
+
+$$
+\frac{12}{8}=\frac{3}{2}
+$$
+
+As três razões são iguais.
+
+Logo:
+
+$$
+\boxed{\triangle ABC\sim\triangle DEF}
+$$
+
+pelo caso LLL.
+
+A razão de semelhança é:
+
+$$
+\boxed{k=\frac{3}{2}}
+$$
+
+</details>
+
+---
+
+# 🔎 Ângulos correspondentes
+
+Em triângulos semelhantes, os ângulos correspondentes são sempre iguais.
+
+Se:
+
+$$
+\triangle ABC\sim\triangle DEF
+$$
+
+então:
+
+$$
+\angle A=\angle D
+$$
+
+$$
+\angle B=\angle E
+$$
+
+$$
+\angle C=\angle F
+$$
+
+Isso significa que os triângulos possuem a mesma forma.
+
+---
+
+# Exemplo 1 — Descobrindo um lado
+
+Dois triângulos semelhantes possuem lados correspondentes de medidas:
+
+$$
+5\text{ cm}
+$$
+
+e:
+
+$$
+8\text{ cm}
+$$
+
+Se outro lado do primeiro triângulo mede $10$ cm, qual é a medida do lado correspondente no segundo?
+
+<details>
+<summary>Ver solução</summary>
+
+A razão de semelhança é:
+
+$$
+k=\frac{8}{5}
+$$
+
+Se o lado correspondente mede $10$ cm:
+
+$$
+x=\frac{8}{5}\cdot10
+$$
+
+$$
+x=16
+$$
+
+Portanto:
+
+$$
+\boxed{x=16\text{ cm}}
+$$
+
+</details>
+
+---
+
+# Exemplo 2 — Encontrando um lado por proporção
+
+Sabemos que:
+
+$$
+\triangle ABC\sim\triangle DEF
+$$
+
+e:
+
+$$
+AB=6,\quad DE=9
+$$
+
+Além disso:
+
+$$
+BC=8
+$$
+
+Determine $EF$.
+
+<details>
+<summary>Ver solução</summary>
+
+Como os triângulos são semelhantes:
+
+$$
+\frac{AB}{DE}=\frac{BC}{EF}
+$$
+
+Substituindo:
+
+$$
+\frac{6}{9}=\frac{8}{x}
+$$
+
+Fazendo a multiplicação cruzada:
+
+$$
+6x=72
+$$
+
+$$
+x=12
+$$
+
+Logo:
+
+$$
+\boxed{EF=12}
+$$
+
+</details>
+
+---
+
+# Exemplo 3 — Encontrando a razão de semelhança
+
+Um triângulo possui lados $4$, $7$ e $9$ cm. Um segundo triângulo semelhante possui o lado correspondente ao lado de $4$ cm medindo $10$ cm.
+
+Qual é a razão de semelhança do segundo triângulo em relação ao primeiro?
+
+<details>
+<summary>Ver solução</summary>
+
+A razão é:
+
+$$
+k=\frac{10}{4}
+$$
+
+Logo:
+
+$$
+\boxed{k=\frac{5}{2}}
+$$
+
+Portanto, cada lado do segundo triângulo é $\frac{5}{2}$ vezes o lado correspondente do primeiro.
+
+</details>
+
+---
+
+# Exemplo 4 — Usando AA
+
+Um triângulo possui ângulos:
+
+$$
+40^\circ,\quad60^\circ,\quad80^\circ
+$$
+
+Outro possui ângulos:
+
+$$
+40^\circ,\quad60^\circ,\quad80^\circ
+$$
+
+Eles são semelhantes?
+
+<details>
+<summary>Ver solução</summary>
+
+Os dois triângulos possuem pelo menos dois ângulos correspondentes iguais:
+
+$$
+40^\circ=40^\circ
+$$
+
+$$
+60^\circ=60^\circ
+$$
+
+Portanto, pelo caso AA:
+
+$$
+\boxed{\text{Sim, são semelhantes}}
+$$
+
+</details>
+
+---
+
+# Exemplo 5 — Descobrindo uma altura
+
+Uma pessoa de $1{,}8$ m de altura projeta uma sombra de $2{,}4$ m.
+
+No mesmo instante, uma árvore projeta uma sombra de $8$ m.
+
+Considerando os triângulos formados pelos objetos e suas sombras semelhantes, determine a altura da árvore.
+
+<details>
+<summary>Ver solução</summary>
+
+Como os triângulos são semelhantes:
+
+$$
+\frac{1{,}8}{2{,}4}=\frac{x}{8}
+$$
+
+Fazendo a multiplicação cruzada:
+
+$$
+2{,}4x=1{,}8\cdot8
+$$
+
+$$
+2{,}4x=14{,}4
+$$
+
+$$
+x=6
+$$
+
+Portanto, a árvore possui:
+
+$$
+\boxed{6\text{ m}}
+$$
+
+</details>
+
+---
+
+# 📐 Semelhança e perímetro
+
+Quando dois triângulos são semelhantes, seus perímetros também estão na mesma razão que seus lados correspondentes.
+
+Se a razão de semelhança é:
+
+$$
+k=2
+$$
+
+então o perímetro também será multiplicado por $2$.
+
+Se o primeiro triângulo possui perímetro:
+
+$$
+P=15\text{ cm}
+$$
+
+o segundo terá:
+
+$$
+P'=2\cdot15
+$$
+
+$$
+\boxed{P'=30\text{ cm}}
+$$
+
+---
+
+# 📐 Semelhança e áreas
+
+Existe uma relação importante entre a razão de semelhança e as áreas.
+
+Se dois triângulos semelhantes possuem razão de semelhança:
+
+$$
+k
+$$
+
+então a razão entre suas áreas é:
+
+$$
+\boxed{k^2}
+$$
+
+Por exemplo, se:
+
+$$
+k=3
+$$
+
+então:
+
+$$
+\frac{A_2}{A_1}=3^2=9
+$$
+
+Ou seja, a área do segundo triângulo é **9 vezes maior**.
+
+### ⚠️ Cuidado
+
+Para lados e perímetros:
+
+$$
+k
+$$
+
+Para áreas:
+
+$$
+k^2
+$$
+
+---
+
+# 📐 Semelhança e alturas
+
+Em triângulos semelhantes, as alturas correspondentes também são proporcionais à razão de semelhança.
+
+Se:
+
+$$
+k=2
+$$
+
+uma altura de $5$ cm no primeiro triângulo corresponderá a:
+
+$$
+2\cdot5=10\text{ cm}
+$$
+
+no segundo.
+
+---
+
+# 🧩 Como resolver problemas de semelhança
+
+Uma estratégia eficiente:
+
+### Passo 1
+
+Identifique os dois triângulos.
+
+### Passo 2
+
+Determine os vértices correspondentes.
+
+### Passo 3
+
+Verifique qual critério de semelhança pode ser usado:
+
+$$
+AA,\quad LAL,\quad LLL
+$$
+
+### Passo 4
+
+Monte uma proporção entre os lados correspondentes.
+
+### Passo 5
+
+Resolva a proporção para encontrar a medida desconhecida.
+
+---
+
+# ⚠️ Cuidado com a ordem
+
+Se:
+
+$$
+\triangle ABC\sim\triangle DEF
+$$
+
+não devemos escrever as proporções de qualquer maneira.
+
+A correspondência é:
+
+$$
+A\leftrightarrow D
+$$
+
+$$
+B\leftrightarrow E
+$$
+
+$$
+C\leftrightarrow F
+$$
+
+Portanto:
+
+$$
+\boxed{
+\frac{AB}{DE}
+=
+\frac{BC}{EF}
+=
+\frac{AC}{DF}
+}
+$$
+
+Manter a mesma ordem evita erros.
+
+---
+
+# 🧠 Resumo
+
+Triângulos semelhantes possuem:
+
+$$
+\boxed{\text{ângulos correspondentes iguais}}
+$$
+
+e:
+
+$$
+\boxed{\text{lados correspondentes proporcionais}}
+$$
+
+Os principais critérios são:
+
+### AA
+
+$$
+\boxed{2\text{ ângulos iguais}}
+$$
+
+### LAL
+
+$$
+\boxed{2\text{ lados proporcionais + ângulo compreendido igual}}
+$$
+
+### LLL
+
+$$
+\boxed{3\text{ lados proporcionais}}
+$$
+
+A razão de semelhança é:
+
+$$
+\boxed{k=\frac{\text{lado do segundo}}{\text{lado correspondente do primeiro}}}
+$$
+
+Para os perímetros:
+
+$$
+\boxed{\frac{P_2}{P_1}=k}
+$$
+
+Para as áreas:
+
+$$
+\boxed{\frac{A_2}{A_1}=k^2}
+$$
+
+E lembre-se:
+
+$$
+\boxed{\text{Semelhança}=\text{mesma forma}}
+$$
+
+enquanto:
+
+$$
+\boxed{\text{Congruência}=\text{mesma forma e mesmo tamanho}}
+$$
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Dois triângulos possuem a mesma forma, mas tamanhos diferentes. Eles podem ser:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Congruentes",
+    "b) Semelhantes",
+    "c) Perpendiculares",
+    "d) Paralelos"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Qual é o símbolo utilizado para representar a semelhança entre dois triângulos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $=$",
+    "b) $\\cong$",
+    "c) $\\sim$",
+    "d) $\\perp$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Dois triângulos possuem dois ângulos correspondentes iguais. Qual critério pode garantir a semelhança?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) LLL",
+    "b) LAL",
+    "c) AA",
+    "d) HC"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Dois triângulos possuem três lados correspondentes proporcionais. Qual critério de semelhança pode ser utilizado?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) AA",
+    "b) LAL",
+    "c) LLL",
+    "d) AAA somente"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Um triângulo possui lados $3$, $4$ e $5$ cm. Outro possui lados $6$, $8$ e $10$ cm. Qual é a razão de semelhança do segundo em relação ao primeiro?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $1$",
+    "b) $2$",
+    "c) $3$",
+    "d) $4$"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Dois triângulos semelhantes possuem lados correspondentes de $5$ cm e $8$ cm. Se outro lado do primeiro mede $10$ cm, quanto mede o lado correspondente do segundo?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $12$ cm",
+    "b) $14$ cm",
+    "c) $16$ cm",
+    "d) $18$ cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Se a razão de semelhança entre dois triângulos é $3$, qual é a razão entre suas áreas?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $3$",
+    "b) $6$",
+    "c) $9$",
+    "d) $12$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Dois triângulos semelhantes têm lados correspondentes na razão $2:5$. Se um lado do menor mede $6$ cm, quanto mede o lado correspondente do maior?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $10$ cm",
+    "b) $12$ cm",
+    "c) $15$ cm",
+    "d) $18$ cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Uma pessoa de $1{,}5$ m projeta uma sombra de $2$ m. No mesmo instante, uma árvore projeta uma sombra de $8$ m. Considerando os triângulos semelhantes, qual é a altura da árvore?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $4$ m",
+    "b) $5$ m",
+    "c) $6$ m",
+    "d) $8$ m"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Dois triângulos possuem dois lados correspondentes proporcionais e o ângulo compreendido entre esses lados é igual. Qual critério de semelhança está sendo utilizado?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) AA",
+    "b) LAL",
+    "c) LLL",
+    "d) HC"
+  ]}
+  correct={1}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos o **Teorema de Tales e a proporcionalidade**, que permitirá aplicar a semelhança de triângulos em situações com retas paralelas e segmentos proporcionais.

@@ -1,0 +1,891 @@
+---
+id: classificacao-dos-triangulos
+title: Classificação dos Triângulos
+sidebar_position: 2
+description: Classificação dos triângulos quanto aos lados e quanto aos ângulos.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Classificação dos Triângulos
+
+Os triângulos podem ser classificados de duas maneiras principais:
+
+1. **quanto às medidas de seus lados**;
+2. **quanto às medidas de seus ângulos internos**.
+
+Essa classificação é importante porque permite reconhecer propriedades específicas de cada tipo de triângulo.
+
+---
+
+# 🔺 Classificação quanto aos lados
+
+Quando classificamos um triângulo de acordo com seus lados, observamos se os três lados possuem medidas iguais ou diferentes.
+
+Existem três tipos:
+
+- **equilátero**;
+- **isósceles**;
+- **escaleno**.
+
+---
+
+## 🟰 Triângulo equilátero
+
+Um triângulo **equilátero** possui os **três lados com a mesma medida**.
+
+```text
+          A
+         / \
+      6 /   \ 6
+       /     \
+      B---6---C
+```
+
+Se:
+
+$$
+AB=BC=AC
+$$
+
+então o triângulo é equilátero.
+
+### Propriedade dos ângulos
+
+Como os três lados são iguais, os três ângulos internos também possuem a mesma medida.
+
+Como a soma dos ângulos internos de um triângulo é $180^\circ$:
+
+$$
+\frac{180^\circ}{3}=60^\circ
+$$
+
+Portanto, todo triângulo equilátero possui:
+
+$$
+\boxed{3\text{ lados iguais e }3\text{ ângulos de }60^\circ}
+$$
+
+---
+
+## 🔹 Triângulo isósceles
+
+Um triângulo **isósceles** possui **dois lados com a mesma medida**.
+
+```text
+          A
+         / \
+      5 /   \ 5
+       /     \
+      B-------C
+          6
+```
+
+Nesse exemplo:
+
+$$
+AB=AC=5
+$$
+
+e:
+
+$$
+BC=6
+$$
+
+Portanto, o triângulo é isósceles.
+
+### Propriedade importante
+
+Em um triângulo isósceles, os ângulos opostos aos lados iguais também são iguais.
+
+Se:
+
+$$
+AB=AC
+$$
+
+então:
+
+$$
+\boxed{\angle B=\angle C}
+$$
+
+---
+
+## 🔹 Triângulo escaleno
+
+Um triângulo **escaleno** possui os **três lados com medidas diferentes**.
+
+```text
+          A
+         / \
+      5 /   \ 7
+       /     \
+      B-------C
+          8
+```
+
+Nesse caso:
+
+$$
+AB\neq AC
+$$
+
+$$
+AB\neq BC
+$$
+
+$$
+AC\neq BC
+$$
+
+Portanto, o triângulo é escaleno.
+
+Em um triângulo escaleno, os ângulos internos também possuem medidas diferentes.
+
+---
+
+# 📊 Resumo quanto aos lados
+
+| Tipo | Característica |
+|---|---|
+| Equilátero | 3 lados iguais |
+| Isósceles | 2 lados iguais |
+| Escaleno | 3 lados diferentes |
+
+Uma forma simples de memorizar:
+
+$$
+\boxed{\text{Equilátero}\rightarrow 3}
+$$
+
+$$
+\boxed{\text{Isósceles}\rightarrow 2}
+$$
+
+$$
+\boxed{\text{Escaleno}\rightarrow 0}
+$$
+
+O número indica a quantidade de pares de lados iguais.
+
+---
+
+# 📐 Classificação quanto aos ângulos
+
+Também podemos classificar os triângulos de acordo com seus ângulos internos.
+
+Existem três tipos:
+
+- **acutângulo**;
+- **retângulo**;
+- **obtusângulo**.
+
+---
+
+## 🔺 Triângulo acutângulo
+
+Um triângulo **acutângulo** possui os **três ângulos internos menores que $90^\circ$**.
+
+Por exemplo:
+
+$$
+50^\circ,\quad60^\circ,\quad70^\circ
+$$
+
+Todos são menores que $90^\circ$.
+
+Portanto:
+
+$$
+\boxed{\text{Triângulo acutângulo}}
+$$
+
+A ideia principal é:
+
+$$
+\boxed{\text{todos os ângulos}<90^\circ}
+$$
+
+---
+
+## 📐 Triângulo retângulo
+
+Um triângulo **retângulo** possui **um ângulo interno igual a $90^\circ$**.
+
+```text
+        A
+        |\
+        | \
+        |  \
+        |   \
+        |____\
+        B     C
+```
+
+Nesse caso:
+
+$$
+\angle B=90^\circ
+$$
+
+Portanto, o triângulo é retângulo.
+
+### Importante
+
+Um triângulo pode possuir **apenas um ângulo reto**.
+
+Isso acontece porque a soma dos três ângulos internos é:
+
+$$
+180^\circ
+$$
+
+Se dois ângulos fossem iguais a $90^\circ$:
+
+$$
+90^\circ+90^\circ=180^\circ
+$$
+
+não sobraria medida para o terceiro ângulo.
+
+---
+
+## 🔻 Triângulo obtusângulo
+
+Um triângulo **obtusângulo** possui **um ângulo interno maior que $90^\circ$ e menor que $180^\circ$**.
+
+Por exemplo:
+
+$$
+120^\circ,\quad30^\circ,\quad30^\circ
+$$
+
+Como existe um ângulo de $120^\circ$:
+
+$$
+120^\circ>90^\circ
+$$
+
+o triângulo é obtusângulo.
+
+### Importante
+
+Um triângulo pode possuir apenas **um ângulo obtuso**.
+
+---
+
+# 📊 Resumo quanto aos ângulos
+
+| Tipo | Característica |
+|---|---|
+| Acutângulo | 3 ângulos menores que $90^\circ$ |
+| Retângulo | 1 ângulo igual a $90^\circ$ |
+| Obtusângulo | 1 ângulo maior que $90^\circ$ |
+
+Podemos memorizar:
+
+$$
+\boxed{\text{Acutângulo}\rightarrow \text{todos agudos}}
+$$
+
+$$
+\boxed{\text{Retângulo}\rightarrow \text{um reto}}
+$$
+
+$$
+\boxed{\text{Obtusângulo}\rightarrow \text{um obtuso}}
+$$
+
+---
+
+# 🔎 Como classificar um triângulo
+
+Para classificar quanto aos **lados**, compare as medidas dos lados.
+
+Para classificar quanto aos **ângulos**, observe as medidas dos ângulos.
+
+Por exemplo, considere:
+
+$$
+5\text{ cm},\quad5\text{ cm},\quad8\text{ cm}
+$$
+
+Existem dois lados iguais:
+
+$$
+5=5
+$$
+
+Logo, quanto aos lados, é:
+
+$$
+\boxed{\text{isósceles}}
+$$
+
+Agora considere os ângulos:
+
+$$
+40^\circ,\quad60^\circ,\quad80^\circ
+$$
+
+Todos são menores que $90^\circ$.
+
+Logo, quanto aos ângulos:
+
+$$
+\boxed{\text{acutângulo}}
+$$
+
+Portanto, esse triângulo pode ser classificado simultaneamente como:
+
+$$
+\boxed{\text{isósceles e acutângulo}}
+$$
+
+---
+
+# ⚠️ Um triângulo pode receber duas classificações
+
+É importante entender que as duas classificações são **independentes**.
+
+Um mesmo triângulo pode ser:
+
+- equilátero e acutângulo;
+- isósceles e acutângulo;
+- isósceles e retângulo;
+- isósceles e obtusângulo;
+- escaleno e acutângulo;
+- escaleno e retângulo;
+- escaleno e obtusângulo.
+
+Por exemplo, um triângulo retângulo pode ser isósceles:
+
+$$
+45^\circ,\quad45^\circ,\quad90^\circ
+$$
+
+Ele possui dois lados iguais e um ângulo reto.
+
+Portanto:
+
+$$
+\boxed{\text{isósceles e retângulo}}
+$$
+
+---
+
+# ⭐ Propriedade especial do triângulo equilátero
+
+Todo triângulo equilátero possui três ângulos de $60^\circ$.
+
+Portanto, ele é sempre:
+
+$$
+\boxed{\text{acutângulo}}
+$$
+
+Isso acontece porque:
+
+$$
+60^\circ<90^\circ
+$$
+
+para os três ângulos.
+
+---
+
+# ⭐ Relação entre lados e ângulos
+
+Existe uma relação muito importante:
+
+> Quanto maior o lado de um triângulo, maior é o ângulo oposto a ele.
+
+E:
+
+> Quanto menor o lado, menor é o ângulo oposto.
+
+Considere um triângulo com:
+
+$$
+AB=5,\quad AC=7,\quad BC=9
+$$
+
+O maior lado é:
+
+$$
+BC=9
+$$
+
+Logo, o maior ângulo é o ângulo oposto a $BC$:
+
+$$
+\boxed{\angle A}
+$$
+
+O menor lado é:
+
+$$
+AB=5
+$$
+
+Portanto, o menor ângulo é:
+
+$$
+\boxed{\angle C}
+$$
+
+Essa propriedade será muito útil em problemas futuros.
+
+---
+
+# Exemplo 1
+
+Classifique quanto aos lados um triângulo cujos lados medem:
+
+$$
+7\text{ cm},\quad7\text{ cm},\quad7\text{ cm}
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Os três lados possuem a mesma medida:
+
+$$
+7=7=7
+$$
+
+Logo, o triângulo é:
+
+$$
+\boxed{\text{equilátero}}
+$$
+
+</details>
+
+---
+
+# Exemplo 2
+
+Classifique quanto aos lados um triângulo cujos lados medem:
+
+$$
+5\text{ cm},\quad5\text{ cm},\quad8\text{ cm}
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Dois lados possuem a mesma medida:
+
+$$
+5=5
+$$
+
+Logo:
+
+$$
+\boxed{\text{isósceles}}
+$$
+
+</details>
+
+---
+
+# Exemplo 3
+
+Classifique quanto aos lados um triângulo cujos lados medem:
+
+$$
+4\text{ cm},\quad6\text{ cm},\quad7\text{ cm}
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Os três lados possuem medidas diferentes:
+
+$$
+4\neq6\neq7
+$$
+
+Logo:
+
+$$
+\boxed{\text{escaleno}}
+$$
+
+</details>
+
+---
+
+# Exemplo 4
+
+Classifique quanto aos ângulos o triângulo cujos ângulos são:
+
+$$
+40^\circ,\quad60^\circ,\quad80^\circ
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Todos os ângulos são menores que $90^\circ$:
+
+$$
+40^\circ<90^\circ
+$$
+
+$$
+60^\circ<90^\circ
+$$
+
+$$
+80^\circ<90^\circ
+$$
+
+Logo:
+
+$$
+\boxed{\text{acutângulo}}
+$$
+
+</details>
+
+---
+
+# Exemplo 5
+
+Classifique quanto aos ângulos o triângulo cujos ângulos são:
+
+$$
+30^\circ,\quad60^\circ,\quad90^\circ
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Existe um ângulo exatamente igual a $90^\circ$.
+
+Logo:
+
+$$
+\boxed{\text{retângulo}}
+$$
+
+</details>
+
+---
+
+# Exemplo 6
+
+Classifique quanto aos ângulos o triângulo cujos ângulos são:
+
+$$
+30^\circ,\quad30^\circ,\quad120^\circ
+$$
+
+<details>
+<summary>Ver solução</summary>
+
+Existe um ângulo maior que $90^\circ$:
+
+$$
+120^\circ>90^\circ
+$$
+
+Logo:
+
+$$
+\boxed{\text{obtusângulo}}
+$$
+
+</details>
+
+---
+
+# Exemplo 7 — Classificação completa
+
+Um triângulo possui lados:
+
+$$
+5\text{ cm},\quad5\text{ cm},\quad5\text{ cm}
+$$
+
+Classifique-o quanto aos lados e quanto aos ângulos.
+
+<details>
+<summary>Ver solução</summary>
+
+Como os três lados são iguais:
+
+$$
+5=5=5
+$$
+
+ele é **equilátero**.
+
+Todo triângulo equilátero possui três ângulos de $60^\circ$:
+
+$$
+60^\circ,\quad60^\circ,\quad60^\circ
+$$
+
+Todos são menores que $90^\circ$.
+
+Portanto, quanto aos ângulos, ele é **acutângulo**.
+
+### 🎯 Resultado
+
+$$
+\boxed{\text{equilátero e acutângulo}}
+$$
+
+</details>
+
+---
+
+# 🧠 Resumo
+
+## Quanto aos lados
+
+### Equilátero
+
+$$
+\boxed{3\text{ lados iguais}}
+$$
+
+### Isósceles
+
+$$
+\boxed{2\text{ lados iguais}}
+$$
+
+### Escaleno
+
+$$
+\boxed{3\text{ lados diferentes}}
+$$
+
+---
+
+## Quanto aos ângulos
+
+### Acutângulo
+
+$$
+\boxed{3\text{ ângulos}<90^\circ}
+$$
+
+### Retângulo
+
+$$
+\boxed{1\text{ ângulo}=90^\circ}
+$$
+
+### Obtusângulo
+
+$$
+\boxed{1\text{ ângulo}>90^\circ}
+$$
+
+---
+
+## Relação importante
+
+O maior lado está sempre oposto ao maior ângulo.
+
+O menor lado está sempre oposto ao menor ângulo.
+
+E um mesmo triângulo pode possuir **uma classificação quanto aos lados e outra quanto aos ângulos**.
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Um triângulo possui três lados iguais. Como ele é classificado quanto aos lados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Escaleno",
+    "b) Isósceles",
+    "c) Equilátero",
+    "d) Retângulo"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Um triângulo possui dois lados iguais. Como ele é classificado quanto aos lados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Equilátero",
+    "b) Isósceles",
+    "c) Escaleno",
+    "d) Obtusângulo"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Um triângulo possui três lados com medidas diferentes. Como ele é classificado quanto aos lados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Equilátero",
+    "b) Isósceles",
+    "c) Escaleno",
+    "d) Retângulo"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Um triângulo possui três ângulos menores que $90^\circ$. Como ele é classificado quanto aos ângulos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Acutângulo",
+    "b) Retângulo",
+    "c) Obtusângulo",
+    "d) Equilátero"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Fácil">
+
+Um triângulo possui um ângulo de $90^\circ$. Como ele é classificado quanto aos ângulos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Acutângulo",
+    "b) Obtusângulo",
+    "c) Retângulo",
+    "d) Escaleno"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Fácil">
+
+Um triângulo possui um ângulo de $120^\circ$. Como ele é classificado quanto aos ângulos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Acutângulo",
+    "b) Retângulo",
+    "c) Obtusângulo",
+    "d) Equilátero"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Um triângulo possui lados de medidas $6$ cm, $6$ cm e $10$ cm. Como ele é classificado quanto aos lados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Equilátero",
+    "b) Isósceles",
+    "c) Escaleno",
+    "d) Retângulo"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Um triângulo possui ângulos de $40^\circ$, $60^\circ$ e $80^\circ$. Como ele é classificado quanto aos ângulos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Acutângulo",
+    "b) Retângulo",
+    "c) Obtusângulo",
+    "d) Isósceles"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Um triângulo possui ângulos de $30^\circ$, $60^\circ$ e $90^\circ$. Como ele é classificado quanto aos ângulos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Acutângulo",
+    "b) Retângulo",
+    "c) Obtusângulo",
+    "d) Equilátero"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Um triângulo possui ângulos de $30^\circ$, $30^\circ$ e $120^\circ$. Como ele é classificado quanto aos lados e aos ângulos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Escaleno e acutângulo",
+    "b) Equilátero e retângulo",
+    "c) Isósceles e obtusângulo",
+    "d) Isósceles e retângulo"
+  ]}
+  correct={2}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos a **soma dos ângulos internos de um triângulo**, uma das propriedades fundamentais para resolver problemas de Geometria.

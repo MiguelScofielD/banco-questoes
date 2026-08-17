@@ -1,0 +1,954 @@
+---
+id: congruencia-de-triangulos
+title: Congruência de Triângulos
+sidebar_position: 6
+description: Estudo da congruência de triângulos e dos principais casos de congruência.
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Congruência de Triângulos
+
+Dois triângulos são **congruentes** quando possuem a mesma forma e o mesmo tamanho.
+
+Isso significa que podemos sobrepor um triângulo ao outro de modo que seus lados e seus ângulos correspondentes coincidam.
+
+O símbolo utilizado para indicar congruência é:
+
+$$
+\boxed{\cong}
+$$
+
+Se o triângulo $ABC$ é congruente ao triângulo $DEF$, podemos escrever:
+
+$$
+\boxed{\triangle ABC\cong\triangle DEF}
+$$
+
+---
+
+# 📐 O que significa ser congruente?
+
+Considere dois triângulos:
+
+```text
+        A                         D
+       / \                       / \
+      /   \                     /   \
+     /     \                   /     \
+    B-------C                 E-------F
+```
+
+Se os lados correspondentes possuem a mesma medida e os ângulos correspondentes também possuem a mesma medida, então os triângulos são congruentes.
+
+Por exemplo:
+
+$$
+AB=DE
+$$
+
+$$
+BC=EF
+$$
+
+$$
+AC=DF
+$$
+
+e:
+
+$$
+\angle A=\angle D
+$$
+
+$$
+\angle B=\angle E
+$$
+
+$$
+\angle C=\angle F
+$$
+
+Então:
+
+$$
+\boxed{\triangle ABC\cong\triangle DEF}
+$$
+
+---
+
+# 🔎 Correspondência entre os vértices
+
+A ordem em que escrevemos os vértices é importante.
+
+Se:
+
+$$
+\triangle ABC\cong\triangle DEF
+$$
+
+isso significa que:
+
+$$
+A\leftrightarrow D
+$$
+
+$$
+B\leftrightarrow E
+$$
+
+$$
+C\leftrightarrow F
+$$
+
+Consequentemente, os lados correspondentes são:
+
+$$
+AB\leftrightarrow DE
+$$
+
+$$
+BC\leftrightarrow EF
+$$
+
+$$
+AC\leftrightarrow DF
+$$
+
+E os ângulos correspondentes são:
+
+$$
+\angle A\leftrightarrow\angle D
+$$
+
+$$
+\angle B\leftrightarrow\angle E
+$$
+
+$$
+\angle C\leftrightarrow\angle F
+$$
+
+### ⚠️ Atenção
+
+Não basta comparar dois triângulos apenas pelo desenho.
+
+A congruência deve ser justificada pelas **medidas dos lados e/ou dos ângulos**.
+
+---
+
+# 🧠 Casos de congruência
+
+Em muitos problemas, não precisamos conhecer todas as medidas dos lados e dos ângulos.
+
+Existem condições suficientes para garantir que dois triângulos são congruentes.
+
+Os principais casos estudados são:
+
+- **LLL** — lado, lado, lado;
+- **LAL** — lado, ângulo, lado;
+- **ALA** — ângulo, lado, ângulo;
+- **LAA** — lado, ângulo, ângulo;
+- **HC** — hipotenusa e cateto, no caso de triângulos retângulos.
+
+---
+
+# 🔷 Caso LLL — Lado, Lado, Lado
+
+Dois triângulos são congruentes pelo caso **LLL** quando possuem os **três lados correspondentes com medidas iguais**.
+
+Por exemplo:
+
+$$
+AB=DE
+$$
+
+$$
+BC=EF
+$$
+
+$$
+AC=DF
+$$
+
+Então:
+
+$$
+\boxed{\triangle ABC\cong\triangle DEF}
+$$
+
+### Exemplo
+
+Considere dois triângulos com lados:
+
+$$
+5\text{ cm},\quad7\text{ cm},\quad9\text{ cm}
+$$
+
+Se os dois possuem essas mesmas três medidas nos lados correspondentes, então são congruentes pelo caso:
+
+$$
+\boxed{LLL}
+$$
+
+---
+
+# 🔷 Caso LAL — Lado, Ângulo, Lado
+
+Dois triângulos são congruentes pelo caso **LAL** quando possuem:
+
+- dois lados correspondentes iguais;
+- o ângulo **entre esses dois lados** igual.
+
+Por exemplo:
+
+$$
+AB=DE
+$$
+
+$$
+AC=DF
+$$
+
+e:
+
+$$
+\angle A=\angle D
+$$
+
+Então:
+
+$$
+\boxed{\triangle ABC\cong\triangle DEF}
+$$
+
+pelo caso LAL.
+
+### ⚠️ O ângulo precisa ser o ângulo compreendido
+
+Esse detalhe é muito importante.
+
+No caso LAL, o ângulo conhecido deve estar **entre os dois lados conhecidos**.
+
+---
+
+# 🔷 Caso ALA — Ângulo, Lado, Ângulo
+
+Dois triângulos são congruentes pelo caso **ALA** quando possuem:
+
+- dois ângulos correspondentes iguais;
+- o lado entre esses dois ângulos igual.
+
+Por exemplo:
+
+$$
+\angle A=\angle D
+$$
+
+$$
+\angle B=\angle E
+$$
+
+e:
+
+$$
+AB=DE
+$$
+
+Então:
+
+$$
+\boxed{\triangle ABC\cong\triangle DEF}
+$$
+
+pelo caso ALA.
+
+---
+
+# 🔷 Caso LAA — Lado, Ângulo, Ângulo
+
+Também podemos garantir a congruência quando conhecemos:
+
+- um lado correspondente;
+- dois ângulos correspondentes.
+
+Esse caso é frequentemente representado por **LAA**.
+
+Por exemplo:
+
+$$
+AB=DE
+$$
+
+$$
+\angle A=\angle D
+$$
+
+$$
+\angle C=\angle F
+$$
+
+Então os triângulos são congruentes.
+
+Isso acontece porque, conhecendo dois ângulos de um triângulo, o terceiro fica determinado pela soma:
+
+$$
+180^\circ
+$$
+
+---
+
+# 🔷 Caso HC — Hipotenusa e Cateto
+
+Para **triângulos retângulos**, existe um caso especial.
+
+Se dois triângulos retângulos possuem:
+
+- hipotenusas de mesma medida;
+- um cateto de mesma medida;
+
+então eles são congruentes.
+
+Esse caso é conhecido como:
+
+$$
+\boxed{HC}
+$$
+
+onde:
+
+- $H$ = hipotenusa;
+- $C$ = cateto.
+
+---
+
+# ⚠️ Congruência não é semelhança
+
+É muito importante não confundir **congruência** com **semelhança**.
+
+### Triângulos congruentes
+
+Possuem:
+
+- mesma forma;
+- mesmo tamanho.
+
+Os lados correspondentes possuem medidas iguais.
+
+$$
+\boxed{\text{mesma forma + mesmo tamanho}}
+$$
+
+### Triângulos semelhantes
+
+Possuem:
+
+- mesma forma;
+- tamanhos que podem ser diferentes.
+
+Os lados correspondentes são proporcionais.
+
+$$
+\boxed{\text{mesma forma + tamanho possivelmente diferente}}
+$$
+
+---
+
+# 🔎 Exemplo de congruência
+
+Considere dois triângulos com lados:
+
+Primeiro:
+
+$$
+3,\quad4,\quad5
+$$
+
+Segundo:
+
+$$
+3,\quad4,\quad5
+$$
+
+Como os três lados correspondentes são iguais:
+
+$$
+3=3
+$$
+
+$$
+4=4
+$$
+
+$$
+5=5
+$$
+
+os triângulos são congruentes pelo caso LLL.
+
+$$
+\boxed{\triangle ABC\cong\triangle DEF}
+$$
+
+---
+
+# 🔎 Exemplo de triângulos que não são congruentes
+
+Considere dois triângulos com lados:
+
+Primeiro:
+
+$$
+3,\quad4,\quad5
+$$
+
+Segundo:
+
+$$
+6,\quad8,\quad10
+$$
+
+Os lados do segundo triângulo são o dobro dos lados do primeiro.
+
+Eles podem ter a mesma forma, mas possuem tamanhos diferentes.
+
+Portanto, eles **não são congruentes**.
+
+Nesse caso, eles podem ser semelhantes.
+
+---
+
+# ⭐ Consequência da congruência
+
+Se dois triângulos são congruentes, então todos os seus elementos correspondentes possuem a mesma medida.
+
+Se:
+
+$$
+\triangle ABC\cong\triangle DEF
+$$
+
+então:
+
+$$
+AB=DE
+$$
+
+$$
+BC=EF
+$$
+
+$$
+AC=DF
+$$
+
+e:
+
+$$
+\angle A=\angle D
+$$
+
+$$
+\angle B=\angle E
+$$
+
+$$
+\angle C=\angle F
+$$
+
+Isso é chamado de **partes correspondentes de figuras congruentes**.
+
+---
+
+# 🧩 Como resolver problemas de congruência
+
+Uma boa estratégia é:
+
+### Passo 1
+
+Identifique os dois triângulos.
+
+### Passo 2
+
+Descubra quais são os vértices correspondentes.
+
+### Passo 3
+
+Compare os lados e os ângulos conhecidos.
+
+### Passo 4
+
+Procure um dos casos de congruência:
+
+$$
+LLL,\quad LAL,\quad ALA,\quad LAA,\quad HC
+$$
+
+### Passo 5
+
+Use a congruência para descobrir as medidas desconhecidas.
+
+---
+
+# Exemplo 1 — Caso LLL
+
+Dois triângulos possuem lados correspondentes de medidas $6$ cm, $8$ cm e $10$ cm. Eles são congruentes?
+
+<details>
+<summary>Ver solução</summary>
+
+Os três lados correspondentes possuem a mesma medida.
+
+Portanto:
+
+$$
+6=6
+$$
+
+$$
+8=8
+$$
+
+$$
+10=10
+$$
+
+Logo, os triângulos são congruentes pelo caso:
+
+$$
+\boxed{LLL}
+$$
+
+</details>
+
+---
+
+# Exemplo 2 — Caso LAL
+
+Dois triângulos possuem dois lados correspondentes medindo $5$ cm e $8$ cm, e o ângulo entre esses lados mede $60^\circ$ nos dois triângulos.
+
+Eles são congruentes?
+
+<details>
+<summary>Ver solução</summary>
+
+Temos:
+
+- dois lados correspondentes iguais;
+- o ângulo compreendido entre eles igual.
+
+Portanto, temos o caso:
+
+$$
+\boxed{LAL}
+$$
+
+Logo, os triângulos são congruentes.
+
+</details>
+
+---
+
+# Exemplo 3 — Caso ALA
+
+Dois triângulos possuem dois ângulos correspondentes de $50^\circ$ e $70^\circ$, e o lado entre esses ângulos mede $6$ cm nos dois triângulos.
+
+Os triângulos são congruentes?
+
+<details>
+<summary>Ver solução</summary>
+
+Temos:
+
+$$
+\angle A=\angle D=50^\circ
+$$
+
+$$
+\angle B=\angle E=70^\circ
+$$
+
+e:
+
+$$
+AB=DE=6\text{ cm}
+$$
+
+Temos dois ângulos e o lado compreendido entre eles.
+
+Portanto:
+
+$$
+\boxed{ALA}
+$$
+
+Os triângulos são congruentes.
+
+</details>
+
+---
+
+# Exemplo 4 — Descobrindo uma medida
+
+Sabemos que:
+
+$$
+\triangle ABC\cong\triangle DEF
+$$
+
+Se:
+
+$$
+AB=12\text{ cm}
+$$
+
+qual é a medida de $DE$?
+
+<details>
+<summary>Ver solução</summary>
+
+Pela ordem da congruência:
+
+$$
+A\leftrightarrow D
+$$
+
+e:
+
+$$
+B\leftrightarrow E
+$$
+
+Logo:
+
+$$
+AB\leftrightarrow DE
+$$
+
+Como os triângulos são congruentes:
+
+$$
+AB=DE
+$$
+
+Portanto:
+
+$$
+\boxed{DE=12\text{ cm}}
+$$
+
+</details>
+
+---
+
+# Exemplo 5 — Descobrindo um ângulo
+
+Sabemos que:
+
+$$
+\triangle ABC\cong\triangle DEF
+$$
+
+e:
+
+$$
+\angle C=75^\circ
+$$
+
+Qual é a medida de $\angle F$?
+
+<details>
+<summary>Ver solução</summary>
+
+Pela ordem:
+
+$$
+C\leftrightarrow F
+$$
+
+Como os triângulos são congruentes, os ângulos correspondentes são iguais.
+
+Logo:
+
+$$
+\boxed{\angle F=75^\circ}
+$$
+
+</details>
+
+---
+
+# ⚠️ Um caso que não garante congruência: AAA
+
+Conhecer apenas os três ângulos correspondentes não garante que os triângulos tenham o mesmo tamanho.
+
+Por exemplo, dois triângulos podem possuir:
+
+$$
+60^\circ,\quad60^\circ,\quad60^\circ
+$$
+
+e ainda assim possuir lados de tamanhos diferentes.
+
+Nesse caso, eles são semelhantes, mas não necessariamente congruentes.
+
+Portanto:
+
+$$
+\boxed{AAA\text{ não é um caso de congruência}}
+$$
+
+---
+
+# ⚠️ Outro cuidado: LLA
+
+Conhecer dois lados e um ângulo que não está entre esses lados, em geral, **não garante a congruência**.
+
+Por isso, não devemos confundir:
+
+$$
+\boxed{LAL}
+$$
+
+com:
+
+$$
+\boxed{LLA}
+$$
+
+No LAL, o ângulo é o **compreendido** entre os dois lados.
+
+---
+
+# 🧠 Resumo
+
+Dois triângulos são congruentes quando possuem a mesma forma e o mesmo tamanho.
+
+Os principais casos são:
+
+| Caso | Elementos conhecidos |
+|---|---|
+| LLL | 3 lados |
+| LAL | 2 lados e ângulo compreendido |
+| ALA | 2 ângulos e lado compreendido |
+| LAA | 1 lado e 2 ângulos |
+| HC | Hipotenusa e um cateto |
+
+A congruência permite concluir que todos os elementos correspondentes possuem a mesma medida.
+
+$$
+\boxed{\triangle ABC\cong\triangle DEF}
+$$
+
+implica:
+
+$$
+\boxed{AB=DE,\quad BC=EF,\quad AC=DF}
+$$
+
+e:
+
+$$
+\boxed{\angle A=\angle D,\quad\angle B=\angle E,\quad\angle C=\angle F}
+$$
+
+Lembre-se:
+
+$$
+\boxed{\text{Congruência}=\text{mesma forma e mesmo tamanho}}
+$$
+
+Enquanto:
+
+$$
+\boxed{\text{Semelhança}=\text{mesma forma, podendo ter tamanho diferente}}
+$$
+
+---
+
+# 📝 Exercícios
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Quando dois triângulos possuem a mesma forma e o mesmo tamanho, dizemos que eles são:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Semelhantes",
+    "b) Congruentes",
+    "c) Paralelos",
+    "d) Perpendiculares"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={2} dificuldade="Fácil">
+
+Qual é o símbolo utilizado para representar a congruência entre duas figuras?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $=$",
+    "b) $\\sim$",
+    "c) $\\cong$",
+    "d) $\\perp$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={3} dificuldade="Fácil">
+
+Dois triângulos possuem os três lados correspondentes com medidas iguais. Qual caso de congruência pode ser utilizado?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) LLL",
+    "b) LAL",
+    "c) ALA",
+    "d) AAA"
+  ]}
+  correct={0}
+/>
+
+---
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Dois lados correspondentes e o ângulo entre eles possuem medidas iguais. Qual caso de congruência está sendo utilizado?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) LLL",
+    "b) LAL",
+    "c) ALA",
+    "d) AAA"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={5} dificuldade="Médio">
+
+Dois triângulos possuem dois ângulos correspondentes iguais e o lado entre esses ângulos também é igual. Qual é o caso de congruência?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) LLL",
+    "b) LAL",
+    "c) ALA",
+    "d) AAA"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={6} dificuldade="Médio">
+
+Se $\triangle ABC\cong\triangle DEF$ e $AB=15$ cm, qual é a medida de $DE$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $5$ cm",
+    "b) $10$ cm",
+    "c) $15$ cm",
+    "d) $30$ cm"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={7} dificuldade="Médio">
+
+Se $\triangle ABC\cong\triangle DEF$ e $\angle C=80^\\circ$, qual é a medida de $\angle F$?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $40^\\circ$",
+    "b) $60^\\circ$",
+    "c) $80^\\circ$",
+    "d) $100^\\circ$"
+  ]}
+  correct={2}
+/>
+
+---
+
+<Exercicio numero={8} dificuldade="Médio">
+
+Dois triângulos possuem ângulos correspondentes iguais, mas os lados de um são o dobro dos lados do outro. Eles são:
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Congruentes",
+    "b) Semelhantes, mas não necessariamente congruentes",
+    "c) Sempre equiláteros",
+    "d) Perpendiculares"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={9} dificuldade="Médio">
+
+Por que o caso AAA não garante a congruência de dois triângulos?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) Porque os ângulos não podem ser iguais",
+    "b) Porque três ângulos iguais determinam apenas a forma, não necessariamente o tamanho",
+    "c) Porque todo triângulo possui apenas dois ângulos",
+    "d) Porque lados correspondentes nunca podem ser iguais"
+  ]}
+  correct={1}
+/>
+
+---
+
+<Exercicio numero={10} dificuldade="Médio">
+
+Qual alternativa apresenta corretamente os quatro principais casos gerais de congruência estudados?
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) LLL, LAL, ALA e LAA",
+    "b) AAA, LLA, AAL e LLL",
+    "c) AAA, LAL, LLA e HC",
+    "d) LLA, AAA, AAL e LAL"
+  ]}
+  correct={0}
+/>
+
+---
+
+## Próximo tópico
+
+No próximo conteúdo estudaremos a **semelhança de triângulos**, comparando triângulos que possuem a mesma forma, mas podem apresentar tamanhos diferentes.

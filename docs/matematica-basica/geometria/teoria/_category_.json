@@ -1,0 +1,11 @@
+{
+  "label": "Teoria",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Teoria de Geometria",
+    "description": "Estude os conceitos de Geometria de forma progressiva e organizada."
+  }
+}

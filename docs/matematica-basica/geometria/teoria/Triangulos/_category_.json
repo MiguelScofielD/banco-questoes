@@ -1,0 +1,11 @@
+{
+  "label": "Triângulos",
+  "position": 3,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Triângulos",
+    "description": "Estudo detalhado sobre triângulos e suas propriedades."
+  }
+}
