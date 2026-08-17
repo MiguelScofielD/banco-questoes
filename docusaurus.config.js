@@ -15,7 +15,7 @@ const config = {
     v4: true,
   },
 
-  url: 'https://seuusuario.github.io',
+  url: 'https://miguelscofield.github.io',
   baseUrl: '/',
 
   stylesheets: [

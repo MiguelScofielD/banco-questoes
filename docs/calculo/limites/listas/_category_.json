@@ -1,4 +1,11 @@
 {
   "label": "Listas",
-  "position": 3
+  "position": 3,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Listas de Exercícios — Limites",
+    "description": "Listas de exercícios de Limites organizadas para desenvolver progressivamente o domínio do conteúdo."
+  }
 }

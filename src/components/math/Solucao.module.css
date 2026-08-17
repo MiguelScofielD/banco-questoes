@@ -22,3 +22,7 @@
   background: var(--ifm-background-surface-color);
   border-radius: 8px;
 }
+
+.hidden {
+  display: none;
+}
