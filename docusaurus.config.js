@@ -16,7 +16,8 @@ const config = {
   },
 
   url: 'https://miguelscofield.github.io',
-  baseUrl: '/',
+  baseUrl: '/banco-questoes/',
+  trailingSlash: false,
 
   stylesheets: [
     {
