@@ -1,0 +1,12 @@
+{
+  "label": "Matemática",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Matemática — Olimpíadas",
+    "description": "Problemas de Matemática para preparação olímpica.",
+    "slug": "/preparacao/olimpiadas/matematica"
+  }
+}

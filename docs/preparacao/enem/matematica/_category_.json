@@ -1,0 +1,12 @@
+{
+  "label": "Matemática",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Matemática — ENEM",
+    "description": "Questões de Matemática para preparação para o ENEM.",
+    "slug": "/preparacao/enem/matematica"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "label": "Física",
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Física — ENEM",
+    "description": "Questões de Física para preparação para o ENEM.",
+    "slug": "/preparacao/enem/fisica"
+  }
+}

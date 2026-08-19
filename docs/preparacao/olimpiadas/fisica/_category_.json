@@ -1,0 +1,12 @@
+{
+  "label": "Física",
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Física — Olimpíadas",
+    "description": "Problemas de Física para preparação olímpica.",
+    "slug": "/preparacao/olimpiadas/fisica"
+  }
+}

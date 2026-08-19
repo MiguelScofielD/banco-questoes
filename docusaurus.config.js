@@ -112,24 +112,6 @@ const config = {
             label: 'Preparação',
             to: '/docs/preparacao',
             position: 'left',
-            items: [
-              {
-                label: 'ENEM',
-                to: '/docs/category/enem',
-              },
-              {
-                label: 'ITA',
-                to: '/docs/category/ita',
-              },
-              {
-                label: 'IME',
-                to: '/docs/category/ime',
-              },
-              {
-                label: 'Olimpíadas',
-                to: '/docs/category/olimpiadas',
-              },
-            ],
           },
 
           {

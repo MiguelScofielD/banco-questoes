@@ -1,0 +1,12 @@
+{
+  "label": "Química",
+  "position": 3,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Química — IME",
+    "description": "Questões de Química para preparação para o vestibular do IME.",
+    "slug": "/preparacao/ime/quimica"
+  }
+}
