@@ -1,0 +1,376 @@
+---
+title:  Questões diversas
+sidebar_position: 1
+---
+
+import MultipleChoice from '@site/src/components/math/MultipleChoice';
+import Solucao from '@site/src/components/math/Solucao';
+import Exercicio from '@site/src/components/math/Exercicio';
+import Dica from '@site/src/components/math/Dica';
+
+
+<Exercicio numero={1} dificuldade="Fácil">
+Considere a expressão
+
+$$
+S =
+\frac{1}{a^{-2007}+1}
++
+\frac{1}{a^{-2006}+1}
++
+\cdots
++
+\frac{1}{a^{-1}+1}
++
+\frac{1}{a^0+1}
++
+\frac{1}{a^1+1}
++
+\cdots
++
+\frac{1}{a^{2006}+1}
++
+\frac{1}{a^{2007}+1},
+$$
+
+com $a\neq 0$.
+
+O valor de $S$ é:
+</Exercicio>
+
+<Dica>
+antes de começar a fazer contas, procure uma simetria
+</Dica>
+
+<MultipleChoice
+  options={[
+    "a) $2005^{-2006}$",
+    "b) $2007$",
+    "c) $2005$",
+    "d) $2006$",
+    "e) $2006\\frac{1}{2}$"
+  ]}
+  correct={4}
+/>
+
+<Solucao>
+
+A expressão possui muitos termos, mas não precisamos calcular cada um deles.
+
+A ideia é observar a simetria dos expoentes.
+
+Para qualquer $k>0$, considere:
+
+$$
+\frac{1}{a^{-k}+1}
++
+\frac{1}{a^k+1}.
+$$
+
+Como
+
+$$
+a^{-k}=\frac{1}{a^k},
+$$
+
+temos:
+
+$$
+\frac{1}{\frac{1}{a^k}+1}
++
+\frac{1}{a^k+1}.
+$$
+
+O primeiro termo pode ser simplificado:
+
+$$
+\frac{1}{\frac{1+a^k}{a^k}}
+=
+\frac{a^k}{1+a^k}.
+$$
+
+Logo,
+
+$$
+\frac{a^k}{1+a^k}
++
+\frac{1}{1+a^k}
+=
+\frac{a^k+1}{1+a^k}
+=
+1.
+$$
+
+Portanto,
+
+$$
+\boxed{
+\frac{1}{a^{-k}+1}
++
+\frac{1}{a^k+1}
+=1
+}
+$$
+
+para cada $k=1,2,\ldots,2007$.
+
+### Pareando os termos
+
+Os expoentes podem ser agrupados em pares:
+
+$$
+(-2007,2007),
+$$
+
+$$
+(-2006,2006),
+$$
+
+$$
+\vdots
+$$
+
+$$
+(-1,1).
+$$
+
+Existem $2007$ pares.
+
+Cada par vale $1$, portanto:
+
+$$
+2007\cdot1=2007.
+$$
+
+Ainda resta o termo correspondente ao expoente zero:
+
+$$
+\frac{1}{a^0+1}.
+$$
+
+Como
+
+$$
+a^0=1,
+$$
+
+temos:
+
+$$
+\frac{1}{1+1}
+=
+\frac12.
+$$
+
+Assim,
+
+$$
+S=2007+\frac12.
+$$
+
+Portanto,
+
+$$
+\boxed{S=2007\frac12}
+$$
+
+ou
+
+$$
+\boxed{S=\frac{4015}{2}}.
+$$
+
+## Sacada da questão
+
+O segredo não está em calcular os termos. Está em perceber a **simetria dos expoentes**.
+
+Sempre que aparecerem simultaneamente termos envolvendo
+
+$$
+a^{-k}
+\quad\text{e}\quad
+a^k,
+$$
+
+vale a pena tentar agrupá-los.
+
+Neste problema:
+
+$$
+\boxed{
+\frac{1}{a^{-k}+1}
++
+\frac{1}{a^k+1}
+=1
+}
+$$
+
+Assim, centenas de termos são transformados em uma simples contagem.
+
+</Solucao>
+
+<Exercicio numero={2} dificuldade="Fácil">
+O resto da divisão da **soma dos algarismos** de
+
+$$
+100^{19}-10019
+$$
+
+por $83$ é igual a:
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 0",
+    "b) 1",
+    "c) 2",
+    "d) 3",
+    "e) 4"
+  ]}
+  correct={0}
+/>
+
+
+<Solucao>
+
+## Ideia principal
+
+A expressão parece envolver um número gigantesco:
+
+$$
+100^{19}
+$$
+
+Mas não precisamos calcular esse número diretamente.
+
+A primeira sacada é transformar a potência:
+
+$$
+100^{19}=(10^2)^{19}=10^{38}
+$$
+
+Assim, o problema passa a ser analisar:
+
+$$
+10^{38}-10019
+$$
+
+---
+
+## Passo 1 — Entendendo $10^{38}$
+
+O número $10^{38}$ é formado por:
+
+- um $1$;
+- seguido de $38$ zeros.
+
+Portanto:
+
+$$
+10^{38}=1000\ldots000
+$$
+
+Ao subtrair $10019$, obtemos:
+
+$$
+10^{38}-10019
+=
+99999999999999999999999999999999989981
+$$
+
+Não precisamos memorizar esse número. O importante é observar a estrutura dos algarismos.
+
+---
+
+## Passo 2 — Soma dos algarismos
+
+O número resultante possui **33 algarismos iguais a \(9\)**, seguidos dos algarismos:
+
+$$
+8,\ 9,\ 9,\ 8,\ 1
+$$
+
+Portanto, a soma dos algarismos é:
+
+$$
+33\cdot9+8+9+9+8+1
+$$
+
+Calculando:
+
+$$
+33\cdot9=297
+$$
+
+e:
+
+$$
+8+9+9+8+1=35
+$$
+
+Logo:
+
+$$
+297+35=332
+$$
+
+Assim, a soma dos algarismos é:
+
+$$
+\boxed{332}
+$$
+
+---
+
+## Passo 3 — Dividindo por $83$
+
+Agora precisamos encontrar o resto da divisão de $332$ por $83$.
+
+Observe que:
+
+$$
+83\cdot4=332
+$$
+
+Portanto:
+
+$$
+332=83\cdot4+0
+$$
+
+Logo, o resto é:
+
+$$
+\boxed{0}
+$$
+
+---
+
+## Resultado
+
+A alternativa correta é:
+
+$$
+\boxed{\text{a) }0}
+$$
+
+---
+
+## Insight
+
+A questão parece exigir o cálculo de uma potência enorme, mas isso é uma distração.
+
+A verdadeira sacada é perceber que:
+
+$$
+100^{19}=10^{38}
+$$
+
+e que a estrutura decimal de uma potência de \(10\) permite determinar rapidamente os algarismos depois da subtração.
+
+A questão testa principalmente a capacidade de **enxergar a estrutura do número antes de começar a fazer contas**.
+
+> **Nem sempre precisamos calcular um número gigantesco para descobrir uma propriedade dele.**
+
+</Solucao>
+

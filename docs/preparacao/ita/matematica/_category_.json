@@ -1,0 +1,12 @@
+{
+  "label": "Matemática",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Matemática — ITA",
+    "description": "Questões de Matemática para preparação para o ITA. Foram selecionadas as questões que trazem conceitos importantes e ideias que podem ser aplicadas em outras problemas. A ideia é que você resolva as questões e depois confira a resolução, para assim aprender com os erros e acertos.",
+    "slug": "/preparacao/ita/matematica"
+  }
+}

@@ -81,20 +81,54 @@ const config = {
           src: 'img/logo_gpt.png',
         },
         items: [
-          // {
-          //   type: 'docSidebar',
-          //   sidebarId: 'tutorialSidebar',
-          //   position: 'left',
-          //   label: 'Conteúdo',
-          // },
+          // ==========================================
+          // CONTEÚDO
+          // ==========================================
 
           {
             label: 'Conteúdo',
             position: 'left',
             items: [
-              {label: 'Matemática', to: '/docs/category/matemática'},
-              {label: 'Cálculo', to: '/docs/category/cálculo'},
-              {label: 'Física', to: '/docs/category/física'},
+              {
+                label: 'Matemática',
+                to: '/docs/category/matemática',
+              },
+              {
+                label: 'Cálculo',
+                to: '/docs/category/cálculo',
+              },
+              {
+                label: 'Física',
+                to: '/docs/category/física',
+              },
+            ],
+          },
+
+          // ==========================================
+          // PREPARAÇÃO
+          // ==========================================
+
+          {
+            label: 'Preparação',
+            to: '/docs/preparacao',
+            position: 'left',
+            items: [
+              {
+                label: 'ENEM',
+                to: '/docs/category/enem',
+              },
+              {
+                label: 'ITA',
+                to: '/docs/category/ita',
+              },
+              {
+                label: 'IME',
+                to: '/docs/category/ime',
+              },
+              {
+                label: 'Olimpíadas',
+                to: '/docs/category/olimpiadas',
+              },
             ],
           },
 
@@ -103,6 +137,7 @@ const config = {
             label: 'Blog',
             position: 'right',
           },
+
           {
             href: 'https://github.com/MiguelScofielD/banco-questoes',
             label: 'GitHub',

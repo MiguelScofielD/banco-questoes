@@ -1,0 +1,11 @@
+{
+  "label": "Álgebra",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Álgebra — ITA",
+    "description": "Questões de Álgebra selecionadas para preparação para o vestibular do ITA."
+  }
+}

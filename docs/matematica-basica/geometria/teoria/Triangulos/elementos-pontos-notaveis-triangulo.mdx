@@ -7,6 +7,7 @@ description: Estudo das medianas, alturas, bissetrizes, mediatrizes e dos princi
 
 import Exercicio from '@site/src/components/math/Exercicio'
 import MultipleChoice from '@site/src/components/math/MultipleChoice'
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Elementos e Pontos Notáveis do Triângulo
 
@@ -74,7 +75,7 @@ As três medianas de um triângulo se encontram em um único ponto chamado **bar
 <div style={{textAlign: 'center'}}>
 
 <img
-  src="/img/geometria/baricentro.png"
+  src={useBaseUrl("/img/geometria/baricentro.png")}
   alt="Triângulo com suas três medianas e o baricentro"
   style={{maxWidth: '400px', width: '100%'}}
 />
@@ -145,7 +146,7 @@ As três alturas de um triângulo se encontram em um ponto chamado **ortocentro*
 <div style={{textAlign: 'center'}}>
 
 <img
-  src="/img/geometria/ortocentro.png"
+  src={useBaseUrl("/img/geometria/ortocentro.png")}
   alt="Triângulo com suas três alturas e o ortocentro"
   style={{maxWidth: '800px', width: '100%'}}
 />

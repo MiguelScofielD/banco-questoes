@@ -1,0 +1,1239 @@
+---
+title:  Somatórios
+sidebar_position: 3
+---
+
+import MultipleChoice from '@site/src/components/math/MultipleChoice';
+import Solucao from '@site/src/components/math/Solucao';
+import Exercicio from '@site/src/components/math/Exercicio';
+import Dica from '@site/src/components/math/Dica';
+
+
+<Exercicio numero={1} dificuldade="Fácil">
+
+Calcule a soma
+
+$$
+1+2+3+\cdots+n.
+$$
+
+</Exercicio>
+
+<Solucao>
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+<iframe
+  width="315"
+  height="560"
+  src="https://www.youtube.com/embed/aWqU02suFeY"
+  title="Soma dos Ângulos Internos de um Triângulo"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+</div>
+
+##  Ideia principal
+
+Escrevemos a soma em duas ordens diferentes e somamos termo a termo.
+
+---
+
+##  Passo 1 — Definindo a soma
+
+Chamemos a soma de
+
+$$
+S_n=1+2+3+\cdots+n.
+$$
+
+---
+
+##  Passo 2 — Escrevendo ao contrário
+
+Agora escrevemos a mesma soma em ordem inversa:
+
+$$
+S_n=n+(n-1)+(n-2)+\cdots+1.
+$$
+
+---
+
+##  Passo 3 — Somando as duas expressões
+
+Somando membro a membro,
+
+$$
+\begin{aligned}
+2S_n
+&=(1+n)+(2+n-1)+(3+n-2)+\cdots+(n+1).
+\end{aligned}
+$$
+
+Observe que **todos os pares possuem o mesmo valor**:
+
+$$
+1+n=2+(n-1)=3+(n-2)=\cdots=n+1.
+$$
+
+Cada parcela vale
+
+$$
+n+1.
+$$
+
+Como existem **\(n\)** parcelas,
+
+$$
+2S_n=n(n+1).
+$$
+
+---
+
+##  Passo 4 — Isolando $(S_n)$
+
+Dividindo ambos os lados por \(2\),
+
+$$
+S_n=\frac{n(n+1)}{2}.
+$$
+
+---
+
+##  Resultado
+
+$$
+\boxed{1+2+3+\cdots+n=\frac{n(n+1)}{2}}
+$$
+
+---
+
+##  Insight
+
+Essa demonstração é atribuída ao matemático **Carl Friedrich Gauss**, que teria descoberto essa fórmula ainda quando criança ao perceber que os pares
+
+$$
+1+n,\;
+2+(n-1),\;
+3+(n-2),\;
+\ldots
+$$
+
+têm sempre a mesma soma.
+
+</Solucao>
+
+<Exercicio numero={2} dificuldade="Média">
+
+Calcule o valor do somatório
+
+$$
+1^2+2^2+3^2+\cdots+n^2.
+$$
+
+</Exercicio>
+
+
+<Dica>
+
+Uma boa estratégia é relacionar o termo $k^2$ com a diferença entre dois cubos consecutivos.
+
+</Dica>
+
+
+<Solucao>
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+<iframe
+  width="315"
+  height="560"
+  src="https://www.youtube.com/embed/kHd3Q2xr4QE"
+  title="Soma dos Ângulos Internos de um Triângulo"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+</div>
+
+## Ideia principal
+
+Queremos calcular
+
+$$
+S_n=1^2+2^2+3^2+\cdots+n^2.
+$$
+
+A ideia é encontrar uma expressão que contenha $k^2$ e que, quando somada para vários valores de $k$, permita cancelar os termos.
+
+Para isso, usamos:
+
+$$
+k^3-(k-1)^3.
+$$
+
+---
+
+## Passo 1 — Desenvolvendo a diferença de cubos
+
+Temos:
+
+$$
+k^3-(k-1)^3.
+$$
+
+Expandindo:
+
+$$
+k^3-(k^3-3k^2+3k-1).
+$$
+
+Logo:
+
+$$
+k^3-(k-1)^3
+=
+3k^2-3k+1.
+$$
+
+Isolando $k^2$:
+
+$$
+3k^2
+=
+k^3-(k-1)^3+3k-1.
+$$
+
+Portanto:
+
+$$
+\boxed{
+k^2=
+\frac{k^3-(k-1)^3+3k-1}{3}
+}
+$$
+
+---
+
+## Passo 2 — Somando de $1$ até $n$
+
+Somando a identidade para
+
+$$
+k=1,2,3,\ldots,n,
+$$
+
+temos:
+
+$$
+3(1^2+2^2+\cdots+n^2)
+=
+\sum_{k=1}^{n}
+\left[
+k^3-(k-1)^3+3k-1
+\right].
+$$
+
+Separando os termos:
+
+$$
+3S_n
+=
+\sum_{k=1}^{n}
+\left[k^3-(k-1)^3\right]
++
+3\sum_{k=1}^{n}k
+-
+\sum_{k=1}^{n}1.
+$$
+
+---
+
+## Passo 3 — O cancelamento
+
+Observe o primeiro somatório:
+
+$$
+\begin{aligned}
+\sum_{k=1}^{n}
+\left[k^3-(k-1)^3\right]
+&=
+(1^3-0^3)
++(2^3-1^3)
++(3^3-2^3)
++\cdots\\
+&\quad +(n^3-(n-1)^3).
+\end{aligned}
+$$
+
+Os termos intermediários se cancelam:
+
+$$
+\boxed{
+\sum_{k=1}^{n}
+\left[k^3-(k-1)^3\right]
+=n^3
+}
+$$
+
+Assim:
+
+$$
+3S_n
+=
+n^3
++
+3\sum_{k=1}^{n}k
+-
+n.
+$$
+
+---
+
+## Passo 4 — Utilizando o somatório dos inteiros
+
+Sabemos que:
+
+$$
+\sum_{k=1}^{n}k
+=
+\frac{n(n+1)}{2}.
+$$
+
+Substituindo:
+
+$$
+3S_n
+=
+n^3
++
+3\frac{n(n+1)}{2}
+-
+n.
+$$
+
+Colocando tudo sobre o mesmo denominador:
+
+$$
+3S_n
+=
+\frac{2n^3+3n(n+1)-2n}{2}.
+$$
+
+Como
+
+$$
+3n(n+1)-2n
+=
+3n^2+3n-2n
+=
+3n^2+n,
+$$
+
+temos:
+
+$$
+3S_n
+=
+\frac{2n^3+3n^2+n}{2}.
+$$
+
+Colocando $n$ em evidência:
+
+$$
+3S_n
+=
+\frac{n(2n^2+3n+1)}{2}.
+$$
+
+Fatorando:
+
+$$
+2n^2+3n+1
+=
+(2n+1)(n+1).
+$$
+
+Portanto:
+
+$$
+3S_n
+=
+\frac{n(n+1)(2n+1)}{2}.
+$$
+
+Finalmente, dividindo por $3$:
+
+$$
+\boxed{
+S_n=
+\frac{n(n+1)(2n+1)}{6}
+}
+$$
+
+---
+
+## Resultado
+
+Assim,
+
+$$
+\boxed{
+1^2+2^2+3^2+\cdots+n^2
+=
+\frac{n(n+1)(2n+1)}{6}
+}
+$$
+
+---
+
+## Insight
+
+A ideia mais importante desta questão é transformar um termo que queremos somar, $k^2$, em uma **diferença de expressões consecutivas**.
+
+A identidade
+
+$$
+k^3-(k-1)^3
+=
+3k^2-3k+1
+$$
+
+é especialmente útil porque, ao somarmos para vários valores de $k$, ocorre um cancelamento em cadeia:
+
+$$
+(1^3-0^3)
++(2^3-1^3)
++(3^3-2^3)
++\cdots
++(n^3-(n-1)^3).
+$$
+
+Tudo desaparece, exceto:
+
+$$
+n^3.
+$$
+
+Essa técnica é chamada de **soma telescópica** e aparece em diversos problemas de Matemática.
+
+> **Sacada:** quando você encontrar uma soma envolvendo potências, procure uma identidade que transforme seus termos em diferenças consecutivas. O cancelamento pode reduzir drasticamente o problema.
+
+</Solucao>
+
+<Exercicio numero={3} dificuldade="Média">
+
+Calcule o valor do somatório
+
+$$
+1^3+2^3+3^3+\cdots+n^3.
+$$
+
+</Exercicio>
+
+
+<Dica>
+
+Tente comparar o somatório dos cubos com o quadrado do somatório dos números naturais:
+
+$$
+\left(1+2+3+\cdots+n\right)^2.
+$$
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+Queremos calcular
+
+$$
+S_n=1^3+2^3+3^3+\cdots+n^3.
+$$
+
+A grande sacada é perceber que esse resultado está relacionado com a diferença de quadrados:
+
+$$
+k^3
+=
+\left(\frac{k(k+1)}{2}\right)^2
+-
+\left(\frac{(k-1)k}{2}\right)^2.
+$$
+---
+
+## Passo 1 — Vamos verificar
+
+Considere:
+
+$$
+\left(\frac{k(k+1)}{2}\right)^2
+-
+\left(\frac{(k-1)k}{2}\right)^2.
+$$
+
+Colocando o fator comum em evidência:
+
+$$
+=
+\frac{k^2}{4}
+\left[
+(k+1)^2-(k-1)^2
+\right].
+$$
+
+Usando a diferença de quadrados:
+
+$$
+(k+1)^2-(k-1)^2
+=
+[(k+1)-(k-1)][(k+1)+(k-1)].
+$$
+
+Logo:
+
+$$
+=2\cdot2k=4k.
+$$
+
+Portanto:
+
+$$
+\frac{k^2}{4}\cdot4k=k^3.
+$$
+
+Assim, descobrimos:
+
+$$
+\boxed{
+k^3=
+\left(\frac{k(k+1)}{2}\right)^2
+-
+\left(\frac{(k-1)k}{2}\right)^2
+}
+$$
+
+---
+
+## Passo 2 — Somando os termos
+
+Agora somamos para $k=1,2,\ldots,n$:
+
+$$
+\begin{aligned}
+1^3+2^3+\cdots+n^3
+={}&
+\left(\frac{1\cdot2}{2}\right)^2
+-\left(\frac{0\cdot1}{2}\right)^2\\
+&+
+\left(\frac{2\cdot3}{2}\right)^2
+-\left(\frac{1\cdot2}{2}\right)^2\\
+&+
+\left(\frac{3\cdot4}{2}\right)^2
+-\left(\frac{2\cdot3}{2}\right)^2\\
+&+\cdots\\
+&+
+\left(\frac{n(n+1)}{2}\right)^2
+-\left(\frac{(n-1)n}{2}\right)^2.
+\end{aligned}
+$$
+
+Observe o cancelamento:
+
+$$
+\left(\frac{1\cdot2}{2}\right)^2
+$$
+
+cancela com o termo seguinte, depois:
+
+$$
+\left(\frac{2\cdot3}{2}\right)^2
+$$
+
+também cancela, e assim por diante.
+
+Todos os termos intermediários desaparecem.
+
+Resta apenas:
+
+$$
+1^3+2^3+\cdots+n^3
+=
+\left(\frac{n(n+1)}{2}\right)^2.
+$$
+
+Portanto:
+
+$$
+\boxed{
+1^3+2^3+\cdots+n^3
+=
+\frac{n^2(n+1)^2}{4}
+}
+$$
+
+ou, de forma mais interessante:
+
+$$
+\boxed{
+1^3+2^3+\cdots+n^3
+=
+\left(\frac{n(n+1)}{2}\right)^2
+}
+$$
+
+---
+
+## Resultado
+
+Como
+
+$$
+1+2+\cdots+n
+=
+\frac{n(n+1)}{2},
+$$
+
+podemos escrever a fórmula de maneira bastante elegante:
+
+$$
+\boxed{
+1^3+2^3+\cdots+n^3
+=
+(1+2+\cdots+n)^2
+}
+$$
+
+Consequentemente,
+
+$$
+\boxed{
+1^3+2^3+\cdots+n^3
+=
+\frac{n^2(n+1)^2}{4}
+}
+$$
+
+---
+
+## Insight
+
+O resultado é particularmente interessante porque estabelece uma relação entre dois somatórios:
+
+$$
+\boxed{
+\sum_{k=1}^{n}k^3
+=
+\left(\sum_{k=1}^{n}k\right)^2
+}
+$$
+
+Ou seja, a soma dos cubos dos primeiros $n$ números naturais é exatamente o **quadrado da soma desses números**.
+
+Por exemplo, para $n=4$:
+
+$$
+1^3+2^3+3^3+4^3
+=
+1+8+27+64
+=
+100.
+$$
+
+Enquanto:
+
+$$
+(1+2+3+4)^2
+=
+10^2
+=
+100.
+$$
+
+A igualdade se confirma.
+
+> **Sacada:** quando um somatório envolve potências, procure relações entre somatórios de diferentes graus. Algumas fórmulas escondem estruturas muito mais simples do que parecem.
+
+</Solucao>
+
+<Exercicio numero={4} dificuldade="Fácil">
+
+Calcule o valor do somatório
+
+$$
+\frac{1}{1\cdot2}
++
+\frac{1}{2\cdot3}
++
+\frac{1}{3\cdot4}
++
+\cdots
++
+\frac{1}{n(n+1)}
+$$
+
+</Exercicio>
+
+
+<Dica>
+
+Tente decompor a fração
+
+$$
+\frac{1}{k(k+1)}
+$$
+
+como uma diferença de duas frações.
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+O denominador possui dois fatores consecutivos:
+
+$$
+k(k+1).
+$$
+
+Podemos transformar cada termo em uma diferença:
+
+$$
+\frac{1}{k(k+1)}
+=
+\frac1k-\frac1{k+1}.
+$$
+
+Isso fará com que os termos intermediários se cancelem quando desenvolvermos o somatório.
+
+---
+
+## Passo 1 — Decompondo a fração
+
+Observe que:
+
+$$
+\frac1k-\frac1{k+1}
+=
+\frac{k+1-k}{k(k+1)}.
+$$
+
+Portanto:
+
+$$
+\boxed{
+\frac{1}{k(k+1)}
+=
+\frac1k-\frac1{k+1}
+}
+$$
+
+---
+
+## Passo 2 — Substituindo no somatório
+
+Temos:
+
+$$
+S_n=
+\sum_{k=1}^{n}
+\frac{1}{k(k+1)}.
+$$
+
+Substituindo a identidade:
+
+$$
+S_n=
+\sum_{k=1}^{n}
+\left(
+\frac1k-\frac1{k+1}
+\right).
+$$
+
+Escrevendo os primeiros termos:
+
+$$
+\begin{aligned}
+S_n={}&
+\left(1-\frac12\right)
++
+\left(\frac12-\frac13\right)
++
+\left(\frac13-\frac14\right)
+\\
+&+
+\left(\frac14-\frac15\right)
++\cdots+
+\left(\frac1n-\frac1{n+1}\right).
+\end{aligned}
+$$
+
+---
+
+## Passo 3 — O cancelamento
+
+Agora podemos observar a estrutura:
+
+$$
+1
+-\frac12
++\frac12
+-\frac13
++\frac13
+-\frac14
++\frac14
+-\cdots
++\frac1n
+-\frac1{n+1}.
+$$
+
+Os termos intermediários se cancelam:
+
+$$
+-\frac12+\frac12=0,
+$$
+
+$$
+-\frac13+\frac13=0,
+$$
+
+$$
+-\frac14+\frac14=0,
+$$
+
+e assim por diante.
+
+Restam apenas:
+
+$$
+S_n=1-\frac1{n+1}.
+$$
+
+---
+
+## Passo 4 — Simplificando
+
+Colocando no mesmo denominador:
+
+$$
+S_n=
+\frac{n+1-1}{n+1}.
+$$
+
+Portanto:
+
+$$
+\boxed{
+S_n=\frac{n}{n+1}
+}
+$$
+
+---
+
+## Resultado
+
+Assim,
+
+$$
+\boxed{
+\sum_{k=1}^{n}
+\frac{1}{k(k+1)}
+=
+\frac{n}{n+1}
+}
+$$
+
+---
+
+## Insight
+
+Este é um exemplo clássico de **soma telescópica**.
+
+O nome vem justamente da ideia de uma luneta telescópica: quando expandimos a soma, grande parte dos termos "desaparece" por cancelamento.
+
+A transformação fundamental foi:
+
+$$
+\boxed{
+\frac{1}{k(k+1)}
+=
+\frac1k-\frac1{k+1}
+}
+$$
+
+e então:
+
+$$
+\begin{aligned}
+S_n
+&=
+\left(1-\frac12\right)
++
+\left(\frac12-\frac13\right)
++
+\left(\frac13-\frac14\right)
++\cdots\\
+&\quad+
+\left(\frac1n-\frac1{n+1}\right).
+\end{aligned}
+$$
+
+Tudo se cancela, exceto o primeiro e o último termo:
+
+$$
+\boxed{
+S_n=1-\frac1{n+1}
+}
+$$
+
+Essa técnica será útil em somatórios muito mais complexos.
+
+> **Sacada:** quando um termo pode ser escrito como a diferença entre duas expressões consecutivas, procure imediatamente por uma soma telescópica.
+
+</Solucao>
+
+<Exercicio numero={5} dificuldade="Média">
+
+Calcule o valor do somatório
+
+$$
+S_n=
+\sum_{k=1}^{n}
+\frac{1}{k(k+2)}.
+$$
+
+</Exercicio>
+
+
+<Dica>
+
+Tente escrever a fração como uma diferença de duas frações mais simples.
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+O denominador possui dois fatores:
+
+$$
+k(k+2).
+$$
+
+Isso sugere uma decomposição em frações parciais.
+
+A ideia é transformar cada termo em uma **diferença**, fazendo com que vários termos se cancelem quando o somatório for desenvolvido.
+
+---
+
+## Passo 1 — Decompondo a fração
+
+Queremos escrever:
+
+$$
+\frac{1}{k(k+2)}
+$$
+
+na forma
+
+$$
+\frac{A}{k}+\frac{B}{k+2}.
+$$
+
+Então:
+
+$$
+\frac{1}{k(k+2)}
+=
+\frac{A(k+2)+Bk}{k(k+2)}.
+$$
+
+Comparando os numeradores:
+
+$$
+1=A(k+2)+Bk.
+$$
+
+Logo:
+
+$$
+1=(A+B)k+2A.
+$$
+
+Para que essa igualdade seja verdadeira para qualquer $k$, devemos ter:
+
+$$
+A+B=0
+$$
+
+e
+
+$$
+2A=1.
+$$
+
+Portanto:
+
+$$
+A=\frac12
+$$
+
+e
+
+$$
+B=-\frac12.
+$$
+
+Assim:
+
+$$
+\boxed{
+\frac{1}{k(k+2)}
+=
+\frac12
+\left(
+\frac1k-\frac1{k+2}
+\right)
+}
+$$
+
+---
+
+## Passo 2 — Substituindo no somatório
+
+Temos:
+
+$$
+S_n=
+\sum_{k=1}^{n}
+\frac{1}{k(k+2)}.
+$$
+
+Substituindo a decomposição:
+
+$$
+S_n=
+\frac12
+\sum_{k=1}^{n}
+\left(
+\frac1k-\frac1{k+2}
+\right).
+$$
+
+Escrevendo os primeiros termos:
+
+$$
+\begin{aligned}
+S_n
+=
+\frac12\Bigg[
+&
+\left(1-\frac13\right)
++
+\left(\frac12-\frac14\right)
++
+\left(\frac13-\frac15\right)
+\\
+&+
+\left(\frac14-\frac16\right)
++\cdots
++
+\left(\frac1n-\frac1{n+2}\right)
+\Bigg].
+\end{aligned}
+$$
+
+---
+
+## Passo 3 — Observando o cancelamento
+
+Agora aparece a principal sacada.
+
+Observe que:
+
+$$
+-\frac13
+$$
+
+cancela com:
+
+$$
++\frac13.
+$$
+
+Da mesma forma:
+
+$$
+-\frac14
+$$
+
+cancela com:
+
+$$
++\frac14,
+$$
+
+e assim sucessivamente.
+
+Todos os termos intermediários desaparecem.
+
+Sobram apenas:
+
+$$
+1+\frac12-\frac1{n+1}-\frac1{n+2}.
+$$
+
+Portanto:
+
+$$
+S_n=
+\frac12
+\left(
+1+\frac12-\frac1{n+1}-\frac1{n+2}
+\right).
+$$
+
+---
+
+## Passo 4 — Simplificando
+
+Temos:
+
+$$
+1+\frac12=\frac32.
+$$
+
+Logo:
+
+$$
+S_n=
+\frac12
+\left(
+\frac32-\frac1{n+1}-\frac1{n+2}
+\right).
+$$
+
+Colocando as duas últimas frações em um único denominador:
+
+$$
+\frac1{n+1}+\frac1{n+2}
+=
+\frac{2n+3}{(n+1)(n+2)}.
+$$
+
+Assim:
+
+$$
+S_n=
+\frac12
+\left[
+\frac32-
+\frac{2n+3}{(n+1)(n+2)}
+\right].
+$$
+
+Colocando tudo no mesmo denominador:
+
+$$
+S_n=
+\frac12
+\cdot
+\frac{
+3(n+1)(n+2)-2(2n+3)
+}{
+2(n+1)(n+2)
+}.
+$$
+
+Expandindo:
+
+$$
+3(n+1)(n+2)
+=
+3n^2+9n+6.
+$$
+
+Então:
+
+$$
+3n^2+9n+6-(4n+6)
+=
+3n^2+5n.
+$$
+
+Logo:
+
+$$
+S_n=
+\frac{3n^2+5n}
+{4(n+1)(n+2)}.
+$$
+
+Colocando $n$ em evidência:
+
+$$
+\boxed{
+S_n=
+\frac{n(3n+5)}
+{4(n+1)(n+2)}
+}
+$$
+
+---
+
+## Resultado
+
+Portanto,
+
+$$
+\boxed{
+\sum_{k=1}^{n}
+\frac{1}{k(k+2)}
+=
+\frac{n(3n+5)}
+{4(n+1)(n+2)}
+}
+$$
+
+---
+
+## Insight
+
+Essa é uma **soma telescópica**.
+
+A ideia é transformar cada termo em uma diferença:
+
+$$
+\frac{1}{k(k+2)}
+=
+\frac12
+\left(
+\frac1k-\frac1{k+2}
+\right).
+$$
+
+Quando escrevemos vários termos, os elementos intermediários se cancelam:
+
+$$
+\cancel{\frac13}
+,\quad
+\cancel{\frac14}
+,\quad
+\cancel{\frac15}
+,\ldots
+$$
+
+restando somente alguns termos das extremidades.
+
+> **Sacada:** em somatórios de frações, quando o denominador é um produto de fatores semelhantes, tente usar frações parciais para transformar o termo em uma diferença. Se houver cancelamento em cadeia, você encontrou uma soma telescópica.
+
+</Solucao>

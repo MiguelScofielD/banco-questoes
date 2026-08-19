@@ -25,6 +25,14 @@ export default function Home() {
               Conteúdo
             </Link>
 
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/preparacao"
+              style={{ marginLeft: "1rem" }}
+            >
+              Preparação
+            </Link>
+
             {/* <Link
               className="button button--secondary button--lg"
               to="/blog"

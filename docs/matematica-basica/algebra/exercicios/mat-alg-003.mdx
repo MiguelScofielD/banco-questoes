@@ -1,0 +1,476 @@
+---
+title: Questões para raciocinar um pouco mais
+sidebar_position: 3
+---
+
+import Exercicio from '@site/src/components/math/Exercicio'
+import Solucao from '@site/src/components/math/Solucao'
+import MultipleChoice from '@site/src/components/math/MultipleChoice'
+
+# Questões para raciocinar um pouco mais
+
+<Exercicio numero={1} dificuldade="Médio">
+Considere a expressão:
+
+$$
+\frac{1}{a^{-n}+1}
++
+\frac{1}{a^{-n+1}+1}
++\cdots+
+\frac{1}{a^{-1}+1}
++
+\frac{1}{a^0+1}
++
+\frac{1}{a^1+1}
++\cdots+
+\frac{1}{a^{n-1}+1}
++
+\frac{1}{a^n+1}
+$$
+
+Para:
+
+$$
+a=2005
+\qquad\text{e}\qquad
+n=2006
+$$
+
+determine o valor da expressão.
+
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) $2005^{-2006}$",
+    "b) 2007",
+    "c) 2005",
+    "d) 2006",
+    "e) $2006\\frac{1}{2}$"
+  ]}
+  correct={4}
+/>
+
+<Solucao>
+
+## Ideia principal
+
+À primeira vista, a expressão parece exigir uma quantidade enorme de cálculos.
+
+Mas existe uma **simetria escondida**.
+
+Os expoentes aparecem aos pares:
+
+$$
+(-n,n),\quad (-n+1,n-1),\quad \ldots,\quad (-1,1)
+$$
+
+**A sacada é agrupar os termos que possuem expoentes opostos.**
+
+---
+
+## Passo 1 — Considere um par de expoentes opostos
+
+Para um número inteiro positivo $k$, considere:
+
+$$
+\frac{1}{a^k+1}
++
+\frac{1}{a^{-k}+1}
+$$
+
+Como:
+
+$$
+a^{-k}=\frac{1}{a^k}
+$$
+
+podemos escrever:
+
+$$
+\frac{1}{a^{-k}+1}
+=
+\frac{1}{\frac{1}{a^k}+1}
+$$
+
+Multiplicando numerador e denominador por $a^k$:
+
+$$
+\frac{1}{\frac{1}{a^k}+1}
+=
+\frac{a^k}{1+a^k}
+$$
+
+Portanto:
+
+$$
+\frac{1}{a^k+1}
++
+\frac{a^k}{a^k+1}
+$$
+
+Colocando no mesmo denominador:
+
+$$
+\frac{1+a^k}{a^k+1}
+$$
+
+Logo:
+
+$$
+\boxed{
+\frac{1}{a^k+1}
++
+\frac{1}{a^{-k}+1}
+=1
+}
+$$
+
+### A grande sacada
+
+**Cada par de expoentes opostos vale exatamente $1$.**
+
+Não precisamos calcular $2005^{2006}$, nem nenhuma outra potência.
+
+---
+
+## Passo 2 — Contando os pares
+
+Os expoentes vão de:
+
+$$
+-n
+$$
+
+até:
+
+$$
+n
+$$
+
+exatamente assim:
+
+$$
+-n,\ldots,-2,-1,0,1,2,\ldots,n
+$$
+
+Para cada:
+
+$$
+k=1,2,\ldots,n
+$$
+
+temos um par:
+
+$$
+(-k,k)
+$$
+
+Portanto, existem exatamente:
+
+$$
+\boxed{n}
+$$
+
+pares simétricos.
+
+Como cada par vale $1$, a contribuição desses pares é:
+
+$$
+n\cdot1=n
+$$
+
+---
+
+## Passo 3 — O termo central
+
+Ainda sobra o expoente:
+
+$$
+0
+$$
+
+O termo correspondente é:
+
+$$
+\frac{1}{a^0+1}
+$$
+
+Como:
+
+$$
+a^0=1
+$$
+
+temos:
+
+$$
+\frac{1}{1+1}
+=
+\frac{1}{2}
+$$
+
+Logo, o termo central contribui com:
+
+$$
+\boxed{\frac12}
+$$
+
+---
+
+## Passo 4 — Montando a soma
+
+A soma inteira é formada por:
+
+- $n$ pares, cada um valendo $1$;
+- um termo central valendo $\frac12$.
+
+Portanto:
+
+$$
+S=n+\frac12
+$$
+
+---
+
+## Passo 5 — Substituindo $n=2006$
+
+$$
+S=2006+\frac12
+$$
+
+Assim:
+
+$$
+\boxed{
+S=2006\frac12
+}
+$$
+
+ou, equivalentemente:
+
+$$
+\boxed{
+S=\frac{4013}{2}
+}
+$$
+
+---
+
+## Resultado
+
+A alternativa correta é:
+
+$$
+\boxed{\text{e) }2006\frac12}
+$$
+
+---
+
+## Insight
+
+O valor de:
+
+$$
+a=2005
+$$
+
+praticamente não importa para a resolução.
+
+A verdadeira informação importante é a **simetria dos expoentes**:
+
+$$
+a^k
+\quad\text{e}\quad
+a^{-k}
+$$
+
+pois:
+
+$$
+\boxed{
+\frac{1}{a^k+1}
++
+\frac{1}{a^{-k}+1}
+=1
+}
+$$
+
+Assim, uma expressão que parece envolver centenas ou milhares de cálculos se transforma simplesmente em:
+
+$$
+\boxed{n+\frac12}
+$$
+
+### A lição
+
+> **Antes de calcular, procure uma estrutura.**
+
+Em questões difíceis, muitas vezes a maior dificuldade não está na conta, mas em perceber **o que deve ser agrupado**.
+
+</Solucao>
+
+<Exercicio>
+O resto da divisão da **soma dos algarismos** de
+
+$$
+100^{19}-10019
+$$
+
+por $83$ é igual a:
+</Exercicio>
+
+<MultipleChoice
+  options={[
+    "a) 0",
+    "b) 1",
+    "c) 2",
+    "d) 3",
+    "e) 4"
+  ]}
+  correct={0}
+/>
+
+
+<Solucao>
+
+## Ideia principal
+
+A expressão parece envolver um número gigantesco:
+
+$$
+100^{19}
+$$
+
+Mas não precisamos calcular esse número diretamente.
+
+A primeira sacada é transformar a potência:
+
+$$
+100^{19}=(10^2)^{19}=10^{38}
+$$
+
+Assim, o problema passa a ser analisar:
+
+$$
+10^{38}-10019
+$$
+
+---
+
+## Passo 1 — Entendendo $10^{38}$
+
+O número $10^{38}$ é formado por:
+
+- um $1$;
+- seguido de $38$ zeros.
+
+Portanto:
+
+$$
+10^{38}=1000\ldots000
+$$
+
+Ao subtrair $10019$, obtemos:
+
+$$
+10^{38}-10019
+=
+99999999999999999999999999999999989981
+$$
+
+Não precisamos memorizar esse número. O importante é observar a estrutura dos algarismos.
+
+---
+
+## Passo 2 — Soma dos algarismos
+
+O número resultante possui **33 algarismos iguais a \(9\)**, seguidos dos algarismos:
+
+$$
+8,\ 9,\ 9,\ 8,\ 1
+$$
+
+Portanto, a soma dos algarismos é:
+
+$$
+33\cdot9+8+9+9+8+1
+$$
+
+Calculando:
+
+$$
+33\cdot9=297
+$$
+
+e:
+
+$$
+8+9+9+8+1=35
+$$
+
+Logo:
+
+$$
+297+35=332
+$$
+
+Assim, a soma dos algarismos é:
+
+$$
+\boxed{332}
+$$
+
+---
+
+## Passo 3 — Dividindo por $83$
+
+Agora precisamos encontrar o resto da divisão de $332$ por $83$.
+
+Observe que:
+
+$$
+83\cdot4=332
+$$
+
+Portanto:
+
+$$
+332=83\cdot4+0
+$$
+
+Logo, o resto é:
+
+$$
+\boxed{0}
+$$
+
+---
+
+## Resultado
+
+A alternativa correta é:
+
+$$
+\boxed{\text{a) }0}
+$$
+
+---
+
+## Insight
+
+A questão parece exigir o cálculo de uma potência enorme, mas isso é uma distração.
+
+A verdadeira sacada é perceber que:
+
+$$
+100^{19}=10^{38}
+$$
+
+e que a estrutura decimal de uma potência de \(10\) permite determinar rapidamente os algarismos depois da subtração.
+
+A questão testa principalmente a capacidade de **enxergar a estrutura do número antes de começar a fazer contas**.
+
+> **Nem sempre precisamos calcular um número gigantesco para descobrir uma propriedade dele.**
+
+</Solucao>
