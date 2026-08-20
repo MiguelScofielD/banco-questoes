@@ -1,0 +1,1505 @@
+---
+title: Canguru
+sidebar_position: 1
+---
+
+import MultipleChoice from '@site/src/components/math/MultipleChoice';
+import Solucao from '@site/src/components/math/Solucao';
+import Exercicio from '@site/src/components/math/Exercicio';
+import Dica from '@site/src/components/math/Dica';
+
+
+<Exercicio numero={1} dificuldade="Fácil" creditos="(Canguru 2025)">
+
+O ano $2025$ é um quadrado perfeito, pois
+
+$$
+2025=45^2.
+$$
+
+Quantos anos vão se passar até o próximo ano que seja um quadrado perfeito?
+
+**(A)** $25$
+
+**(B)** $91$
+
+**(C)** $121$
+
+**(D)** $500$
+
+**(E)** $2025$
+
+</Exercicio>
+
+
+<Dica>
+
+Se $2025=45^2$, qual é o próximo número inteiro depois de $45$?
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+Se
+
+$$
+2025=45^2,
+$$
+
+o próximo quadrado perfeito será obtido elevando $46$ ao quadrado.
+
+---
+
+## Passo 1 — Encontrando o próximo quadrado perfeito
+
+Temos:
+
+$$
+46^2=(45+1)^2.
+$$
+
+Usando o quadrado da soma:
+
+$$
+46^2=45^2+2\cdot45+1.
+$$
+
+Como $45^2=2025$:
+
+$$
+46^2=2025+90+1.
+$$
+
+Logo:
+
+$$
+46^2=2116.
+$$
+
+---
+
+## Passo 2 — Calculando quantos anos se passarão
+
+O ano atual é $2025$ e o próximo ano quadrado perfeito é $2116$.
+
+Portanto:
+
+$$
+2116-2025=91.
+$$
+
+Assim:
+
+$$
+\boxed{91}
+$$
+
+---
+
+## Resultado
+
+A resposta é:
+
+$$
+\boxed{\text{(B) }91}
+$$
+
+</Solucao>
+
+<Exercicio numero={2} dificuldade="Médio" creditos="(Canguru 2025)">
+
+Qual é o menor número inteiro positivo $N$ para o qual
+
+$$
+\sqrt{2\sqrt{3\sqrt{N}}}
+$$
+
+é um número inteiro?
+
+**(A)** $2^{12}\cdot3^2$
+
+**(B)** $2^4\cdot3^{14}$
+
+**(C)** $2^4\cdot3^6\cdot5$
+
+**(D)** $2^4\cdot3^8$
+
+**(E)** $2^4\cdot3^6$
+
+</Exercicio>
+
+
+<Dica>
+
+Transforme os radicais em potências.
+
+Depois, escreva $N$ como produto de fatores primos e observe os expoentes de $2$ e $3$.
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+Como os radicais estão aninhados, podemos transformá-los em potências.
+
+A expressão
+
+$$
+\sqrt{2\sqrt{3\sqrt{N}}}
+$$
+
+pode ser escrita como uma potência de $2$, uma potência de $3$ e uma potência de $N$.
+
+Depois, basta escolher os menores expoentes possíveis para que o resultado seja um número inteiro.
+
+---
+
+## Passo 1 — Transformando os radicais
+
+Começamos pelo radical mais interno:
+
+$$
+\sqrt{N}=N^{1/2}.
+$$
+
+Então:
+
+$$
+\sqrt{3\sqrt N}
+=
+\left(3N^{1/2}\right)^{1/2}.
+$$
+
+Logo:
+
+$$
+\sqrt{3\sqrt N}
+=
+3^{1/2}N^{1/4}.
+$$
+
+Agora aplicamos o último radical:
+
+$$
+\sqrt{2\sqrt{3\sqrt N}}
+=
+\left(2\cdot3^{1/2}N^{1/4}\right)^{1/2}.
+$$
+
+Portanto:
+
+$$
+\sqrt{2\sqrt{3\sqrt N}}
+=
+2^{1/2}3^{1/4}N^{1/8}.
+$$
+
+Podemos escrever:
+
+$$
+\boxed{
+\sqrt{2\sqrt{3\sqrt N}}
+=
+2^{1/2}3^{1/4}N^{1/8}
+}.
+$$
+
+---
+
+## Passo 2 — Fatorando $N$
+
+Para que o resultado seja inteiro, os expoentes dos fatores primos precisam ser inteiros.
+
+Escrevamos:
+
+$$
+N=2^a3^b,
+$$
+
+Substituindo na expressão:
+
+$$
+2^{1/2}\cdot3^{1/4}\cdot
+(2^a\cdot3^b)^{1/8}.
+$$
+
+Assim:
+
+$$
+2^{(4+a)/8}\cdot
+3^{(2+b)/8}
+$$
+
+Para que o resultado seja inteiro, precisamos que os expoentes sejam inteiros.
+
+---
+
+## Passo 3 — Determinando o expoente de $2$
+
+Precisamos que:
+
+$$
+\frac{4+a}{8}
+$$
+
+seja um número inteiro.
+
+O menor valor possível de $a\geq0$ é:
+
+$$
+a=4.
+$$
+
+De fato:
+
+$$
+\frac{4+4}{8}=1.
+$$
+
+Portanto, precisamos de:
+
+$$
+2^4.
+$$
+
+---
+
+## Passo 4 — Determinando o expoente de $3$
+
+Agora precisamos que:
+
+$$
+\frac{2+b}{8}
+$$
+
+seja um número inteiro.
+
+O menor valor possível de $b\geq0$ é:
+
+$$
+b=6.
+$$
+
+Pois:
+
+$$
+\frac{2+6}{8}=1.
+$$
+
+Logo, precisamos de:
+
+$$
+3^6.
+$$
+---
+
+## Resultado
+
+A alternativa correta é:
+
+$$
+\boxed{\text{(E)}\quad 2^4\cdot3^6}.
+$$
+
+---
+
+## Insight
+
+Em problemas com **radicais aninhados**, uma estratégia poderosa é transformar os radicais em potências.
+
+Neste caso:
+
+$$
+\sqrt{2\sqrt{3\sqrt N}}
+=
+2^{1/2}3^{1/4}N^{1/8}.
+$$
+
+Depois disso, o problema deixa de ser essencialmente sobre radicais e passa a ser um problema sobre **expoentes na fatoração prima**.
+
+A ideia geral é:
+
+$$
+\boxed{\text{radicais}\longrightarrow\text{potências}\longrightarrow\text{expoentes primos}}
+$$
+
+Essa transformação costuma simplificar bastante problemas de Olimpíadas.
+
+</Solucao>
+
+<Exercicio numero={3} dificuldade="Médio" creditos="(Canguru 2025)">
+
+A figura mostra um quarto de círculo $OPQ$ de raio $r$ e um triângulo $OPR$.
+
+As duas regiões sombreadas na figura têm a mesma área.
+
+Qual é o comprimento do segmento $OR$?
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+
+<img
+  src="/banco-questoes/img/olimpiadas/canguru/questao-3.png"
+  alt="Quarto de círculo OPQ e triângulo OPR"
+  style={{maxWidth: '200px', width: '100%'}}
+/>
+
+</div>
+
+**(A)** $\dfrac{\pi r}{2}$
+
+**(B)** $\dfrac{3r}{2}$
+
+**(C)** $\pi r$
+
+**(D)** $\dfrac{2r}{\pi}$
+
+**(E)** $\dfrac{\pi}{2r}$
+
+</Exercicio>
+
+<Dica>
+
+Não tente calcular diretamente as áreas das regiões sombreadas.
+
+Chame a área da região não sombreada de $A$ e a área de cada região sombreada de $B$.
+
+Observe que tanto o quarto de círculo quanto o triângulo $OPR$ são formados pelas mesmas áreas $A+B$.
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+A sacada da questão é perceber que não precisamos calcular as áreas sombreadas individualmente.
+
+Vamos chamar:
+
+- $A$ de área da região não sombreada;
+- $B$ de área de cada uma das duas regiões sombreadas.
+
+Como as duas regiões sombreadas possuem a mesma área, podemos comparar diretamente as áreas totais das duas figuras.
+
+---
+
+## Passo 1 — Área do quarto de círculo
+
+O quarto de círculo possui raio $r$.
+
+Sua área é:
+
+$$
+A_{\text{círculo}}=
+\frac14\pi r^2.
+$$
+
+Como ele é formado pelas regiões de áreas $A$ e $B$:
+
+$$
+A+B=\frac{\pi r^2}{4}.
+$$
+
+---
+
+## Passo 2 — Área do triângulo
+
+O triângulo $OPR$ possui:
+
+- base $OP=r$;
+- altura $OR$.
+
+Portanto, sua área é:
+
+$$
+A_{\triangle OPR}
+=
+\frac{r\cdot OR}{2}.
+$$
+
+O triângulo também é formado pelas mesmas regiões de áreas $A$ e $B$.
+
+Logo:
+
+$$
+A+B=\frac{r\cdot OR}{2}.
+$$
+
+---
+
+## Passo 3 — Igualando as áreas
+
+Como as duas expressões representam a mesma quantidade $A+B$, podemos igualá-las:
+
+$$
+\frac{\pi r^2}{4}
+=
+\frac{r\cdot OR}{2}.
+$$
+
+Como $r\neq0$, podemos dividir ambos os lados por $r$:
+
+$$
+\frac{\pi r}{4}
+=
+\frac{OR}{2}.
+$$
+
+Multiplicando por $2$:
+
+$$
+OR=\frac{\pi r}{2}.
+$$
+
+Portanto:
+
+$$
+\boxed{OR=\frac{\pi r}{2}}.
+$$
+
+---
+
+## Resultado
+
+A resposta correta é:
+
+$$
+\boxed{\text{(A)}\quad\frac{\pi r}{2}}
+$$
+
+</Solucao>
+
+<Exercicio numero={4} dificuldade="Médio" creditos="(Canguru 2026)">
+
+O número
+
+$$
+\underbrace{333\ldots333}_{2026\text{ dígitos}}
+$$
+
+foi dividido por $33$.
+
+Qual é a soma dos dígitos do resultado?
+
+<MultipleChoice
+  options={[
+    "a) $1111$",
+    "b) $1013$",
+    "c) $2025$",
+    "d) $2026$",
+    "e) $3039$"
+  ]}
+  correct={1}
+/>
+
+</Exercicio>
+
+
+<Dica>
+
+Antes de tentar dividir um número com $2026$ algarismos, experimente números menores formados apenas por algarismos $1$.
+
+Por exemplo:
+
+$$
+1111\div11
+$$
+
+e
+
+$$
+111111\div11.
+$$
+
+Procure descobrir um padrão no quociente e, principalmente, na soma de seus algarismos.
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+Não precisamos realizar diretamente uma divisão com $2026$ algarismos.
+
+Primeiro, vamos observar alguns exemplos menores para identificar um padrão.
+
+---
+
+## Passo 1 — Observando exemplos
+
+Considere:
+
+$$
+1111\div11=101.
+$$
+
+A soma dos algarismos do resultado é:
+
+$$
+1+0+1=2.
+$$
+
+O número $1111$ possui $4$ algarismos, e:
+
+$$
+2=\frac42.
+$$
+
+Agora considere:
+
+$$
+111111\div11=10101.
+$$
+
+A soma dos algarismos é:
+
+$$
+1+0+1+0+1=3.
+$$
+
+Como o número $111111$ possui $6$ algarismos:
+
+$$
+3=\frac62.
+$$
+
+Mais um exemplo:
+
+$$
+11111111\div11=1010101.
+$$
+
+A soma dos algarismos é:
+
+$$
+1+0+1+0+1+0+1=4.
+$$
+
+E:
+
+$$
+4=\frac82.
+$$
+
+Portanto, percebemos o padrão:
+
+$$
+\boxed{
+\text{soma dos algarismos do quociente}
+=
+\frac{\text{quantidade de algarismos do dividendo}}{2}
+}
+$$
+
+quando a quantidade de algarismos é par.
+
+---
+
+## Passo 2 — Simplificando o problema
+
+O número do problema é:
+
+$$
+\underbrace{333\ldots333}_{2026\text{ dígitos}}.
+$$
+
+Podemos colocar $3$ em evidência:
+
+$$
+\underbrace{333\ldots333}_{2026\text{ dígitos}}
+=
+3\underbrace{111\ldots111}_{2026\text{ dígitos}}.
+$$
+
+Como
+
+$$
+33=3\cdot11,
+$$
+
+temos:
+
+$$
+\frac{
+3\underbrace{111\ldots111}_{2026\text{ dígitos}}
+}{33}
+=
+\frac{
+\underbrace{111\ldots111}_{2026\text{ dígitos}}
+}{11}.
+$$
+
+Portanto, basta analisar a divisão de um número formado por $2026$ algarismos $1$ por $11$.
+
+---
+
+## Passo 3 — Aplicando o padrão
+
+Para uma quantidade par de algarismos:
+
+$$
+1111\div11=101,
+$$
+
+$$
+111111\div11=10101,
+$$
+
+$$
+11111111\div11=1010101.
+$$
+
+Assim, para $2026$ algarismos:
+
+$$
+\underbrace{111\ldots111}_{2026\text{ dígitos}}
+\div11
+=
+101010\ldots0101.
+$$
+
+O resultado possui:
+
+$$
+\frac{2026}{2}=1013
+$$
+
+algarismos iguais a $1$.
+
+Todos os outros algarismos são zeros.
+
+Portanto, a soma dos algarismos do resultado é:
+
+$$
+1+1+\cdots+1
+$$
+
+com $1013$ parcelas.
+
+Logo:
+
+$$
+\boxed{1013}.
+$$
+
+---
+
+## Resultado
+
+A resposta correta é:
+
+$$
+\boxed{\text{(B) }1013}
+$$
+
+---
+
+## Insight
+
+O mais importante nessa questão não é efetuar a divisão.
+
+Ao observar:
+
+$$
+1111\div11=101,
+$$
+
+$$
+111111\div11=10101,
+$$
+
+$$
+11111111\div11=1010101,
+$$
+
+percebemos que, para um número com uma quantidade **par** de algarismos $1$, o quociente possui exatamente metade dessa quantidade de algarismos $1$.
+
+Assim:
+
+$$
+\boxed{
+\text{soma dos algarismos}
+=
+\frac{\text{número de algarismos do dividendo}}{2}
+}.
+$$
+
+No problema:
+
+$$
+\frac{2026}{2}=1013.
+$$
+
+> **Sacada:** quando aparecer uma divisão envolvendo números formados por algarismos repetidos, tente calcular alguns casos pequenos. O padrão pode permitir resolver um número gigantesco sem realizar a divisão.
+
+</Solucao>
+
+<Exercicio numero={5} dificuldade="Médio" creditos="(Canguru 2026)">
+
+A soma de $15$ números naturais consecutivos é igual à soma dos $9$ números naturais seguintes.
+
+Qual é o menor desses $24$ números?
+
+<MultipleChoice
+  options={[
+    "a) $10$",
+    "b) $11$",
+    "c) $12$",
+    "d) $13$",
+    "e) $14$"
+  ]}
+  correct={1}
+/>
+
+</Exercicio>
+
+
+<Dica>
+
+Em uma sequência de números consecutivos, a média é igual ao número que está no meio.
+
+Use a relação:
+
+$$
+\text{soma}=\text{quantidade}\times\text{média}.
+$$
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+Em vez de somar os $24$ números diretamente, podemos utilizar a média de cada grupo de números consecutivos.
+
+Seja $n$ o menor dos $24$ números.
+
+Então os $15$ primeiros são:
+
+$$
+n,n+1,n+2,\ldots,n+14.
+$$
+
+Os $9$ seguintes são:
+
+$$
+n+15,n+16,\ldots,n+23.
+$$
+
+---
+
+## Passo 1 — Soma dos 15 primeiros números
+
+Como existem $15$ números, o termo central é o oitavo:
+
+$$
+n+7.
+$$
+
+Portanto, a média dos $15$ números é:
+
+$$
+n+7.
+$$
+
+A soma dos $15$ números é:
+
+$$
+15(n+7).
+$$
+
+---
+
+## Passo 2 — Soma dos 9 números seguintes
+
+Agora temos:
+
+$$
+n+15,n+16,\ldots,n+23.
+$$
+
+Como são $9$ números, o termo central é o quinto:
+
+$$
+n+19.
+$$
+
+Logo, a média desses $9$ números é:
+
+$$
+n+19.
+$$
+
+A soma é:
+
+$$
+9(n+19).
+$$
+
+---
+
+## Passo 3 — Igualando as somas
+
+O enunciado afirma que as duas somas são iguais.
+
+Assim:
+
+$$
+15(n+7)=9(n+19).
+$$
+
+Desenvolvendo:
+
+$$
+15n+105=9n+171.
+$$
+
+Então:
+
+$$
+15n-9n=171-105.
+$$
+
+$$
+6n=66.
+$$
+
+Portanto:
+
+$$
+n=11.
+$$
+
+---
+
+## Resultado
+
+O menor dos $24$ números é:
+
+$$
+\boxed{11}.
+$$
+
+Logo, a resposta correta é:
+
+$$
+\boxed{\text{(B) }11}.
+$$
+
+---
+
+## Insight
+
+A principal ideia é que a soma de uma sequência de números consecutivos pode ser calculada rapidamente usando sua média:
+
+$$
+\boxed{\text{soma}=\text{quantidade}\times\text{média}}.
+$$
+
+Para uma quantidade ímpar de números consecutivos, a média é simplesmente o termo central.
+
+Neste problema:
+
+$$
+15(n+7)=9(n+19).
+$$
+
+Isso evita a necessidade de escrever e somar todos os $24$ números.
+
+</Solucao>
+
+<Exercicio numero={6} dificuldade="Fácil" creditos="(Canguru 2023)">
+
+Quantos pares de números inteiros positivos $x$ e $y$ satisfazem a equação
+
+$$
+x+2y=2^{10}?
+$$
+
+<MultipleChoice
+  options={[
+    "a) $2^9-1$",
+    "b) $2^9$",
+    "c) $2^9+1$",
+    "d) $2^9+2$",
+    "e) $0$"
+  ]}
+  correct={0}
+/>
+
+</Exercicio>
+
+
+<Dica>
+
+Isole $x$ na equação e observe quais valores positivos $y$ pode assumir.
+
+Lembre-se de que **inteiros positivos não incluem o zero**.
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+A equação é
+
+$$
+x+2y=2^{10}.
+$$
+
+Como $x$ e $y$ são inteiros positivos, podemos escolher os valores possíveis de $y$ e, para cada um deles, determinar um único valor de $x$.
+
+---
+
+## Passo 1 — Isolando $x$
+
+Temos:
+
+$$
+x=2^{10}-2y.
+$$
+
+Como
+
+$$
+2^{10}=1024,
+$$
+
+podemos escrever:
+
+$$
+x=1024-2y.
+$$
+
+---
+
+## Passo 2 — Determinando os valores de $y$
+
+Como $x$ deve ser positivo:
+
+$$
+1024-2y>0.
+$$
+
+Logo:
+
+$$
+2y<1024
+$$
+
+e, portanto,
+
+$$
+y<512.
+$$
+
+Além disso, $y$ é um inteiro positivo, então:
+
+$$
+1\leq y\leq511.
+$$
+
+Assim, existem exatamente:
+
+$$
+511
+$$
+
+valores possíveis para $y$.
+
+---
+
+## Passo 3 — Contando os pares
+
+Para cada valor de $y$, a equação
+
+$$
+x=1024-2y
+$$
+
+determina exatamente um valor positivo de $x$.
+
+Portanto, o número de pares $(x,y)$ é:
+
+$$
+511.
+$$
+
+Como
+
+$$
+511=2^9-1,
+$$
+
+temos:
+
+$$
+\boxed{2^9-1}.
+$$
+
+---
+
+## Resultado
+
+A resposta correta é:
+
+$$
+\boxed{\text{(A) }2^9-1}
+$$
+
+---
+
+## Insight
+
+O ponto importante é perceber que **não precisamos encontrar os pares $(x,y)$ individualmente**.
+
+Cada valor permitido de $y$ determina exatamente um valor de $x$.
+
+Como:
+
+$$
+1\leq y\leq511,
+$$
+
+temos:
+
+$$
+\boxed{511}
+$$
+
+possibilidades.
+
+Lembre-se também:
+
+$$
+\mathbb{Z}=\{\ldots,-2,-1,0,1,2,\ldots\}
+$$
+
+é o conjunto dos inteiros, enquanto os **inteiros positivos** são:
+
+$$
+\{1,2,3,\ldots\}.
+$$
+
+Por isso, $y=0$ não é permitido nesta questão.
+
+</Solucao>
+
+<Exercicio numero={7} dificuldade="Média" creditos="(Canguru 2023)">
+
+Um quadrado de área $84$ foi dividido em $4$ quadrados. Destes novos quadrados, o que está na parte superior esquerda do quadrado original foi pintado de preto, o que está na parte inferior direita também foi dividido em $4$ quadrados menores e assim por diante.
+
+Se esse processo for repetido infinitamente, qual será a área total pintada de preto?
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+
+<img
+  src="/banco-questoes/img/olimpiadas/canguru/quadrado.png"
+  alt="Quarto de círculo OPQ e triângulo OPR"
+  style={{maxWidth: '200px', width: '100%'}}
+/>
+
+</div>
+
+<MultipleChoice
+  options={[
+    "a) $24$",
+    "b) $28$",
+    "c) $31$",
+    "d) $35$",
+    "e) $42$"
+  ]}
+  correct={1}
+/>
+
+
+</Exercicio>
+
+
+<Dica>
+
+Observe que, a cada etapa, a área do quadrado que será pintado é reduzida para a quarta parte da área anterior.
+
+Isso forma uma progressão geométrica infinita.
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+A cada etapa, o quadrado que será dividido possui lado igual à metade do lado do quadrado anterior.
+
+Consequentemente, sua área é reduzida para a quarta parte:
+
+$$
+\frac14
+$$
+
+da área anterior.
+
+Assim, as áreas pintadas formam uma **progressão geométrica infinita**.
+
+---
+
+## Passo 1 — Área da primeira região pintada
+
+O quadrado original possui área:
+
+$$
+84.
+$$
+
+Ele foi dividido em $4$ quadrados de mesma área.
+
+Portanto, a área de cada um é:
+
+$$
+\frac{84}{4}=21.
+$$
+
+Logo, a primeira região pintada possui área:
+
+$$
+a_1=21.
+$$
+
+---
+
+## Passo 2 — Encontrando a razão
+
+O quadrado inferior direito é novamente dividido em $4$ quadrados.
+
+Assim, a próxima região pintada possui área:
+
+$$
+\frac{21}{4}.
+$$
+
+Na etapa seguinte, teremos:
+
+$$
+\frac{21}{16}.
+$$
+
+Depois:
+
+$$
+\frac{21}{64}.
+$$
+
+Portanto, as áreas pintadas formam a PG:
+
+$$
+21+\frac{21}{4}+\frac{21}{16}+\frac{21}{64}+\cdots
+$$
+
+com razão:
+
+$$
+q=\frac14.
+$$
+
+---
+
+## Passo 3 — Somando a PG infinita
+
+Como:
+
+$$
+|q|<1,
+$$
+
+a progressão geométrica converge.
+
+A soma de uma PG infinita é dada por:
+
+$$
+S=\frac{a_1}{1-q}.
+$$
+
+Substituindo:
+
+$$
+S=
+\frac{21}{1-\frac14}.
+$$
+
+Então:
+
+$$
+S=
+\frac{21}{\frac34}.
+$$
+
+Logo:
+
+$$
+S=28.
+$$
+
+---
+
+## Resultado
+
+A área total pintada de preto é:
+
+$$
+\boxed{28}.
+$$
+
+Portanto, a resposta correta é:
+
+$$
+\boxed{\text{(B) }28}.
+$$
+
+---
+
+## Insight
+
+O ponto principal é perceber que a área pintada diminui por um fator de $4$ a cada nova etapa:
+
+$$
+21,\quad
+\frac{21}{4},\quad
+\frac{21}{16},\quad
+\frac{21}{64},\quad\ldots
+$$
+
+Assim:
+
+$$
+\boxed{
+A=
+\frac{84}{4}
+\left(
+1+\frac14+\frac1{16}+\frac1{64}+\cdots
+\right)
+}
+$$
+
+Como a razão é menor que $1$, podemos utilizar a soma da PG infinita:
+
+$$
+\boxed{
+S=\frac{a_1}{1-q}
+}.
+$$
+
+Essa é uma aplicação clássica de **progressões geométricas infinitas em problemas de áreas**.
+
+</Solucao>
+
+<Exercicio numero={8} dificuldade="Médio" creditos="(Canguru 2023)">
+
+Os gráficos das funções definidas por
+
+$$
+y=x^3+3x^2+ax+2a+4
+$$
+
+passam todos por um certo ponto, qualquer que seja o valor de $a$.
+
+Qual é a soma das coordenadas desse ponto?
+
+<MultipleChoice
+  options = {[
+    "a) $2$",
+    "b) $4$",
+    "c) $6$",
+    "d) $7$",
+    "e) $8$"
+  ]}
+  correct={2}
+/>
+
+</Exercicio>
+
+
+<Dica>
+
+Agrupe os termos que possuem $a$.
+
+Depois, pense: para que o ponto seja o mesmo independentemente do valor de $a$, o que precisa acontecer com o termo que contém $a$?
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+Temos uma família de funções:
+
+$$
+y=x^3+3x^2+ax+2a+4.
+$$
+
+O valor de $a$ pode ser qualquer número.
+
+Queremos encontrar um ponto que pertença ao gráfico **independentemente do valor de $a$**.
+
+Para isso, precisamos encontrar um valor de $x$ que faça desaparecer a dependência em relação a $a$.
+
+---
+
+## Passo 1 — Agrupando os termos que possuem $a$
+
+Na expressão
+
+$$
+y=x^3+3x^2+ax+2a+4,
+$$
+
+os termos que possuem $a$ são:
+
+$$
+ax+2a.
+$$
+
+Colocando $a$ em evidência:
+
+$$
+ax+2a=a(x+2).
+$$
+
+Assim, podemos escrever:
+
+$$
+y=x^3+3x^2+4+a(x+2).
+$$
+
+Agora fica evidente qual parte da expressão depende de $a$.
+
+---
+
+## Passo 2 — Fazendo o termo que depende de $a$ desaparecer
+
+Queremos um ponto que pertença a **todos** os gráficos, qualquer que seja o valor de $a$.
+
+Portanto, o valor de $y$ nesse ponto não pode depender de $a$.
+
+Como $a$ pode assumir qualquer valor, precisamos fazer o fator que multiplica $a$ ser igual a zero:
+
+$$
+x+2=0.
+$$
+
+Logo:
+
+$$
+x=-2.
+$$
+
+Observe que, nesse caso,
+
+$$
+a(x+2)=a\cdot0=0,
+$$
+
+independentemente do valor de $a$.
+
+É justamente isso que faz o resultado deixar de depender do parâmetro.
+
+---
+
+## Passo 3 — Encontrando a coordenada $y$
+
+Substituindo $x=-2$:
+
+$$
+y=(-2)^3+3(-2)^2+4.
+$$
+
+Calculando:
+
+$$
+y=-8+12+4.
+$$
+
+Portanto:
+
+$$
+y=8.
+$$
+
+Assim, o ponto comum a todos os gráficos é:
+
+$$
+\boxed{(-2,8)}.
+$$
+
+---
+
+## Passo 4 — Somando as coordenadas
+
+A soma das coordenadas é:
+
+$$
+-2+8=6.
+$$
+
+Logo:
+
+$$
+\boxed{6}.
+$$
+
+---
+
+## Resultado
+
+A resposta correta é:
+
+$$
+\boxed{\text{(C) }6}
+$$
+
+---
+
+## Insight
+
+Quando temos uma família de funções que depende de um parâmetro, como
+
+$$
+f_a(x)=\text{parte independente de }a+a\cdot g(x),
+$$
+
+e todos os gráficos passam por um mesmo ponto independentemente de $a$, devemos procurar um valor de $x$ que faça:
+
+$$
+g(x)=0.
+$$
+
+Neste problema:
+
+$$
+y=x^3+3x^2+4+a(x+2),
+$$
+
+portanto precisamos de:
+
+$$
+x+2=0.
+$$
+
+Daí:
+
+$$
+x=-2.
+$$
+
+Essa é a ideia fundamental: **fazer desaparecer o termo que depende do parâmetro**.
+
+</Solucao>

@@ -374,3 +374,653 @@ A questão testa principalmente a capacidade de **enxergar a estrutura do númer
 
 </Solucao>
 
+<Exercicio numero={3} dificuldade="Médio">
+
+Prove que, se
+
+$$
+(a+b)^2+(b+c)^2+(c+d)^2
+=
+4(ab+bc+cd),
+$$
+
+então
+
+$$
+a=b=c=d.
+$$
+
+</Exercicio>
+
+
+<Dica>
+
+Desenvolva os quadrados e passe todos os termos para um mesmo lado.
+
+Tente reconhecer uma soma de quadrados envolvendo as diferenças
+
+$$
+a-b,\qquad b-c,\qquad c-d.
+$$
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+A estratégia é desenvolver os quadrados da hipótese e reorganizar os termos.
+
+A expressão resultante possui uma estrutura muito importante:
+
+$$
+(a-b)^2+(b-c)^2+(c-d)^2.
+$$
+
+Como estamos trabalhando com números reais, uma soma de quadrados só pode ser zero quando todos os quadrados forem zero.
+
+---
+
+## Passo 1 — Desenvolvendo os quadrados
+
+Partimos da hipótese:
+
+$$
+(a+b)^2+(b+c)^2+(c+d)^2
+=
+4(ab+bc+cd).
+$$
+
+Desenvolvendo:
+
+$$
+a^2+2ab+b^2
++
+b^2+2bc+c^2
++
+c^2+2cd+d^2
+=
+4ab+4bc+4cd.
+$$
+
+Agrupando os termos:
+
+$$
+a^2+2b^2+2c^2+d^2
++
+2ab+2bc+2cd
+=
+4ab+4bc+4cd.
+$$
+
+---
+
+## Passo 2 — Reorganizando
+
+Passando os termos do lado direito para o lado esquerdo:
+
+$$
+a^2+2b^2+2c^2+d^2
+-2ab-2bc-2cd
+=0.
+$$
+
+Agora precisamos reconhecer uma soma de quadrados.
+
+Observe que:
+
+$$
+(a-b)^2=a^2-2ab+b^2,
+$$
+
+$$
+(b-c)^2=b^2-2bc+c^2,
+$$
+
+e
+
+$$
+(c-d)^2=c^2-2cd+d^2.
+$$
+
+Somando essas três expressões:
+
+$$
+\begin{aligned}
+(a-b)^2+(b-c)^2+(c-d)^2
+={}&
+a^2-2ab+b^2
+\\
+&+b^2-2bc+c^2
+\\
+&+c^2-2cd+d^2.
+\end{aligned}
+$$
+
+Portanto:
+
+$$
+(a-b)^2+(b-c)^2+(c-d)^2
+=
+a^2+2b^2+2c^2+d^2
+-2ab-2bc-2cd.
+$$
+
+Pela hipótese, concluímos que:
+
+$$
+\boxed{
+(a-b)^2+(b-c)^2+(c-d)^2=0
+}.
+$$
+
+---
+
+## Passo 3 — Analisando a soma de quadrados
+
+Como $a,b,c,d$ são reais, temos:
+
+$$
+(a-b)^2\geq0,
+$$
+
+$$
+(b-c)^2\geq0,
+$$
+
+e
+
+$$
+(c-d)^2\geq0.
+$$
+
+A soma de três números não negativos é igual a zero somente quando cada um deles é zero.
+
+Logo:
+
+$$
+(a-b)^2=0,
+$$
+
+$$
+(b-c)^2=0,
+$$
+
+e
+
+$$
+(c-d)^2=0.
+$$
+
+Portanto:
+
+$$
+a-b=0,
+$$
+
+$$
+b-c=0,
+$$
+
+e
+
+$$
+c-d=0.
+$$
+
+Assim:
+
+$$
+a=b,
+\qquad
+b=c,
+\qquad
+c=d.
+$$
+
+Consequentemente,
+
+$$
+\boxed{a=b=c=d}.
+$$
+
+---
+
+## Resultado
+
+A hipótese implica:
+
+$$
+\boxed{
+(a-b)^2+(b-c)^2+(c-d)^2=0
+}.
+$$
+
+Como todos os termos são quadrados de números reais, cada um deve ser igual a zero. Portanto:
+
+$$
+\boxed{a=b=c=d}.
+$$
+
+---
+
+## Insight
+
+A grande sacada da questão é reconhecer uma **soma de quadrados** escondida depois de desenvolver e reorganizar a expressão.
+
+O resultado central é:
+
+$$
+\boxed{
+a^2+2b^2+2c^2+d^2
+-2ab-2bc-2cd
+=
+(a-b)^2+(b-c)^2+(c-d)^2
+}.
+$$
+
+Quando uma questão conduz a uma igualdade da forma
+
+$$
+x_1^2+x_2^2+\cdots+x_n^2=0,
+$$
+
+com $x_i\in\mathbb R$, podemos concluir imediatamente que:
+
+$$
+x_1=x_2=\cdots=x_n=0.
+$$
+
+> **Sacada:** ao encontrar uma expressão quadrática complicada, procure reorganizá-la como uma soma de quadrados. Muitas demonstrações de igualdade são resolvidas exatamente dessa maneira.
+
+</Solucao>
+
+<Exercicio numero={4} dificuldade="Difícil">
+
+Prove que, se $x$, $y$ e $z$ são números reais não nulos tais que
+
+$$
+\frac1x+\frac1y+\frac1z
+=
+\frac1{x+y+z},
+$$
+
+então vale que
+
+$$
+\frac1{x^{2019}}
++
+\frac1{y^{2019}}
++
+\frac1{z^{2019}}
+=
+\frac1{x^{2019}+y^{2019}+z^{2019}}.
+$$
+
+</Exercicio>
+
+
+<Dica>
+
+Tente passar um dos termos do lado esquerdo para o lado direito.
+
+Depois de colocar as frações em um mesmo denominador, procure uma fatoração.
+
+O fato de $2019$ ser ímpar será importante no final.
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+A hipótese
+
+$$
+\frac1x+\frac1y+\frac1z
+=
+\frac1{x+y+z}
+$$
+
+parece inicialmente difícil de relacionar com a conclusão.
+
+A ideia é manipular a igualdade até descobrir uma informação mais simples sobre $x$, $y$ e $z$.
+
+Vamos mostrar que necessariamente dois deles são opostos.
+
+---
+
+## Passo 1 — Isolando um dos termos
+
+Partimos de:
+
+$$
+\frac1x+\frac1y+\frac1z
+=
+\frac1{x+y+z}.
+$$
+
+Vamos passar o termo $\frac1z$ para o lado direito:
+
+$$
+\frac1x+\frac1y
+=
+\frac1{x+y+z}-\frac1z.
+$$
+
+Agora calculamos cada lado.
+
+No lado esquerdo:
+
+$$
+\frac1x+\frac1y
+=
+\frac{x+y}{xy}.
+$$
+
+No lado direito:
+
+$$
+\frac1{x+y+z}-\frac1z
+=
+\frac{z-(x+y+z)}
+{z(x+y+z)}.
+$$
+
+Simplificando o numerador:
+
+$$
+z-(x+y+z)=-(x+y).
+$$
+
+Portanto:
+
+$$
+\frac{x+y}{xy}
+=
+-\frac{x+y}{z(x+y+z)}.
+$$
+
+---
+
+## Passo 2 — Colocando tudo em um lado
+
+Passando tudo para o lado esquerdo:
+
+$$
+\frac{x+y}{xy}
++
+\frac{x+y}{z(x+y+z)}
+=0.
+$$
+
+Colocando $(x+y)$ em evidência:
+
+$$
+(x+y)
+\left(
+\frac1{xy}
++
+\frac1{z(x+y+z)}
+\right)
+=0.
+$$
+
+---
+
+## Passo 3 — Colocando as frações em um mesmo denominador
+
+Somando as duas frações:
+
+$$
+(x+y)
+\frac{
+z(x+y+z)+xy
+}{
+xyz(x+y+z)
+}
+=0.
+$$
+
+Vamos analisar o numerador:
+
+$$
+z(x+y+z)+xy.
+$$
+
+Distribuindo $z$:
+
+$$
+xz+yz+z^2+xy.
+$$
+
+Reorganizando:
+
+$$
+xy+xz+yz+z^2.
+$$
+
+Agora aparece uma fatoração:
+
+$$
+xy+xz+yz+z^2
+=
+x(y+z)+z(y+z).
+$$
+
+Colocando $(y+z)$ em evidência:
+
+$$
+=(x+z)(y+z).
+$$
+
+Assim, chegamos a:
+
+$$
+\frac{(x+y)(x+z)(y+z)}
+{xyz(x+y+z)}
+=0.
+$$
+
+Como $x$, $y$ e $z$ são não nulos e, pela própria hipótese, $x+y+z\neq0$, o denominador é diferente de zero.
+
+Logo:
+
+$$
+\boxed{
+(x+y)(x+z)(y+z)=0
+}.
+$$
+
+---
+
+## Passo 4 — O que isso significa?
+
+Se um produto é zero, pelo menos um dos seus fatores deve ser zero.
+
+Portanto, temos pelo menos uma das possibilidades:
+
+$$
+x+y=0,
+$$
+
+ou
+
+$$
+x+z=0,
+$$
+
+ou
+
+$$
+y+z=0.
+$$
+
+Em outras palavras, **dois dos números são opostos**.
+
+Por exemplo, podemos ter:
+
+$$
+y=-x.
+$$
+
+Os outros casos serão completamente análogos.
+
+---
+
+## Passo 5 — Usando o fato de $2019$ ser ímpar
+
+Suponha que:
+
+$$
+y=-x.
+$$
+
+Como $2019$ é ímpar:
+
+$$
+y^{2019}=(-x)^{2019}=-x^{2019}.
+$$
+
+Portanto:
+
+$$
+\frac1{x^{2019}}
++
+\frac1{y^{2019}}
+=
+\frac1{x^{2019}}
+-
+\frac1{x^{2019}}
+=0.
+$$
+
+Assim:
+
+$$
+\frac1{x^{2019}}
++
+\frac1{y^{2019}}
++
+\frac1{z^{2019}}
+=
+\frac1{z^{2019}}.
+$$
+
+Por outro lado:
+
+$$
+x^{2019}+y^{2019}+z^{2019}
+=
+x^{2019}-x^{2019}+z^{2019}.
+$$
+
+Logo:
+
+$$
+x^{2019}+y^{2019}+z^{2019}
+=
+z^{2019}.
+$$
+
+Consequentemente:
+
+$$
+\frac1{x^{2019}+y^{2019}+z^{2019}}
+=
+\frac1{z^{2019}}.
+$$
+
+Portanto:
+
+$$
+\boxed{
+\frac1{x^{2019}}
++
+\frac1{y^{2019}}
++
+\frac1{z^{2019}}
+=
+\frac1{x^{2019}+y^{2019}+z^{2019}}
+}.
+$$
+
+---
+
+## Resultado
+
+A hipótese inicial força:
+
+$$
+\boxed{
+(x+y)(x+z)(y+z)=0
+}.
+$$
+
+Logo, dois dos números $x$, $y$ e $z$ são opostos.
+
+Como $2019$ é ímpar, esses dois termos continuam sendo opostos quando elevados à potência $2019$.
+
+Assim,
+
+$$
+\boxed{
+\frac1{x^{2019}}
++
+\frac1{y^{2019}}
++
+\frac1{z^{2019}}
+=
+\frac1{x^{2019}+y^{2019}+z^{2019}}
+}.
+$$
+
+---
+
+## Insight
+
+A parte mais interessante da questão é que a fatoração não precisa ser conhecida de antemão.
+
+Ao passar $\frac1z$ para o outro lado, obtemos:
+
+$$
+\frac{x+y}{xy}
+=
+-\frac{x+y}{z(x+y+z)}.
+$$
+
+O fator $(x+y)$ aparece naturalmente.
+
+Depois, ao juntar as frações, surge:
+
+$$
+z(x+y+z)+xy.
+$$
+
+Desenvolvendo:
+
+$$
+xz+yz+z^2+xy.
+$$
+
+E somente então percebemos a fatoração:
+
+$$
+xy+xz+yz+z^2
+=
+(x+z)(y+z).
+$$
+
+Assim, toda a hipótese se transforma em:
+
+$$
+\boxed{
+(x+y)(x+z)(y+z)=0
+}.
+$$
+
+> **Sacada:** em problemas de demonstração, não tente necessariamente descobrir a fatoração antes de começar. Muitas vezes, a melhor estratégia é manipular a equação e deixar a própria estrutura algébrica revelar a fatoração.
+
+</Solucao>

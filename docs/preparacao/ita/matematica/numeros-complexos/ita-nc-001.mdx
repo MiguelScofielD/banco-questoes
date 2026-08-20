@@ -1,5 +1,5 @@
 ---
-title: Soma ponderada de potências de uma raiz da unidade
+title: Complexos
 sidebar_position: 1
 ---
 
@@ -269,5 +269,354 @@ $$
 $$
 
 > **Sacada:** em somatórios com coeficientes consecutivos multiplicando potências de uma mesma razão, experimente multiplicar a soma pela razão e subtrair. O deslocamento das potências pode fazer os coeficientes se reduzirem drasticamente.
+
+</Solucao>
+
+<Exercicio numero={2} dificuldade="Difícil">
+
+Resolva em $\mathbb{C}$:
+
+$$
+z^2+\frac{9z^2}{(z+3)^2}=-5.
+$$
+
+</Exercicio>
+
+
+<Dica>
+
+Observe que o termo $(z+3)^2$ pode ser obtido adicionando $6z+9$ aos dois lados da equação.
+
+Depois disso, tente identificar um **segundo quadrado perfeito**.
+
+</Dica>
+
+
+<Solucao>
+
+## Ideia principal
+
+A sacada da questão é completar o quadrado duas vezes.
+
+Primeiro, vamos criar o termo
+
+$$
+(z+3)^2.
+$$
+
+Depois, o termo $6z$ permitirá formar um segundo quadrado perfeito.
+
+---
+
+## Passo 1 — Restrição do domínio
+
+Como temos $(z+3)^2$ no denominador, devemos ter:
+
+$$
+z+3\neq0.
+$$
+
+Portanto:
+
+$$
+\boxed{z\neq-3}.
+$$
+
+---
+
+## Passo 2 — Completando o primeiro quadrado
+
+Partimos de:
+
+$$
+z^2+\frac{9z^2}{(z+3)^2}=-5.
+$$
+
+Adicionamos $6z+9$ aos dois lados:
+
+$$
+z^2+6z+9+\frac{9z^2}{(z+3)^2}
+=
+-5+6z+9.
+$$
+
+Como
+
+$$
+z^2+6z+9=(z+3)^2,
+$$
+
+e
+
+$$
+\frac{9z^2}{(z+3)^2}
+=
+\left(\frac{3z}{z+3}\right)^2,
+$$
+
+temos:
+
+$$
+(z+3)^2+
+\left(\frac{3z}{z+3}\right)^2
+=
+6z+4.
+$$
+
+---
+
+## Passo 3 — Identificando o segundo quadrado
+
+Passando $6z$ para o lado esquerdo:
+
+$$
+(z+3)^2+
+\left(\frac{3z}{z+3}\right)^2
+-6z
+=
+4.
+$$
+
+Agora observe que:
+
+$$
+(z+3)\left(\frac{3z}{z+3}\right)=3z.
+$$
+
+Logo,
+
+$$
+2(z+3)\left(\frac{3z}{z+3}\right)=6z.
+$$
+
+Portanto, podemos escrever:
+
+$$
+(z+3)^2
++
+\left(\frac{3z}{z+3}\right)^2
+-
+2(z+3)\left(\frac{3z}{z+3}\right)
+=4.
+$$
+
+Reconhecendo a identidade
+
+$$
+a^2+b^2-2ab=(a-b)^2,
+$$
+
+obtemos:
+
+$$
+\boxed{
+\left(
+z+3-\frac{3z}{z+3}
+\right)^2=4
+}.
+$$
+
+---
+
+## Passo 4 — Extraindo a raiz
+
+Como estamos trabalhando em $\mathbb{C}$:
+
+$$
+\left(
+z+3-\frac{3z}{z+3}
+\right)^2=2^2.
+$$
+
+Portanto:
+
+$$
+z+3-\frac{3z}{z+3}=\pm2.
+$$
+
+Temos dois casos.
+
+---
+
+## Caso 1
+
+Considere:
+
+$$
+z+3-\frac{3z}{z+3}=2.
+$$
+
+Então:
+
+$$
+z+1=\frac{3z}{z+3}.
+$$
+
+Multiplicando por $z+3$:
+
+$$
+(z+1)(z+3)=3z.
+$$
+
+Expandindo:
+
+$$
+z^2+4z+3=3z.
+$$
+
+Logo:
+
+$$
+z^2+z+3=0.
+$$
+
+Aplicando a fórmula de Bhaskara:
+
+$$
+z=
+\frac{-1\pm\sqrt{1-12}}{2}.
+$$
+
+Assim:
+
+$$
+z=
+\frac{-1\pm\sqrt{-11}}{2}.
+$$
+
+Como
+
+$$
+\sqrt{-11}=i\sqrt{11},
+$$
+
+obtemos:
+
+$$
+\boxed{
+z=\frac{-1\pm i\sqrt{11}}{2}
+}.
+$$
+
+---
+
+## Caso 2
+
+Agora considere:
+
+$$
+z+3-\frac{3z}{z+3}=-2.
+$$
+
+Então:
+
+$$
+z+5=\frac{3z}{z+3}.
+$$
+
+Multiplicando por $z+3$:
+
+$$
+(z+5)(z+3)=3z.
+$$
+
+Expandindo:
+
+$$
+z^2+8z+15=3z.
+$$
+
+Logo:
+
+$$
+z^2+5z+15=0.
+$$
+
+Aplicando novamente Bhaskara:
+
+$$
+z=
+\frac{-5\pm\sqrt{25-60}}{2}.
+$$
+
+Portanto:
+
+$$
+z=
+\frac{-5\pm\sqrt{-35}}{2}.
+$$
+
+Como
+
+$$
+\sqrt{-35}=i\sqrt{35},
+$$
+
+temos:
+
+$$
+\boxed{
+z=\frac{-5\pm i\sqrt{35}}{2}
+}.
+$$
+
+---
+
+## Resultado
+
+Reunindo as soluções dos dois casos:
+
+$$
+\boxed{
+z=
+\frac{-1+i\sqrt{11}}{2},
+\quad
+\frac{-1-i\sqrt{11}}{2},
+\quad
+\frac{-5+i\sqrt{35}}{2},
+\quad
+\frac{-5-i\sqrt{35}}{2}
+}
+$$
+
+Nenhuma das soluções é $-3$, portanto todas satisfazem a restrição do problema.
+
+---
+
+## Insight
+
+O ponto central da questão é perceber que o termo $6z$ não aparece por acaso.
+
+Ao completar o primeiro quadrado,
+
+$$
+z^2+6z+9=(z+3)^2,
+$$
+
+surge o termo $6z$.
+
+Por outro lado,
+
+$$
+6z
+=
+2(z+3)\left(\frac{3z}{z+3}\right).
+$$
+
+Isso permite reconhecer:
+
+$$
+a^2+b^2-2ab=(a-b)^2.
+$$
+
+Assim, a expressão complicada se transforma em:
+
+$$
+\left(
+z+3-\frac{3z}{z+3}
+\right)^2=4.
+$$
+
+> **Sacada:** quando uma questão pede para resolver uma equação racional e aparecem expressões como $(z+3)^2$ e $\frac{9z^2}{(z+3)^2}$, procure uma maneira de fazer essas duas expressões funcionarem como os termos $a^2$ e $b^2$ de um quadrado perfeito.
 
 </Solucao>

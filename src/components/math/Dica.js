@@ -2,19 +2,32 @@ import React from "react";
 
 function Dica({ children }) {
   return (
-    <div
+    <details
       style={{
         borderLeft: "6px solid #ff9800",
         background: "#fff9e6",
-        padding: "1rem",
         margin: "1.5rem 0",
-        borderRadius: "6px"
+        borderRadius: "6px",
       }}
     >
-      <strong>💡 Dica</strong>
+      <summary
+        style={{
+          padding: "1rem",
+          cursor: "pointer",
+          fontWeight: "bold",
+        }}
+      >
+        💡 Dica — clique para visualizar
+      </summary>
 
-      <div>{children}</div>
-    </div>
+      <div
+        style={{
+          padding: "0 1rem 1rem 1rem",
+        }}
+      >
+        {children}
+      </div>
+    </details>
   );
 }
 
